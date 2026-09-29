@@ -309,25 +309,25 @@ def short_title(title):
 # ---------- card ----------
 
 def build_card(groups, day):
-    line2 = [{"tag": "text", "text": f"🚗 脚垫类新品 ({len(groups)})"}]
+    lines = [f"📅 **{day} | Lasfit 新品**", "", f"🚗 **脚垫类新品 ({len(groups)})**", ""]
     for g in groups:
         price_str = f"${g['price_min']:.2f}" if g["price_min"] == g["price_max"] \
             else f"${g['price_min']:.2f}~${g['price_max']:.2f}"
-        line2.append({"tag": "text", "text": "\n\n• "})
-        line2.append({"tag": "a", "href": g["url"], "text": g["short"]})
-        tail = f" · {price_str}"
+        head = f"- [{g['short']}]({g['url']}) · {price_str}"
         if g["d"] != day:  # 防御：日期不一致时保留日期便于排查
-            tail += f" · {g['d']}"
-        line2.append({"tag": "text", "text": tail})
+            head += f" · {g['d']}"
+        lines.append(head)
         for vl in g["variant_lines"]:
-            line2.append({"tag": "text", "text": f"\n  {vl}"})
+            lines.append(f"  {vl}")
+        lines.append("")
+    while lines and lines[-1] == "":
+        lines.pop()
+    md = "\n".join(lines)
     return {
-        "title": "🆕 Lasfit 新品上架",
+        "config": {"wide_screen_mode": True},
+        "header": {"title": {"tag": "plain_text", "content": "🆕 Lasfit 新品上架"}, "template": "blue"},
         "elements": [
-            [{"tag": "text", "text": f"📅 {day} | Lasfit 新品"}],
-            line2,
-            [{"tag": "hr"}],
-            [{"tag": "note", "elements": []}],
+            {"tag": "div", "text": {"tag": "lark_md", "content": md}},
         ],
     }
 
