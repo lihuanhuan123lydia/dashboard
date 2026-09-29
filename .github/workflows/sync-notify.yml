@@ -1,0 +1,56 @@
+name: sync-and-notify
+
+on:
+  schedule:
+    # GitHub Actions cron 最短间隔为 5 分钟（原面板后端是 2 分钟，此处取平台允许的最密值）
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+    inputs:
+      target_date:
+        description: '检测日期 YYYY-MM-DD（留空 = 今天，仅测试用）'
+        required: false
+        default: ''
+      dry_run:
+        description: 'true = 只打印卡片不发送'
+        required: false
+        default: 'false'
+
+concurrency:
+  group: sync-notify
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Fetch data & notify Lasfit mat arrivals
+        env:
+          FEISHU_APP_ID: ${{ secrets.FEISHU_APP_ID }}
+          FEISHU_APP_SECRET: ${{ secrets.FEISHU_APP_SECRET }}
+          FEISHU_CHAT_ID: ${{ secrets.FEISHU_CHAT_ID }}
+          DASHBOARD_DATA_URL: ${{ secrets.DASHBOARD_DATA_URL }}
+          INPUT_TARGET_DATE: ${{ github.event.inputs.target_date }}
+          INPUT_DRY_RUN: ${{ github.event.inputs.dry_run }}
+        run: python scripts/sync_notify.py
+
+      - name: Commit & push data/state changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add new_products_data.js state/notified_ids.json
+          if git diff --cached --quiet; then
+            echo "no changes to commit"
+          else
+            git commit -m "chore: sync new_products_data $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            git push
+          fi

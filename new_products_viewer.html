@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="dark">
+<head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+<title>新品实时监控 v2</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Inter,sans-serif;background:#0b0d14;color:#e8eaf0;padding:16px}
+.card{background:#1a1e2e;border:1px solid #262a3d;border-radius:8px;padding:12px;margin-bottom:8px}
+.card:hover{border-color:rgba(59,130,246,.3)}
+.badge{display:inline-flex;padding:1px 6px;border-radius:4px;font-size:.6rem;font-weight:600}
+.b-3w{background:rgba(236,72,153,.15);color:#f472b6}
+.b-LF{background:rgba(249,115,22,.15);color:#fdba74}
+.b-TM{background:rgba(236,72,153,.15);color:#f472b6}
+.b-SL{background:rgba(168,85,247,.15);color:#c084fc}
+.loading{text-align:center;padding:40px;color:#5a6378}
+.auto-badge{display:inline-flex;padding:2px 8px;border-radius:99px;font-size:.6rem;background:rgba(34,197,94,.12);color:#86efac}
+::-webkit-scrollbar{width:3px}::-webkit-scrollbar-track{background:#0b0d14}::-webkit-scrollbar-thumb{background:#262a3d;border-radius:2px}
+</style>
+</head>
+<body>
+<div class="flex items-center justify-between mb-3">
+  <div><h1 class="text-base font-bold">🆕 新品/新车型实时监控</h1><p class="text-xs text-gray-500 mt-0.5">Shopify JSON API · 每日自动扫描</p></div>
+  <span id="countBadge" class="auto-badge">0 条</span>
+</div>
+
+<!-- Lasfit 脚垫统计面板 -->
+<div id="lasfitStatsPanel" class="card mb-3" style="display:none">
+  <div style="display:flex;align-items:center;gap:8px;padding:8px 12px;border-bottom:1px solid #262a3d;font-size:.82rem">
+    <span class="badge b-LF">Lasfit</span>
+    <span class="font-semibold text-xs" id="lasfitStatsTitle">脚垫车型链接统计</span>
+    <span class="text-gray-500 text-xs ml-auto">🚗 点击柱状图查看每月明细</span>
+  </div>
+  <div id="lasfitStatsBody" class="p-3"></div>
+</div>
+
+<!-- 弹窗遮罩 -->
+<div id="lasfitModal" onclick="if(event.target===this)closeLasfitModal()" style="display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.6);z-index:9999;align-items:center;justify-content:center;padding:20px">
+  <div style="background:#1a1e2e;border:1px solid #262a3d;border-radius:8px;max-width:600px;width:100%;max-height:80vh;overflow-y:auto;padding:14px 16px">
+    <div id="lasfitModalBody"></div>
+  </div>
+</div>
+
+<div id="productList"><div class="loading">⏳ 加载中...</div></div>
+<script>
+function renderProducts(NEW_PRODUCTS){
+  if (!NEW_PRODUCTS || NEW_PRODUCTS.length === 0) {
+    document.getElementById('productList').innerHTML = '<div class="loading">暂无数据</div>';
+    return;
+  }
+  const total = NEW_PRODUCTS.length;
+  document.getElementById('countBadge').textContent = total + ' 条';
+  const brands = {};
+  NEW_PRODUCTS.forEach(p => { if(!brands[p.b]) brands[p.b]=[]; brands[p.b].push(p); });
+  
+  let html = '<div class="grid md:grid-cols-3 gap-3">';
+  
+  // 第1列：Lasfit（高面板）
+  html += renderColumn(brands['Lasfit'] || [], {id:'Lasfit', color:'b-LF', title:'Lasfit 新品跟踪'}, 'calc(100vh - 160px)');
+  // 第2列：TuxMat（高面板）
+  html += renderColumn(brands['TuxMat'] || [], {id:'TuxMat', color:'b-TM', title:'TuxMat 新品跟踪'}, 'calc(100vh - 160px)');
+  // 第3列：3W（高面板）
+  html += renderColumn(brands['3W'] || [], {id:'3W', color:'b-3w', title:'3W 新品跟踪'}, 'calc(100vh - 160px)');
+  
+  html += '</div>';
+  document.getElementById('productList').innerHTML = html;
+}
+
+function renderColumn(items, bi, maxH) {
+  maxH = maxH || '400px';
+  let html = '<div class="card"><div class="card-hd" style="display:flex;align-items:center;gap:8px;padding:10px 12px;border-bottom:1px solid #262a3d;font-size:.82rem">';
+  html += '<span class="badge '+bi.color+'">'+bi.id+'</span>';
+  html += '<span class="font-semibold text-xs">'+bi.title+'</span>';
+  html += '<span class="chip" style="margin-left:auto">'+items.length+' 条</span>';
+  html += '</div><div class="p-2" style="max-height:'+maxH+';overflow-y:auto">';
+  if(items.length === 0) {
+    html += '<div class="text-xs text-gray-500 p-2">近期无新品上线</div>';
+  } else {
+    html += items.map(p => 
+      '<div class="flex items-start gap-2 text-xs py-1.5 border-b border-[#262a3d] last:border-0"><span class="text-gray-500 w-16 shrink-0">'+p.d+'</span>'+
+      (p.u ? '<a href="'+p.u+'" target="_blank" class="hover:text-blue-400 flex-1" style="word-break:break-word">'+p.t+'</a>' : '<span class="flex-1" style="word-break:break-word">'+p.t+'</span>')+
+      '<span class="text-gray-400 shrink-0">$'+p.p+'</span></div>'
+    ).join('');
+  }
+  html += '</div></div>';
+  return html;
+}
+
+/* ── Lasfit 脚垫统计 ── */
+const FLOOR_MAT_KW = ['floor mat','floormat','cargo liner','trunk mat','cargo mat','all-weather','footwell','floor liner','carpet mat','tpe floor','rubber floor','all weather'];
+
+function isFloorMat(t) {
+  const s = t.toLowerCase();
+  return FLOOR_MAT_KW.some(kw => s.includes(kw));
+}
+
+function productBase(u) {
+  if (!u) return null;
+  const m = u.match(/^(https:\/\/lasfit\.com\/products\/\d+)/);
+  return m ? m[1] : u;
+}
+
+function extractModel(t) {
+  // Try: "Fit for YYYY-YYYY Make Model ..." or "Fit for YYYY Make Model ..."
+  // Handle multi-word brands like "Mercedes-Benz", "Ford Freightliner" etc.
+  const m = t.match(/^Fit for (\d{4}(?:-\d{4})?)\s+((?:[A-Z][a-zA-Z.-]+\s)*[A-Z][a-zA-Z.-]+?)\s+(.+?)(?:Floor Mats|Cargo|Trunk|Seatback|All-weather|TPE|Rubber|Custom)/i);
+  if (m) {
+    let modelPart = m[3].trim();
+    // Strip trailing notes in parens for cleaner display
+    modelPart = modelPart.replace(/\(.*/, '').trim();
+    if (modelPart.endsWith(',') || modelPart.endsWith(';') || modelPart.endsWith('/')) modelPart = modelPart.slice(0,-1).trim();
+    return { years: m[1], make: m[2].trim(), model: modelPart };
+  }
+  return null;
+}
+
+function modelKey(p) {
+  const base = productBase(p.u);
+  return base || p.t;
+}
+
+function fmtMonthRange(firstMonth, lastMonth) {
+  const [fy, fm] = firstMonth.split('-').map(Number);
+  const [ly, lm] = lastMonth.split('-').map(Number);
+  const fStr = fy + '年' + fm + '月';
+  const lStr = (fy === ly ? '' : ly + '年') + lm + '月';
+  return fStr + ' ~ ' + lStr;
+}
+
+function renderLasfitStats(items) {
+  const panel = document.getElementById('lasfitStatsPanel');
+  const body = document.getElementById('lasfitStatsBody');
+  
+  // filter: Lasfit + floor mats + 2026 年至今
+  const fm = items.filter(p => {
+    if (p.b !== 'Lasfit') return false;
+    if (!isFloorMat(p.t)) return false;
+    if (!p.d) return false;
+    return p.d >= '2026-01-01';
+  });
+  
+  if (fm.length === 0) { panel.style.display = 'none'; return; }
+  
+  // unique product URLs
+  const linkMap = {}; // baseURL -> {firstItem, variants (titles set), years, make, model}
+  fm.forEach(p => {
+    const base = productBase(p.u);
+    if (!base) return;
+    if (!linkMap[base]) linkMap[base] = { items: [], years: null, make: null, model: null };
+    linkMap[base].items.push(p);
+    if (!linkMap[base].years) {
+      const ex = extractModel(p.t);
+      if (ex) { linkMap[base].years = ex.years; linkMap[base].make = ex.make; linkMap[base].model = ex.model; }
+    }
+  });
+  
+  const uniqueBases = Object.keys(linkMap);
+  const uniqueLinksCount = uniqueBases.length;
+  
+  // 动态月份：从数据里取实际存在的月份，自动扩展（1月 ~ 最新月）
+  const monthSet = [...new Set(fm.map(p => p.d.substring(0,7)))].sort();
+  const firstMonth = monthSet[0];
+  const lastMonth = monthSet[monthSet.length - 1];
+  // 生成连续月份列表（含中间空月）
+  const allMonths = [];
+  let [yy, mm] = firstMonth.split('-').map(Number);
+  const [eyy, emm] = lastMonth.split('-').map(Number);
+  while (yy < eyy || (yy === eyy && mm <= emm)) {
+    allMonths.push(yy + '-' + String(mm).padStart(2, '0'));
+    mm++;
+    if (mm > 12) { mm = 1; yy++; }
+  }
+  const monthLabels = {};
+  allMonths.forEach(m => { monthLabels[m] = parseInt(m.substring(5,7)) + '月'; });
+  const monthData = {};
+  allMonths.forEach(m => { monthData[m] = { entries: 0, unique: new Set() }; });
+  fm.forEach(p => {
+    const m = p.d.substring(0, 7);
+    if (monthData[m]) {
+      monthData[m].entries++;
+      const base = productBase(p.u);
+      if (base) monthData[m].unique.add(base);
+    }
+  });
+  
+  const monthsWithData = allMonths.filter(m => monthData[m].unique.size > 0).length;
+  const maxMonthly = Math.max(...allMonths.map(m => monthData[m].unique.size), 1);
+  
+  panel.style.display = 'block';
+  // 动态标题：2026年1月 ~ 8月
+  document.getElementById('lasfitStatsTitle').textContent = '脚垫车型链接统计 · ' + fmtMonthRange(firstMonth, lastMonth);
+  
+  let html = '';
+  
+  // ═══ 顶部汇总 ═══
+  html += '<div style="display:flex;gap:20px;margin-bottom:14px;flex-wrap:wrap">';
+  html += '<div style="background:#0b0d14;border-radius:6px;padding:10px 18px;text-align:center;min-width:100px">';
+  html += '<div style="font-size:1.6rem;font-weight:700;color:#fdba74">'+fm.length+'</div>';
+  html += '<div style="font-size:.62rem;color:#5a6378">总条目数</div></div>';
+  html += '<div style="background:#0b0d14;border-radius:6px;padding:10px 18px;text-align:center;min-width:100px">';
+  html += '<div style="font-size:1.6rem;font-weight:700;color:#86efac">'+uniqueLinksCount+'</div>';
+  html += '<div style="font-size:.62rem;color:#5a6378">去重车型链接数</div></div>';
+  html += '<div style="background:#0b0d14;border-radius:6px;padding:10px 18px;text-align:center;min-width:100px">';
+  html += '<div style="font-size:1.6rem;font-weight:700;color:#60a5fa">'+monthsWithData+'</div>';
+  html += '<div style="font-size:.62rem;color:#5a6378">有上架月份</div></div>';
+  html += '</div>';
+  
+  // ═══ 柱状图 — 按月展示去重车型链接数（含1-5月=0），点击弹出该月明细 ═══
+  html += '<div style="margin-bottom:14px"><div style="display:flex;gap:8px;align-items:end">';
+  allMonths.forEach(m => {
+    const d = monthData[m];
+    const cnt = d.unique.size;
+    const pct = Math.round(cnt / maxMonthly * 100);
+    const clickable = cnt > 0 ? ' onclick="showMonthModal(\''+m+'\')" style="cursor:pointer"' : '';
+    html += '<div'+clickable+' style="flex:1;display:flex;flex-direction:column;align-items:center;gap:2px">';
+    html += '<div style="font-size:.65rem;font-weight:600;color:'+(cnt>0?'#e8eaf0':'#5a6378')+'">'+cnt+'</div>';
+    html += '<div style="width:100%;height:60px;background:#0b0d14;border-radius:4px;position:relative;overflow:hidden">';
+    if (pct > 0) {
+      html += '<div style="position:absolute;bottom:0;left:0;width:100%;height:'+pct+'%;background:linear-gradient(to top,#fdba74,#fb923c);border-radius:2px 2px 0 0;opacity:0.85"></div>';
+    }
+    html += '</div>';
+    html += '<div style="font-size:.55rem;color:#5a6378">'+monthLabels[m]+'</div>';
+    html += '</div>';
+  });
+  html += '</div></div>';
+
+  // ═══ 老年分车型 vs 最新一代 ═══
+  // 老年分 = 标题适配年份区间上界 < 2026（不含2026；含2026或2027+ = 最新一代）
+  // 按去重链接分类，随数据自动重算。年份直接从标题提取（宽松兼容 - / – / 括号紧跟）
+  function extractGenYear(t) {
+    // 优先取区间：YYYY-YYYY 或 YYYY–YYYY
+    let m = t.match(/(\d{4})\s*[\-\u2013]\s*(\d{4})/);
+    if (m) return { lo: +m[1], hi: +m[2] };
+    // 单年
+    m = t.match(/(\d{4})/);
+    if (m) return { lo: +m[1], hi: +m[1] };
+    return null;
+  }
+  const genCats = {}; // base -> 'older' | 'latest' | null(未分类)
+  uniqueBases.forEach(b => {
+    // 优先用 linkMap 里已解析的 years，否则直接从首条标题提取
+    const title = linkMap[b].items[0].t;
+    let yr = null;
+    if (linkMap[b].years) {
+      const ym = linkMap[b].years.match(/(\d{4})\s*[\-\u2013]\s*(\d{4})/) || linkMap[b].years.match(/(\d{4})/);
+      if (ym) yr = { hi: parseInt(ym[2] || ym[1]) };
+    }
+    if (!yr) yr = extractGenYear(title);
+    if (!yr) { genCats[b] = null; return; }
+    genCats[b] = (yr.hi < 2026) ? 'older' : 'latest';
+  });
+  let olderCount = 0, latestCount = 0;
+  uniqueBases.forEach(b => { if (genCats[b]==='older') olderCount++; else if (genCats[b]==='latest') latestCount++; });
+  const classifiedBases = olderCount + latestCount;
+  const olderPct = classifiedBases ? (olderCount / classifiedBases * 100) : 0;
+  // 每月统计（按去重链接的实际上架月份 firstItem.d）
+  const genMonth = {};
+  allMonths.forEach(m => genMonth[m] = { older: new Set(), latest: new Set() });
+  uniqueBases.forEach(b => {
+    const cat = genCats[b];
+    if (!cat) return;
+    const m = linkMap[b].items[0].d.substring(0,7);
+    if (genMonth[m]) genMonth[m][cat].add(b);
+  });
+  // 渲染区块
+  html += '<div style="margin-top:18px;border-top:1px solid #262a3d;padding-top:14px">';
+  html += '<div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;flex-wrap:wrap">';
+  html += '<span style="font-size:.82rem;font-weight:700;color:#fdba74">👴 老年分车型 <span style="color:#4a5568;font-weight:400">vs</span> <span style="color:#86efac">最新一代</span></span>';
+  html += '<span style="font-size:.6rem;color:#5a6378">老年分 = 标题适配年份区间不含 2026</span>';
+  html += '</div>';
+  // 汇总卡片
+  html += '<div style="display:flex;gap:20px;margin-bottom:14px;flex-wrap:wrap">';
+  html += '<div style="background:#0b0d14;border-radius:6px;padding:10px 18px;text-align:center;min-width:100px"><div style="font-size:1.4rem;font-weight:700;color:#fdba74">'+olderCount+'</div><div style="font-size:.62rem;color:#5a6378">老年分车型</div></div>';
+  html += '<div style="background:#0b0d14;border-radius:6px;padding:10px 18px;text-align:center;min-width:100px"><div style="font-size:1.4rem;font-weight:700;color:#86efac">'+latestCount+'</div><div style="font-size:.62rem;color:#5a6378">最新一代车型</div></div>';
+  html += '<div style="background:#0b0d14;border-radius:6px;padding:10px 18px;text-align:center;min-width:100px"><div style="font-size:1.4rem;font-weight:700;color:#fdba74">'+olderPct.toFixed(1)+'%</div><div style="font-size:.62rem;color:#5a6378">老年分占比</div></div>';
+  html += '<div style="background:#0b0d14;border-radius:6px;padding:10px 18px;text-align:center;min-width:100px"><div style="font-size:1.4rem;font-weight:700;color:#60a5fa">'+classifiedBases+'</div><div style="font-size:.62rem;color:#5a6378">已分类链接</div></div>';
+  html += '</div>';
+  // 堆叠柱状图
+  html += '<div style="margin-bottom:12px"><div style="display:flex;gap:8px;align-items:end">';
+  allMonths.forEach(m => {
+    const o = genMonth[m].older.size, l = genMonth[m].latest.size, tot = o + l;
+    const oPct = tot ? (o / tot * 100) : 0;
+    const maxH = 80;
+    html += '<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:2px">';
+    html += '<div style="font-size:.58rem;font-weight:600;color:'+(tot>0?'#e8eaf0':'#5a6378')+'">'+(tot>0?o+'+'+l:'0')+'</div>';
+    html += '<div style="width:100%;height:'+maxH+'px;background:#0b0d14;border-radius:4px;position:relative;overflow:hidden">';
+    if (tot > 0) {
+      // 老年分在下（橙），最新一代在上（绿）
+      const oH = Math.round(o / Math.max(1, Math.max(...allMonths.map(mm=>{const t=genMonth[mm].older.size+genMonth[mm].latest.size;return t||0;})), 1 ) * maxH);
+      const lH = Math.round(l / Math.max(1, Math.max(...allMonths.map(mm=>{const t=genMonth[mm].older.size+genMonth[mm].latest.size;return t||0;})), 1 ) * maxH);
+      html += '<div style="position:absolute;bottom:0;left:0;width:100%;height:'+oH+'px;background:linear-gradient(to top,#fdba74,#fb923c);border-radius:2px 2px 0 0"></div>';
+      html += '<div style="position:absolute;bottom:'+oH+'px;left:0;width:100%;height:'+lH+'px;background:linear-gradient(to top,#4ade80,#86efac);border-radius:2px 2px 0 0"></div>';
+    }
+    html += '</div>';
+    html += '<div style="font-size:.55rem;color:#5a6378">'+monthLabels[m]+'</div>';
+    html += '<div style="font-size:.52rem;color:#fdba74;font-weight:600">'+(tot>0?Math.round(oPct)+'%':'')+'</div>';
+    html += '</div>';
+  });
+  html += '</div></div>';
+  // 图例
+  html += '<div style="display:flex;gap:14px;align-items:center;margin-bottom:10px;font-size:.6rem;color:#5a6378">';
+  html += '<span><span style="display:inline-block;width:8px;height:8px;background:#fb923c;border-radius:2px;margin-right:4px"></span>老年分 ('+olderCount+')</span>';
+  html += '<span><span style="display:inline-block;width:8px;height:8px;background:#86efac;border-radius:2px;margin-right:4px"></span>最新一代 ('+latestCount+')</span>';
+  html += '<span style="color:#fdba74">老年分占比 '+olderPct.toFixed(1)+'%</span>';
+  html += '</div>';
+  // 月度表
+  html += '<div style="border:1px solid #262a3d;border-radius:6px;overflow:hidden;margin-bottom:10px">';
+  html += '<div style="display:grid;grid-template-columns:1fr 70px 80px 70px 90px;gap:4px;font-size:.6rem;color:#5a6378;background:#141826;padding:6px 10px;font-weight:600">';
+  html += '<span>月份</span><span style="text-align:center">老年分</span><span style="text-align:center">最新一代</span><span style="text-align:center">合计</span><span style="text-align:center">老年分占比</span></div>';
+  let gTotO=0, gTotL=0;
+  allMonths.forEach(m => {
+    const o=genMonth[m].older.size, l=genMonth[m].latest.size, tot=o+l;
+    gTotO+=o; gTotL+=l;
+    html += '<div style="display:grid;grid-template-columns:1fr 70px 80px 70px 90px;gap:4px;font-size:.62rem;padding:5px 10px;border-top:1px solid #1a1e2e;color:#e8eaf0">';
+    html += '<span>'+monthLabels[m]+'</span>';
+    html += '<span style="text-align:center;color:#fdba74">'+o+'</span>';
+    html += '<span style="text-align:center;color:#86efac">'+l+'</span>';
+    html += '<span style="text-align:center;color:#a0aec0">'+tot+'</span>';
+    html += '<span style="text-align:center;color:#fdba74">'+(tot?Math.round(o/tot*100)+'%':'0%')+'</span></div>';
+  });
+  html += '<div style="display:grid;grid-template-columns:1fr 70px 80px 70px 90px;gap:4px;font-size:.66rem;font-weight:700;padding:6px 10px;border-top:1px solid #262a3d;background:#141826;color:#e8eaf0">';
+  html += '<span>合计</span><span style="text-align:center;color:#fdba74">'+gTotO+'</span><span style="text-align:center;color:#86efac">'+gTotL+'</span><span style="text-align:center;color:#a0aec0">'+(gTotO+gTotL)+'</span><span style="text-align:center;color:#fdba74">'+(gTotO+gTotL?Math.round(gTotO/(gTotO+gTotL)*100)+'%':'0%')+'</span></div>';
+  html += '</div>';
+  // 口径说明
+  html += '<div style="font-size:.55rem;color:#5a6378;line-height:1.6;margin-bottom:4px">';
+  html += '📌 数据来源：Lasfit '+firstMonth+' 起新上线脚垫车型（标题以 Fit for / Custom engineered 开头）。按产品链接去重，归属月份取实际上架月。从标题提取适配年份区间（如 2018-2024）：区间不含 2026 的归为老年分；含 2026 及以上（或 2027+）的归为最新一代。数据每日自动更新，本区块随面板数据自动重算。';
+  html += '</div>';
+  html += '</div>';
+  
+  // ═══ 车型明细列表（默认折叠，点击展开全部）═══
+  html += '<div style="margin-top:6px;border-top:1px solid #262a3d;padding-top:10px">';
+  html += '<div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">';
+  html += '<div style="font-size:.72rem;font-weight:600;color:#fdba74">📋 车型链接明细</div>';
+  html += '<span onclick="toggleLasfitSort()" id="lasfitSortBtn" title="切换排序方向" style="font-size:.62rem;color:#93c5fd;cursor:pointer;user-select:none">🔄 最新在前</span>';
+  html += '<span onclick="toggleLasfitDetail()" id="lasfitToggleBtn" style="font-size:.62rem;color:#60a5fa;cursor:pointer;user-select:none;margin-left:auto">▶ 展开全部 ('+uniqueLinksCount+')</span>';
+  html += '</div>';
+  
+  // Sort by date then model name
+  const sorted = uniqueBases
+    .map(b => ({ base: b, info: linkMap[b] }))
+    .sort((a, b) => {
+      const dA = a.info.items[0].d;
+      const dB = b.info.items[0].d;
+      if (dA !== dB) return dA.localeCompare(dB);
+      return (a.info.make||'') + (a.info.model||'') > (b.info.make||'') + (b.info.model||'') ? 1 : -1;
+    });
+  
+  // Table header
+  html += '<div style="display:grid;grid-template-columns:1fr 40px 40px;gap:4px;font-size:.58rem;color:#5a6378;border-bottom:1px solid #262a3d;padding:4px 6px;margin-bottom:4px">';
+  html += '<span>车型 · 年份</span><span style="text-align:center">价格</span><span style="text-align:center">上架</span>';
+  html += '</div>';
+  
+  // 明细容器：默认只显示前几行，其余靠高度裁剪折叠
+  html += '<div id="lasfitDetailList" style="max-height:190px;overflow:hidden;position:relative">';
+  html += '<div style="position:relative" id="lasfitDetailRows">';
+  
+  html += buildLasfitDetailRows(sorted);
+  
+  html += '</div>';
+  // 折叠遮罩（渐变 + 提示）
+  html += '<div id="lasfitDetailFade" style="position:absolute;bottom:0;left:0;right:0;height:60px;background:linear-gradient(to bottom,rgba(26,30,46,0),rgba(26,30,46,.95));display:flex;align-items:flex-end;justify-content:center;padding-bottom:6px">';
+  html += '<span style="font-size:.6rem;color:#60a5fa;cursor:pointer;user-select:none" onclick="toggleLasfitDetail()">▼ 展开全部 '+uniqueLinksCount+' 个车型链接</span>';
+  html += '</div></div>';
+  
+  html += '</div>';
+  
+  // 小标注
+  html += '<div style="margin-top:10px;font-size:.6rem;color:#5a6378;display:flex;gap:16px;flex-wrap:wrap">';
+  html += '<span>📅 统计周期: '+firstMonth+'-01 ~ '+lastMonth+'-31</span>';
+  html += '<span>（<span style="color:#86efac">'+uniqueLinksCount+'</span> 个车型链接 / <span style="color:#fdba74">'+fm.length+'</span> 条商品记录）</span>';
+  html += '<span style="color:#5a6378;cursor:pointer" onclick="showLasfitModal()">🔍 查看全部</span>';
+  html += '</div>';
+  
+  body.innerHTML = html;
+  
+  // 折叠状态重置
+  window._lasfitExpanded = false;
+  
+  // store for modal
+  window._lasfitSorted = sorted;
+  window._lasfitLinkMap = linkMap;
+  window._lasfitMonthData = monthData;
+  window._lasfitAllMonths = allMonths;
+  window._lasfitMonthLabels = monthLabels;
+  window._lasfitFirstMonth = firstMonth;
+  window._lasfitLastMonth = lastMonth;
+  window._lasfitDesc = false;
+}
+
+/* ── 明细行渲染（支持排序切换）── */
+function buildLasfitDetailRows(sorted) {
+  const desc = window._lasfitDesc;
+  const arr = desc ? [...sorted].reverse() : sorted;
+  let rows = '';
+  arr.forEach(({base, info}) => {
+    const first = info.items[0];
+    const prices = info.items.map(x => x.p);
+    const minP = Math.min(...prices);
+    const maxP = Math.max(...prices);
+    const priceStr = minP === maxP ? '$'+minP : '$'+minP+'~$'+maxP;
+    const displayName = info.make && info.model ? info.make+' '+info.model+' ('+info.years+')' : first.t.substring(0,50)+'...';
+    const month = first.d.substring(5,7);
+    
+    rows += '<div data-lasfit-detail>';
+    rows += '<div style="display:grid;grid-template-columns:1fr 40px 40px;gap:4px;padding:4px 6px;border-bottom:1px solid #1a1e2e;align-items:center">';
+    rows += '<a href="'+base+'" target="_blank" style="font-size:.62rem;color:#93c5fd;text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">'+displayName+'</a>';
+    rows += '<span style="font-size:.58rem;color:#5a6378;text-align:center">'+priceStr+'</span>';
+    rows += '<span style="font-size:.55rem;color:#fdba74;text-align:center">'+month+'月</span>';
+    rows += '</div></div>';
+  });
+  return rows;
+}
+
+/* ── 排序切换 ── */
+function toggleLasfitSort() {
+  window._lasfitDesc = !window._lasfitDesc;
+  const rowsEl = document.getElementById('lasfitDetailRows');
+  const btn = document.getElementById('lasfitSortBtn');
+  if (rowsEl) rowsEl.innerHTML = buildLasfitDetailRows(window._lasfitSorted);
+  if (btn) btn.textContent = window._lasfitDesc ? '🔄 最早在前' : '🔄 最新在前';
+}
+
+/* ── 明细展开/收起 ── */
+function toggleLasfitDetail() {
+  const list = document.getElementById('lasfitDetailList');
+  const fade = document.getElementById('lasfitDetailFade');
+  const btn = document.getElementById('lasfitToggleBtn');
+  const total = window._lasfitSorted ? window._lasfitSorted.length : 0;
+  if (!list) return;
+  if (!window._lasfitExpanded) {
+    list.style.maxHeight = 'none';
+    list.style.overflow = 'visible';
+    fade.style.display = 'none';
+    btn.textContent = '▼ 收起';
+    window._lasfitExpanded = true;
+  } else {
+    list.style.maxHeight = '190px';
+    list.style.overflow = 'hidden';
+    fade.style.display = 'flex';
+    btn.textContent = '▶ 展开全部 ('+total+')';
+    window._lasfitExpanded = false;
+  }
+}
+
+/* ── Modal 弹窗 ── */
+function closeLasfitModal() {
+  document.getElementById('lasfitModal').style.display = 'none';
+}
+
+function renderModalList(list, title) {
+  const overlay = document.getElementById('lasfitModal');
+  overlay.style.display = 'flex';
+  
+  let html = '<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;padding-bottom:6px;border-bottom:1px solid #262a3d">';
+  html += '<span style="font-size:.82rem;font-weight:600;color:#fdba74">'+title+'</span>';
+  html += '<span onclick="closeLasfitModal()" style="cursor:pointer;color:#5a6378;font-size:1.2rem;line-height:1">✕</span>';
+  html += '</div>';
+  
+  html += '<div style="display:grid;grid-template-columns:1fr 50px 55px;gap:4px;font-size:.6rem;color:#5a6378;border-bottom:1px solid #262a3d;padding:4px 6px">';
+  html += '<span>车型 · 年份</span><span style="text-align:center">价格</span><span style="text-align:center">上架</span>';
+  html += '</div>';
+  
+  list.forEach(({base, info}) => {
+    const first = info.items[0];
+    const prices = info.items.map(x => x.p);
+    const minP = Math.min(...prices);
+    const maxP = Math.max(...prices);
+    const priceStr = minP === maxP ? '$'+minP : '$'+minP+'~$'+maxP;
+    const displayName = info.make && info.model ? info.make+' '+info.model+' ('+info.years+')' : first.t.substring(0,60)+'...';
+    html += '<div style="display:grid;grid-template-columns:1fr 50px 55px;gap:4px;padding:4px 6px;border-bottom:1px solid #1a1e2e;align-items:center">';
+    html += '<a href="'+base+'" target="_blank" style="font-size:.62rem;color:#93c5fd;text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">'+displayName+'</a>';
+    html += '<span style="font-size:.6rem;color:#5a6378;text-align:center">'+priceStr+'</span>';
+    html += '<span style="font-size:.58rem;color:#fdba74;text-align:center">'+first.d.substring(5,7)+'月</span>';
+    html += '</div>';
+  });
+  
+  html += '<div style="margin-top:6px;font-size:.6rem;color:#5a6378;text-align:center">共 '+list.length+' 个车型链接</div>';
+  
+  document.getElementById('lasfitModalBody').innerHTML = html;
+}
+
+function showMonthModal(month) {
+  const data = window._lasfitMonthData[month];
+  if (!data || data.unique.size === 0) return;
+  const label = window._lasfitMonthLabels[month] || month;
+  // filter sorted list to this month
+  const filtered = window._lasfitSorted.filter(({info}) => {
+    return info.items[0].d.substring(0,7) === month;
+  });
+  renderModalList(filtered, '📅 '+label+' — 脚垫车型明细');
+}
+
+function showLasfitModal() {
+  const fm = window._lasfitFirstMonth, lm = window._lasfitLastMonth;
+  renderModalList(window._lasfitSorted, '📋 全部车型链接明细（'+fmtMonthRange(fm, lm)+'）');
+}
+
+async function loadData(){
+  try {
+    const r = await fetch('new_products_data.js?_t='+Date.now());
+    const txt = await r.text();
+    // Extract JSON array from var NEW_PRODUCTS = [...];
+    const jsonStr = txt.substring(txt.indexOf('['), txt.lastIndexOf(']')+1);
+    const data = JSON.parse(jsonStr);
+    renderProducts(data);
+    renderLasfitStats(data);
+  } catch(e) {
+    document.getElementById('productList').innerHTML = '<div class="loading">❌ 加载失败: '+e.message+'</div>';
+  }
+}
+loadData();
+setInterval(loadData, 300000);
+</script>
+</body>
+</html>
