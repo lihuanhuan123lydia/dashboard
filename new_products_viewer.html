@@ -276,28 +276,50 @@ function renderLasfitStats(items) {
   html += '<div style="background:#0b0d14;border-radius:6px;padding:10px 18px;text-align:center;min-width:100px"><div style="font-size:1.4rem;font-weight:700;color:#fdba74">'+olderPct.toFixed(1)+'%</div><div style="font-size:.62rem;color:#5a6378">老年分占比</div></div>';
   html += '<div style="background:#0b0d14;border-radius:6px;padding:10px 18px;text-align:center;min-width:100px"><div style="font-size:1.4rem;font-weight:700;color:#60a5fa">'+classifiedBases+'</div><div style="font-size:.62rem;color:#5a6378">已分类链接</div></div>';
   html += '</div>';
-  // 堆叠柱状图
-  html += '<div style="margin-bottom:12px"><div style="display:flex;gap:8px;align-items:end">';
+  // 堆叠面积图（原堆叠柱状图改；数据/颜色/标签不变，老年分在下（橙）、最新一代在上（绿））
+  const genMaxH = 80;
+  const genN = allMonths.length;
+  const genW = Math.max(1, genN) * 60, genVH = 100; // viewBox 坐标
+  const genMaxTot = Math.max(1, ...allMonths.map(mm => genMonth[mm].older.size + genMonth[mm].latest.size));
+  const genX = i => genW * (i + 0.5) / genN; // 与下方标签列（flex:1）中心对齐
+  const genYO = allMonths.map(m => genVH - genVH * genMonth[m].older.size / genMaxTot);                                     // 老年分面积上边界
+  const genYT = allMonths.map(m => genVH - genVH * (genMonth[m].older.size + genMonth[m].latest.size) / genMaxTot);         // 堆叠总上边界
+  const ptsO = allMonths.map((m, i) => genX(i).toFixed(2) + ',' + genYO[i].toFixed(2));
+  const ptsT = allMonths.map((m, i) => genX(i).toFixed(2) + ',' + genYT[i].toFixed(2));
+  const areaO = '0,' + genYO[0].toFixed(2) + ' ' + ptsO.join(' ') + ' ' + genW + ',' + genYO[genN-1].toFixed(2) + ' ' + genW + ',' + genVH + ' 0,' + genVH;
+  const areaG = '0,' + genYT[0].toFixed(2) + ' ' + ptsT.join(' ') + ' ' + genW + ',' + genYT[genN-1].toFixed(2)
+    + ' ' + genW + ',' + genYO[genN-1].toFixed(2) + ' ' + ptsO.slice().reverse().join(' ') + ' 0,' + genYO[0].toFixed(2);
+  // 顶部数值标签（o+l / 0，与原柱状图一致）
+  html += '<div style="margin-bottom:12px">';
+  html += '<div style="display:flex">';
+  allMonths.forEach(m => {
+    const o = genMonth[m].older.size, l = genMonth[m].latest.size, tot = o + l;
+    html += '<div style="flex:1;text-align:center;font-size:.58rem;font-weight:600;color:'+(tot>0?'#e8eaf0':'#5a6378')+'">'+(tot>0?o+'+'+l:'0')+'</div>';
+  });
+  html += '</div>';
+  // SVG 堆叠面积图
+  html += '<svg width="100%" height="'+genMaxH+'" viewBox="0 0 '+genW+' '+genVH+'" preserveAspectRatio="none" style="display:block;background:#0b0d14;border-radius:4px">';
+  html += '<defs>';
+  html += '<linearGradient id="genGradO" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#fdba74"/><stop offset="1" stop-color="#fb923c"/></linearGradient>';
+  html += '<linearGradient id="genGradG" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#4ade80"/><stop offset="1" stop-color="#86efac"/></linearGradient>';
+  html += '</defs>';
+  html += '<polygon points="'+areaO+'" fill="url(#genGradO)" fill-opacity="0.85"/>';
+  html += '<polygon points="'+areaG+'" fill="url(#genGradG)" fill-opacity="0.85"/>';
+  html += '<polyline points="'+ptsO.join(' ')+'" fill="none" stroke="#fb923c" stroke-width="1.5" vector-effect="non-scaling-stroke"/>';
+  html += '<polyline points="'+ptsT.join(' ')+'" fill="none" stroke="#86efac" stroke-width="1.5" vector-effect="non-scaling-stroke"/>';
+  html += '</svg>';
+  // 月份标签 + 老年分占比（与原柱状图一致）
+  html += '<div style="display:flex">';
   allMonths.forEach(m => {
     const o = genMonth[m].older.size, l = genMonth[m].latest.size, tot = o + l;
     const oPct = tot ? (o / tot * 100) : 0;
-    const maxH = 80;
-    html += '<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:2px">';
-    html += '<div style="font-size:.58rem;font-weight:600;color:'+(tot>0?'#e8eaf0':'#5a6378')+'">'+(tot>0?o+'+'+l:'0')+'</div>';
-    html += '<div style="width:100%;height:'+maxH+'px;background:#0b0d14;border-radius:4px;position:relative;overflow:hidden">';
-    if (tot > 0) {
-      // 老年分在下（橙），最新一代在上（绿）
-      const oH = Math.round(o / Math.max(1, Math.max(...allMonths.map(mm=>{const t=genMonth[mm].older.size+genMonth[mm].latest.size;return t||0;})), 1 ) * maxH);
-      const lH = Math.round(l / Math.max(1, Math.max(...allMonths.map(mm=>{const t=genMonth[mm].older.size+genMonth[mm].latest.size;return t||0;})), 1 ) * maxH);
-      html += '<div style="position:absolute;bottom:0;left:0;width:100%;height:'+oH+'px;background:linear-gradient(to top,#fdba74,#fb923c);border-radius:2px 2px 0 0"></div>';
-      html += '<div style="position:absolute;bottom:'+oH+'px;left:0;width:100%;height:'+lH+'px;background:linear-gradient(to top,#4ade80,#86efac);border-radius:2px 2px 0 0"></div>';
-    }
-    html += '</div>';
+    html += '<div style="flex:1;text-align:center">';
     html += '<div style="font-size:.55rem;color:#5a6378">'+monthLabels[m]+'</div>';
     html += '<div style="font-size:.52rem;color:#fdba74;font-weight:600">'+(tot>0?Math.round(oPct)+'%':'')+'</div>';
     html += '</div>';
   });
-  html += '</div></div>';
+  html += '</div>';
+  html += '</div>';
   // 图例
   html += '<div style="display:flex;gap:14px;align-items:center;margin-bottom:10px;font-size:.6rem;color:#5a6378">';
   html += '<span><span style="display:inline-block;width:8px;height:8px;background:#fb923c;border-radius:2px;margin-right:4px"></span>老年分 ('+olderCount+')</span>';
