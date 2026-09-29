@@ -13,14 +13,16 @@ Before sending, numeric IDs are resolved to handles via lasfit.com
 products.json (weekly full-store cache in _handles.json + on-demand scan),
 and each handle URL is verified HTTP 200 before use.
 
-Card format v5 (2026-09-29):
-  title : 🆕 Lasfit 新品上架
+Card format v7 (2026-09-29, FINAL — owner confirmed, do NOT iterate further):
+  header: 🆕 Lasfit 新品上架
   line1 : 📅 <date> | Lasfit 新品
-  line2 : 🚗 脚垫类新品 (N) + one block per product:
-            • [车型年份信息](handle URL) · $price
-              <variant line: "Model / 中文配置">   (one line per variant)
-            (no per-product date; kept only if entry.d != notify date)
-  hr + empty note
+  line2 : 🚗 脚垫类新品 (N) [+ " · X% OFF" if page promo present]
+          one block per product:
+            - [车型年份信息](handle URL)
+                <variant line: "Model / 中文配置 · $price">   (one line per variant)
+          Discount scraped from product-page HTML %OFF badge/checkout banner
+          (NOT compare_at_price); if absent show face price only.
+  Schema: flat div/lark_md (nested-array legacy format rejected by Feishu).
 """
 import json
 import os
@@ -266,8 +268,15 @@ def mats_from_title(title):
     return "+".join(seen)
 
 
+def fmt_price(cents):
+    try:
+        return f"${int(cents) / 100:.2f}"
+    except (TypeError, ValueError):
+        return ""
+
+
 def variant_lines(product, fallback_title):
-    """v5: one line per variant ('Model / 中文配置'); fallback for Default Title."""
+    """v7: one line per variant ('Model / 中文配置 · $price'); fallback for Default Title."""
     lines = []
     variants = (product or {}).get("variants", []) if product else []
     real = [v for v in variants if (v.get("option2") or "").strip() not in ("", "Default Title", "Default")]
@@ -275,14 +284,30 @@ def variant_lines(product, fallback_title):
         for v in real:
             o1 = (v.get("option1") or "").strip()
             cfg = translate_config(v.get("option2") or "")
-            if o1 and cfg:
-                lines.append(f"{o1} / {cfg}")
-            else:
-                lines.append(cfg or o1 or (v.get("title") or "").strip())
+            base = f"{o1} / {cfg}" if o1 and cfg else (cfg or o1 or (v.get("title") or "").strip())
+            lines.append(base + (f" · {fmt_price(v.get('price'))}" if base and v.get("price") is not None else ""))
     else:
         title = (product or {}).get("title") or fallback_title
-        lines.append(mats_from_title(title) or "默认")
+        base = mats_from_title(title) or "默认"
+        price = (product or {}).get("price")
+        lines.append(base + (f" · {fmt_price(price)}" if price is not None else ""))
     return [l for l in lines if l]
+
+
+def fetch_discount(handle):
+    """v7: scrape promo percent from product page HTML (NOT compare_at_price).
+
+    Anchors: checkout banner JSON title like '"title":"18% OFF Code: HAR2618"',
+    fallback to a rendered badge like '>18%OFF<'. Bare '\\d+%OFF' grep is unsafe —
+    variant option values ('Whole Package-Extra 10%OFF') pollute it.
+    """
+    try:
+        html = http_get(f"{STORE}/products/{handle}", timeout=30)
+    except Exception as e:
+        print(f"[discount] fetch page failed for {handle}: {e}")
+        return None
+    m = re.search(r'"title":"\s*(\d+)% ?OFF', html) or re.search(r">(\d+)%OFF<", html)
+    return int(m.group(1)) if m else None
 
 
 SHORT_RE = re.compile(
@@ -309,11 +334,17 @@ def short_title(title):
 # ---------- card ----------
 
 def build_card(groups, day):
-    lines = [f"📅 **{day} | Lasfit 新品**", "", f"🚗 **脚垫类新品 ({len(groups)})**", ""]
+    discs = [g["discount"] for g in groups if g.get("discount")]
+    if discs:
+        if len(set(discs)) == 1:
+            disc_suffix = f" · {discs[0]}% OFF"
+        else:
+            disc_suffix = " · " + "/".join(str(d) for d in discs) + "% OFF"
+    else:
+        disc_suffix = ""  # 无促销折扣时只显示面价，不带折扣字段
+    lines = [f"📅 **{day} | Lasfit 新品**", "", f"🚗 **脚垫类新品 ({len(groups)}){disc_suffix}**", ""]
     for g in groups:
-        price_str = f"${g['price_min']:.2f}" if g["price_min"] == g["price_max"] \
-            else f"${g['price_min']:.2f}~${g['price_max']:.2f}"
-        head = f"- [{g['short']}]({g['url']}) · {price_str}"
+        head = f"- [{g['short']}]({g['url']})"
         if g["d"] != day:  # 防御：日期不一致时保留日期便于排查
             head += f" · {g['d']}"
         lines.append(head)
@@ -428,6 +459,7 @@ def main():
         url = first.get("u") or ""
         title_src = first.get("t") or ""
         product = None
+        discount = None
         if g["pid"]:
             handle = resolve_handle(cache, g["pid"], today.strftime("%Y-%m-%d"))
             cache_changed = True
@@ -437,16 +469,15 @@ def main():
                 if ok_url:
                     url = ok_url
                 product = fetch_product_js(handle)
+                discount = fetch_discount(handle)  # v7: 页面促销 %OFF，拿不到则不带折扣字段
         if product:
             title_src = product.get("title") or title_src
-        prices = [e.get("p") for e in g["entries"] if isinstance(e.get("p"), (int, float))]
         built.append({
             "key": key,
             "url": url,
             "short": short_title(title_src),
-            "price_min": min(prices) if prices else 0,
-            "price_max": max(prices) if prices else 0,
             "d": first.get("d", ""),
+            "discount": discount,
             "variant_lines": variant_lines(product, first.get("t") or ""),
         })
 
