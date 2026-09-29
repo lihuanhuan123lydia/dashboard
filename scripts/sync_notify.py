@@ -401,7 +401,8 @@ def main():
     cache = load_handles()
     cache_changed = False
     last_scan = cache.get("last_full_scan", "")
-    if not last_scan or (today - datetime.strptime(last_scan, "%Y-%m-%d")).days >= FULL_SCAN_EVERY_DAYS:
+    today_naive = today.replace(tzinfo=None)
+    if not last_scan or (today_naive - datetime.strptime(last_scan, "%Y-%m-%d")).days >= FULL_SCAN_EVERY_DAYS:
         full_scan(cache, today.strftime("%Y-%m-%d"))
         cache_changed = True
 
