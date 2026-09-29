@@ -4,48 +4,75 @@
 Sync new_products_data.js from dashboard.dmdmnow.com and notify Lasfit floor-mat
 new arrivals to the Feishu group.
 
-Notification rule (fixed by owner, do NOT change):
+Detection rule (fixed by owner, do NOT change):
   b == "Lasfit" AND title contains "Floor Mat" / "Cargo Mat" / "Bed Mat"
-  AND d == today (Asia/Shanghai). Peripheral accessories are excluded by the
-  keyword list itself.
+  AND d == today (Asia/Shanghai).
 
-Card format replicates the existing group card 1:1:
-  title: 🆕 Lasfit 新品上架
-  line1: 📅 <date> | Lasfit 新品
-  line2: 🚗 脚垫类新品 (N) + one link line per product ($price | date)
+Link fix (2026-09-29): data `u` uses Shopify numeric product IDs which 404.
+Before sending, numeric IDs are resolved to handles via lasfit.com
+products.json (weekly full-store cache in _handles.json + on-demand scan),
+and each handle URL is verified HTTP 200 before use.
+
+Card format v5 (2026-09-29):
+  title : 🆕 Lasfit 新品上架
+  line1 : 📅 <date> | Lasfit 新品
+  line2 : 🚗 脚垫类新品 (N) + one block per product:
+            • [车型年份信息](handle URL) · $price
+              <variant line: "Model / 中文配置">   (one line per variant)
+            (no per-product date; kept only if entry.d != notify date)
   hr + empty note
 """
 import json
 import os
+import re
 import sys
 import time
 import urllib.request
 import urllib.error
 from datetime import datetime, timedelta, timezone
 
-CST = timezone(timedelta(hours=8))  # Asia/Shanghai, fixed offset (no DST)
+CST = timezone(timedelta(hours=8))  # Asia/Shanghai (no DST)
 
 DATA_URL = os.environ.get("DASHBOARD_DATA_URL", "https://dashboard.dmdmnow.com/new_products_data.js")
+STORE = "https://www.lasfit.com"
+UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_FILE = os.path.join(REPO_ROOT, "new_products_data.js")
 STATE_FILE = os.path.join(REPO_ROOT, "state", "notified_ids.json")
+HANDLES_FILE = os.path.join(REPO_ROOT, "_handles.json")
 
 MAT_KEYWORDS = ("floor mat", "cargo mat", "bed mat")
 STATE_KEEP_DAYS = 30
+FULL_SCAN_EVERY_DAYS = 7
+ONDEMAND_SCAN_MAX_PAGES = 20
+FULL_SCAN_MAX_PAGES = 60
+
+# 英文配置 -> 中文（用户指定映射）
+TOKEN_MAP = [
+    ("floor mat", "脚垫"),
+    ("cargo mat", "尾箱垫"),
+    ("bed mat", "床垫"),
+    ("seatback", "椅背"),
+    ("liner", "防污垫"),
+]
 
 
-def http_get(url, timeout=30, retries=2):
+# ---------- http ----------
+
+def http_get(url, timeout=30, retries=2, as_json=False):
     last_err = None
     for attempt in range(retries + 1):
         try:
-            req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (dmdmnow-dashboard-sync)"})
+            req = urllib.request.Request(url, headers={"User-Agent": UA})
             with urllib.request.urlopen(req, timeout=timeout) as r:
-                return r.read().decode("utf-8", errors="replace")
-        except (urllib.error.URLError, TimeoutError) as e:
+                body = r.read().decode("utf-8", errors="replace")
+                return json.loads(body) if as_json else body
+        except (urllib.error.URLError, TimeoutError, json.JSONDecodeError) as e:
             last_err = e
             if attempt < retries:
-                time.sleep(3)
-    raise RuntimeError(f"fetch failed after {retries + 1} attempts: {last_err}")
+                time.sleep(2)
+    raise RuntimeError(f"GET {url} failed: {last_err}")
 
 
 def http_post_json(url, payload, headers=None, timeout=20):
@@ -55,8 +82,20 @@ def http_post_json(url, payload, headers=None, timeout=20):
         return json.loads(r.read().decode("utf-8"))
 
 
+def http_status(url, timeout=20):
+    try:
+        req = urllib.request.Request(url, method="HEAD", headers={"User-Agent": UA})
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            return r.status
+    except urllib.error.HTTPError as e:
+        return e.code
+    except Exception:
+        return -1
+
+
+# ---------- data sync ----------
+
 def parse_items(text):
-    """Extract the JSON array from `var NEW_PRODUCTS = [...]`."""
     start, end = text.index("["), text.rindex("]") + 1
     return json.loads(text[start:end])
 
@@ -81,8 +120,18 @@ def write_data_file(items):
         f.write(content)
 
 
-def item_id(p):
-    return f"{p.get('u', '')}::{p.get('t', '')}"
+# ---------- detection ----------
+
+def item_base(p):
+    """Group key: product page URL without variant query."""
+    u = p.get("u") or ""
+    m = re.match(r"^(https?://(?:www\.)?lasfit\.com/products/[^?]+)", u)
+    return m.group(1) if m else (u or p.get("t", ""))
+
+
+def product_numeric_id(p):
+    m = re.search(r"lasfit\.com/products/(\d+)", p.get("u") or "")
+    return m.group(1) if m else None
 
 
 def is_lasfit_mat(p):
@@ -92,38 +141,187 @@ def is_lasfit_mat(p):
     return any(kw in t for kw in MAT_KEYWORDS)
 
 
-def load_state():
-    if os.path.exists(STATE_FILE):
+# ---------- handle resolution ----------
+
+def load_handles():
+    if os.path.exists(HANDLES_FILE):
         try:
-            return json.load(open(STATE_FILE, encoding="utf-8"))
+            return json.load(open(HANDLES_FILE, encoding="utf-8"))
         except Exception:
             pass
-    return {}
+    return {"last_full_scan": "", "handles": {}, "verified": {}}
 
 
-def save_state(state):
-    os.makedirs(os.path.dirname(STATE_FILE), exist_ok=True)
-    with open(STATE_FILE, "w", encoding="utf-8") as f:
-        json.dump(state, f, ensure_ascii=False, indent=1, sort_keys=True)
+def save_handles(cache):
+    with open(HANDLES_FILE, "w", encoding="utf-8") as f:
+        json.dump(cache, f, ensure_ascii=False, indent=1, sort_keys=True)
         f.write("\n")
 
 
-def purge_state(state, today):
-    cutoff = (today - timedelta(days=STATE_KEEP_DAYS)).strftime("%Y-%m-%d")
-    return {k: v for k, v in state.items() if v >= cutoff}
+def fetch_products_page(page):
+    d = http_get(f"{STORE}/products.json?limit=250&page={page}", as_json=True, timeout=40)
+    return d.get("products", [])
 
 
-def build_card(hits, day):
-    """Replicate the exact legacy card structure used in the group today."""
-    line2 = [{"tag": "text", "text": f"🚗 脚垫类新品 ({len(hits)})"}]
-    for i, p in enumerate(hits):
-        price = p.get("p")
-        price_str = f"${price:.2f}" if isinstance(price, (int, float)) else ""
-        sep = "\n• " if i < len(hits) - 1 else ""
-        line2.append({"tag": "text", "text": "\n• "})
-        line2.append({"tag": "a", "href": p.get("u", ""), "text": p.get("t", "")})
-        line2.append({"tag": "text", "text": f"  {price_str}  | {p.get('d', '')}{sep}"})
-    card = {
+def full_scan(cache, today):
+    print("[handles] weekly full-store scan start")
+    n = 0
+    for page in range(1, FULL_SCAN_MAX_PAGES + 1):
+        try:
+            prods = fetch_products_page(page)
+        except Exception as e:
+            print(f"[handles] page {page} failed: {e}; stopping scan")
+            break
+        if not prods:
+            break
+        for p in prods:
+            cache["handles"][str(p["id"])] = p["handle"]
+            n += 1
+        if len(prods) < 250:
+            break
+    cache["last_full_scan"] = today
+    print(f"[handles] full scan done: {n} products, cache size {len(cache['handles'])}")
+
+
+def resolve_handle(cache, pid, today):
+    """Resolve numeric product id -> handle (cache -> on-demand page scan)."""
+    h = cache["handles"].get(pid)
+    if h:
+        return h
+    for page in range(1, ONDEMAND_SCAN_MAX_PAGES + 1):
+        try:
+            prods = fetch_products_page(page)
+        except Exception as e:
+            print(f"[handles] on-demand page {page} failed: {e}")
+            return None
+        if not prods:
+            break
+        for p in prods:
+            cache["handles"][str(p["id"])] = p["handle"]
+        hit = next((p for p in prods if str(p["id"]) == pid), None)
+        if hit:
+            print(f"[handles] resolved {pid} -> {hit['handle']} (page {page})")
+            return hit["handle"]
+        if len(prods) < 250:
+            break
+    print(f"[handles] {pid} not found in first {ONDEMAND_SCAN_MAX_PAGES} pages")
+    return None
+
+
+def verified_handle_url(cache, handle, today):
+    url = f"{STORE}/products/{handle}"
+    last = cache["verified"].get(handle, "")
+    if last and (datetime.strptime(today, "%Y-%m-%d") - datetime.strptime(last, "%Y-%m-%d")).days < 7:
+        return url
+    status = http_status(url)
+    if status == 200:
+        cache["verified"][handle] = today
+        return url
+    print(f"[handles] WARN {url} returned {status}")
+    return None
+
+
+def fetch_product_js(handle):
+    """Fetch full product detail (title + variants) via /products/{handle}.js."""
+    try:
+        return http_get(f"{STORE}/products/{handle}.js", as_json=True, timeout=30)
+    except Exception as e:
+        print(f"[variant] fetch {handle}.js failed: {e}")
+        return None
+
+
+# ---------- variant formatting (v5) ----------
+
+def translate_config(s):
+    """'Floor Mats & Cargo Mat' -> '脚垫+尾箱垫'."""
+    if not s:
+        return ""
+    parts = re.split(r"\s*(?:&|\+)\s*", s.strip())
+    out = []
+    for part in parts:
+        part = part.strip()
+        if not part:
+            continue
+        low = part.lower()
+        zh = next((v for k, v in TOKEN_MAP if k in low), None)
+        out.append(zh or part)
+    return "+".join(out)
+
+
+def mats_from_title(title):
+    """Fallback: extract mat config keywords from product title in order."""
+    s = (title or "").lower()
+    pats = [(r"floor\s*mat", "脚垫"), (r"cargo\s*mat", "尾箱垫"),
+            (r"bed\s*mat", "床垫"), (r"seatback", "椅背"), (r"liner", "防污垫")]
+    hits = []
+    for pat, zh in pats:
+        m = re.search(pat, s)
+        if m:
+            hits.append((m.start(), zh))
+    hits.sort()
+    seen = []
+    for _, zh in hits:
+        if zh not in seen:
+            seen.append(zh)
+    return "+".join(seen)
+
+
+def variant_lines(product, fallback_title):
+    """v5: one line per variant ('Model / 中文配置'); fallback for Default Title."""
+    lines = []
+    variants = (product or {}).get("variants", []) if product else []
+    real = [v for v in variants if (v.get("option2") or "").strip() not in ("", "Default Title", "Default")]
+    if real:
+        for v in real:
+            o1 = (v.get("option1") or "").strip()
+            cfg = translate_config(v.get("option2") or "")
+            if o1 and cfg:
+                lines.append(f"{o1} / {cfg}")
+            else:
+                lines.append(cfg or o1 or (v.get("title") or "").strip())
+    else:
+        title = (product or {}).get("title") or fallback_title
+        lines.append(mats_from_title(title) or "默认")
+    return [l for l in lines if l]
+
+
+SHORT_RE = re.compile(
+    r"^(?:Fit for\s+|Custom engineered for\s+|Custom Fit for\s+)?"
+    r"((?:\d{4}\s*[-–]\s*\d{4}|\d{4})\s+)?"
+    r"(.*?)"
+    r"(?=\s*(?:Floor Mats?|Cargo Mats?|Bed Mats?|Cargo|Trunk|Seatback|All[- ]?Weather|TPE|Rubber|Custom)\b)",
+    re.IGNORECASE,
+)
+
+
+def short_title(title):
+    """'Fit for 2025-2026 Kia K4 Floor Mats or ...' -> '2025-2026 Kia K4'."""
+    m = SHORT_RE.match((title or "").strip())
+    if m:
+        years = (m.group(1) or "").strip()
+        model = m.group(2).strip().strip(",;/").strip()
+        if model:
+            return (years + " " if years else "") + model
+    t = (title or "").strip()
+    return t[:60] + ("..." if len(t) > 60 else "")
+
+
+# ---------- card ----------
+
+def build_card(groups, day):
+    line2 = [{"tag": "text", "text": f"🚗 脚垫类新品 ({len(groups)})"}]
+    for g in groups:
+        price_str = f"${g['price_min']:.2f}" if g["price_min"] == g["price_max"] \
+            else f"${g['price_min']:.2f}~${g['price_max']:.2f}"
+        line2.append({"tag": "text", "text": "\n\n• "})
+        line2.append({"tag": "a", "href": g["url"], "text": g["short"]})
+        tail = f" · {price_str}"
+        if g["d"] != day:  # 防御：日期不一致时保留日期便于排查
+            tail += f" · {g['d']}"
+        line2.append({"tag": "text", "text": tail})
+        for vl in g["variant_lines"]:
+            line2.append({"tag": "text", "text": f"\n  {vl}"})
+    return {
         "title": "🆕 Lasfit 新品上架",
         "elements": [
             [{"tag": "text", "text": f"📅 {day} | Lasfit 新品"}],
@@ -132,8 +330,9 @@ def build_card(hits, day):
             [{"tag": "note", "elements": []}],
         ],
     }
-    return card
 
+
+# ---------- feishu ----------
 
 def feishu_token(app_id, app_secret):
     resp = http_post_json(
@@ -156,6 +355,26 @@ def send_card(token, chat_id, card):
     return resp
 
 
+# ---------- state ----------
+
+def load_state():
+    if os.path.exists(STATE_FILE):
+        try:
+            return json.load(open(STATE_FILE, encoding="utf-8"))
+        except Exception:
+            pass
+    return {}
+
+
+def save_state(state):
+    os.makedirs(os.path.dirname(STATE_FILE), exist_ok=True)
+    with open(STATE_FILE, "w", encoding="utf-8") as f:
+        json.dump(state, f, ensure_ascii=False, indent=1, sort_keys=True)
+        f.write("\n")
+
+
+# ---------- main ----------
+
 def main():
     dry_run = os.environ.get("INPUT_DRY_RUN", "").lower() == "true"
     target_date = os.environ.get("INPUT_TARGET_DATE", "").strip()
@@ -169,40 +388,86 @@ def main():
     local_items = load_local_items()
     if local_items != upstream_items:
         write_data_file(upstream_items)
-        print(f"[sync] new_products_data.js updated ({(local_items or []) and len(local_items) or 0} -> {len(upstream_items)} items)")
+        print(f"[sync] new_products_data.js updated ({len(local_items or [])} -> {len(upstream_items)} items)")
     else:
         print("[sync] data unchanged")
 
     state = load_state()
-    purged = purge_state(state, today)
+    cutoff = (today - timedelta(days=STATE_KEEP_DAYS)).strftime("%Y-%m-%d")
+    purged = {k: v for k, v in state.items() if v >= cutoff}
     state_changed = len(purged) != len(state)
     state = purged
 
-    hits = [p for p in upstream_items if p.get("d") == day and is_lasfit_mat(p) and item_id(p) not in state]
-    hits.sort(key=lambda p: p.get("t", ""))
-    print(f"[notify] date={day} new Lasfit mat items: {len(hits)}")
+    cache = load_handles()
+    cache_changed = False
+    last_scan = cache.get("last_full_scan", "")
+    if not last_scan or (today - datetime.strptime(last_scan, "%Y-%m-%d")).days >= FULL_SCAN_EVERY_DAYS:
+        full_scan(cache, today.strftime("%Y-%m-%d"))
+        cache_changed = True
 
-    if hits:
-        card = build_card(hits, day)
+    # group hits by product
+    groups = {}
+    order = []
+    for p in upstream_items:
+        if p.get("d") != day or not is_lasfit_mat(p):
+            continue
+        key = product_numeric_id(p) or item_base(p)
+        if key in state:
+            continue
+        if key not in groups:
+            groups[key] = {"entries": [], "pid": product_numeric_id(p)}
+            order.append(key)
+        groups[key]["entries"].append(p)
+    print(f"[notify] date={day} new Lasfit mat products: {len(order)}")
+
+    built = []
+    for key in order:
+        g = groups[key]
+        first = g["entries"][0]
+        url = first.get("u") or ""
+        title_src = first.get("t") or ""
+        product = None
+        if g["pid"]:
+            handle = resolve_handle(cache, g["pid"], today.strftime("%Y-%m-%d"))
+            cache_changed = True
+            if handle:
+                ok_url = verified_handle_url(cache, handle, today.strftime("%Y-%m-%d"))
+                cache_changed = True
+                if ok_url:
+                    url = ok_url
+                product = fetch_product_js(handle)
+        if product:
+            title_src = product.get("title") or title_src
+        prices = [e.get("p") for e in g["entries"] if isinstance(e.get("p"), (int, float))]
+        built.append({
+            "key": key,
+            "url": url,
+            "short": short_title(title_src),
+            "price_min": min(prices) if prices else 0,
+            "price_max": max(prices) if prices else 0,
+            "d": first.get("d", ""),
+            "variant_lines": variant_lines(product, first.get("t") or ""),
+        })
+
+    if built:
+        card = build_card(built, day)
         if dry_run:
             print("[notify] DRY RUN, card would be:")
             print(json.dumps(card, ensure_ascii=False, indent=1))
         else:
-            app_id = os.environ["FEISHU_APP_ID"]
-            app_secret = os.environ["FEISHU_APP_SECRET"]
-            chat_id = os.environ["FEISHU_CHAT_ID"]
-            token = feishu_token(app_id, app_secret)
-            send_card(token, chat_id, card)
-            print(f"[notify] card sent with {len(hits)} item(s)")
-            for p in hits:
-                state[item_id(p)] = day
+            token = feishu_token(os.environ["FEISHU_APP_ID"], os.environ["FEISHU_APP_SECRET"])
+            send_card(token, os.environ["FEISHU_CHAT_ID"], card)
+            print(f"[notify] card sent with {len(built)} product(s)")
+            for g in built:
+                state[g["key"]] = day
             state_changed = True
 
     if state_changed:
         save_state(state)
         print("[state] notified_ids.json updated")
-    else:
-        print("[state] unchanged")
+    if cache_changed:
+        save_handles(cache)
+        print("[handles] _handles.json updated")
 
 
 if __name__ == "__main__":

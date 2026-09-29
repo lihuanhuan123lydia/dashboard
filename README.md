@@ -12,5 +12,7 @@
 ## 自动化（.github/workflows/sync-notify.yml）
 
 - 每 5 分钟（GitHub Actions cron 最短间隔）从 `dashboard.dmdmnow.com/new_products_data.js` 拉取最新数据并 commit。
-- 每次运行时检测：`b == "Lasfit"` 且标题含 `Floor Mat` / `Cargo Mat` / `Bed Mat` 且 `d == 当天（北京时间）` 的新品；发现即向飞书群发送与布鲁斯卡片同款格式的通知卡片，且同一条目只通知一次。
+- 每次运行时检测：`b == "Lasfit"` 且标题含 `Floor Mat` / `Cargo Mat` / `Bed Mat` 且 `d == 当天（北京时间）` 的新品；发现即向飞书群发送通知卡片，同一产品只通知一次。
+- 链接修正：数据里的 Shopify 数字 ID 会 404，发送前经 `lasfit.com/products.json` 解析为 handle（每周全店扫描缓存于 `_handles.json`，新品按需解析），且验证 handle URL 返回 200 才使用。
+- 卡片格式 v5：标题日期 + 每产品一行「车型年份 · 价格」+ 每个变体一行中文配置（Sedan / 脚垫+尾箱垫），产品行不再重复日期。
 - 支持手动触发（Actions → sync-and-notify → Run workflow）：`target_date` 指定检测日期（测试用），`dry_run=true` 只打印不发送。
