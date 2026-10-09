@@ -78,7 +78,9 @@ function renderColumn(items, bi, maxH) {
   if(items.length === 0) {
     html += '<div class="text-xs text-gray-500 p-2">近期无新品上线</div>';
   } else {
-    html += items.map(p => 
+    // 按发布日期降序排（数据源不一定严格按日期排，渲染时保险排一次）
+    const sortedItems = items.slice().sort((a,b) => (b.d||'').localeCompare(a.d||''));
+    html += sortedItems.map(p => 
       '<div class="flex items-start gap-2 text-xs py-1.5 border-b border-[#262a3d] last:border-0"><span class="text-gray-500 w-16 shrink-0">'+p.d+'</span>'+
       (p.u ? '<a href="'+p.u+'" target="_blank" class="hover:text-blue-400 flex-1" style="word-break:break-word">'+p.t+'</a>' : '<span class="flex-1" style="word-break:break-word">'+p.t+'</span>')+
       '<span class="text-gray-400 shrink-0">$'+p.p+'</span></div>'
