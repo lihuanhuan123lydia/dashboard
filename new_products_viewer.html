@@ -2,6 +2,7 @@
 <html lang="zh-CN" class="dark">
 <head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
 <title>新品实时监控 v2</title>
+<!-- build: 2026-10-09-fix-cache-and-eom -->
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -389,7 +390,7 @@ function renderLasfitStats(items) {
   
   // 小标注
   html += '<div style="margin-top:10px;font-size:.6rem;color:#5a6378;display:flex;gap:16px;flex-wrap:wrap">';
-  html += '<span>📅 统计周期: '+firstMonth+'-01 ~ '+lastMonth+'-31</span>';
+  html += '<span>📅 统计周期: '+firstMonth+'-01 ~ '+lastMonth+'-'+new Date(eyy, emm, 0).getDate()+'</span>';
   html += '<span>（<span style="color:#86efac">'+uniqueLinksCount+'</span> 个车型链接 / <span style="color:#fdba74">'+fm.length+'</span> 条商品记录）</span>';
   html += '<span style="color:#5a6378;cursor:pointer" onclick="showLasfitModal()">🔍 查看全部</span>';
   html += '</div>';
