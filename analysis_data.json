@@ -1,0 +1,6690 @@
+{
+  "existing_products": [
+    "电动踏板",
+    "后侧踏",
+    "电动伸缩盖",
+    "车载摄像头",
+    "侧踏板",
+    "后视镜",
+    "灯支架",
+    "越野灯",
+    "充气泵",
+    "货架"
+  ],
+  "vehicle_data": [
+    {
+      "cat": "车载摄像头",
+      "make": "Ford",
+      "model": "Maverick",
+      "product": "Electronics",
+      "detail": "Dash Camera, rear camera",
+      "year": "2026",
+      "date": "2026/5/22"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ford",
+      "model": "Maverick",
+      "product": "Cargo bed retractable step",
+      "detail": "Is not in the market a retractable step...",
+      "year": "2023",
+      "date": "2026/5/1"
+    },
+    {
+      "cat": "车载摄像头",
+      "make": "Ram",
+      "model": "1500",
+      "product": "rearview dash cam",
+      "detail": "What is the top 2 or 3 choices for a rearview dash cam front and rear at minimum",
+      "year": "2014"
+    },
+    {
+      "cat": "电动伸缩盖\n电动踏板",
+      "make": "Toyota",
+      "model": "Tacoma",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Retractable bed cover \nPower side steps",
+      "year": "2014",
+      "date": "46195"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ram",
+      "model": "3500",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Looking for something for my truck with an 8 foot bed",
+      "year": "2008",
+      "date": "46195"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "Excursion",
+      "product": "Power Running Boards",
+      "detail": "Extended for lift",
+      "year": "2005",
+      "date": "46195"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Toyota",
+      "model": "Tacoma",
+      "product": "Retractable Bed Step",
+      "detail": "Retractable bed step",
+      "year": "2014",
+      "date": "46195"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Toyota",
+      "model": "Sienna",
+      "product": "Power Running Boards",
+      "detail": "Platinum edition has foot operated side slide door option would probably need cu",
+      "year": "2025",
+      "date": "46195"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Toyota",
+      "model": "Tundra",
+      "product": "Retractable Bed Step",
+      "detail": "Nothing custom",
+      "year": "2018",
+      "date": "46195"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Jeep",
+      "model": "Grand Cherokee",
+      "product": "Power Running Boards",
+      "detail": "Looking for power running boards for handicap wife.",
+      "year": "2015",
+      "trim": "Limited",
+      "date": "46195"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Nissan",
+      "model": "Frontier",
+      "product": "Retractable Bed Step",
+      "detail": "Looking for a retractable bed step.",
+      "year": "2026",
+      "trim": "Pro 4X Roush",
+      "date": "46195"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Jeep",
+      "model": "Liberty",
+      "product": "Power Running Boards",
+      "detail": "FBRB55",
+      "year": "2011",
+      "date": "46195"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "1500",
+      "product": "Retractable Bed Step",
+      "detail": "Will the 2500 model fit the 1500",
+      "year": "2025",
+      "date": "46195"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-250 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "Power running board availability for my truck",
+      "year": "2006",
+      "trim": "Lariat Crew Cab",
+      "date": "46195"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "1500",
+      "product": "Retractable Bed Step",
+      "detail": "I'm 77 need help to get into the bed of my  Ram Laramie 1500 with air ride",
+      "year": "2018",
+      "trim": "Laramie",
+      "date": "46195"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-250 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "Na",
+      "year": "2015",
+      "trim": "Platinum",
+      "date": "46195"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ford",
+      "model": "F-250 Super Duty",
+      "product": "Retractable Bed Step",
+      "detail": "Bed step",
+      "year": "2016",
+      "date": "46195"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ford",
+      "model": "F-350 Super Duty",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "8 foot bed",
+      "year": "1996",
+      "date": "46195"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ford",
+      "model": "Ranger",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Looking for power retractable bed cover",
+      "year": "2026",
+      "trim": "Raptor",
+      "date": "46195"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ford",
+      "model": "Ranger",
+      "product": "Retractable Bed Step",
+      "detail": "Retractable bed step",
+      "year": "2020",
+      "date": "46195"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "GMC",
+      "model": "Sierra EV",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "For sierra ev",
+      "year": "2025",
+      "trim": "Denali",
+      "date": "46195"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "GMC",
+      "model": "Sierra EV",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "need to for my truck",
+      "year": "2025",
+      "trim": "Denali",
+      "date": "46195"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Power Running Boards",
+      "detail": "Ram megacab power running boards",
+      "year": "2018",
+      "date": "46195"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Jeep",
+      "model": "Gladiator",
+      "product": "Power Running Boards",
+      "detail": "Just as the title states. Power running boards for Jeep Gladiator JT models. The",
+      "date": "46195"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Nissan",
+      "model": "Frontier",
+      "product": "Power Running Boards",
+      "detail": "Please put your R&D dept. to work making Power Running boards for the late model",
+      "year": "2025+",
+      "date": "46195"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Retractable Step",
+      "detail": "",
+      "year": "2016",
+      "trim": "Longhorn",
+      "date": "46195"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Retractable Bed Step",
+      "detail": "Did not see this year covered - Tony Whitney",
+      "year": "2014",
+      "date": "46195"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ford",
+      "model": "F-250 Super Duty",
+      "product": "Retractable Bed Step",
+      "detail": "Bed step - Craig Freeman",
+      "year": "2009",
+      "date": "46195"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Power Running Boards",
+      "detail": "Black - Ric Bleecker",
+      "year": "2016",
+      "date": "46195"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Chevy",
+      "model": "Colorado",
+      "product": "Retractable Bed Step",
+      "detail": "Love this idea. - Stephen Ehrhart",
+      "year": "2025",
+      "date": "46195"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Toyota",
+      "model": "Tacoma",
+      "product": "Retractable Bed Step",
+      "detail": "Do you have a bed step for 2005 Toyota Tacoma? - Emmanuel Bulang",
+      "year": "2005",
+      "date": "46195"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "Promaster",
+      "product": "Retractable Bed Step",
+      "detail": "Interested in step for sliding door - Michael Baldoni",
+      "year": "2023",
+      "date": "46195"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ram",
+      "model": "1500",
+      "product": "Power Running Boards",
+      "detail": "I need bed cover but i have ram boxes - Semir Dervisevic",
+      "year": "2026",
+      "date": "46195"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-350 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "Power running boards - Mark O'Bryan",
+      "year": "2008",
+      "date": "46195"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Colorado",
+      "product": "Power Running Boards",
+      "detail": "What do you carry for the Chevy Colorado? - Michael O'Halloran",
+      "year": "2026",
+      "date": "46195"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ram",
+      "model": "1500",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Dodge ram 1500 2014 short bed - Guido Decastro",
+      "year": "2014",
+      "date": "46195"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "GMC",
+      "model": "Sierra 2500 HD",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Cannot find retractable bed cover for my Sierra 2500",
+      "year": "2025",
+      "date": "46195"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "1500",
+      "product": "Retractable Bed Step",
+      "detail": "Bed step",
+      "year": "2012",
+      "date": "46195"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ford",
+      "model": "Transit",
+      "product": "Retractable Bed Step",
+      "detail": "Side steps",
+      "year": "2026",
+      "date": "46195"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "GMC",
+      "model": "Sierra 2500 HD",
+      "product": "Retractable Bed Step",
+      "detail": "Looking for a bed step for my truck",
+      "year": "2018",
+      "date": "46195"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ram",
+      "model": "1500",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Looking for a cover for the above truck",
+      "year": "2015",
+      "trim": "Eco Diesel 5'7\"",
+      "date": "46195"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "1500",
+      "product": "Retractable Bed Step",
+      "detail": "Bed step retractable.",
+      "year": "2015",
+      "trim": "Sport",
+      "date": "46195"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Power Running Boards",
+      "detail": "Needs to work with ground effects",
+      "year": "2026",
+      "trim": "Lobo",
+      "date": "46195"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Silverado 1500",
+      "product": "Power Running Boards",
+      "detail": "Power Running Boards",
+      "year": "2017",
+      "date": "46195"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Toyota",
+      "model": "Tacoma",
+      "product": "Retractable Bed Step",
+      "detail": "Will any fit my Tacoma? Toyotas stay on the road longer.",
+      "year": "2013",
+      "date": "46195"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ford",
+      "model": "F-350 Super Duty",
+      "product": "Retractable Bed Step",
+      "detail": "Would love to try one on my pickup.",
+      "year": "2015",
+      "date": "46195"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-350 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "Power running board kit for this vehicle please",
+      "year": "2012",
+      "date": "46195"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "GMC",
+      "model": "Sierra 1500",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Crew cab",
+      "year": "2010",
+      "date": "46195"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ford",
+      "model": "Ranger",
+      "product": "Retractable Bed Step",
+      "detail": "Retractable bed step",
+      "year": "2024",
+      "trim": "Fx",
+      "date": "46195"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Sierra 1500",
+      "product": "Power Running Boards",
+      "detail": "I did a search and it only shows up to 2007. Hopefully you will come out with on",
+      "year": "2006",
+      "trim": "Slt Crew Cab 4Wd",
+      "date": "46195"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "GMC",
+      "model": "Canyon",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Do you make this one for my model - Jeff Billingsley",
+      "year": "2026",
+      "date": "46195"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Traverse",
+      "product": "Power Running Boards",
+      "detail": "Power running boards for 2025 Chevy Traverse - Harsh Patel",
+      "year": "2025",
+      "date": "46195"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ford",
+      "model": "Ranger",
+      "product": "Retractable Bed Step",
+      "detail": "Retractable bumper step - Dean Jacobson",
+      "year": "2025",
+      "date": "46195"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ford",
+      "model": "F-450 Super Duty",
+      "product": "Retractable Bed Step",
+      "detail": "Retractable - Dawn Winans",
+      "year": "2008",
+      "date": "46195"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Jeep",
+      "model": "Wrangler",
+      "product": "Power Running Boards",
+      "detail": "Running boards that come out when the door opens and closes",
+      "year": "2016",
+      "date": "46195"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Chevy",
+      "model": "Silverado 2500 HD",
+      "product": "Retractable Bed Step",
+      "detail": "Bed step.",
+      "year": "1994",
+      "trim": "Extra Cab 2 Door Short Bed",
+      "date": "46195"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Chevy",
+      "model": "Silverado 2500 HD",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Regular Bed",
+      "year": "2005",
+      "trim": "Duramax",
+      "date": "46195"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "GMC",
+      "model": "Sierra 3500 HD",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "8 foot bed.",
+      "year": "2016",
+      "trim": "Denali",
+      "date": "46195"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "1500",
+      "product": "Power Running Boards",
+      "detail": "Something that fix",
+      "year": "2015",
+      "date": "46195"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Power Running Boards",
+      "detail": "Can't find it on your website",
+      "year": "2022",
+      "trim": "Power Wagon",
+      "date": "46195"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "GMC",
+      "model": "Canyon",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Do you make this one for my model",
+      "year": "2026",
+      "date": "46195"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Traverse",
+      "product": "Power Running Boards",
+      "detail": "Power running boards for 2025 Chevy Traverse",
+      "year": "2025",
+      "date": "46195"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ford",
+      "model": "Ranger",
+      "product": "Retractable Bed Step",
+      "detail": "Retractable bumper step",
+      "year": "2025",
+      "date": "46195"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ford",
+      "model": "F-450 Super Duty",
+      "product": "Retractable Bed Step",
+      "detail": "Retractable",
+      "year": "2008",
+      "date": "46195"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Chevy",
+      "model": "Silverado 1500",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Bed cover",
+      "year": "2019",
+      "date": "46195"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ford",
+      "model": "Ranger",
+      "product": "Retractable Bed Step",
+      "detail": "I didn't see the Ford Ranger listed for the retractable bed step",
+      "year": "2025",
+      "date": "46195"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Toyota",
+      "model": "Tacoma",
+      "product": "Retractable Bed Step",
+      "detail": "2003 tacoma extended cab looking for automatic steps please",
+      "year": "2003",
+      "date": "46195"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "GMC",
+      "model": "Canyon",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Powered retractable bed cover",
+      "year": "2019",
+      "date": "46195"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-250 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "",
+      "year": "2016",
+      "date": "46195"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Jeep",
+      "model": "Wrangler",
+      "product": "Power Running Boards",
+      "detail": "I was surprised to not see a listing for Jeep Wranglers.",
+      "year": "2015",
+      "trim": "Jku Rubicon",
+      "date": "46195"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Sierra 2500 HD",
+      "product": "Power Running Boards",
+      "detail": "Running boards please! 🙏🏼",
+      "year": "2015",
+      "date": "46195"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Chevy",
+      "model": "Silverado 1500",
+      "product": "Retractable Bed Step",
+      "detail": "Do you make a retractable step for my truck?",
+      "year": "2017",
+      "date": "46195"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Chevy",
+      "model": "Colorado",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "For a ZR2 short bed model would be great.",
+      "year": "2022",
+      "date": "46195"
+    },
+    {
+      "cat": "未知",
+      "make": "Lexus",
+      "model": "GX 550",
+      "product": "",
+      "detail": "Lexus overtrail",
+      "year": "2026",
+      "trim": "Overtrail",
+      "date": "2026-06-25"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Sierra 2500 HD",
+      "product": "Power Running Boards",
+      "detail": "0000",
+      "year": "2019",
+      "trim": "Sle",
+      "date": "2026-06-25"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Camaro",
+      "product": "Power Running Boards",
+      "detail": "DASHCAM",
+      "year": "2023",
+      "trim": "2Lt",
+      "date": "2026-06-25"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Hummer",
+      "model": "H2",
+      "product": "Retractable Bed Step",
+      "detail": "Any chance there is a bed step that would work on a 2005 Hummer SUT?",
+      "year": "2005",
+      "trim": "Sut",
+      "date": "2026-06-25"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "1500",
+      "product": "Retractable Bed Step",
+      "detail": "Are you going to add the retractable bed step for the 2023 ram 1500 trucks?",
+      "year": "2023",
+      "date": "2026-06-25"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "3500",
+      "product": "Retractable Bed Step",
+      "detail": "Retractable bed step",
+      "year": "2013",
+      "date": "2026-06-25"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ford",
+      "model": "F-150 Raptor",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Do you make one to fit? Also the side mirrors?",
+      "year": "2013",
+      "trim": "Raptor",
+      "date": "2026-06-25"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "1500",
+      "product": "Retractable Bed Step",
+      "detail": "2 steps under the rear bumper for a 2015 Dodge Ram Quad cab",
+      "year": "2015",
+      "trim": "Quad Cab",
+      "date": "2026-06-23"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Chevy",
+      "model": "Silverado 1500",
+      "product": "Retractable Bed Step",
+      "detail": "I'm looking for the retractable bed step.",
+      "year": "2012",
+      "trim": "Ls",
+      "date": "2026-06-23"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "Explorer Sport Trac",
+      "product": "Power Running Boards",
+      "detail": "Vin: 1FMEU318X8UB20307",
+      "year": "2008",
+      "date": "2026-06-23"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ford",
+      "model": "Ranger",
+      "product": "Retractable Bed Step",
+      "detail": "Your retractable bed step looks like a great product. No one makes it for Ranger",
+      "year": "2021",
+      "date": "2026-06-23"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Vin: 3C6UR5CJ5TG319460",
+      "year": "2026",
+      "trim": "Tradesman",
+      "date": "2026-06-22"
+    },
+    {
+      "cat": "后斗拓展架",
+      "make": "Ford",
+      "model": "Ranger",
+      "product": "Bed rack",
+      "detail": "Bed rack",
+      "year": "2025",
+      "date": "2026-06-21"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "GMC",
+      "model": "Hummer EV",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Truck Bed Covers for Hummer EV",
+      "year": "2025",
+      "date": "2026-06-21"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "3500",
+      "product": "Retractable Bed Step",
+      "detail": "Retractable Bed Step",
+      "year": "2014",
+      "date": "2026-06-21"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Jeep",
+      "model": "Wrangler",
+      "product": "Power Running Boards",
+      "detail": "Running boards for jeep",
+      "year": "2014",
+      "trim": "Freedom Edition",
+      "date": "2026-06-21"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Sierra 2500 HD",
+      "product": "Power Running Boards",
+      "detail": "Has DPF tank, check compatibility",
+      "year": "2019",
+      "date": "2026-06-20"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Sierra 1500",
+      "product": "Power Running Boards",
+      "detail": "Need for a crew cab",
+      "year": "2007",
+      "trim": "Crew Cab",
+      "date": "2026-06-20"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Bed covers",
+      "year": "1998",
+      "trim": "Nascar Edition",
+      "date": "2026-06-19"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "3500",
+      "product": "Power Running Boards",
+      "detail": "Crew cab long bed",
+      "year": "2012",
+      "date": "2026-06-19"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "GMC",
+      "model": "Hummer EV",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Looking for the retractable bed cover for my hummer ev SUT",
+      "year": "2026",
+      "date": "2026-06-19"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Chevy",
+      "model": "Silverado 2500 HD",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Manual retractable bed cover",
+      "year": "2018",
+      "date": "2026-06-19"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "1500",
+      "product": "Retractable Bed Step",
+      "detail": "Will you have this available for the 2026 Ram 1500?",
+      "year": "2026",
+      "date": "2026-06-18"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ford",
+      "model": "F-150 Raptor",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Available?",
+      "year": "2024",
+      "trim": "Raptor R",
+      "date": "2026-06-18"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Honda",
+      "model": "Ridgeline",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "You have to create one for the Honda Ridgeline! Amazing design!",
+      "year": "2022",
+      "date": "2026-06-18"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "3500",
+      "product": "Retractable Bed Step",
+      "detail": "Retractable bed step",
+      "year": "2018",
+      "date": "2026-06-18"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Nissan",
+      "model": "Frontier",
+      "product": "Retractable Bed Step",
+      "detail": "Do you have a bed step that fits 2026 Nissan Frontier Pro 4X",
+      "year": "2026",
+      "trim": "Pro 4X",
+      "date": "2026/6/29"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Chevy",
+      "model": "Colorado",
+      "product": "Retractable Bed Step",
+      "detail": "Will this fit my truck? I don't have the step bumpers like most models",
+      "year": "2018",
+      "date": "2026/6/29"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Chevy",
+      "model": "Silverado 3500 HD",
+      "product": "Retractable Bed Step",
+      "detail": "I would like to purchase a retractable bed step",
+      "year": "2011",
+      "trim": "Ltz",
+      "date": "2026/6/29"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "1500",
+      "product": "Retractable Bed Step",
+      "detail": "Can't see if you make it for my truck",
+      "year": "2026",
+      "trim": "Tungsten",
+      "date": "2026/6/29"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Chevy",
+      "model": "Colorado",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Retractable bed cover",
+      "year": "2024",
+      "date": "2026/6/29"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Toyota",
+      "model": "FJ Cruiser",
+      "product": "Retractable Bed Step",
+      "detail": "Anything with a 5\"-6\" drop to be easier to get in car",
+      "year": "2007",
+      "date": "2026/6/29"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Chevy",
+      "model": "Silverado 2500 HD",
+      "product": "Retractable Bed Step",
+      "detail": "I need a way to step up to bed. I'm getting too old!",
+      "year": "2004",
+      "date": "2026/6/29"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ford",
+      "model": "F-250 Super Duty",
+      "product": "Retractable Bed Step",
+      "detail": "Would love to see a version of your step that fits the 2022 Ford F250!",
+      "year": "2022",
+      "date": "2026/6/29"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-350 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "I'm interested",
+      "year": "2006",
+      "date": "2026/6/30"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Silverado 3500 HD",
+      "product": "Power Running Boards",
+      "detail": "Please design this product for my truck",
+      "year": "2006",
+      "date": "2026/6/30"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Chevy",
+      "model": "Silverado 2500 HD",
+      "product": "Retractable Bed Step",
+      "detail": "Retractable bed step",
+      "year": "2016",
+      "date": "2026/6/30"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Toyota",
+      "model": "Tundra",
+      "product": "Retractable Bed Step",
+      "detail": "Retractable step for bed",
+      "year": "2021",
+      "date": "2026/6/30"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Silverado 1500",
+      "product": "Power Running Boards",
+      "detail": "Power running board",
+      "year": "2025"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Toyota",
+      "model": "Tundra",
+      "product": "Retractable Bed Step",
+      "detail": "Step",
+      "year": "2019"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Nissan",
+      "model": "Frontier",
+      "product": "Step under bumper",
+      "detail": "Nissan Frontier Pro X\nStep under bumper",
+      "year": "2023"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "1500",
+      "product": "Retractable Bed Step",
+      "detail": "Need a retractable step",
+      "year": "2022",
+      "trim": "Classic"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Power Running Boards",
+      "detail": "Hello, I very interested in purchasing the power running boards for my 2010 Ford",
+      "year": "2010"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "1500",
+      "product": "Retractable Bed Step",
+      "detail": "want to make sure the step fits a 2026 Ram RHO",
+      "year": "2026",
+      "trim": "Rho"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "1500",
+      "product": "Retractable Bed Step",
+      "detail": "I don’t see a step for the ram 1500",
+      "year": "2017",
+      "trim": "Big Horn"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Jeep",
+      "model": "Wrangler",
+      "product": "Power Running Boards",
+      "detail": "The only place that makes these is the dealership and they don't make them for m",
+      "year": "2015",
+      "trim": "Unlimited"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "1500",
+      "product": "Retractable Bed Step",
+      "detail": "Retractable bed step",
+      "year": "2016"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Tahoe",
+      "product": "Power Running Boards",
+      "detail": "Power running boards",
+      "year": "1999",
+      "trim": "Obs"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Retractable Bed Step",
+      "detail": "Retractable bed step",
+      "year": "2010",
+      "trim": "Diesel"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Power Running Boards",
+      "detail": "None",
+      "year": "2013"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Sierra 2500 HD",
+      "product": "Power Running Boards",
+      "detail": "Looking for the power running boards you sell for my truck. There is no DEF tank",
+      "year": "2019",
+      "trim": "Duramax"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Power Running Boards",
+      "detail": "running boards",
+      "year": "2009",
+      "trim": "Xl"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "3500",
+      "product": "Retractable Bed Step",
+      "detail": "Black color",
+      "year": "2017"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Suburban",
+      "product": "Power Running Boards",
+      "detail": "I would like to replace the stock plastic running boards with electric and steel",
+      "year": "2003"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "GMC",
+      "model": "",
+      "product": "Retractable Bed Step",
+      "detail": "Bed step for my year and mdodel"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ford",
+      "model": "Ranger",
+      "product": "Retractable Bed Step",
+      "detail": "bed step for my truck, preferably black",
+      "year": "2019"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ford",
+      "model": "F-350 Super Duty",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Power bed cover",
+      "year": "2016"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "GMC",
+      "model": "Canyon",
+      "product": "Retractable Bed Step",
+      "detail": "Please produce this step for disabled people",
+      "year": "2017"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Retractable Bed Step",
+      "detail": "Bed step",
+      "year": "2018"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Retractable Bed Step",
+      "detail": "Power Wagon model",
+      "year": "2018"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Chevy",
+      "model": "Silverado 1500",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "I need a price on a tanno cover",
+      "year": "2011"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Retractable Bed Step",
+      "detail": "Been looking for awhile for someone to make these.   The 2nd gen Dodge Ram diese",
+      "year": "2001",
+      "trim": "01'"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Power Running Boards",
+      "detail": "Quad cab",
+      "year": "2008"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Power Running Boards",
+      "detail": "See you these for super crew….any thing for a supercab?",
+      "year": "2015"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "3500",
+      "product": "Power Running Boards",
+      "detail": "I’m looking for power running boards for my 2003 ram 3500 quad cab 8 foot bed",
+      "year": "2003"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ford",
+      "model": "F-250 Super Duty",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Manual operation",
+      "year": "2015",
+      "trim": "King Ranch"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Power Running Boards",
+      "detail": "2020f150 regular cab short bed",
+      "year": "2020"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "GMC",
+      "model": "Sierra 1500",
+      "product": "Retractable Bed Step",
+      "detail": "When viewing the link for the bed step there are only 2 options. RAM & TOYOTA.",
+      "year": "2010"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-350 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "You don’t have any power steps for an F350?",
+      "year": "2016",
+      "trim": "Lariat, Cc, Lb, Fx4"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "Excursion",
+      "product": "Power Running Boards",
+      "detail": "I saw your power running boards on a Zip Tie Tuning YouTube video and got very e",
+      "year": "2005"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Hyundai",
+      "model": "Santa Cruz",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Black aluminum retractable bed cover",
+      "year": "2026"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Silverado 2500 HD",
+      "product": "Power Running Boards",
+      "detail": "My truck is a diesel, and I do have a deff box on the passenger side",
+      "year": "2016"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Retractable Bed Step",
+      "detail": "Bed step",
+      "year": "2006"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ford",
+      "model": "",
+      "product": "Retractable Bed Step",
+      "detail": "Retractable bumper step",
+      "year": "1996"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "Explorer",
+      "product": "Power Running Boards",
+      "detail": "Looking for pricing and/or availability",
+      "year": "2025"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Retractable Bed Step",
+      "detail": "Should be easy to make the bracket for the step.",
+      "year": "2003"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "Dakota",
+      "product": "Retractable Bed Step",
+      "detail": "Did you make it for a Dodge Dakota 2006?",
+      "year": "2006"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Silverado 2500 HD",
+      "product": "Power Running Boards",
+      "detail": "Do you manufacture running boards for the old body style 2003-2007 Chevrolet 250",
+      "year": "2004"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "1500",
+      "product": "Rear step",
+      "detail": "Rear step",
+      "year": "2026"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-350 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "I’ve been searching for a Quality power running board that fits my vintage ride",
+      "year": "1996",
+      "trim": "Crew Cab Long Bed"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "3500",
+      "product": "Retractable Bed Step",
+      "detail": "Looking for the bed step u onto tailgate",
+      "year": "2003",
+      "trim": "Srw"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ford",
+      "model": "Ranger",
+      "product": "Retractable Bed Step",
+      "detail": "Step to get in and out of the bed.",
+      "year": "2026"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Retractable Bed Step",
+      "detail": "Will the 2019 fit my year?",
+      "year": "2018"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "GMC",
+      "model": "Sierra 2500 HD",
+      "product": "Retractable Bed Step",
+      "detail": "Step",
+      "year": "2009"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "3500",
+      "product": "Retractable Bed Step",
+      "detail": "Does this product that fits the 1500 fit 3500",
+      "year": "2017"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Power Running Boards",
+      "detail": "I'd like to also see support for a powered bed cover. Support for 2014 F-150 wou",
+      "year": "2014"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-250 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "Power retractable running boards",
+      "year": "2014"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ford",
+      "model": "Ranger",
+      "product": "Retractable Bed Step",
+      "detail": "similar to the ones for F150s",
+      "year": "2022"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Tray cover",
+      "year": "2014"
+    },
+    {
+      "cat": "硬折叠",
+      "make": "GMC",
+      "model": "Sierra 2500 HD",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Looking at tri-fold covers",
+      "year": "2016"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ford",
+      "model": "Ranger",
+      "product": "Retractable Bed Step",
+      "detail": "Step for getting into the bed of pickup with tailgate down",
+      "year": "2021",
+      "trim": "Xlt"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "",
+      "product": "Power Running Boards",
+      "detail": "Crew cab",
+      "year": "2013"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "GMC",
+      "model": "Sierra 2500 HD",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "I would love to purchase the electric tonneau cover for a 2023 GMC 2500AT4 stand",
+      "year": "2023",
+      "trim": "At4"
+    },
+    {
+      "cat": "后斗拓展架",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Truck Rack",
+      "detail": "Can't find a rack for a 6-1/2 foot bed"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "Ranger",
+      "product": "Multiple Products",
+      "detail": "Why no products for the Ranger?"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ford",
+      "model": "F-350 Super Duty",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Any opportunities for a Super Duty F350 Platinum Package 8 ft electric bed cover"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "1500",
+      "product": "Power Running Boards",
+      "detail": "I have a 2006 ram megacab 4x4 1500, need low running boards for foster girls wit",
+      "year": "2006",
+      "trim": "Mega Cab",
+      "date": "2026/7/20"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ford",
+      "model": "Ranger",
+      "product": "Retractable Bed Step",
+      "detail": "Bed step",
+      "year": "2021",
+      "date": "2026/7/20"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Silverado 2500 HD",
+      "product": "Power Running Boards",
+      "detail": "My truck has a 6\" lift.",
+      "year": "2011",
+      "date": "2026/7/20"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Sierra 2500 HD",
+      "product": "Power Running Boards",
+      "detail": "FBRB55",
+      "year": "2018",
+      "date": "2026/7/20"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ford",
+      "model": "F-250 Super Duty",
+      "product": "Retractable Bed Step",
+      "detail": "looking for a side step",
+      "year": "2002",
+      "date": "2026/7/20"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Power Running Boards",
+      "detail": "Power running board",
+      "year": "2009",
+      "date": "2026/7/20"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Nissan",
+      "model": "Frontier",
+      "product": "Power Running Boards",
+      "detail": "Need power running boards for Nissan frontier",
+      "year": "2025",
+      "date": "2026/7/20"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Silverado 1500",
+      "product": "Power Running Boards",
+      "detail": "Can't find any for my truck",
+      "year": "2010",
+      "date": "2026/7/20"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ford",
+      "model": "F-250 Super Duty",
+      "product": "Retractable Bed Step",
+      "detail": "Please make for my vehicle",
+      "year": "2016",
+      "date": "2026/7/20"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "K10",
+      "product": "Power Running Boards",
+      "detail": "Would love these for my k10 4x4",
+      "year": "1971",
+      "date": "2026/7/20"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "1500",
+      "product": "Retractable Bed Step",
+      "detail": "One for ram please",
+      "year": "2026",
+      "trim": "Rebel X",
+      "date": "2026/7/20"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "3500",
+      "product": "Power Running Boards",
+      "detail": "Black power running boards",
+      "year": "2018",
+      "date": "2026/7/20"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Toyota",
+      "model": "Sequoia",
+      "product": "Power Running Boards",
+      "detail": "These would be sick on a 1st gen Sequoia/Tundra",
+      "year": "2006",
+      "trim": "Sr5",
+      "date": "2026/7/20"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Power Running Boards",
+      "detail": "Do you have any available?",
+      "year": "2013",
+      "trim": "Crew Cab Lariat 4Wd 3.5L",
+      "date": "2026/7/20"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Retractable Bed Step",
+      "detail": "Would buy if retractable step fits truck with factory dual exhaust",
+      "year": "2025",
+      "trim": "Lariat",
+      "date": "2026/7/20"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Chevy",
+      "model": "Silverado 1500",
+      "product": "Retractable Bed Step",
+      "detail": "2010 Chevy 1500 rear bumper step",
+      "year": "2010",
+      "trim": "4X4",
+      "date": "2026/7/20"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Chevy",
+      "model": "Avalanche",
+      "product": "Retractable Bed Step",
+      "detail": "Bed step",
+      "year": "2008",
+      "date": "2026/7/20"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Power Running Boards",
+      "detail": "Looking for retractable running boards for ram 2500 Laramie 2017",
+      "year": "2017",
+      "trim": "Laramie",
+      "date": "2026/7/20"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Toyota",
+      "model": "Land Cruiser",
+      "product": "Power Running Boards",
+      "detail": "Looking for power boards for Land Cruiser",
+      "year": "2026",
+      "date": "2026/7/20"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Retractable Bed Step",
+      "detail": "You don't show this product for this truck",
+      "year": "2018",
+      "trim": "2 Door 4X4 W/6.7 Diesel",
+      "date": "2026/7/20"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Toyota",
+      "model": "Tacoma",
+      "product": "Power Running Boards",
+      "detail": "Na",
+      "year": "2002",
+      "date": "2026/7/20"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Chevy",
+      "model": "Avalanche",
+      "product": "Retractable Bed Step",
+      "detail": "",
+      "year": "2012",
+      "date": "2026/7/20"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Kia",
+      "model": "Sportage",
+      "product": "Power Running Boards",
+      "detail": "Let me know if/when available",
+      "year": "2025",
+      "date": "2026/7/20"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Jeep",
+      "model": "Grand Cherokee",
+      "product": "Power Running Boards",
+      "detail": "Brand new jeep needs running boards for short wife",
+      "year": "2025",
+      "trim": "Limited 2 Row",
+      "date": "2026/7/20"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Silverado 3500 HD",
+      "product": "Power Running Boards",
+      "detail": "Will these power running boards clear the DEF tank?",
+      "year": "2019",
+      "trim": "Duramax",
+      "date": "2026/7/20"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Toyota",
+      "model": "Land Cruiser",
+      "product": "Power Running Boards",
+      "detail": "Want to replace fixed running boards with retractable power running boards",
+      "year": "2027",
+      "date": "2026/7/20"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Silverado 2500 HD",
+      "product": "Power Running Boards",
+      "detail": "Will these work with factory installed running boards to provide a second, lower",
+      "year": "2023",
+      "date": "2026/7/20"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Toyota",
+      "model": "Land Cruiser",
+      "product": "Power Running Boards",
+      "detail": "Rock slides",
+      "year": "2007",
+      "date": "2026/7/20"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Chevy",
+      "model": "Suburban",
+      "product": "Retractable Bed Step",
+      "detail": "6\" of lift and tires to match. I need a step.",
+      "year": "1992",
+      "date": "2026/7/20"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-350 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "Need power running board setup",
+      "year": "2002",
+      "date": "2026/7/20"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Bed cover 5.5 ft bed",
+      "year": "2007",
+      "date": "2026/7/20"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Blazer",
+      "product": "Power Running Boards",
+      "detail": "Power running boards",
+      "year": "1969"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "Lariat crew cab 4x4",
+      "product": "Power Running Boards",
+      "detail": "Power running boards electric",
+      "year": "2014"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-350 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "Power running boards for a crew cab",
+      "year": "2016"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Suburban",
+      "product": "Power Running Boards",
+      "detail": "Looking for power running boards",
+      "year": "2015"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Kia",
+      "model": "Telluride",
+      "product": "Power Running Boards",
+      "detail": ".",
+      "year": "2024"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Toyota",
+      "model": "Tundra",
+      "product": "Power Running Boards",
+      "detail": "You guys don't make one that fits my truck",
+      "year": "2020"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "Excursion",
+      "product": "Power Running Boards",
+      "detail": "Make them",
+      "year": "99-07 Superduty"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-250 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "frame mount if possible",
+      "year": "2002"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-350 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "Steps that won't lose their powder coating",
+      "year": "2016"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-250 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "Crew cab",
+      "year": "2015"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Mercedes-Benz",
+      "model": "Sprinter",
+      "product": "Power Running Boards",
+      "detail": ".",
+      "year": "2024"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ram",
+      "model": "1500",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Black",
+      "year": "2008"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Sierra 2500 HD",
+      "product": "Power Running Boards",
+      "detail": "I have def deleted so I can take off the def tank if need be",
+      "year": "2016"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "GMC",
+      "model": "Canyon",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Powered retractable bed cover",
+      "year": "2026"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Toyota",
+      "model": "Tundra",
+      "product": "Retractable Bed Step",
+      "detail": "Under bumper step",
+      "year": "2006"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "K10",
+      "product": "Power Running Boards",
+      "detail": "Running board for single cab 1976 K10",
+      "year": "1976"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Sierra 2500 HD",
+      "product": "Power Running Boards",
+      "detail": "Looking for a price on running boards for my 2004 gmc 2500hd.",
+      "year": "2004"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Nissan",
+      "model": "Titan",
+      "product": "Power Running Boards",
+      "detail": "2007 Nissan Titan Power Running Boards",
+      "year": "2007"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Retractable Bed Step",
+      "detail": "None",
+      "year": "2013"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Toyota",
+      "model": "Tacoma",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Looking to see if this would be a better option then the Roll-n Lock cover i cur",
+      "year": "2012"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Cadillac",
+      "model": "Escalade",
+      "product": "Power Running Boards",
+      "detail": "Similar to f-150 running boards, first time trying to adapt this to the car.",
+      "year": "2016"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Chevy",
+      "model": "Silverado 2500 HD",
+      "product": "Retractable Bed Step",
+      "detail": "Would like a quote for both left and right side.",
+      "year": "2004"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "3500",
+      "product": "Bed step",
+      "detail": "Bed step",
+      "year": "2018"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ford",
+      "model": "F-350 Super Duty",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Power with",
+      "year": "2016"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ford",
+      "model": "F-250 Super Duty",
+      "product": "Retractable Bed Step",
+      "detail": "The slide out, (not down) bed step.",
+      "year": "2017"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ford",
+      "model": "F-250 Super Duty",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "F250 2016 bed cover",
+      "year": "2016"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Sierra 2500 HD",
+      "product": "Power Running Boards",
+      "detail": "Looking to get a price on electric running boards please",
+      "year": "2005"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-250 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "Crew cab power stroke 4x4.",
+      "year": "2015"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Power Running Boards",
+      "detail": "I wanna to install this steps to my 2001 f150 supercap",
+      "year": "2001"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-250 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "Looking for powered running boards",
+      "year": "2015"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "Transit",
+      "product": "Power Running Boards",
+      "detail": "So few aftermarket products for the Transit.",
+      "year": "2016"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Retractable Bed Step",
+      "detail": "Step",
+      "year": "2004"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-250 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "Power running board",
+      "year": "2015"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Chevy",
+      "model": "Silverado 2500 HD",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Length of bed is 6'4' Width of bed is 5'2'",
+      "year": "2008"
+    },
+    {
+      "cat": "电动伸缩盖\n硬折叠",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Aluminum tonneau cover, retractable or tri-fold",
+      "year": "2026"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Chevy",
+      "model": "Silverado 1500",
+      "product": "Retractable Bed Step",
+      "detail": "Bed side or back step",
+      "year": "2016"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Sierra 2500 HD",
+      "product": "Power Running Boards",
+      "detail": "How low do they drop?",
+      "year": "2007"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ram",
+      "model": "1500",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "6'4' bed",
+      "year": "2020"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Chevy",
+      "model": "Silverado 2500 HD",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Powered bed cover",
+      "year": "2011"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Retractable Bed Step",
+      "detail": "Retractable bed step",
+      "year": "2018"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-350 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "Diesel",
+      "year": "2016"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "K10",
+      "product": "Power Running Boards",
+      "detail": "Power running boards for my 91 Chevy K1500",
+      "year": "1991"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Power Running Boards",
+      "detail": "F150 XL regular cab",
+      "year": "2025"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Power Running Boards",
+      "detail": "Also have a 2007 f250 ford",
+      "year": "2003"
+    },
+    {
+      "cat": "硬折叠",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Tough fold t1",
+      "detail": "Tough fold t1",
+      "year": "2015"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Power Running Boards",
+      "detail": "A",
+      "year": "2011"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "1500",
+      "product": "Retractable Bed Step",
+      "detail": "Bed step",
+      "year": "2025"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Traverse",
+      "product": "Power Running Boards",
+      "detail": "really interested in power running boards",
+      "year": "2026"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Power Running Boards",
+      "detail": "Power running board",
+      "year": "2021"
+    },
+    {
+      "cat": "硬折叠",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "I have a 6.5' bed and I want a flip up cover with 4 panels.",
+      "year": "2026"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-350 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "Looking for more products",
+      "year": "2007"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Tahoe",
+      "product": "Power Running Boards",
+      "detail": "Having trouble with a set that came with vehicle I bought used",
+      "year": "2017"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-350 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "Do u guys have them for my truck",
+      "year": "2011"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Nissan",
+      "model": "Frontier",
+      "product": "Power Running Boards",
+      "detail": "Need power running boards for D41 Nissan Frontier 2005-2021",
+      "year": "2006"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Do you have a power retractable cover that fits a 2007 ford f150 super crew cab?",
+      "year": "2007"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-350 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "Electric running boards",
+      "year": "2005"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "3500",
+      "product": "Power Running Boards",
+      "detail": "Pppwer running bords"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Silverado 2500 HD",
+      "product": "Power Running Boards",
+      "detail": "Power running boards",
+      "year": "2012"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Tahoe",
+      "product": "Power Running Boards",
+      "detail": "Solid black no chrome",
+      "year": "2016"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Silverado 2500 HD",
+      "product": "Power Running Boards",
+      "detail": "cost and shipping",
+      "year": "2011"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Silverado 2500 HD",
+      "product": "Power Running Boards",
+      "detail": "I have a 2015 Chevy 2500hd crew cab Diesel",
+      "year": "2015"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-350 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "4 door",
+      "year": "2012"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Yukon",
+      "product": "Power Running Boards",
+      "detail": "Just looking for power running boards.",
+      "year": "2004"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-250 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "Power running boards",
+      "year": "2015"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Silverado 1500",
+      "product": "Power Running Boards",
+      "detail": "Powersteps",
+      "year": "2018"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Silverado 3500 HD",
+      "product": "Power Running Boards",
+      "detail": "With led rgb",
+      "year": "2016"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Sierra 2500 HD",
+      "product": "Power Running Boards",
+      "detail": "Extended cab truck",
+      "year": "2011"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Power Running Boards",
+      "detail": "Black power running boards that will give my 97 ram a sleek look",
+      "year": "1997"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Power Running Boards",
+      "detail": "Single cab",
+      "year": "1983"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Canyon",
+      "product": "Power Running Boards",
+      "detail": "Power running board",
+      "year": "2026"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "Dodge",
+      "product": "Power Running Boards",
+      "detail": "Make an adapter?",
+      "year": "2005"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Toyota",
+      "model": "Land Cruiser",
+      "product": "Retractable Bed Step",
+      "detail": "Retractable bed step",
+      "year": "1988"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Silverado 3500 HD",
+      "product": "Power Running Boards",
+      "detail": "Do you have these running boards?",
+      "year": "2018"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Sierra 1500",
+      "product": "Power Running Boards",
+      "detail": "Need some for an 1989 Gmc k1500!  Lotta folks out there want them for  88-98 obs",
+      "year": "1989"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Power Running Boards",
+      "detail": "Powered running boards",
+      "year": "2005"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "3500",
+      "product": "Power Running Boards",
+      "detail": "Crew cab dually",
+      "year": "2013"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Power Running Boards",
+      "detail": "Running boards",
+      "year": "2013"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Silverado 2500 HD",
+      "product": "Power Running Boards",
+      "detail": "Do you have for my year?",
+      "year": "2018"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Power Running Boards",
+      "detail": "Just want a quote on powered running boards",
+      "year": "2014"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Silverado",
+      "product": "Power Running Boards",
+      "detail": "6” lift on truck\nNeed assistance getting in",
+      "year": "1982"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Chevy",
+      "model": "Colorado",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Bed cover",
+      "year": "2021"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Sierra 2500 HD",
+      "product": "Power Running Boards",
+      "detail": "I’m interested in this",
+      "year": "2016"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Yukon XL",
+      "product": "Power Running Boards",
+      "detail": "power running boards",
+      "year": "2004"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Power Running Boards",
+      "detail": "Would like running boards with lighting from front doors past cab to rear wheel.",
+      "year": "2016"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Cadillac",
+      "model": "Escalade",
+      "product": "Power Running Boards",
+      "detail": "I’m in several escalate forums and I hear people all the time wanting to replace",
+      "year": "2016"
+    },
+    {
+      "cat": "后视镜",
+      "make": "Lexus",
+      "model": "NX 300",
+      "product": "Side Mirrors",
+      "detail": "Quiero espejos laterales y el wolfbox g900",
+      "year": "2021"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Power Running Boards",
+      "detail": "Black",
+      "year": "2017"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Retractable Bed Step",
+      "detail": "step",
+      "year": "2014"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Yukon",
+      "product": "Power Running Boards",
+      "detail": "Power running boards for 2025 GMC Yukon Elevation 4x4 5.3 liter v-8",
+      "year": "2025"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "5500",
+      "product": "Power Running Boards",
+      "detail": "Retractable running board",
+      "year": "2026"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-350 Super Duty & F-250 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "Would love to buy a set for both of my trucks",
+      "year": "2004"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Power Running Boards",
+      "detail": "When will you have these for my truck",
+      "year": "2016"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Power Running Boards",
+      "detail": "Standard",
+      "year": "2025"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Honda",
+      "model": "Ridgeline",
+      "product": "Power Running Boards",
+      "detail": "Do you have a set of running-boards for my 2026 Honda Ridgeline truck",
+      "year": "2026"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-250 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "Looking for power boards with led lights on them.",
+      "year": "2013"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Toyota",
+      "model": "Tundra",
+      "product": "Power Running Boards",
+      "detail": "Power running board's \n2019 Toyota Tundra 1794 Crew Max",
+      "year": "2019"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Jeep",
+      "model": "Wrangler",
+      "product": "Power Running Boards",
+      "detail": "Do you have the power running boards for jeep jk?",
+      "year": "2018"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Retractable Bed Step",
+      "detail": "Looking for power steps retractable power bed step power retractable  ed cover",
+      "year": "2012"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ford",
+      "model": "Ranger",
+      "product": "Retractable Bed Step",
+      "detail": "Do not see a retractable box step for a 2025 XLT Ford Ranger",
+      "year": "2025"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Power Running Boards",
+      "detail": "I’m looking for powered running boards for my truck",
+      "year": "2011"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Sierra 2500 HD",
+      "product": "Power Running Boards",
+      "detail": "Power running boards",
+      "year": "2018"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-350 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "It’s for my f-350 crew cab. Can’t seem to find it in your options for my 2015.",
+      "year": "2015"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "3500",
+      "product": "Retractable Bed Step",
+      "detail": "Is a 1500 the same step for a 3500",
+      "year": "2017"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Power Running Boards",
+      "detail": "2018 ram 2500 crew cab",
+      "year": "2018"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "GMC",
+      "model": "Sierra 2500 HD",
+      "product": "Retractable Bed Step",
+      "detail": "Will this retractable bed step fit my vehicle? It only had the Sierra 1500 liste",
+      "year": "2016"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-250 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "I would like to inquire about power running board for my old body style ford tha",
+      "year": "1996"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Silverado 2500 HD",
+      "product": "Power Running Boards",
+      "detail": "Y",
+      "year": "2018"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-250 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "Ligth",
+      "year": "2006"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "3500",
+      "product": "Power Running Boards",
+      "detail": "I have a 2012 Ram crew cab long bed.",
+      "year": "2012"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Power Running Boards",
+      "detail": "Power running boards",
+      "year": "2010"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Silverado 2500 HD",
+      "product": "Power Running Boards",
+      "detail": "Running boards for 2017,Chevy hd2500 \n4,door extended cab",
+      "year": "2017"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Tahoe",
+      "product": "Power Running Boards",
+      "detail": "I run a small business doing truck accessories and tuning. I’m interested in get",
+      "year": "2023"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-250 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "Only F150 available",
+      "year": "2015"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "Bronco",
+      "product": "Power Running Boards",
+      "detail": "I just wanna make sure if it fits two-door bronco wild track",
+      "year": "2024"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Power Running Boards",
+      "detail": "I'm looking for powered running board, and the retractable bed covers",
+      "year": "2012"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Power Running Boards",
+      "detail": "Power running boards for mega cab",
+      "year": "2006"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "3500",
+      "product": "Power Running Boards",
+      "detail": "2008 dodge 3500 mega cab",
+      "year": "2008"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Sierra 2500 HD",
+      "product": "Power Running Boards",
+      "detail": "Make some for these trucks and you guys will be set!",
+      "year": "2017"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Jeep",
+      "model": "Wrangler",
+      "product": "Power Running Boards",
+      "detail": "Power running boards",
+      "year": "2015"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Power Running Boards",
+      "detail": "I cannot find any products for a 2500 yet alone my black widow is this correct I",
+      "year": "2021"
+    },
+    {
+      "cat": "硬折叠",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Hard Cover",
+      "detail": "Hard cov",
+      "year": "2014"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Silverado 2500 HD",
+      "product": "Power Running Boards",
+      "detail": "Powered running boards",
+      "year": "2016"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-350 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "2013",
+      "year": "2013"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Sierra 3500 HD",
+      "product": "Power Running Boards",
+      "detail": "Power running  boards",
+      "year": "2018"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Power Running Boards",
+      "detail": "If you had running boards for my truck, I would buy em in a heartbeat. It would ",
+      "year": "2010"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Power Running Boards",
+      "detail": "2018 ram 2500 mega cab",
+      "year": "2018"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Colorado",
+      "product": "Power Running Boards",
+      "detail": "Chevrolet colorado ZR2 2026",
+      "year": "2026"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Silverado 1500",
+      "product": "Power Running Boards",
+      "detail": "Looking for a price",
+      "year": "2008"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Jeep",
+      "model": "Wrangler",
+      "product": "Power Running Boards",
+      "detail": "Full length for both doors",
+      "year": "2016"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Tahoe",
+      "product": "Power Running Boards",
+      "detail": "Power running boards for 2015 Chevy Tahoe",
+      "year": "2015"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Toyota",
+      "model": "Highlander",
+      "product": "Power Running Boards",
+      "detail": "Running board",
+      "year": "2018"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Sierra 2500 HD",
+      "product": "Power Running Boards",
+      "detail": "Didnt see the product for my model truck was wondering if you guys offered them ",
+      "year": "2019"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Sierra 2500 HD",
+      "product": "Power Running Boards",
+      "detail": "Produce Power Running Boards for the GM Heavy Duty Diesel K2XX models. Understan",
+      "year": "2016"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ford",
+      "model": "Ranger",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "I am just looking for a good bed cover for my little ranger I just bought.",
+      "year": "2011"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Power Running Boards",
+      "detail": "Power running boards",
+      "year": "2012"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Sierra 2500 HD",
+      "product": "Power Running Boards",
+      "detail": "2500 HD 4 door",
+      "year": "2018"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Toyota",
+      "model": "Land Cruiser",
+      "product": "Power Running Boards",
+      "detail": "Would love to have electric running boards.  I’m getting to old to get in my 2” ",
+      "year": "2013"
+    },
+    {
+      "cat": "后斗拓展架",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Bed Rack",
+      "detail": "2015 ram 2500 bed rack",
+      "year": "2015"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Lexus",
+      "model": "GX 550",
+      "product": "Power Running Boards",
+      "detail": "Do your running boards plug into the OBD port or magnets ?",
+      "year": "2026"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Honda",
+      "model": "Pilot",
+      "product": "Power Running Boards",
+      "detail": "Would love for you guys to make these for my Honda!",
+      "year": "2021"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Silverado 2500 HD",
+      "product": "Power Running Boards",
+      "detail": "Not offered",
+      "year": "2018"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Chevy",
+      "model": "Silverado 3500 HD",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Looking for bed cover",
+      "year": "2015"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-350 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "power running boards",
+      "year": "2004"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-250 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "Looking for running boards for 2016 F250 four door",
+      "year": "2016"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Sierra 2500 HD",
+      "product": "Power Running Boards",
+      "detail": "Power running boards",
+      "year": "2005"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ford",
+      "model": "Ranger",
+      "product": "Retractable Bed Step",
+      "detail": "I love your t-step design...and obvious quality!!! I don't see my truck (my trim",
+      "year": "2023"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Rivian",
+      "model": "R1T",
+      "product": "Power Running Boards",
+      "detail": "Would like power boards like I had on my F150 platinum",
+      "year": "2022"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "Bronco Raptor",
+      "product": "Power Running Boards",
+      "detail": "2026 ford bronco raptor power steps",
+      "year": "2026"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Tahoe",
+      "product": "Power Running Boards",
+      "detail": "I’m assuming the 1500 steps would work with the Tahoe, but I’m not sure. Do they",
+      "year": "2023"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Chevy",
+      "model": "Colorado",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "I have a crew cab 4 door",
+      "year": "2021"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Power Running Boards",
+      "detail": "Power running boards",
+      "year": "2009"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Toyota",
+      "model": "Land Cruiser",
+      "product": "Power Running Boards",
+      "detail": "Looking for power running boards for my 2026 Land Cruiser",
+      "year": "2026"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Power Running Boards",
+      "detail": "Deceptacon logo on it",
+      "year": "2017"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F250",
+      "product": "Power Running Boards",
+      "detail": "It’s a 4 door 4x4",
+      "year": "2016"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F150",
+      "product": "Power Running Boards",
+      "detail": "It’s a xlt super cab/ extended cab. It’s not a full size 4 door crew cab",
+      "year": "2010"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F150 raptor",
+      "product": "Power Running Boards",
+      "detail": "Do you all carry a power running boards for 2011 Ford F150 raptor four-door 6.2 ",
+      "year": "2011"
+    },
+    {
+      "cat": "硬折叠",
+      "make": "Ram",
+      "model": "1500 longstanding. 6.4 bed with rambox",
+      "product": "Hard Tri-Fold Flip Up Tonneau Cover",
+      "detail": "Need it with ram box",
+      "year": "2015"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "3500 SRW",
+      "product": "Power Running Boards",
+      "detail": "Power retractable running boards for 2006 Ram 3500 SRW longbed.",
+      "year": "2006"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Jeep",
+      "model": "Wrangler Sahara 4 Door",
+      "product": "Power Running Boards",
+      "detail": "Retractable running boards",
+      "year": "2026"
+    },
+    {
+      "cat": "硬折叠",
+      "make": "GMC",
+      "model": "Serria",
+      "product": "Hard Cover",
+      "detail": "Hard cover",
+      "year": "2011gmc"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Toyota",
+      "model": "Platinum Tundra crewmax",
+      "product": "Power Running Boards",
+      "detail": "Would like to know which running boards fit my 2023 platinum crewmax 5.5 tundra",
+      "year": "2023"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Chevy",
+      "model": "1500",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "5’8” bed looking for a retractable bed cover not necessarily automatic one",
+      "year": "2004"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F250",
+      "product": "Power Running Boards",
+      "detail": "Crew cab",
+      "year": "2010"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-150 crew cab",
+      "product": "Power Running Boards",
+      "detail": "Electric running boards",
+      "year": "2013"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Chevy",
+      "model": "Colorado",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "None",
+      "year": "2019"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Lincoln",
+      "model": "Navigator",
+      "product": "Power Running Boards",
+      "detail": "New new boards",
+      "year": "2014"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Silverado 2500",
+      "product": "Power Running Boards",
+      "detail": "Power running boards",
+      "year": "2017"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Nissan",
+      "model": "Nissan Frontier",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Will they be making a powered bed cover for the 2025 Nissan Frontier 5 foot bed",
+      "year": "2025"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F350 lariat crew cab dually",
+      "product": "Power Running Boards",
+      "detail": "Power boards for crew cab f350\nI also wanted to ask do you know of and power boa",
+      "year": "2016"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "3500 HD, Reg Cab, Cummins",
+      "product": "Power Running Boards",
+      "detail": "If you make it i will buy it.\nPower running boards\n2025 Ram 3500, Cummins\nRegula",
+      "year": "2025"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "Maverick",
+      "product": "Power Running Boards",
+      "detail": "Power running boards",
+      "year": "2026"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-250",
+      "product": "Power Running Boards",
+      "detail": "Make these for 99 to 07 please? 🥺",
+      "year": "2005"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Toyota",
+      "model": "Tacoma",
+      "product": "Retractable Bed Step",
+      "detail": "76 pulgadas long x5f  w",
+      "year": "2024"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "2500 duramax",
+      "product": "Power Running Boards",
+      "detail": "I like your products but can seem to find them for my truck",
+      "year": "2018"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Colorado",
+      "product": "Power Running Boards",
+      "detail": "My truck is crew cab.",
+      "year": "2024"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "3500",
+      "product": "Power Running Boards",
+      "detail": "Side steps for me 2014 ram 3500 diesel. I don’t see an option for my truck",
+      "year": "2014"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "3500 mega cab",
+      "product": "Power Running Boards",
+      "detail": "None",
+      "year": "2018"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Mercedes-Benz",
+      "model": "Sprinter Tall",
+      "product": "Power Running Boards",
+      "detail": "I have an Espar heater",
+      "year": "2025"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Honda",
+      "model": "Passport",
+      "product": "Power Running Boards",
+      "detail": "Please include a place have them installed.",
+      "year": "2026"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "2500 HD Classic",
+      "product": "Power Running Boards",
+      "detail": "The GMT 800 trucks, classic body style 99-2007 are a huge market. \n\nPlease do po",
+      "year": "2007"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F150 crew cab",
+      "product": "Power Running Boards",
+      "detail": "Power running board",
+      "year": "2011"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Traverse",
+      "product": "Power Running Boards",
+      "detail": "Power running board.",
+      "year": "2015"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ford",
+      "model": "150 raptor",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Bed cover power",
+      "year": "2014"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Tahoe",
+      "product": "Power Running Boards",
+      "detail": "I would like to see if you had running boards for my truck",
+      "year": "2012"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Jeep",
+      "model": "JK",
+      "product": "Power Running Boards",
+      "detail": "I do not see a listing for your power running boards for this application",
+      "year": "2016"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "Ranger Raptor",
+      "product": "Power Running Boards",
+      "detail": "Power running boards for Ranger",
+      "year": "2025"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "2500hd",
+      "product": "Power Running Boards",
+      "detail": "We need to fit DOUBLE  cab",
+      "year": "2025"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F350 4x4 crew cab",
+      "product": "Power Running Boards",
+      "detail": "Would like price and availability on power retractable running board",
+      "year": "2016"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Toyota",
+      "model": "Tundra double cab",
+      "product": "Power Running Boards",
+      "detail": "Power running boards for my truck. Do you have Side steps for bed and rear bed s",
+      "year": "2019"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "1500 Quad Cab",
+      "product": "Power Running Boards",
+      "detail": "Power Running Boards",
+      "year": "2021"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "2500 megacab",
+      "product": "Power Running Boards",
+      "detail": "Need power steps for my new truck.",
+      "year": "2026"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Suburban",
+      "product": "Power Running Boards",
+      "detail": "Power running boards for 2013 Chevrolet Suburban.",
+      "year": "2013"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Silverado extended cab",
+      "product": "Power Running Boards",
+      "detail": "Want to know much would a set of power running boards for my 2011 Chevy Silverad",
+      "year": "2011"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "Explorer platinum",
+      "product": "Power Running Boards",
+      "detail": "Would love these for my Explorer.  Wife is too short and needs the lift..",
+      "year": "2025"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Power Running Boards",
+      "detail": "09 2500 ram 4door short bed",
+      "year": "2009"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Power Running Boards",
+      "detail": "None",
+      "year": "2005"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Power Running Boards",
+      "detail": "Power running boards",
+      "year": "2026"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "Promaster",
+      "product": "Power Running Boards",
+      "detail": "Both front side doors",
+      "year": "2020"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Express Van 1500",
+      "product": "Power Running Boards",
+      "detail": "I have three doors on both sides of my express 1500 conversion van",
+      "year": "2008"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Power Running Boards",
+      "detail": "Retractable running board with step assist lighting",
+      "year": "2014"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Chevy",
+      "model": "Avalanche",
+      "product": "Retractable Bed Step",
+      "detail": "Retractable bed step",
+      "year": "2013"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ford",
+      "model": "Ranger",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "None",
+      "year": "2021"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "GMC",
+      "model": "Sierra 2500 HD",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Just wondering if it fits or not most fit both",
+      "year": "2019"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Power Running Boards",
+      "detail": "Power running boards",
+      "year": "2014"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "Excursion",
+      "product": "Power Running Boards",
+      "detail": "I need to replace my running boards and this product looks great",
+      "year": "2005"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-350 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "Retractable running boards for F350 Lariat super cab",
+      "year": "2014"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Power Running Boards",
+      "detail": "Crew cab",
+      "year": "2018"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Jeep",
+      "model": "Grand Cherokee",
+      "product": "Power Running Boards",
+      "detail": "Black",
+      "year": "2017"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "GMC",
+      "model": "Sierra 1500",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Electric roll-up bed cover",
+      "year": "2010"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Toyota",
+      "model": "Tacoma",
+      "product": "Retractable Bed Step",
+      "detail": "Any color",
+      "year": "2006"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-250 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "Running boards",
+      "year": "2013"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "Bronco",
+      "product": "Power Running Boards",
+      "detail": "Do you have for Black Diamond Sasquatch 2 door",
+      "year": "2023"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Lexus",
+      "model": "GX 550",
+      "product": "Power Running Boards",
+      "detail": "Power running boards for Lexus GX550",
+      "year": "2026"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Power Running Boards",
+      "detail": "Did not show my model,you you make it",
+      "year": "2012"
+    },
+    {
+      "cat": "未知",
+      "make": "Chevy",
+      "model": "Silverado",
+      "product": "",
+      "detail": "I’d like products for my vehicle",
+      "year": "2001"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "1500",
+      "product": "Retractable Bed Step",
+      "detail": "Bed step",
+      "year": "2019"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Power Running Boards",
+      "detail": "Crew cab",
+      "year": "2014"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Sierra 2500 HD",
+      "product": "Power Running Boards",
+      "detail": "Truck has 6 inch lift.",
+      "year": "2014"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Silverado 2500 HD",
+      "product": "Power Running Boards",
+      "detail": "Do you make power running boards for\nthis truck?",
+      "year": "2016"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Yukon",
+      "product": "Power Running Boards",
+      "detail": "Are they available for this vehicle?",
+      "year": "2021"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Silverado 3500 HD",
+      "product": "Power Running Boards",
+      "detail": "I didn't see an match for this vehicle. Overall length for the full crew cab ver",
+      "year": "2015"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Power Running Boards",
+      "detail": "Do you have running boards to fit my truck and if you do how much?",
+      "year": "2017"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "Bronco",
+      "product": "Power Running Boards",
+      "detail": "I have a 2 door full size bronco.",
+      "year": "2023"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Toyota",
+      "model": "FJ Cruiser",
+      "product": "Power Running Boards",
+      "detail": "Can you make for FJ?",
+      "year": "2007"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Toyota",
+      "model": "4Runner",
+      "product": "Power Running Boards",
+      "detail": "it does not specify if the retractable running boards fir a 2026 toyota 4 runner",
+      "year": "2026"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "N",
+      "year": "2016"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Tahoe",
+      "product": "Power Running Boards",
+      "detail": "Are the Tahoe running boards the same as Silverado? Or not yet available?",
+      "year": "2025"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Chevy",
+      "model": "Colorado",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "My truck bed measurements 61.7 inches length x 57.8 inches width. Do you have a ",
+      "year": "2021"
+    },
+    {
+      "cat": "硬折叠",
+      "make": "Honda",
+      "model": "Ridgeline",
+      "product": "Hard Tri-Fold Flip Up Tonneau Cover",
+      "detail": "No",
+      "year": "2008"
+    },
+    {
+      "cat": "灯支架",
+      "make": "Ford",
+      "model": "Transit",
+      "product": "Light Mounts",
+      "detail": "Light mounts for Ford Transit t150",
+      "year": "2015"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Silverado",
+      "product": "Power Running Boards",
+      "detail": "Hopefully you have the them.",
+      "year": "1996"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Rivian",
+      "model": "R1T",
+      "product": "Retractable Bed Step",
+      "detail": "Do you have retractable bed step for Rivian? Can you make one?",
+      "year": "2024"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Power Running Boards",
+      "detail": "It a regular cab f150 xlt 4x4 with a ,4inch lift kit",
+      "year": "1994"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Silverado 2500 HD",
+      "product": "Power Running Boards",
+      "detail": "With lights",
+      "year": "2016"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Black",
+      "year": "2010"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Power Running Boards",
+      "detail": "Just want to purchase the power running boards for my 2005 Ford F-150 XLT Superc",
+      "year": "2005"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "GMC",
+      "model": "Hummer EV",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Just curious if you have one for the Hummer EV in development. The GMC one was t",
+      "year": "2025"
+    },
+    {
+      "cat": "硬折叠",
+      "make": "Nissan",
+      "model": "Titan",
+      "product": "Hard Tri-Fold Flip Up Tonneau Cover",
+      "detail": "Nissan Titan with t slot rails",
+      "year": "2022"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-350 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "I'm looking for retractable running boards to replace the old standard ones. \n\nA",
+      "year": "2000"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Power Running Boards",
+      "detail": "I couldn’t simply find running boards for my truck",
+      "year": "2016"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Colorado",
+      "product": "Power Running Boards",
+      "detail": "Power running boards for 2026 Chevy Colorado ZR2",
+      "year": "2026"
+    },
+    {
+      "cat": "硬折叠",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Hard Tri-Fold Flip Up Tonneau Cover",
+      "detail": "Looking for a hard top cover for a 2008 f150 flareside",
+      "year": "2008"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Tahoe",
+      "product": "",
+      "detail": "Do you have running board for this vehicle",
+      "year": "2022"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Silverado 1500",
+      "product": "Power Running Boards",
+      "detail": "Power running boards for   2019 Chevy Silverado",
+      "year": "2019"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "GMC",
+      "model": "Hummer EV",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "It would be an instant hit. The Hummer EV pickup has virtually no hard bed cover",
+      "year": "2025"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Sierra 2500 HD",
+      "product": "Power Running Boards",
+      "detail": "Looking for a solid set of power retractable running boards for my Duramax",
+      "year": "2017"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Nissan",
+      "model": "Titan",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Why don’t you have any for Nissan Titans??🤦🏾‍♂️",
+      "year": "2009"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "6.5 ft bed",
+      "year": "2020"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "3500",
+      "product": "Power Running Boards",
+      "detail": "Power running boards",
+      "year": "2012"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Silverado 3500 HD",
+      "product": "Power Running Boards",
+      "detail": "Looking for power running boards.",
+      "year": "2017"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-250 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "My truck is a CCLB 4x4 with 6.0 turbo diesel, 4\" lift with 35\" tires. Great truc",
+      "year": "2004"
+    },
+    {
+      "cat": "硬折叠",
+      "make": "Ford",
+      "model": "Ranger",
+      "product": "Hard Tri-Fold Flip Up Tonneau Cover",
+      "detail": "Tri fold hard tonneau cover",
+      "year": "2021"
+    },
+    {
+      "cat": "硬折叠",
+      "make": "GMC",
+      "model": "Canyon",
+      "product": "Hard Tri-Fold Flip Up Tonneau Cover",
+      "detail": "This Canyon is long bed model",
+      "year": "2015"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Canyon",
+      "product": "Power Running Boards",
+      "detail": "Just looking for parts for my truck",
+      "year": "2019"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "3500",
+      "product": "Power Running Boards",
+      "detail": "Truck has airbags on the axle",
+      "year": "2016"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Silverado 2500 HD",
+      "product": "Power Running Boards",
+      "detail": "Whatever",
+      "year": "2016"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "1500",
+      "product": "Power Running Boards",
+      "detail": "Power steps for 2001 dodge ram 1500",
+      "year": "2001"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-250 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "Power running boards",
+      "year": "2012"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-350 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "Thank you",
+      "year": "1999"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-250 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "8 inch lift",
+      "year": "2000"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Power Running Boards",
+      "detail": "My make is Dodge",
+      "year": "2015"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Tahoe",
+      "product": "Power Running Boards",
+      "detail": "do you make one for this?",
+      "year": "2015"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-250 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "It’s a crew cab as well",
+      "year": "2015"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Chevy",
+      "model": "Silverado 2500 HD",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Do yall offer covers for the 2018 Silverado 2500 with 6’6” bed?",
+      "year": "2018"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Toyota",
+      "model": "",
+      "product": "Power Running Boards",
+      "detail": "Have you a runnings board that fix to my car? Does I come with lights?",
+      "year": "1989"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Silverado 2500 HD",
+      "product": "Power Running Boards",
+      "detail": "Crewcab",
+      "year": "2004"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Colorado",
+      "product": "Power Running Boards",
+      "detail": "We currently have Amp Research Power Boards and after having a retract motor rep",
+      "year": "2018"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "Explorer",
+      "product": "Power Running Boards",
+      "detail": "2026 Ford Explorer Tremor",
+      "year": "2026"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "GMC",
+      "model": "Canyon",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Don’t see my truck as an option for the bed cover",
+      "year": "2021"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Toyota",
+      "model": "Tacoma",
+      "product": "Retractable Bed Step",
+      "detail": "Na",
+      "year": "2006"
+    },
+    {
+      "cat": "硬折叠",
+      "make": "Ford",
+      "model": "Ranger",
+      "product": "Hard Tri-Fold Flip Up Tonneau Cover",
+      "detail": "Short bed (5’1”)",
+      "year": "2022"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Toyota",
+      "model": "FJ Cruiser",
+      "product": "Power Running Boards",
+      "detail": "2008 FJ CRUISER",
+      "year": "2008"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Sierra 1500",
+      "product": "Power Running Boards",
+      "detail": "Couldn’t find the ones that fit the 22 limited",
+      "year": "2022"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Silverado 1500",
+      "product": "Power Running Boards",
+      "detail": "None",
+      "year": "2011"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Silverado 1500",
+      "product": "Power Running Boards",
+      "detail": "Power running boards.",
+      "year": "1998"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Power Running Boards",
+      "detail": "Products available for my truck?",
+      "year": "2014"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Rivian",
+      "model": "R1T",
+      "product": "Power Running Boards",
+      "detail": "These new power retracting running boards look legit. Any chance you’ll be makin",
+      "year": "2023"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "Bronco",
+      "product": "Power Running Boards",
+      "detail": "Looking for a set of retractable running boards for my 1975 Bronco build. Do you",
+      "year": "1975"
+    },
+    {
+      "cat": "硬折叠",
+      "make": "Ram",
+      "model": "3500",
+      "product": "Hard Tri-Fold Flip Up Tonneau Cover",
+      "detail": "Tri fold cover",
+      "year": "2018"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "GMC",
+      "model": "Hummer EV",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "I have the Hummer ev pickup truck. Is there a bed size available that would matc",
+      "year": "2024"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Sierra 2500 HD",
+      "product": "Power Running Boards",
+      "detail": "Would like to find out the price on the selected above. Would be willing to try ",
+      "year": "2006"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Tahoe",
+      "product": "Power Running Boards",
+      "detail": "Do they make any for this make and model",
+      "year": "2014"
+    },
+    {
+      "cat": "硬折叠",
+      "make": "Tesla",
+      "model": "Cybertruck",
+      "product": "Hard Tri-Fold Flip Up Tonneau Cover",
+      "detail": "Just like the regular truck hard tonneau cover",
+      "year": "2025"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Power Running Boards",
+      "detail": "Want full running boards from wheel to wheel",
+      "year": "2013"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Toyota",
+      "model": "4Runner",
+      "product": "Power Running Boards",
+      "detail": "Will this running board work with the different rocker panels that are on the li",
+      "year": "2021"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "Ranger",
+      "product": "Power Running Boards",
+      "detail": "Looking for a set of power running steps that come with OBD port adapter with a ",
+      "year": "2020"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Toyota",
+      "model": "4Runner",
+      "product": "Power Running Boards",
+      "detail": "Power running boards.as seen above ⬆️",
+      "year": "1986"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "If this can be made for a Ram 2500 please let me know. Thank you.",
+      "year": "2015"
+    },
+    {
+      "cat": "硬折叠",
+      "make": "GMC",
+      "model": "Sierra 1500",
+      "product": "Hard Tri-Fold Flip Up Tonneau Cover",
+      "detail": "SLT crew cab short bed 5’8”\n\nWill newer years work?",
+      "year": "2018"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "Ranger Raptor",
+      "product": "Power Running Boards",
+      "detail": "Will the Ranger fit the Ranger Raptor?",
+      "year": "2025"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "1500",
+      "product": "Retractable Bed Step",
+      "detail": "Rear Step",
+      "year": "2019"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Canyon",
+      "product": "Power Running Boards",
+      "detail": "Is there any chance that you will be supporting the 2016 GMC Canyon in the near ",
+      "year": "2016"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Power Running Boards",
+      "detail": "Side step lights",
+      "year": "2010"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Tahoe",
+      "product": "Power Running Boards",
+      "detail": "4x4 with a 6 inch lift kit with 22 inch tires",
+      "year": "1999"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Please consider making the 13-15 in drop auto steps for these trucks",
+      "year": "2000"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "1500",
+      "product": "Retractable Bed Step",
+      "detail": "2018 Ram 1500",
+      "year": "2018"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Jeep",
+      "model": "Grand Cherokee",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Price",
+      "year": "2022"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Toyota",
+      "model": "Land Cruiser",
+      "product": "Power Running Boards",
+      "detail": "Need power running boards for my Toyota Land Cruiser model 76",
+      "year": "2012"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "1500",
+      "product": "Retractable Bed Step",
+      "detail": "Anti slip step tape",
+      "year": "2026"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Sierra 2500 HD",
+      "product": "Power Running Boards",
+      "detail": "Running boards to fit my truck",
+      "year": "2022"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Nissan",
+      "model": "Titan",
+      "product": "Power Running Boards",
+      "detail": "Do you make power running boards for my truck ?",
+      "year": "2023"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Toyota",
+      "model": "Tundra",
+      "product": "Retractable Bed Step",
+      "detail": "Looking to see if you have a step for 2003 Toyota Tundra.",
+      "year": "2003"
+    },
+    {
+      "cat": "硬折叠",
+      "make": "Ram",
+      "model": "3500",
+      "product": "Hard Tri-Fold Flip Up Tonneau Cover",
+      "detail": "FBRB55",
+      "year": "2017"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Power Running Boards",
+      "detail": "Power running boards for 1997 Short Wheel Base 4X4 Standard Cab.",
+      "year": "1997"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Sierra 1500",
+      "product": "Power Running Boards",
+      "detail": "My kit is missing one of the mounting studs and the plastic retainers\ncan you pr",
+      "year": "2026"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Sierra 1500",
+      "product": "Power Running Boards",
+      "detail": "Power running boards",
+      "year": "2011"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Toyota",
+      "model": "Sequoia",
+      "product": "Power Running Boards",
+      "detail": "Custom fit for sequoia limited 2024",
+      "year": "2024"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "Explorer",
+      "product": "Power Running Boards",
+      "detail": "Do you offer pier running steps for a 2010 Ford Explorer? Or do you offer a cust",
+      "year": "2010"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-350 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "Crew cab obs f350. Need running board powered with brackets.",
+      "year": "1996"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-250 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "Will these become available? I recently installed the WOLFBOX Tripro camera and ",
+      "year": "2016"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Sierra 2500 HD",
+      "product": "Power Running Boards",
+      "detail": "Didn't see listed",
+      "year": "2008"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Sierra 2500 HD",
+      "product": "Power Running Boards",
+      "detail": "Has def tank",
+      "year": "2019"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Silverado 1500",
+      "product": "Power Running Boards",
+      "detail": "Not finding this item on your site to fit my 2008 silverado",
+      "year": "2008"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Lexus",
+      "model": "GX 550",
+      "product": "Power Running Boards",
+      "detail": "Will the 4Runner boards work on my GX?",
+      "year": "2023"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Savana 1500",
+      "product": "Power Running Boards",
+      "detail": "Side running board",
+      "year": "2014"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Power Running Boards",
+      "detail": "Do you make running boards for my truck?  Thanks",
+      "year": "2016"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Sierra 2500 HD",
+      "product": "Power Running Boards",
+      "detail": "also do you offer wholesale prices for shops",
+      "year": "2019"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Power Running Boards",
+      "detail": "Looking to add to my single cab long bed",
+      "year": "1988"
+    },
+    {
+      "cat": "硬折叠",
+      "make": "Honda",
+      "model": "Ridgeline",
+      "product": "Hard Tri-Fold Flip Up Tonneau Cover",
+      "detail": "Do you make one for my vehicle",
+      "year": "2023"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Sierra 3500 HD",
+      "product": "Power Running Boards",
+      "detail": "Would like to see if you plan on making a set of power steps for my vehicle.",
+      "year": "2005"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Sierra 2500 HD",
+      "product": "Power Running Boards",
+      "detail": "Looking for power running boards",
+      "year": "2019"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "3500",
+      "product": "Power Running Boards",
+      "detail": "I was just hoping to see if ya'll made these for my pickup. I seen David from th",
+      "year": "2007"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "Expedition",
+      "product": "Power Running Boards",
+      "detail": "Does the power running board have lights",
+      "year": "2022"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Nissan",
+      "model": "Titan",
+      "product": "Power Running Boards",
+      "detail": "Looking to buy power running board for my Nissan Titan 2023",
+      "year": "2023"
+    },
+    {
+      "cat": "硬折叠",
+      "make": "Chevy",
+      "model": "Colorado",
+      "product": "Hard Tri-Fold Flip Up Tonneau Cover",
+      "detail": "Looking for availability and price",
+      "year": "2016"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Sierra 2500 HD",
+      "product": "Power Running Boards",
+      "detail": "GMC three-quarter ton truck regular cab 8 foot box power running boards",
+      "year": "2015"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Toyota",
+      "model": "Tundra",
+      "product": "Power Running Boards",
+      "detail": "Tried finding a power running board for my crew cab. website says none found...",
+      "year": "2015"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Toyota",
+      "model": "Tundra",
+      "product": "Power Running Boards",
+      "detail": "Power running boards",
+      "year": "2023"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Sierra 2500 HD",
+      "product": "Power Running Boards",
+      "detail": "GMC 2500 crew cab 6’ 6” bed",
+      "year": "2017"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Toyota",
+      "model": "Land Cruiser",
+      "product": "Power Running Boards",
+      "detail": "The stock running boards are useless!  I’d love to get power steps like I have o",
+      "year": "2027"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "Explorer Sport Trac",
+      "product": "Power Running Boards",
+      "detail": "Do you offer any powered running bards that may work with that specific vehicle",
+      "year": "2003"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "Bronco",
+      "product": "Power Running Boards",
+      "detail": "I want them",
+      "year": "1993"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Nissan",
+      "model": "NV3500",
+      "product": "Power Running Boards",
+      "detail": "I’m looking for power running board for my 2016 Nissan NV-3500.\nThe 4 wheel driv",
+      "year": "2016"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Toyota",
+      "model": "Tundra",
+      "product": "Retractable Bed Step",
+      "detail": "Step",
+      "year": "2005"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-350 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "Do you have these ?",
+      "year": "2015"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Canyon",
+      "product": "Power Running Boards",
+      "detail": "Will this foot 2022 gmc canyon excab",
+      "year": "2022"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ford",
+      "model": "Explorer Sport Trac",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Bed cover",
+      "year": "2008"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Sierra 2500 HD",
+      "product": "Power Running Boards",
+      "detail": "Power running boards",
+      "year": "2002"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-250 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "I don't see running boards",
+      "year": "2015"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Colorado",
+      "product": "Power Running Boards",
+      "detail": "Need to make them for Colorado ZR2",
+      "year": "2022"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Silverado 1500",
+      "product": "Power Running Boards",
+      "detail": "Running boards for 2016 Silverado 1500",
+      "year": "2016"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "Explorer",
+      "product": "Power Running Boards",
+      "detail": "Power running boards",
+      "year": "2025"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Toyota",
+      "model": "Sequoia",
+      "product": "Power Running Boards",
+      "detail": "Which one will work",
+      "year": "2026"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Power Running Boards",
+      "detail": "None",
+      "year": "2006"
+    },
+    {
+      "cat": "硬折叠",
+      "make": "Ram",
+      "model": "3500",
+      "product": "Hard Tri-Fold Flip Up Tonneau Cover",
+      "detail": "8 foot bed",
+      "year": "2028"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "GMC",
+      "model": "Sierra 1500",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "4 door 5.8",
+      "year": "2019"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "Expedition",
+      "product": "Power Running Boards",
+      "detail": "Driver side",
+      "year": "2015"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Jeep",
+      "model": "Grand Cherokee",
+      "product": "Power Running Boards",
+      "detail": "No",
+      "year": "2025"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Chevy",
+      "model": "Silverado 2500 HD",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "waterproof and lockable",
+      "year": "2024"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Tahoe",
+      "product": "Power Running Boards",
+      "detail": "Powered steps",
+      "year": "2020"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "1500",
+      "product": "Power Running Boards",
+      "detail": "what powered running boards will fit on the rebel.",
+      "year": "2019"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ford",
+      "model": "F-350 Super Duty",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Do you make an electric cover for a long bed for my model truck",
+      "year": "2016"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "3500",
+      "product": "Power Running Boards",
+      "detail": "Running boards",
+      "year": "2012"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Jeep",
+      "model": "Gladiator",
+      "product": "Retractable Bed Step",
+      "detail": "retracting bed with T-slots for accessories",
+      "year": "2022"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Jeep",
+      "model": "Gladiator",
+      "product": "Power Running Boards",
+      "detail": "Interested in power running board.\nThank you,",
+      "year": "2026"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "GMC",
+      "model": "Sierra 2500 HD",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Electric bed",
+      "year": "2026"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Power Running Boards",
+      "detail": "Power running boards",
+      "year": "1979"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Power Running Boards",
+      "detail": "09-14 supercab.",
+      "year": "2012"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-350 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "Only see f150 for this year",
+      "year": "2015"
+    },
+    {
+      "cat": "硬折叠",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Hard Tri-Fold Flip Up Tonneau Cover",
+      "detail": "I see that you guys dont have a cover for my truck",
+      "year": "2022"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Silverado 1500",
+      "product": "Power Running Boards",
+      "detail": "None",
+      "year": "2014"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Toyota",
+      "model": "Tundra",
+      "product": "Power Running Boards",
+      "detail": "Power Running Boards",
+      "year": "2017"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Power Running Boards",
+      "detail": "Do you make these for a single cab",
+      "year": "2024"
+    },
+    {
+      "cat": "硬折叠",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Hard Tri-Fold Flip Up Tonneau Cover",
+      "detail": "Bed cover",
+      "year": "2014"
+    },
+    {
+      "cat": "硬折叠",
+      "make": "Nissan",
+      "model": "Titan",
+      "product": "Hard Tri-Fold Flip Up Tonneau Cover",
+      "detail": "Looking for a Nissan Titan Cover",
+      "year": "2011"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Power Running Boards",
+      "detail": "Power running boards",
+      "year": "2013"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Extended Cab",
+      "product": "Power Running Boards",
+      "detail": "Do these fit an extended cab? Not a crew cab",
+      "year": "2019"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "Excursion",
+      "product": "Power Running Boards",
+      "detail": "Do you offer for this model",
+      "year": "2005"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Power Running Boards",
+      "detail": "Why do you not have these for a 2023 ram 2500?",
+      "year": "2023"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "Crew Cab",
+      "product": "Power Running Boards",
+      "detail": "Plug and play options and prices thanks you",
+      "year": "2012"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-250 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "I have a standard cab and would like some power running boards that are the prop",
+      "year": "2001"
+    },
+    {
+      "cat": "硬折叠",
+      "make": "Chevy",
+      "model": "",
+      "product": "Hard Tri-Fold Flip Up Tonneau Cover",
+      "detail": "Hard tri-fold flip up tonneau cover\n\nFor 8’ bed",
+      "year": "2012"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Colorado",
+      "product": "Power Running Boards",
+      "detail": "strong enough to use as rock sliders?",
+      "year": "2020"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ford",
+      "model": "Ranger",
+      "product": "Retractable Bed Step",
+      "detail": "Would be awesome if this could be made was looking online to see if anyone made ",
+      "year": "2025"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Chevy",
+      "model": "Colorado",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Fits a small bed",
+      "year": "2022"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Nissan",
+      "model": "Frontier",
+      "product": "Power Running Boards",
+      "detail": "Nissain",
+      "year": "2019"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "GMC",
+      "model": "Sierra EV",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "I would by this and running boards today.",
+      "year": "2025"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ram",
+      "model": "3500",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Bed cover",
+      "year": "2020"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "GMC",
+      "model": "Sierra 2500 HD",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Nope just woudl like it to fit my truck",
+      "year": "2016"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-350 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "Any availability on running boards for 2016 F350 super cab??",
+      "year": "2016"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Chevy",
+      "model": "Colorado",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Waterproof power retractable tonneau cover 2024 Chevy Colorado",
+      "year": "2024"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ford",
+      "model": "F-350 Super Duty",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Looking for a price.",
+      "year": "2026"
+    },
+    {
+      "cat": "硬折叠",
+      "make": "Chevy",
+      "model": "Silverado 1500",
+      "product": "Hard Tri-Fold Flip Up Tonneau Cover",
+      "detail": "Bed cover",
+      "year": "2017"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-350 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "I know some of the f-150 will mount up but I'm not sure the wiring up will work.",
+      "year": "2016"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Canyon",
+      "product": "Power Running Boards",
+      "detail": "Power retractable side steps",
+      "year": "2026"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "Bronco",
+      "product": "Power Running Boards",
+      "detail": "Looking for a set of running boards for my bronco",
+      "year": "1968"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "3500",
+      "product": "Power Running Boards",
+      "detail": "Power steps with lights",
+      "year": "2016"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Toyota",
+      "model": "FJ Cruiser",
+      "product": "Power Running Boards",
+      "detail": "Power Side steps",
+      "year": "2007"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Silverado 2500 HD",
+      "product": "Power Running Boards",
+      "detail": "Power ronning boards",
+      "year": "2001"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Toyota",
+      "model": "Tacoma",
+      "product": "Power Running Boards",
+      "detail": "Looking for retracting running board",
+      "year": "2012"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ram",
+      "model": "1500",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Powered Retractable Bed Cover",
+      "year": "2006"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ford",
+      "model": "F-250 Super Duty",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Does your electric bed cover work on 8’ f250 SD?",
+      "year": "2024"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ram",
+      "model": "1500",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "6’4",
+      "year": "2020"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Toyota",
+      "model": "Tacoma",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Retractable bed cover",
+      "year": "2017"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "None",
+      "year": "2018"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "GMC",
+      "model": "Sierra 3500 HD",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "I have a dually with a reading service body"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ford",
+      "model": "F-350 Super Duty",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "I’m looking for hard bed covers for my F-350 with an 8’ bed.",
+      "year": "2003"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "1500",
+      "product": "Retractable Bed Step",
+      "detail": "?",
+      "year": "2026"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Yukon",
+      "product": "Power Running Boards",
+      "detail": "Preferably black",
+      "year": "2008"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "3500",
+      "product": "Power Running Boards",
+      "detail": "Running boards",
+      "year": "2016"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Chevy",
+      "model": "Silverado 1500",
+      "product": "Retractable Bed Step",
+      "detail": "Would like a retractable bed step for this model",
+      "year": "2004"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "GMC",
+      "model": "Sierra 2500 HD",
+      "product": "",
+      "detail": "Bed step",
+      "year": "2009"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Sierra",
+      "product": "Power Running Boards",
+      "detail": "Add lights",
+      "year": "2014"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-250 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "Do you have a kit that fits this model",
+      "year": "2016"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Nissan",
+      "model": "Frontier",
+      "product": "Power Running Boards",
+      "detail": "Need for a Nissan",
+      "year": "2023"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Yukon",
+      "product": "Power Running Boards",
+      "detail": "Power running boards.",
+      "year": "2026"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Chevy",
+      "model": "Silverado 2500 HD",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Would like to see a powered retractable cover available!",
+      "year": "2026"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Power Running Boards",
+      "detail": "Looking for running boards",
+      "year": "2016"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Power Running Boards",
+      "detail": "Power running boards",
+      "year": "2005"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Power Running Boards",
+      "detail": "Just power steps please",
+      "year": "2004"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Power Running Boards",
+      "detail": "Power running boards",
+      "year": "2013"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Chevy",
+      "model": "Silverado 1500",
+      "product": "Retractable Bed Step",
+      "detail": "In the drop down list of models on the 2003 Chey Silverado, the 1500 is listed a",
+      "year": "2003"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Toyota",
+      "model": "Tundra",
+      "product": "Power Running Boards",
+      "detail": "Looking for a set of power running boards for my truck",
+      "year": "2018"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Hi \nI've seen that you do a bed cover for the gen2 f150 raptor, i would like to ",
+      "year": "2013"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Power Running Boards",
+      "detail": "Crew cab 4x4",
+      "year": "2026"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ford",
+      "model": "Ranger",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "One that fits the new Ford Ranger Raptors",
+      "year": "2026"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ford",
+      "model": "F-250 Super Duty",
+      "product": "Retractable Bed Step",
+      "detail": "Retractable bed step",
+      "year": "2014"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Rivian",
+      "model": "R1S",
+      "product": "Power Running Boards",
+      "detail": "Support Rivian R1’s!",
+      "year": "2025"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Silverado",
+      "product": "Power Running Boards",
+      "detail": "Regular cab power running board",
+      "year": "2016"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Toyota",
+      "model": "FJ Cruiser",
+      "product": "Power Running Boards",
+      "detail": "Please let me if the power running board or power step are avail for my Toyota F",
+      "year": "2007"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "For 5.5 ft truck bed.",
+      "year": "2014"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Nissan",
+      "model": "Titan",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "2021 Nissan Titan",
+      "year": "2021"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "3500",
+      "product": "Retractable Bed Step",
+      "detail": "Is this product available for my 99’ Dodge Ram 3500? It’s a dually",
+      "year": "1999"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "1500",
+      "product": "Power Running Boards",
+      "detail": "Would like to see some products for my truck it’s a 2015 ram express 1500 quad c",
+      "year": "2015"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "3500",
+      "product": "Retractable Bed Step",
+      "detail": "Retractable Bed step",
+      "year": "2018"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Retractable Bed Step",
+      "detail": "Bed step",
+      "year": "2017"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "3500",
+      "product": "Retractable Bed Step",
+      "detail": "Truck has standard single unit solid chromed bumper.",
+      "year": "2015"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "Transit",
+      "product": "Power Running Boards",
+      "detail": "Will you make or adapt running boards for the Ford Transit van",
+      "year": "2026"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Bed cover",
+      "year": "2014"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "3500",
+      "product": "Power Running Boards",
+      "detail": "You only offer 1500 sized trucks",
+      "year": "2015"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Toyota",
+      "model": "Tacoma",
+      "product": "Power Running Boards",
+      "detail": "Toyota tacoma 2002 extra cap",
+      "year": "2002"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Chevy",
+      "model": "Colorado",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Do you make this for my truck?",
+      "year": "2021"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Silverado 2500 HD",
+      "product": "Power Running Boards",
+      "detail": "Make it happen",
+      "year": "2006"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Sierra 2500 HD",
+      "product": "Power Running Boards",
+      "detail": "Power running boards",
+      "year": "2008"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Power Running Boards",
+      "detail": "Power steps not shown",
+      "year": "2014"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-250 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "Need these power steps for my 77 f250! Trust me when i say there is a great inte",
+      "year": "1977"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Power Running Boards",
+      "detail": "With control in the cab",
+      "year": "2021"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ford",
+      "model": "Ranger",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Would love this product for my truck",
+      "year": "2023"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Nissan",
+      "model": "Titan",
+      "product": "Power Running Boards",
+      "detail": "Really like the look of the running boards, do they fit 2017 Nissan titan crew c",
+      "year": "2017"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Colorado",
+      "product": "Power Running Boards",
+      "detail": "Is this product available for a Colorado",
+      "year": "2017"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Silverado 1500",
+      "product": "Power Running Boards",
+      "detail": "Black power step for this year model 2002",
+      "year": "2002"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Chevy",
+      "model": "Silverado 2500 HD",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Other covers",
+      "year": "2006"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "1500",
+      "product": "Power Running Boards",
+      "detail": "Do you guys have in development for the fifth generation ram  1500 quad 6 1/2 be",
+      "year": "2020"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ford",
+      "model": "F-250 Super Duty",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Looking for a bedcover",
+      "year": "2026"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Toyota",
+      "model": "Tundra",
+      "product": "Power Running Boards",
+      "detail": "The maximum drop available",
+      "year": "2004"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "GMC",
+      "model": "Sierra EV",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Just want better options out there than OEM",
+      "year": "2024"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-250 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "do you make for this model",
+      "year": "2001"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Toyota",
+      "model": "Tundra",
+      "product": "Power Running Boards",
+      "detail": "Running boards",
+      "year": "2006"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-250 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "powersteps",
+      "year": "2012"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ram",
+      "model": "1500",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Looking for power retracing bed cover",
+      "year": "2019"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "1500",
+      "product": "Power Running Boards",
+      "detail": "Powered running boards to fit 2013-2018 and 2019-2024 ram 1500 and ram 1500 clas",
+      "year": "2018"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Toyota",
+      "model": "Hilux",
+      "product": "Power Running Boards",
+      "detail": "Do you have power running boards for a 2018 Toyota Hilux SR Double Cab?",
+      "year": "2008"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Jeep",
+      "model": "Gladiator",
+      "product": "Power Running Boards",
+      "detail": "Power running boards",
+      "year": "2026"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Power Running Boards",
+      "detail": "And would look at the auto bed covers to for 6.5 ft truck bed",
+      "year": "2004"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "Ranger",
+      "product": "Power Running Boards",
+      "detail": "None",
+      "year": "2023"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Retractable Bed Step",
+      "detail": "Do you have one to fit my truck?",
+      "year": "2016"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ford",
+      "model": "Ranger",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Only want it available for the vehicle requested.",
+      "year": "2026"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Sierra 2500 HD",
+      "product": "Power Running Boards",
+      "detail": "Power running boards",
+      "year": "2008"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Toyota",
+      "model": "Tundra",
+      "product": "Power Running Boards",
+      "detail": "Come on make the brackets to fit 🙏🏼",
+      "year": "2019"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Jeep",
+      "model": "Wrangler",
+      "product": "Power Running Boards",
+      "detail": "I have a 2024 Jeep Wrangler unlimited 4XE and would like to buy accessories for",
+      "year": "2024"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Chevy",
+      "model": "Colorado",
+      "product": "Retractable Bed Step",
+      "detail": "Rear bed / bumper retractable step",
+      "year": "2025"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Power Running Boards",
+      "detail": "15 inch drop",
+      "year": "2004"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Jeep",
+      "model": "Wrangler",
+      "product": "Power Running Boards",
+      "detail": "Would like power running boards for my Jeep",
+      "year": "2021"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ford",
+      "model": "Maverick",
+      "product": "",
+      "detail": "I would like a step to help me get into my pickup bed when the tailgate is down.",
+      "year": "2024"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Mercedes-Benz",
+      "model": "Sprinter 2500",
+      "product": "Power Running Boards",
+      "detail": "I would LOVE LONG retractable steps for BOTH sides of the van. Not a short & lon",
+      "year": "2012"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Lexus",
+      "model": "GX 460",
+      "product": "Power Running Boards",
+      "detail": "Saw the power running boards for the 4Runner and was wondering if they would be ",
+      "year": "2013"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Power Running Boards",
+      "detail": "Power step",
+      "year": "2017"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "none",
+      "year": "1993"
+    },
+    {
+      "cat": "硬折叠",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Hard Tri-Fold Flip Up Tonneau Cover",
+      "detail": "None",
+      "year": "2023"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Nissan",
+      "model": "Frontier",
+      "product": "Power Running Boards",
+      "detail": "Whenever that you have",
+      "year": "2022"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Nissan",
+      "model": "Titan",
+      "product": "Retractable Bed Step",
+      "detail": "For a 2017 Nissan Titan Platinum XD 4D Extended cab",
+      "year": "2017"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Sierra 2500 HD",
+      "product": "Power Running Boards",
+      "detail": "Extended cab and crew cab",
+      "year": "2007"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Jeep",
+      "model": "Wrangler",
+      "product": "",
+      "detail": "Power Running Boards for 2015 Jeep Wrangler JK 4-door and installation",
+      "year": "2015"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Silverado 1500",
+      "product": "Power Running Boards",
+      "detail": "Same as offered for Chevy Silverado Truck 1500 year 2022-2026",
+      "year": "2009"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Chevy",
+      "model": "Silverado 1500",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Crew Cab",
+      "year": "2014"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Power Running Boards",
+      "detail": "Would like chromed or black stainless",
+      "year": "2008"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "1500",
+      "product": "Retractable Bed Step",
+      "detail": "Just wondering if I can get a step for the bed of my truck?",
+      "year": "2026"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-250 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "Will you guys be carrying power awards for this year Ford F250 crew cab",
+      "year": "2016"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Toyota",
+      "model": "Tundra",
+      "product": "Power Running Boards",
+      "detail": "Do you all have any plans to make power running boards for the 07-21 tundra crew",
+      "year": "2008"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "1500",
+      "product": "Retractable Bed Step",
+      "detail": "Step",
+      "year": "2026"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Retractable Bed Step",
+      "detail": "Will the step fit on my 2014 Ram 2500 Tradesman?",
+      "year": "2014"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Cadillac",
+      "model": "Escalade",
+      "product": "Power Running Boards",
+      "detail": "Black color",
+      "year": "2004"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-250 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "Couldn’t find my model truck in the drop boxes for power running boards. Need to",
+      "year": "2007"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "3500",
+      "product": "Power Running Boards",
+      "detail": "running boards",
+      "year": "2012"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Toyota",
+      "model": "Tundra",
+      "product": "Power Running Boards",
+      "detail": "For the biggest cabin (Crew Max). I’d love the 15 inch drop as long as it still ",
+      "year": "2015"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Silverado 2500 HD",
+      "product": "Power Running Boards",
+      "detail": "Request for power running boards for this vehicle",
+      "year": "2003"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "3500",
+      "product": "Power Running Boards",
+      "detail": "Single cab",
+      "year": "2001"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Jeep",
+      "model": "Wrangler",
+      "product": "Power Running Boards",
+      "detail": "Looking for a power running board that doesnt use magnets that only drop down wi",
+      "year": "2017"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "1500",
+      "product": "Retractable Bed Step",
+      "detail": "Any ETA on a 2026 step support ?  I do not see a match for that year model.",
+      "year": "2026"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "3500",
+      "product": "Power Running Boards",
+      "detail": "Single rear wheel 3500 mega cab. I’d buy tomorrow if there were a set available.",
+      "year": "2024"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ford",
+      "model": "F-250 Super Duty",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "6 ft 9 in bed",
+      "year": "2018"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "Bronco",
+      "product": "Power Running Boards",
+      "detail": "Hello, your power running boards look really nice but I don't see an option list",
+      "trim": "2-door"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-150",
+      "product": "Power Running Boards",
+      "detail": "Can you reduce the step length so a F150 crew step can be used for extended cab,",
+      "trim": "Extended Cab"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ram",
+      "model": "3500 Limited Long Bed",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Electric tonneau cover",
+      "year": "2022"
+    },
+    {
+      "cat": "硬折叠",
+      "make": "Ford",
+      "model": "F150 Lariat 4X4",
+      "product": "Hard Tri-Fold Cover",
+      "detail": "tri fold and power retractable bed cover",
+      "year": "2006"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ford",
+      "model": "F-350",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Long bed",
+      "year": "2024"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Silverado Custom 1500",
+      "product": "Power Running Boards",
+      "detail": "Running Boards",
+      "year": "2020"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Chevy",
+      "model": "Silverado 2500",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Wondering when you’ll have this bed cover available for a Silverado 2500 with th",
+      "year": "2026"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Toyota",
+      "model": "4 Runner",
+      "product": "Power Running Boards",
+      "detail": "Power running board",
+      "year": "2026"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "Expedition Limited",
+      "product": "Power Running Boards",
+      "detail": "Did not see Expedition listed for your prbs",
+      "year": "2024"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ford",
+      "model": "F350",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "When are you going to do one for f350 trucks",
+      "year": "2026"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Silverado 2500Hd Crew Cab",
+      "product": "Power Running Boards",
+      "detail": "Power running boards",
+      "year": "2019"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ram",
+      "model": "2500 Hd",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Make to fit 2017 ram 2500 8’ bed with bed box.",
+      "year": "2017"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ford",
+      "model": "F-250",
+      "product": "Retractable Bed Step",
+      "detail": "Single cab 8’ bed",
+      "year": "2000"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Jeep",
+      "model": "Gladiator",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "With the leds and a remote",
+      "year": "2023"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ford",
+      "model": "Maverick",
+      "product": "Retractable Bed Step",
+      "detail": "Interested in the bed step for the Maverick",
+      "year": "2026"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Toyota",
+      "model": "Tundra",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Any plans to make for this model?",
+      "year": "2005"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Gmc",
+      "model": "Canyon At4X",
+      "product": "Retractable Bed Step",
+      "detail": "The AT4X is a big step to get into the bed. Make a step and I will purchase the ",
+      "year": "2023"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-350 Crew Cab Long Bed",
+      "product": "Power Running Boards",
+      "detail": "I would like to purchase power running boards for this truck.",
+      "year": "2007"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Gmc",
+      "model": "Sierra 2500",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Electric Tono cover",
+      "year": "2025"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ram",
+      "model": "1500 Rebel",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Vehicle make doesn’t include ram.\n\nRather disappointed the retractable cover isn",
+      "year": "2017"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Chevy",
+      "model": "Silverado 2500Hd",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Powered retractable bed cover, manual retractable bed cover, truck bed mats.",
+      "year": "2026"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Gmc",
+      "model": "1500 Gmc",
+      "product": "Power Running Boards",
+      "detail": "Just wondering if you make power running boards for this year, vehicle",
+      "year": "2018"
+    },
+    {
+      "cat": "硬折叠",
+      "make": "Ram",
+      "model": "Ram 3500 Mega Cab Dualley",
+      "product": "Hard Tri-Fold Cover",
+      "detail": "No",
+      "year": "2026"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ford",
+      "model": "F150",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "powered bed cover",
+      "year": "2007"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F250 Crewcab",
+      "product": "Power Running Boards",
+      "detail": "Can I have one of your sales reps reach out to me regarding a request for F250 r",
+      "year": "2026"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Hyundai",
+      "model": "Seltos",
+      "product": "Power Running Boards",
+      "detail": "Installation that disappears once in the vehicle",
+      "year": "2026"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F 150",
+      "product": "Power Running Boards",
+      "detail": "I need the 13 to 15 inch drop to help my wife get in my raptor, would the 2015 b",
+      "year": "2014"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Chevy",
+      "model": "Colorado Zr2",
+      "product": "Retractable Bed Step",
+      "detail": "No"
+    },
+    {
+      "cat": "电动伸缩盖",
+      "make": "Ram",
+      "model": "1500 Laramie",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Have a 6’4” bed. Only seeing the 5’7” bed option.",
+      "year": "2026"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "1500 Rho",
+      "product": "Retractable Bed Step",
+      "detail": "Left and right bed step, specifically for RHO",
+      "year": "2026"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Toyota",
+      "model": "Tundra (Doublecab Limited 4X4)",
+      "product": "Power Running Boards",
+      "detail": "Power Running Boards\nRetractable Bed Step\nPowered Retractable Bed Cover\nTri-Pro ",
+      "year": "2006"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F250 Xlt Super Crew Cab",
+      "product": "Power Running Boards",
+      "detail": "I'm interested in the Power Running Boards and Retractable Bed Steps",
+      "year": "2011"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Toyota",
+      "model": "Tundra",
+      "product": "Power Running Boards",
+      "detail": "No request.",
+      "year": "2016"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Canyon",
+      "product": "Power Running Boards",
+      "detail": "Please let me know when you have these available for my truck, thanks",
+      "year": "2023"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Silverado doble cab",
+      "product": "Power Running Boards",
+      "detail": "We need steeps for this model please",
+      "year": "2016"
+    },
+    {
+      "cat": "电动后斗盖",
+      "make": "Ram",
+      "model": "1500 TRX",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Request to know when you have an Electric Tonneau Cover available for my truck. ",
+      "year": "2022"
+    },
+    {
+      "cat": "电动后斗盖",
+      "make": "Chevy",
+      "model": "Colorado ZR2",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Bed cover, removable steps that attach to the rocker panels.",
+      "year": "2026"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "2500HD",
+      "product": "Power Running Boards",
+      "detail": "A step the folds down when you open your door",
+      "year": "2008"
+    },
+    {
+      "cat": "后斗拓展架",
+      "make": "Ram",
+      "model": "2500",
+      "product": "",
+      "detail": "modular bed rack",
+      "year": "2021"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ford",
+      "model": "F 150",
+      "product": "Retractable Bed Step",
+      "detail": "Rear retractable bumper step ?",
+      "year": "2014"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "expedition max xlt",
+      "product": "Power Running Boards",
+      "detail": "I'm looking to replace fixed running boards with power steps on my 2024 Ford Exp",
+      "year": "2024"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Sierra Denali 2500HD",
+      "product": "Power Running Boards",
+      "detail": "👍🏿",
+      "year": "2018"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F350",
+      "product": "Power Running Boards",
+      "detail": "Looking for running boards for a 97 f350 crew cab",
+      "year": "1997"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Yukon XL",
+      "product": "Power Running Boards",
+      "detail": "Do you have them that will fit my Yukon XL",
+      "year": "2024"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "2500 Laramie crew cab",
+      "product": "Power Running Boards",
+      "detail": "I just can’t find which one matches my car",
+      "year": "2024"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "2500",
+      "product": "Power Running Boards",
+      "detail": "Power running board",
+      "year": "2011"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "2500 Laramie limited",
+      "product": "Power Running Boards",
+      "detail": "Can’t find them",
+      "year": "2016"
+    },
+    {
+      "cat": "电动后斗盖",
+      "make": "Chevy",
+      "model": "Silverado 2500HD",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Will you be making a powered retractable bed cover for the 2020 Chevrolet Silver",
+      "year": "2020"
+    },
+    {
+      "cat": "电动后斗盖",
+      "make": "GMC",
+      "model": "Hummer EV 3X",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "I am very interested in your power bed cover, power steps and off-road lights.",
+      "year": "2025"
+    },
+    {
+      "cat": "电动后斗盖",
+      "make": "GMC",
+      "model": "sierra 3500 HD",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "The bed inb my truck is the standard bed not the long bed",
+      "year": "2023"
+    },
+    {
+      "cat": "电动后斗盖",
+      "make": "Ford",
+      "model": "F250",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "WONDERING IF YOU WERE GOING TO MAKE THE POWER RETRACTABLE BED COVER FOR A 6.75 B",
+      "year": "2022"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Yukon",
+      "product": "Power Running Boards",
+      "detail": "BBOL",
+      "year": "5"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "1500 Rebel",
+      "product": "Retractable Bed Step",
+      "detail": "Notified when a bed step is available for my truck",
+      "year": "2025"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Tahoe",
+      "product": "Power Running Boards",
+      "detail": "Make more products available.",
+      "year": "2024"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "Bighorn",
+      "product": "Power Running Boards",
+      "detail": "2500 6.7 Cummins 4Wd this would be a nice addition to my truck.",
+      "year": "2021"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "2500 HD Silverado",
+      "product": "Power Running Boards",
+      "detail": "Let me know when one that fits this unit becomes available",
+      "year": "2017"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "2500 mega cab",
+      "product": "Power Running Boards",
+      "detail": "Haven’t found many running boards that properly fit the mega cabs.",
+      "year": "2007"
+    },
+    {
+      "cat": "待分类",
+      "make": "Ford",
+      "model": "F250",
+      "product": "",
+      "detail": "Multiple items i have  tried to see if you carry for my vehicle and you carry no",
+      "year": "2016"
+    },
+    {
+      "cat": "电动后斗盖",
+      "make": "Ram",
+      "model": "1500 w/ Ram Box",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "I would love it if I could get the Retractable Bed Cover for my 2013 Ram 1500 Bi",
+      "year": "2013"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Honda",
+      "model": "Ridgeline",
+      "product": "Retractable Bed Step",
+      "detail": "Bed step",
+      "year": "2024"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Toyota",
+      "model": "Land Cruiser First Edition",
+      "product": "Power Running Boards",
+      "detail": "Do you make these running boards for my vehicle and if so, are they comparable t",
+      "year": "2024"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "Expedition Max",
+      "product": "Power Running Boards",
+      "detail": "Power running boards to fit Expedition max",
+      "year": "2024"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ford",
+      "model": "F250 Lariat",
+      "product": "Retractable Bed Step",
+      "detail": "Retractable step to assist this old timer getting into the bed of his pickup.",
+      "year": "2015"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ford",
+      "model": "Ranger Raptor",
+      "product": "Retractable Bed Step",
+      "detail": "Make it awesome!",
+      "year": "2026"
+    },
+    {
+      "cat": "电动后斗盖",
+      "make": "Ram",
+      "model": "2500 Power Wagon",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "When do you anticipate supporting a RAM 6'4\" bed? Thanks.",
+      "year": "2021"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ford",
+      "model": "Ranger 2 WD",
+      "product": "Retractable Bed Step",
+      "detail": "Curious to know if the Bed Step from the F150 would fit the Ranger",
+      "year": "2022"
+    },
+    {
+      "cat": "电动后斗盖",
+      "make": "GMC",
+      "model": "2500 sierra denali",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Powered retractable bed cover",
+      "year": "2023"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Kia",
+      "model": "Sorento",
+      "product": "Power Running Boards",
+      "detail": "Running board for Kia sorento 2024",
+      "year": "2024"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F350 crewcab",
+      "product": "Power Running Boards",
+      "detail": "Crewcab power steps",
+      "year": "2002"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Toyota",
+      "model": "Tundra",
+      "product": "Power Running Boards",
+      "detail": "The one that fits 2014 Toyota tundra 1794 crew cab",
+      "year": "2014"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "Ranger",
+      "product": "Power Running Boards",
+      "detail": "Carbon steel",
+      "year": "2025"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Hummer H2 SUT",
+      "product": "Power Running Boards",
+      "detail": "Auto running boards for my 2006 hummer h2 sut",
+      "year": "2006"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Rivian",
+      "model": "R1T",
+      "product": "Retractable Bed Step",
+      "detail": "This would be great for the Rivian truck as there’s no step on the bumper either",
+      "year": "2023"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Yukon XL",
+      "product": "Power Running Boards",
+      "detail": "2nd option from basically only AMP research for Yukon models",
+      "year": "2017"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F350 Super Duty",
+      "product": "Power Running Boards",
+      "detail": "Running boards with brackets",
+      "year": "2000"
+    },
+    {
+      "cat": "电动后斗盖",
+      "make": "Lincoln",
+      "model": "Mark LT",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Electric bed cover",
+      "year": "2008"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Tahoe",
+      "product": "Power Running Boards",
+      "detail": "Any custom",
+      "year": "2013"
+    },
+    {
+      "cat": "电动后斗盖",
+      "make": "Ford",
+      "model": "F450",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "No",
+      "year": "2027"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "Ram 3500",
+      "product": "Power Running Boards",
+      "detail": "I did not see Ram 3500 power steps",
+      "year": "2014"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Ram",
+      "model": "2500 tradesman diesel",
+      "product": "Retractable Bed Step",
+      "detail": "Bed step up",
+      "year": "2018"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "Bronco",
+      "product": "Power Running Boards",
+      "detail": "Is this available?",
+      "year": "1995"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F150",
+      "product": "Power Running Boards",
+      "detail": "I have single cab f150 short bed. What is the correct running board for this tru",
+      "year": "2026"
+    },
+    {
+      "cat": "后斗拓展架",
+      "make": "Chevy",
+      "model": "Colorado",
+      "product": "",
+      "detail": "I really like your bed rack, i wish you made one for my 2026 Chevy Colorado ZR2.",
+      "year": "2026"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Honda",
+      "model": "Ridgeline",
+      "product": "Power Running Boards",
+      "detail": "I know it's not a \"real truck\" but it'd still be nice to have running boards for",
+      "year": "2006"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Colorado crew cab Z71",
+      "product": "Power Running Boards",
+      "detail": "Nice set of electric running boards",
+      "year": "2016"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "",
+      "model": "",
+      "product": "",
+      "detail": "Nissan frontier crew cab, I want retractable running boards, no one carries for ",
+      "year": "2018"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ford",
+      "model": "F-250",
+      "product": "Power Running Boards",
+      "detail": "Would love to have these on the older big trucks!",
+      "year": "2004"
+    },
+    {
+      "cat": "电动后斗盖",
+      "make": "Chevy",
+      "model": "Colorado",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Powered retractable bed cover",
+      "year": "2026"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Chevy colorado",
+      "product": "Power Running Boards",
+      "detail": "Do you make power running boards for this vehicle it’s a Z71 package.",
+      "year": "2010"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Mazda",
+      "model": "CX-90",
+      "product": "Power Running Boards",
+      "detail": "Powered running boards for the Mazda CX-90 would be great",
+      "year": "2025"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Silverado 2500hd gasser ext. cab",
+      "product": "Power Running Boards",
+      "detail": "Need power step kit for 2012 extended cab Silverado 2500hd with 6.0 gas engine.",
+      "year": "2012"
+    },
+    {
+      "cat": "电动后斗盖",
+      "make": "Chevy",
+      "model": "Colorado",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Are you all going to make a cover for a Colorado",
+      "year": "2025"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Silverado",
+      "product": "Power Running Boards",
+      "detail": "Amp running boards",
+      "year": "2013"
+    },
+    {
+      "cat": "电动后斗盖",
+      "make": "Ford",
+      "model": "F150",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Black",
+      "year": "2014"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "2500hd",
+      "product": "Power Running Boards",
+      "detail": "Power running boards 4 door truck",
+      "year": "2004.5"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Cadillac",
+      "model": "Escalade",
+      "product": "Power Running Boards",
+      "detail": "None",
+      "year": "2002"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Ram",
+      "model": "2500 Cummins",
+      "product": "Power Running Boards",
+      "detail": "My truck has a 8 inch lift kit on it",
+      "year": "2017"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Toyota",
+      "model": "Tundra",
+      "product": "Retractable Bed Step",
+      "detail": "Standard",
+      "year": "2012"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "GMC",
+      "model": "Sierra",
+      "product": "Retractable Bed Step",
+      "detail": "Retractable step",
+      "year": "2012"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Suburban",
+      "product": "Power Running Boards",
+      "detail": "Lighted power steps",
+      "year": "2023"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Chevy",
+      "model": "Silverado LTZ 1500",
+      "product": "Power Running Boards",
+      "detail": "Power running boards"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "Jeep",
+      "model": "Tj rubicon",
+      "product": "Power Running Boards",
+      "detail": "Know of several people who own jeeps that would love to have them",
+      "year": "2006"
+    },
+    {
+      "cat": "电动后斗盖",
+      "make": "Ford",
+      "model": "F150 Flareside",
+      "product": "Powered Retractable Bed Cover",
+      "detail": "Hello is there anyway possible to make it work with a stepside bed measuring 6.5",
+      "year": "2008"
+    },
+    {
+      "cat": "硬折叠",
+      "make": "",
+      "model": "Toyota",
+      "product": "Hard Tri-Fold Flip Up Tonneau Cover",
+      "detail": "Looking for reasonable priced folding bed cover that locks",
+      "year": "2017"
+    },
+    {
+      "cat": "电动踏板",
+      "make": "GMC",
+      "model": "Canyon",
+      "product": "Power Running Boards",
+      "detail": "Also interested in onboard air compressors",
+      "year": "2024"
+    },
+    {
+      "cat": "后侧踏",
+      "make": "Toyota",
+      "model": "Tundra",
+      "product": "Retractable Bed Step",
+      "detail": "Rear step for access to the bed",
+      "year": "2017"
+    }
+  ],
+  "new_product_data": [
+    {
+      "title": "Step",
+      "cat": "保险杠折叠踏板",
+      "detail": "Rear bumper fold down step",
+      "translation": "后保险杠折叠脚踏板，方便上下货厢",
+      "exclusive": true
+    },
+    {
+      "title": "Fronk Footrest for Cybertruck",
+      "cat": "前备箱搁脚板",
+      "detail": "The ultra hyped Tesla Cybertruck, like it or not, has a front trunk aka \"Frunk\" that is often used for tailgating or sitting in by people but it's awkward because there is no were to put your feet up-needs a foot rest-your storable step could be the solution for a very profitable problem. See attached pictures.",
+      "translation": "特斯拉 Cybertruck 前备箱（Frunk）常被用于车尾派对或坐着休息，但因为没有放脚的地方很尴尬。建议设计一个可收纳搁脚板，解决这一痛点，利润空间大。详见附图。",
+      "exclusive": true
+    },
+    {
+      "title": "Ratchet tie downs",
+      "cat": "捆扎带/车尾网",
+      "detail": "Yall need to brand a ratchet tie down system with your logo. Even just an aftermarket net for the back with your colors and name would go well. Include nice carabiners with it too.",
+      "translation": "建议做一个带品牌 Logo 的棘轮捆绑带系统，再做一款车尾收纳网，印上品牌配色和 Logo，配上好看的登山扣一起卖。",
+      "exclusive": true
+    },
+    {
+      "title": "Auto step wheel to wheel",
+      "cat": "全轮间自动踏板",
+      "detail": "Extend what you already have. Super bad",
+      "translation": "全轮间自动踏板，在现有产品基础上扩展",
+      "exclusive": true
+    },
+    {
+      "title": "Center Retractable bumper step",
+      "cat": "保险杠折叠踏板",
+      "detail": "The F150 Tremor with the pro tailgate is in need of a center retractable bumper step for easier access.",
+      "translation": "F150 Tremor 尾门需要中央伸缩式保险杠踏板，方便进入货厢。",
+      "exclusive": true
+    },
+    {
+      "title": "Rack accessory",
+      "cat": "后斗宠物仓",
+      "detail": "Rooftop/ ceiling attachment. Shelter when transporting dogs",
+      "translation": "车顶/车厢顶挂载附件，运输狗狗时提供遮蔽空间——可考虑与后斗卷帘盖/车顶架搭配设计",
+      "exclusive": true
+    },
+    {
+      "title": "Tonneau Cover Rack",
+      "cat": "货架拓展件",
+      "detail": "Ladder/cargo rack for tonneau cover similar to this but for less money would be a good product line addition. Reference: Leitner Designs ACS Forged Tonneau Rack.",
+      "translation": "建议推出一款与后斗卷帘盖搭配使用的货架/行李架，用于搭载梯子、货物等。参考 Leitner Designs 的 ACS Forged Tonneau Rack，但做更具竞争力的定价。适合北美户外/overlanding 场景。",
+      "exclusive": true
+    },
+    {
+      "title": "Shoe cleaning spot in running boards",
+      "cat": "电动踏板",
+      "detail": "Cut a rectangle out in the running board. In that area make a snap-in piece made of bars running lenghway topped with stiff bristles for cleaning your shoes. Debris would fall between the bars. The bristle piece will ware out. Opportunity for repeat sales. You can adapt this for cars. Attach a C shaped roof to bottom of car. Have it powered to pivot down on door opening.",
+      "translation": "给电动踏板加装可拆卸的鞋底清洁刷条，泥土碎屑从缝隙漏下；刷条作为耗材可产生复购；思路也可适配汽车底盘。",
+      "exclusive": true
+    },
+    {
+      "title": "Hummer H2",
+      "cat": "电动踏板",
+      "detail": "Amp Research is our only option besides cheap foreign stuff on eBay.  We have factory rock sliders with 3\" tube steps bolted to them even lower. Looks ok but not ideal. \n\nLooking to design a bracket setup to add either cut down OEM 2013 Escalade folding steps or find a set of boards like yours and develop my own brackets to adapt them. What do you offer for bare steps/motors/wiring without adapter plates for vehicle specific install brackets? Interested in working together to make an option for Hummer H2's?\n\nPicture added is with 3\" tubes removed, rock sliders still bolted to frame. Could fabricate my own brackets to create/engineer a kit to work for Us Hummer H2 fanatics.",
+      "translation": "悍马H2玩家想要电动踏板方案：客户愿自己加工支架，把2013款凯迪拉克Escalade原厂折叠踏板改装到H2上，或直接购买WOLFBOX裸板+电机+线束（不带车型适配支架）自己开发安装支架。客户有原厂岩石护板+3寸圆管踏板，觉得效果一般但不理想，希望与WOLFBOX合作开发H2专用套件。",
+      "exclusive": true
+    }
+  ],
+  "new_product_analysis": {
+    "total": 9,
+    "exclusive_count": 9,
+    "categories": {
+      "保险杠折叠踏板": 2,
+      "电动踏板": 2,
+      "前备箱搁脚板": 1,
+      "捆扎带/车尾网": 1,
+      "全轮间自动踏板": 1,
+      "后斗宠物仓": 1,
+      "货架拓展件": 1
+    },
+    "key_trends": [
+      {
+        "name": "踏板延展需求",
+        "count": 5,
+        "desc": "保险杠折叠/全轮间踏板是核心品类，用户希望从现有电动踏板延伸到更多上下车场景"
+      },
+      {
+        "name": "后斗场景拓展",
+        "count": 2,
+        "desc": "宠物仓、货架等后斗使用场景延伸，用户希望最大化利用后斗空间"
+      },
+      {
+        "name": "品牌配件化",
+        "count": 1,
+        "desc": "带Logo的捆扎带/车尾网，用户期待品牌生活方式化"
+      },
+      {
+        "name": "Cybertruck专属",
+        "count": 1,
+        "desc": "特斯拉Cybertruck特有前备箱搁脚板，新兴小众市场"
+      }
+    ],
+    "pain_points": [
+      "上下车不便（高龄/残障/升高改装）",
+      "后斗取物困难（需要后保险杠折叠踏板）",
+      "后斗空间利用率低（宠物仓/货架）",
+      "前备箱/休息场景未被覆盖（Cybertruck）"
+    ]
+  },
+  "updated_at": "2026/9/23"
+}
