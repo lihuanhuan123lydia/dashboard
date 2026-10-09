@@ -1,0 +1,318 @@
+{
+  "total_models": 78,
+  "period": "2023-01 → 2025-12",
+  "predictions": {
+    "Volkswagen Golf": {
+      "predicted_growth": 50,
+      "confidence": "low"
+    },
+    "BMW X1": {
+      "predicted_growth": 5.1,
+      "confidence": "low"
+    },
+    "Tesla Model Y": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Benz GLC": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Volvo XC60": {
+      "predicted_growth": 50,
+      "confidence": "high"
+    },
+    "Volkswagen Tiguan": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "BMW 1 Series": {
+      "predicted_growth": 50,
+      "confidence": "low"
+    },
+    "Tesla Model 3": {
+      "predicted_growth": 3.76,
+      "confidence": "low"
+    },
+    "Audi Q3": {
+      "predicted_growth": 1.96,
+      "confidence": "low"
+    },
+    "Audi A3": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Nissan Qashqai": {
+      "predicted_growth": 50,
+      "confidence": "medium"
+    },
+    "BMW 3 Series": {
+      "predicted_growth": -0.57,
+      "confidence": "low"
+    },
+    "Hyundai Tucson": {
+      "predicted_growth": 50,
+      "confidence": "low"
+    },
+    "Audi A6": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Audi Q5": {
+      "predicted_growth": 2.63,
+      "confidence": "low"
+    },
+    "MINI HATCH": {
+      "predicted_growth": 42.0,
+      "confidence": "low"
+    },
+    "BMW IX1": {
+      "predicted_growth": 50,
+      "confidence": "high"
+    },
+    "Benz C-Class": {
+      "predicted_growth": 5.29,
+      "confidence": "low"
+    },
+    "BMW X3": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Benz A-Class": {
+      "predicted_growth": 50,
+      "confidence": "medium"
+    },
+    "BMW 5 Series": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Benz E-Class": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "BMW 2 Series": {
+      "predicted_growth": 48.49,
+      "confidence": "low"
+    },
+    "BMW X2": {
+      "predicted_growth": 48.77,
+      "confidence": "low"
+    },
+    "Benz CLA": {
+      "predicted_growth": 50,
+      "confidence": "high"
+    },
+    "MINI COUNTRYMAN": {
+      "predicted_growth": 37.35,
+      "confidence": "high"
+    },
+    "BMW X5": {
+      "predicted_growth": -18.85,
+      "confidence": "low"
+    },
+    "Audi Q4": {
+      "predicted_growth": 39.35,
+      "confidence": "low"
+    },
+    "Benz V-Class": {
+      "predicted_growth": 33.67,
+      "confidence": "low"
+    },
+    "Benz GLE": {
+      "predicted_growth": 50,
+      "confidence": "low"
+    },
+    "Audi Q7/Audi Q8": {
+      "predicted_growth": 38.39,
+      "confidence": "low"
+    },
+    "Peugeot 3008": {
+      "predicted_growth": 50,
+      "confidence": "low"
+    },
+    "Nissan X-Trail": {
+      "predicted_growth": 22.82,
+      "confidence": "medium"
+    },
+    "Benz GLB": {
+      "predicted_growth": 22.23,
+      "confidence": "low"
+    },
+    "Porsche Cayenne": {
+      "predicted_growth": 23.72,
+      "confidence": "low"
+    },
+    "Land Rover Defender": {
+      "predicted_growth": 8.16,
+      "confidence": "low"
+    },
+    "Volkswagen ID.3": {
+      "predicted_growth": 50,
+      "confidence": "low"
+    },
+    "Benz B-Class": {
+      "predicted_growth": 18.93,
+      "confidence": "low"
+    },
+    "Porsche Macan": {
+      "predicted_growth": 16.85,
+      "confidence": "low"
+    },
+    "Porsche 911": {
+      "predicted_growth": 14.09,
+      "confidence": "low"
+    },
+    "Hyundai IONIQ 5": {
+      "predicted_growth": 8.61,
+      "confidence": "low"
+    },
+    "Range Rover Sport": {
+      "predicted_growth": 6.9,
+      "confidence": "low"
+    },
+    "Benz G-Class": {
+      "predicted_growth": 13.76,
+      "confidence": "low"
+    },
+    "BMW IX": {
+      "predicted_growth": 10.25,
+      "confidence": "low"
+    },
+    "Skoda ELroq": {
+      "predicted_growth": 50,
+      "confidence": "low"
+    },
+    "Lexus NX": {
+      "predicted_growth": 15.46,
+      "confidence": "medium"
+    },
+    "Range Rover Evoque": {
+      "predicted_growth": 10.68,
+      "confidence": "high"
+    },
+    "BMW X6": {
+      "predicted_growth": 8.86,
+      "confidence": "low"
+    },
+    "Kia EV6": {
+      "predicted_growth": 1.45,
+      "confidence": "low"
+    },
+    "BMW X4": {
+      "predicted_growth": 6.47,
+      "confidence": "low"
+    },
+    "BMW X7": {
+      "predicted_growth": 8.2,
+      "confidence": "low"
+    },
+    "Toyota Corrola": {
+      "predicted_growth": 50,
+      "confidence": "low"
+    },
+    "Porsche panamera": {
+      "predicted_growth": 3.8,
+      "confidence": "low"
+    },
+    "Kia Sportage": {
+      "predicted_growth": 50,
+      "confidence": "low"
+    },
+    "BMW IX3": {
+      "predicted_growth": 50,
+      "confidence": "low"
+    },
+    "BYD ATTO 3 Yuan Plus": {
+      "predicted_growth": 7.13,
+      "confidence": "medium"
+    },
+    "Benz GLS": {
+      "predicted_growth": 2.37,
+      "confidence": "low"
+    },
+    "Range Rover Velar": {
+      "predicted_growth": 5.04,
+      "confidence": "low"
+    },
+    "Audi A4": {
+      "predicted_growth": -1.6,
+      "confidence": "medium"
+    },
+    "Range Rover": {
+      "predicted_growth": -0.75,
+      "confidence": "low"
+    },
+    "BMW 7 Series": {
+      "predicted_growth": 4.85,
+      "confidence": "low"
+    },
+    "Land Rover Discovery Sport": {
+      "predicted_growth": 1.41,
+      "confidence": "low"
+    },
+    "Ford Mustang Mach E": {
+      "predicted_growth": 3.61,
+      "confidence": "medium"
+    },
+    "Mazda CX-5": {
+      "predicted_growth": 50,
+      "confidence": "low"
+    },
+    "Benz S-Class": {
+      "predicted_growth": -0.1,
+      "confidence": "medium"
+    },
+    "Tesla Model X": {
+      "predicted_growth": 9.4,
+      "confidence": "low"
+    },
+    "Tesla Model S": {
+      "predicted_growth": 50,
+      "confidence": "low"
+    },
+    "Volkswagen Touareg": {
+      "predicted_growth": 40.02,
+      "confidence": "low"
+    },
+    "Honda CR-V": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "BMW M3": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "BMW X3/X4": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Benz GLA": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Nissan Rogue": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Porsche 718": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Tesla Cybertruck": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Toyota Hilux": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Toyota RAV4": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Volkswagen ID.4": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    }
+  }
+}
