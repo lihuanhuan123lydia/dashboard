@@ -1,0 +1,727 @@
+{
+  "source": "Google Trends",
+  "scraped_at": "2026-09-22T09:02:22.562493",
+  "total_models": 144,
+  "trends": {
+    "Chevrolet Silverado&GMC Sierra": {
+      "interest_avg_90d": 0.7,
+      "slope_pct_30d_vs_60d": -100.0,
+      "data_points": 93
+    },
+    "Ford F-Series": {
+      "interest_avg_90d": 0.0,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Toyota RAV4": {
+      "interest_avg_90d": 4.4,
+      "slope_pct_30d_vs_60d": 191.8,
+      "data_points": 93
+    },
+    "Honda CR-V": {
+      "interest_avg_90d": 0.1,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Toyota Camry": {
+      "interest_avg_90d": 2.9,
+      "slope_pct_30d_vs_60d": 212.11,
+      "data_points": 93
+    },
+    "Tesla Model Y": {
+      "interest_avg_90d": 19.2,
+      "slope_pct_30d_vs_60d": -10.6,
+      "data_points": 93
+    },
+    "Toyota Tacoma": {
+      "interest_avg_90d": 13.8,
+      "slope_pct_30d_vs_60d": 6.85,
+      "data_points": 93
+    },
+    "Dodge Ram 系列": {
+      "interest_avg_90d": 0.0,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Toyota Corrola": {
+      "interest_avg_90d": 0.0,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Honda Civic": {
+      "interest_avg_90d": 6.8,
+      "slope_pct_30d_vs_60d": 151.42,
+      "data_points": 93
+    },
+    "Hyundai Tucson": {
+      "interest_avg_90d": 1.5,
+      "slope_pct_30d_vs_60d": 1.68,
+      "data_points": 93
+    },
+    "Ford Explorer": {
+      "interest_avg_90d": 2.3,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Nissan Rogue": {
+      "interest_avg_90d": 1.6,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Jeep Grand Cherokee": {
+      "interest_avg_90d": 3.1,
+      "slope_pct_30d_vs_60d": 655.32,
+      "data_points": 93
+    },
+    "Tesla Model 3": {
+      "interest_avg_90d": 5.5,
+      "slope_pct_30d_vs_60d": 159.03,
+      "data_points": 93
+    },
+    "Jeep Wrangler": {
+      "interest_avg_90d": 26.2,
+      "slope_pct_30d_vs_60d": 24.82,
+      "data_points": 93
+    },
+    "Honda Accord": {
+      "interest_avg_90d": 6.3,
+      "slope_pct_30d_vs_60d": 19.92,
+      "data_points": 93
+    },
+    "Honda HR-V": {
+      "interest_avg_90d": 0.0,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Hyundai Elantra": {
+      "interest_avg_90d": 0.4,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Toyota Tundra": {
+      "interest_avg_90d": 6.9,
+      "slope_pct_30d_vs_60d": 68.24,
+      "data_points": 93
+    },
+    "Chevrolet Trax": {
+      "interest_avg_90d": 1.1,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Ford Bronco": {
+      "interest_avg_90d": 4.2,
+      "slope_pct_30d_vs_60d": 88.38,
+      "data_points": 93
+    },
+    "Chevrolet Equinox": {
+      "interest_avg_90d": 0.0,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Ford Escape": {
+      "interest_avg_90d": 0.7,
+      "slope_pct_30d_vs_60d": -38.24,
+      "data_points": 93
+    },
+    "Toyota Grand Highlander": {
+      "interest_avg_90d": 0.4,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Mazda CX-5": {
+      "interest_avg_90d": 0.0,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Ford Bronco Sport": {
+      "interest_avg_90d": 0.9,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Kia Sportage": {
+      "interest_avg_90d": 1.7,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Honda Pilot": {
+      "interest_avg_90d": 0.5,
+      "slope_pct_30d_vs_60d": 547.5,
+      "data_points": 93
+    },
+    "Hyundai Palisade": {
+      "interest_avg_90d": 0.2,
+      "slope_pct_30d_vs_60d": -21.25,
+      "data_points": 93
+    },
+    "Ford Maverick": {
+      "interest_avg_90d": 2.9,
+      "slope_pct_30d_vs_60d": 1949.6,
+      "data_points": 93
+    },
+    "Subaru Outback": {
+      "interest_avg_90d": 0.4,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "短轴tahoe/yukon/escalade": {
+      "interest_avg_90d": 0.3,
+      "slope_pct_30d_vs_60d": -100.0,
+      "data_points": 93
+    },
+    "Lexus RX": {
+      "interest_avg_90d": 0.4,
+      "slope_pct_30d_vs_60d": -17.5,
+      "data_points": 93
+    },
+    "Subaru Forester": {
+      "interest_avg_90d": 1.5,
+      "slope_pct_30d_vs_60d": -20.2,
+      "data_points": 93
+    },
+    "Jeep Compass": {
+      "interest_avg_90d": 0.7,
+      "slope_pct_30d_vs_60d": 256.09,
+      "data_points": 93
+    },
+    "Toyota Sienna": {
+      "interest_avg_90d": 1.5,
+      "slope_pct_30d_vs_60d": -20.2,
+      "data_points": 93
+    },
+    "Toyota 4 Runner/Lexus GX460": {
+      "interest_avg_90d": 0.8,
+      "slope_pct_30d_vs_60d": -100.0,
+      "data_points": 93
+    },
+    "Kia sorento": {
+      "interest_avg_90d": 0.2,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Nissan Altima": {
+      "interest_avg_90d": 2.1,
+      "slope_pct_30d_vs_60d": 158.28,
+      "data_points": 93
+    },
+    "Honda Odyssey": {
+      "interest_avg_90d": 2.6,
+      "slope_pct_30d_vs_60d": -47.77,
+      "data_points": 93
+    },
+    "Nissan Qashqai": {
+      "interest_avg_90d": 0.0,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Lexus NX": {
+      "interest_avg_90d": 1.1,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "BMW X5": {
+      "interest_avg_90d": 0.9,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Peugeot 3008": {
+      "interest_avg_90d": 1.9,
+      "slope_pct_30d_vs_60d": -100.0,
+      "data_points": 93
+    },
+    "Nissan Pathfinder": {
+      "interest_avg_90d": 0.5,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Benz GLC": {
+      "interest_avg_90d": 0.0,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Hyundai Sonata": {
+      "interest_avg_90d": 2.1,
+      "slope_pct_30d_vs_60d": 180.84,
+      "data_points": 93
+    },
+    "Benz GLE": {
+      "interest_avg_90d": 0.2,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Chevrolet Suburban": {
+      "interest_avg_90d": 0.0,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Chevrolet Traverse": {
+      "interest_avg_90d": 1.1,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Jeep Gladiator": {
+      "interest_avg_90d": 3.3,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Toyota Highlander": {
+      "interest_avg_90d": 1.0,
+      "slope_pct_30d_vs_60d": 194.0,
+      "data_points": 93
+    },
+    "Ford Ranger": {
+      "interest_avg_90d": 2.7,
+      "slope_pct_30d_vs_60d": 10.06,
+      "data_points": 93
+    },
+    "Nissan kick": {
+      "interest_avg_90d": 0.3,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Ford Mustang Mach E": {
+      "interest_avg_90d": 0.0,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Kia Telluride": {
+      "interest_avg_90d": 0.7,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Hyundai Santa Fe": {
+      "interest_avg_90d": 1.4,
+      "slope_pct_30d_vs_60d": -32.8,
+      "data_points": 93
+    },
+    "BMW X3": {
+      "interest_avg_90d": 0.5,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Hyundai IONIQ 5": {
+      "interest_avg_90d": 0.0,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Chevrolet trailblazer": {
+      "interest_avg_90d": 1.2,
+      "slope_pct_30d_vs_60d": -16.51,
+      "data_points": 93
+    },
+    "Audi Q5": {
+      "interest_avg_90d": 1.2,
+      "slope_pct_30d_vs_60d": -83.2,
+      "data_points": 93
+    },
+    "Acura MDX": {
+      "interest_avg_90d": 0.3,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Skoda ELroq": {
+      "interest_avg_90d": 0.0,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Volvo XC60": {
+      "interest_avg_90d": 0.0,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Lexus ES": {
+      "interest_avg_90d": 0.0,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Jeep Grand Wagoneer": {
+      "interest_avg_90d": 0.0,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Nissan Frontier": {
+      "interest_avg_90d": 4.3,
+      "slope_pct_30d_vs_60d": 675.76,
+      "data_points": 93
+    },
+    "Mazda CX50": {
+      "interest_avg_90d": 0.0,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "BMW 1 Series": {
+      "interest_avg_90d": 0.4,
+      "slope_pct_30d_vs_60d": -100.0,
+      "data_points": 93
+    },
+    "Volkswagen ID.3": {
+      "interest_avg_90d": 1.1,
+      "slope_pct_30d_vs_60d": -100.0,
+      "data_points": 93
+    },
+    "SKODA Kodiaq": {
+      "interest_avg_90d": 0.6,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Lexus GX460": {
+      "interest_avg_90d": 0.0,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Volkswagen ID.7": {
+      "interest_avg_90d": 0.0,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "BMW 3 Series": {
+      "interest_avg_90d": 0.0,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Acura RDX": {
+      "interest_avg_90d": 3.7,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "BMW X7": {
+      "interest_avg_90d": 0.1,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Benz A-Class": {
+      "interest_avg_90d": 0.0,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "MINI HATCH": {
+      "interest_avg_90d": 1.1,
+      "slope_pct_30d_vs_60d": -100.0,
+      "data_points": 93
+    },
+    "Benz C-Class": {
+      "interest_avg_90d": 0.0,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Audi Q7/Audi Q8": {
+      "interest_avg_90d": 0.0,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Hyundai Kona": {
+      "interest_avg_90d": 1.0,
+      "slope_pct_30d_vs_60d": -100.0,
+      "data_points": 93
+    },
+    "Subaru Crosstrek/Impreza": {
+      "interest_avg_90d": 1.1,
+      "slope_pct_30d_vs_60d": -100.0,
+      "data_points": 93
+    },
+    "Land Rover Defender": {
+      "interest_avg_90d": 0.1,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "BMW X1": {
+      "interest_avg_90d": 1.1,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "BMW 2 Series": {
+      "interest_avg_90d": 0.0,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Porsche Macan": {
+      "interest_avg_90d": 0.1,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "BMW IX1": {
+      "interest_avg_90d": 0.0,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Rivian R1S": {
+      "interest_avg_90d": 0.1,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Cadillac XT5": {
+      "interest_avg_90d": 0.0,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Benz GLA": {
+      "interest_avg_90d": 1.1,
+      "slope_pct_30d_vs_60d": -100.0,
+      "data_points": 93
+    },
+    "Cadillac XTS": {
+      "interest_avg_90d": 0.1,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Volkswagen ID.4": {
+      "interest_avg_90d": 1.1,
+      "slope_pct_30d_vs_60d": -100.0,
+      "data_points": 93
+    },
+    "Benz E-Class": {
+      "interest_avg_90d": 0.0,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Range Rover Sport": {
+      "interest_avg_90d": 0.0,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Audi Q3": {
+      "interest_avg_90d": 0.0,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Benz V-Class": {
+      "interest_avg_90d": 1.1,
+      "slope_pct_30d_vs_60d": -100.0,
+      "data_points": 93
+    },
+    "Porsche Cayenne": {
+      "interest_avg_90d": 1.0,
+      "slope_pct_30d_vs_60d": -100.0,
+      "data_points": 93
+    },
+    "Volkswagen Tiguan": {
+      "interest_avg_90d": 0.0,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Tesla Cybertruck": {
+      "interest_avg_90d": 0.2,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "BMW 5 Series": {
+      "interest_avg_90d": 0.9,
+      "slope_pct_30d_vs_60d": -100.0,
+      "data_points": 93
+    },
+    "Ford Expedition": {
+      "interest_avg_90d": 1.8,
+      "slope_pct_30d_vs_60d": 102.41,
+      "data_points": 93
+    },
+    "Lincoln MKC": {
+      "interest_avg_90d": 0.0,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Lincoln MKX": {
+      "interest_avg_90d": 2.1,
+      "slope_pct_30d_vs_60d": -100.0,
+      "data_points": 93
+    },
+    "Nissan Armada": {
+      "interest_avg_90d": 1.7,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "MINI COUNTRYMAN": {
+      "interest_avg_90d": 1.0,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Nissan X-Trail": {
+      "interest_avg_90d": 0.0,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Nissan Murano": {
+      "interest_avg_90d": 1.1,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Tesla Model X": {
+      "interest_avg_90d": 0.1,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Kia EV6": {
+      "interest_avg_90d": 0.0,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "BMW IX": {
+      "interest_avg_90d": 0.8,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Benz G-Class": {
+      "interest_avg_90d": 1.1,
+      "slope_pct_30d_vs_60d": -100.0,
+      "data_points": 93
+    },
+    "Lincoln MKZ": {
+      "interest_avg_90d": 0.0,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "BMW X6": {
+      "interest_avg_90d": 0.0,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Benz GLB": {
+      "interest_avg_90d": 1.0,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Cadillac XT4": {
+      "interest_avg_90d": 1.1,
+      "slope_pct_30d_vs_60d": -100.0,
+      "data_points": 93
+    },
+    "BMW IX3": {
+      "interest_avg_90d": 0.0,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Honda Passport": {
+      "interest_avg_90d": 9.3,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Benz B-Class": {
+      "interest_avg_90d": 0.0,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "BMW 7 Series": {
+      "interest_avg_90d": 0.0,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Volkswagen Touareg": {
+      "interest_avg_90d": 1.1,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "BMW X2": {
+      "interest_avg_90d": 0.0,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Audi A3": {
+      "interest_avg_90d": 0.0,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Audi Q4": {
+      "interest_avg_90d": 0.0,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Santa Cruz": {
+      "interest_avg_90d": 1.3,
+      "slope_pct_30d_vs_60d": -2.68,
+      "data_points": 93
+    },
+    "Tesla Model S": {
+      "interest_avg_90d": 2.2,
+      "slope_pct_30d_vs_60d": 120.5,
+      "data_points": 93
+    },
+    "Audi A6": {
+      "interest_avg_90d": 0.9,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Range Rover Velar": {
+      "interest_avg_90d": 0.0,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Volkswagen Golf": {
+      "interest_avg_90d": 1.1,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Range Rover Evoque": {
+      "interest_avg_90d": 0.0,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Jaguar F-pace": {
+      "interest_avg_90d": 0.0,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "BYD ATTO 3 Yuan Plus": {
+      "interest_avg_90d": 0.0,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Porsche 911": {
+      "interest_avg_90d": 0.0,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Ford Edge": {
+      "interest_avg_90d": 2.0,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Land Rover Discovery Sport": {
+      "interest_avg_90d": 0.0,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Honda Prologue": {
+      "interest_avg_90d": 1.1,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Benz CLA": {
+      "interest_avg_90d": 1.1,
+      "slope_pct_30d_vs_60d": -100.0,
+      "data_points": 93
+    },
+    "Porsche panamera": {
+      "interest_avg_90d": 0.0,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Range Rover": {
+      "interest_avg_90d": 0.9,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Benz GLS": {
+      "interest_avg_90d": 0.0,
+      "slope_pct_30d_vs_60d": 0,
+      "data_points": 93
+    },
+    "Benz S-Class": {
+      "interest_avg_90d": 0.7,
+      "slope_pct_30d_vs_60d": -100.0,
+      "data_points": 93
+    },
+    "Jeep Renegade": {
+      "interest_avg_90d": 2.2,
+      "slope_pct_30d_vs_60d": 8.83,
+      "data_points": 93
+    },
+    "Jeep Cherokee": {
+      "interest_avg_90d": 6.5,
+      "slope_pct_30d_vs_60d": 579.93,
+      "data_points": 93
+    },
+    "Audi A4": {
+      "interest_avg_90d": 0.8,
+      "slope_pct_30d_vs_60d": -88.8,
+      "data_points": 93
+    }
+  }
+}

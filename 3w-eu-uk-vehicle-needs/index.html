@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="dark">
+<head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta http-equiv="Cache-Control" content="no-cache">
+<title>3W-EU-UK客户车型需求</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0b0d14;--bg2:#131621;--card:#1a1e2e;--hover:#24283b;--text:#e8eaf0;--t2:#8892a8;--tm:#5a6378;--accent:#3b82f6;--accent2:#22c55e;--border:#262a3d;--sbw:175px}
+body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;display:flex}
+::-webkit-scrollbar{width:3px}::-webkit-scrollbar-track:var(--bg)::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px}
+.sidebar{width:var(--sbw);min-height:100vh;background:var(--bg2);border-right:1px solid var(--border);padding:12px 6px;flex-shrink:0;display:flex;flex-direction:column}
+.sidebar .brand{font-size:.85rem;font-weight:800;padding:2px 8px 8px;border-bottom:1px solid var(--border);margin-bottom:6px}
+.sidebar .brand span{background:linear-gradient(135deg,#3b82f6,#22c55e);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.sl{font-size:.55rem;font-weight:600;text-transform:uppercase;letter-spacing:.04em;color:var(--tm);padding:5px 8px 2px}
+.fb{display:flex;align-items:center;gap:4px;width:100%;padding:4px 7px;border-radius:4px;cursor:pointer;font-size:.66rem;font-weight:500;color:var(--t2);background:0;border:0;text-align:left;transition:.1s;margin-bottom:1px}
+.fb:hover{background:var(--hover);color:var(--text)}
+.fb.act{background:rgba(59,130,246,.12);color:#93c5fd}
+.fb .n{font-size:.53rem;background:rgba(255,255,255,.06);padding:0 5px;border-radius:3px;margin-left:auto;color:var(--tm)}
+.sd{height:1px;background:var(--border);margin:4px 6px}
+.main{flex:1;padding:12px 16px;overflow-y:auto;max-height:100vh}
+.sc{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:8px 10px;text-align:center}
+.sc .sv{font-size:1.1rem;font-weight:700}
+.sc .sl{font-size:.53rem;color:var(--tm);letter-spacing:.03em}
+.br{display:flex;align-items:center;gap:5px;padding:2px 0;font-size:.66rem}
+.bt{flex:1;height:16px;background:var(--bg);border-radius:3px;overflow:hidden}
+.bf{height:100%;border-radius:3px;display:flex;align-items:center;padding-left:4px;font-size:.52rem;font-weight:600;color:#fff;min-width:20px;transition:width .5s}
+.cc{background:var(--card);border:1px solid var(--border);border-radius:7px;margin-bottom:6px;overflow:hidden}
+.cc-h{display:flex;align-items:center;gap:6px;padding:6px 10px;font-size:.72rem;font-weight:600;cursor:pointer;user-select:none}
+.cc-h:hover{filter:brightness(1.1)}
+.cc-b{padding:4px 10px 8px}
+.badge{display:inline-flex;padding:0 5px;border-radius:3px;font-size:.5rem;font-weight:600;white-space:nowrap}
+.b-eu{background:rgba(59,130,246,.15);color:#93c5fd}
+.b-uk{background:rgba(34,197,94,.15);color:#86efac}
+.b-both{background:rgba(168,85,247,.15);color:#c084fc}
+.rank-badge{display:inline-flex;align-items:center;justify-content:center;border-radius:3px;padding:0 5px;font-size:.5rem;font-weight:700;min-width:16px;text-align:center}
+.store-tab{padding:3px 10px;border-radius:4px;font-size:.6rem;font-weight:500;cursor:pointer;border:1px solid var(--border);background:transparent;color:var(--t2);transition:.12s}
+.store-tab:hover{border-color:var(--accent);color:var(--text)}
+.store-tab.active{border-color:var(--accent);background:rgba(59,130,246,.12);color:#93c5fd}
+.store-tab.eu{border-color:rgba(59,130,246,.3);color:#60a5fa}
+.store-tab.uk{border-color:rgba(34,197,94,.3);color:#4ade80}
+.loading{padding:30px;text-align:center;color:var(--tm)}
+.loading .sp{width:16px;height:16px;border:2px solid rgba(255,255,255,.08);border-top-color:var(--accent);border-radius:50%;animation:s .7s linear infinite;margin:0 auto 4px}
+@keyframes s{to{transform:rotate(360deg)}}
+@media(max-width:700px){.sidebar{display:none}.main{padding:8px}}
+</style>
+</head>
+<body>
+<aside class="sidebar">
+  <div class="brand"><span>3W EU/UK</span> 车型需求</div>
+  <div style="flex:1;overflow-y:auto" id="sb"></div>
+  <div class="sd"></div>
+  <div class="text-[.52rem] text-gray-600 px-2 py-1">
+    <div id="ut">-</div>
+    <button class="text-[.52rem] text-blue-400 bg-transparent border-0 cursor-pointer hover:text-blue-300" onclick="ld()">🔄 刷新</button>
+  </div>
+</aside>
+<div class="main">
+  <div class="flex items-center gap-2 mb-3 flex-wrap" id="topBar"></div>
+<div class="flex items-center gap-1 mb-3">
+  <button class="store-tab active" id="tabDemand" onclick="switchView('demand')">📋 需求分析</button>
+  <button class="store-tab" id="tabSales" onclick="switchView('sales')">📊 销量&渗透率</button>
+  <span id="mkToggles" style="display:none"><button class="store-tab eu active" id="mkEuBtn" onclick="setMarket('eu')">🇪🇺 EU</button><button class="store-tab uk" id="mkUkBtn" onclick="setMarket('uk')">🇬🇧 UK</button></span>
+
+</div>
+  <div id="body"></div>
+</div>
+
+<script>
+let D, af='all', store='all', makes={};
+let viewMode = 'demand';
+var salesMarket = "eu"; // 'demand' or 'sales'
+
+async function ld() {
+  try {
+    const r = await fetch('dashboard_data.json?_t='+Date.now());
+    D = await r.json();
+    const {models} = D;
+    makes = {};
+    models.forEach(m => {
+      if (!makes[m.make]) makes[m.make] = {count:0, people:{all:0, eu:0, uk:0}, models:[]};
+      makes[m.make].count++;
+      makes[m.make].people.all += m.total;
+      makes[m.make].people.eu += m.eu_count;
+      makes[m.make].people.uk += m.uk_count;
+      makes[m.make].models.push(m);
+    });
+    document.getElementById('ut').textContent = '📅 '+(D.updated_at||'-');
+    rn();
+  } catch(e) {
+    document.getElementById('body').innerHTML = '<div class="loading"><div class="sp"></div>加载失败</div>';
+  }
+}
+
+function setMarket(m) {
+  salesMarket = m;
+  document.getElementById("mkEuBtn").className = "store-tab eu" + (m==="eu"?" active":"");
+  document.getElementById("mkUkBtn").className = "store-tab uk" + (m==="uk"?" active":"");
+  loadSalesView();
+}
+
+function switchView(v) {
+  viewMode = v;
+  document.getElementById('tabDemand').className = 'store-tab' + (v==='demand'?' active':'') + ' eu';
+  document.getElementById('tabSales').className = 'store-tab' + (v==='sales'?' active':'') + ' uk';
+  if (v === 'sales') loadSalesView();
+  else { document.getElementById('mkToggles').style.display = 'none'; rn(); }
+}
+
+function loadSalesView() {
+  document.getElementById('mkToggles').style.display = 'inline-flex';
+  var bd = document.getElementById('body');
+  bd.innerHTML = '<div class="loading"><div class="sp"></div>⏳ 加载中...</div>';
+  var sf = salesMarket === 'eu' ? 'eu' : 'uk';
+  
+  function render(salesData, preds) {
+    // Fetch exchange rate
+    var fx = document.getElementById('fxRate');
+    if (fx) {
+      var xc = new XMLHttpRequest();
+      xc.open('GET', 'fx_rates.json?_t='+Date.now(), true);
+      xc.onload = function(){
+        try {
+          var r = JSON.parse(xc.responseText);
+          var key = salesMarket==='eu'?'EURUSD':'GBPUSD';
+          if (r[key]) fx.innerHTML = (salesMarket==='eu'?'EUR/USD: ':'GBP/USD: ')+r[key];
+        } catch(e){}
+      };
+      xc.send();
+    }
+    
+    var sales = salesData.sales || [];
+    var ts = 0, gc = 0, dc = 0;
+    for (var i = 0; i < sales.length; i++) {
+      ts += (+sales[i].car_sales || 0);
+      if ((+sales[i].car_sales || 0) > 500 && (+sales[i].change_pct || 0) > 5) gc++;
+      if ((+sales[i].car_sales || 0) > 0 && (+sales[i].change_pct || 0) < -5) dc++;
+    }
+    var tm = sales.slice().sort(function(a, b) { return (b.car_sales || 0) - (a.car_sales || 0); })[0] || {};
+    
+    var h = '';
+    h += '<div style="display:flex;align-items:center;gap:6px;margin-bottom:8px;font-size:.65rem"><span style="color:#5a6378">数据周期:</span><span class="chip" style="background:rgba(59,130,246,.1);color:#93c5fd;font-size:.55rem">'+(salesMarket==='eu'?'2026-04':'2026-03')+'</span>'+(salesMarket==='uk'?'<span style="color:#5a6378;font-size:.55rem">(UK汽车销量\u53d63\u6708\u6570\u636e)</span>':'')+'</div>';
+    h += '<div class="grid grid-cols-2 md:grid-cols-4 gap-2 mb-3">';
+    h += '<div class="sc"><div class="sv">' + sales.length + '</div><div class="sl">' + (salesMarket === 'eu' ? 'EU' : 'UK') + ' 车型</div></div>';
+    h += '<div class="sc"><div class="sv">' + ts.toFixed(0) + '</div><div class="sl">汽车销量</div></div>';
+    h += '<div class="sc"><div class="sv">' + gc + '</div><div class="sl">增长车型</div></div>';
+    h += '<div class="sc"><div class="sv">' + (tm.model ? tm.model : '-') + '</div><div class="sl">热销</div></div>';
+    h += '</div>';
+    if (tm.model) {
+      h += '<div class="text-[.65rem] text-gray-500 mb-3" style="border-bottom: 1px solid #262a3d;padding-bottom: 6px">🏆 ' + tm.model + ' ' + (tm.car_sales || 0) + '辆 · 🚀 增长 ' + gc + ' / 📉 下降 ' + dc + '</div>';
+    }
+    
+    // Growth ranking with EV trend
+    var evTrendFile = salesMarket === 'uk' ? 'uk_ev_trend.json' : 'eu_ev_trend.json';
+    var evTrendData = window._evTrendCache || {};
+    // Lookup EV trend for a model name
+    function getEvTrend(modelName) {
+      var up = modelName.toUpperCase().split(' ');
+      var best = 0;
+      for (var key in evTrendData) {
+        var t = evTrendData[key];
+        var tup = t.model.toUpperCase();
+        // Check if the last word(s) of modelName match the EV model name
+        for (var wi = 0; wi < up.length; wi++) {
+          if (up[wi].length > 2 && tup.indexOf(up[wi]) >= 0) {
+            if (Math.abs(t.mom_pct) > Math.abs(best)) best = t.mom_pct;
+            break;
+          }
+        }
+      }
+      return best;
+    }
+    function compScore(s) {
+      var ai = (preds&&preds[s.model]?preds[s.model].predicted_growth||0:0);
+      var ev = getEvTrend(s.model) / 10; // normalize EV mom_pct to ~0-50 scale
+      return ai * 0.6 + ev * 0.4;
+    }
+    var gw = sales.filter(function(s) { return (+s.car_sales || 0) > 500; }).sort(function(a, b) { return compScore(b) - compScore(a); });
+    if (gw.length > 0) {
+      h += '<div class="cc mb-3"><div class="cc-h" style="background:linear-gradient(135deg,rgba(34,197,94,.08),rgba(59,130,246,.08))">🚀 增长潜力车型 <span class="chip" style="background:rgba(249,115,22,.1);color:#fdba74;font-size:.5rem">基础: 销量>500</span><span class="chip" style="background:rgba(34,197,94,.1);color:#86efac;font-size:.5rem">AI预测×0.6 + EV趋势×0.4</span><span class="chip" style="background:rgba(59,130,246,.08);color:#93c5fd;font-size:.5rem">📡 EV来源: EU-EVs</span></div><div class="cc-b p-0"><div class="table-wrap"><table id="growthTable" style="width:100%;border-collapse:collapse;font-size:.65rem"><thead><tr style="color:#5a6378;font-size:.55rem"><th style="padding:4px 6px;text-align:center;width:24px">#</th><th style="text-align:left">车型</th><th style="text-align:center;width:55px">销量</th><th style="text-align:center;width:45px">环比</th><th style="text-align:center;width:55px" title="基于UK 2023-2025历史数据">AI预测</th><th style="text-align:center;width:55px" title="EV注册环比趋势 (EU-EVs)">📡EV趋势</th></tr></thead><tbody id="growthBody">';
+      for (var i = 0; i < gw.length && i < 20; i++) {
+        var s = gw[i];
+        var ar = s.change_pct >= 0 ? '📈' : '📉';
+        var cl = s.change_pct >= 0 ? '#22c55e' : '#ef4444';
+        var pg = preds&&preds[s.model]?preds[s.model].predicted_growth||0:null; var phtml=pg!==null?'<span style="background:'+(preds[s.model].confidence==='high'?'rgba(34,197,94,.15)':preds[s.model].confidence==='medium'?'rgba(234,179,8,.15)':'rgba(239,68,68,.15)')+';color:'+(pg>=0?'#4ade80':'#ef4444')+';padding:0 4px;border-radius:3px;font-weight:600">'+(pg>0?'+':'')+pg.toFixed(1)+'%</span>':'-';
+        var evt = getEvTrend(s.model);
+        var evHtml = evt !== 0 ? '<span style="color:'+(evt>0?'#86efac':'#fbbf24')+';font-weight:600;font-size:.55rem">'+(evt>0?'📈 ':'📉 ')+(evt>0?'+':'')+evt.toFixed(1)+'%</span>' : '<span style="color:#5a6378;font-size:.5rem">-</span>';
+      h += '<tr><td style="padding:3px 6px;text-align:center">' + (i + 1) + '</td><td>' + s.model + '</td><td style="text-align:center;font-weight:600">' + (s.car_sales || 0) + '</td><td style="text-align:center;color:' + cl + '">' + ar + ' ' + (s.change_pct > 0 ? '+' : '') + s.change_pct.toFixed(1) + '%</td><td style="text-align:center;font-size:.55rem">' + phtml + '</td><td style="text-align:center;font-size:.55rem">' + evHtml + '</td></tr>';
+      }
+      h += '</tbody></table></div></div><div id="mtd" style="display:none;margin-top:4px;padding:6px 10px;background:rgba(59,130,246,.03);border-radius:4px;font-size:.55rem;line-height:1.6;color:#8892a8;border:1px solid rgba(59,130,246,.08)"><b style="color:#e8eaf0">📊 数据来源 & 增速预测方法</b><br>📦 训练数据: UK 61车型+EU 78车型 · 2023-01→2025-12 (6份明道云导出)<br>🧮 综合分 = AI预测×0.6 + EV趋势×0.4<br>🔮 AI预测: 线性回归+动量 (R²>0.5=🟢高 · R²>0.2=🟡中 · 其他=🔴低)<br>⚡ EV趋势: EU-EVs 月度 EV 注册环比 (MoM%)<br>💱 汇率: Alpha Vantage · 🔍搜索: Google Trends · 💬论坛: Reddit+垂直论坛</div></div></div>';
+      
+    }
+    
+    // Grid: Penetration + Sales ranking
+    h += '<div class="grid md:grid-cols-2 gap-3" id="mainGrid">';
+    // Penetration placeholder - will fill when data loads
+    h += '<div class="cc mb-3" id="penCard"><div class="cc-h" style="background:linear-gradient(135deg,rgba(168,85,247,.08),rgba(236,72,153,.08))">📈 渗透率排名 <span class="chip" style="background:rgba(168,85,247,.1);color:#c084fc;font-size:.55rem">加载中...</span></div></div>';
+    h += '<div class="cc" id="salesCard"><div class="cc-h" style="background:#1a1e2e">🚗 汽车销量排名 (Top 25) <span class="chip" style="background:rgba(34,197,94,.1);color:#86efac;font-size:.5rem">'+(salesMarket==='eu'?'2026-04':'2026-03')+'</span></div><div class="cc-b p-0"><div class="table-wrap"><table style="width:100%;border-collapse:collapse;font-size:.65rem"><thead><tr style="color:#5a6378;font-size:.55rem"><th style="padding:4px 6px;text-align:center;width:24px">#</th><th style="text-align:left">车型</th><th style="text-align:center;width:45px">品牌</th><th style="text-align:center;width:65px">销量</th><th style="width:100px">占比</th><th style="text-align:center;width:45px">渗透率</th></tr></thead><tbody>';
+    var tp = sales.slice().sort(function(a, b) { return (b.car_sales || 0) - (a.car_sales || 0); }).filter(function(s) { return s.car_sales > 0; }).slice(0, 25);
+    var ms = Math.max(1, tp[0] ? tp[0].car_sales : 1);
+    for (var i = 0; i < tp.length; i++) {
+      var s = tp[i];
+      var bw = ((s.car_sales || 0) / ms * 100).toFixed(0);
+      h += '<tr><td style="padding:3px 6px;text-align:center"><span class="rank-badge" style="background:' + (i < 3 ? ["#fbbf24", "#94a3b8", "#fb923c"][i] : 'rgba(59,130,246,.2)') + ';color:#000">' + (i + 1) + '</span></td><td>' + s.model + '</td><td style="text-align:center;font-size:.55rem"><span class="badge b-eu">' + s.brand_group + '</span></td><td style="text-align:center;font-weight:600">' + (s.car_sales || 0) + '</td><td><div class="bt" style="height:12px"><div class="bf" style="width:' + bw + '%;background:#3b82f6"></div></div></td><td style="text-align:center">' + (s.penetration_pct ? s.penetration_pct + '%' : '-') + '</td></tr>';
+    }
+    h += '</tbody></table></div></div></div>';
+    h += '</div>'; // close grid
+    
+    bd.innerHTML = h;
+    
+    // Fetch EV reference data (UK: uk_ev_reference, EU: eu_ev_reference)
+    var evFile = salesMarket === 'uk' ? 'uk_ev_reference.json' : 'eu_ev_reference.json';
+    var evLabel = salesMarket === 'uk' ? 'UK' : '欧洲15国';
+    var evx = new XMLHttpRequest();
+    evx.open('GET', evFile+'?_t='+Date.now(), true);
+      evx.onload = function() {
+        try {
+          var evd = JSON.parse(evx.responseText);
+          if (!evd || !evd.models || evd.models.length === 0) return;
+          window._evRefCache = evd;
+          // Re-fetch penetration data to render EV columns
+          var refetch = new XMLHttpRequest();
+          refetch.open('GET', sf+'_penetration.json?_t='+Date.now(), true);
+          refetch.onload = function() {
+            try {
+              var rpd = JSON.parse(refetch.responseText);
+              var pc = document.getElementById('penCard');
+              if (pc && rpd && rpd.models) {
+                var allZeroCs2 = rpd.models.every(function(m){return (m.car_sales||0)===0;});
+                var ph2 = '<div class="cc-h" style="background:linear-gradient(135deg,rgba(168,85,247,.08),rgba(236,72,153,.08))">📈 渗透率排名';
+                if (allZeroCs2) ph2 += ' <span class="chip" style="background:rgba(234,179,8,.15);color:#fbbf24;font-size:.55rem">⚠️ 市场销量数据缺失</span>';
+                ph2 += ' <span class="chip" style="background:rgba(168,85,247,.1);color:#c084fc;font-size:.55rem">'+rpd.period+'</span></div><div class="cc-b p-0"><div class="table-wrap"><table style="width:100%;border-collapse:collapse;font-size:.65rem"><thead><tr style="color:#5a6378;font-size:.55rem"><th style="padding:4px 6px;text-align:center;width:24px">#</th><th style="text-align:left">车型</th><th style="text-align:center;width:45px">品牌</th><th style="text-align:center;width:55px">渗透率</th><th style="text-align:center;width:45px">3W销量</th><th style="text-align:center;width:55px" title="EU-EVs '+evLabel+' 最新月注册量">🚗EV注册</th><th style="text-align:center;width:55px" title="基于EU-EVs EV注册计算的渗透率">⚡EV渗透率</th></tr></thead><tbody>';
+                var evModels = window._evRefCache ? window._evRefCache.models : [];
+                function luEv(mn) {
+                  var w=mn.toUpperCase().split(' ');
+                  var b=['BMW','BENZ','MERCEDES','LAND','RANGE','ROVER','VOLVO','VW','FORD','PORSCHE','HONDA','BYD','HYUNDAI','NISSAN','AUDI','KIA','MINI','SKODA','PEUGEOT','LEXUS','TOYOTA','VAUXHALL','CITROEN','JEEP','DACIA','SMART','POLESTAR','TESLA','SUZUKI','CUPRA','DS','JAECOO','MG','FIAT','ALFA'];
+                  var kw=w.filter(function(x){return x.length>2&&b.indexOf(x)<0;});
+                  if(!kw.length)return 0;
+                  var t=0;
+                  for(var ei=0;ei<evModels.length;ei++){var em=evModels[ei];var eu=em.model.toUpperCase();for(var ki=0;ki<kw.length;ki++){if(eu.indexOf(kw[ki])>=0){t+=em.count;break;}}}
+                  return t;
+                }
+                for (var ri=0; ri<rpd.models.length && ri<15; ri++) {
+                  var rp = rpd.models[ri];
+                  var bwr=Math.min(100,rp.penetration_pct*3);
+                  var sv=rp.sales||0;
+                  var er=luEv(rp.model);
+                  var eph=er>0&&sv>0?(sv/er*100).toFixed(1):'';
+                  ph2 += '<tr><td style="padding:3px 6px;text-align:center"><span class="rank-badge" style="background:'+(ri<3?["#fbbf24","#94a3b8","#fb923c"][ri]:'rgba(59,130,246,.2)')+';color:#000">'+(ri+1)+'</span></td><td>'+rp.model+'</td><td style="text-align:center;font-size:.55rem"><span class="badge b-eu">'+rp.brand_group+'</span></td><td style="text-align:center"><div class="bt" style="height:12px"><div class="bf" style="width:'+bwr+'%;background:#a855f7;font-size:.45rem">'+rp.penetration_pct.toFixed(1)+'%</div></div></td><td style="text-align:center;color:'+(rp.sales>0?'#4ade80':'#5a6378')+'">'+sv+'</td><td style="text-align:center;font-size:.55rem;color:#86efac;font-weight:600">'+(er>0?er.toLocaleString():'<span style="color:#5a6378;font-size:.5rem">-</span>')+'</td><td style="text-align:center;font-size:.55rem;font-weight:600;color:'+(eph>5?'#fbbf24':'#93c5fd')+'">'+(eph?eph+'%':'<span style="color:#5a6378;font-size:.5rem">-</span>')+'</td></tr>';
+                }
+                ph2 += '</tbody></table></div></div>';
+                pc.innerHTML = ph2;
+              }
+            } catch(e){}
+          };
+          refetch.send();
+          // Only create EV reference card once (check if already exists)
+          if (!document.getElementById('evRefCard')) {
+            var evh = '<div class="cc mt-3" id="evRefCard"><div class="cc-h" style="background:linear-gradient(135deg,rgba(74,222,128,.08),rgba(59,130,246,.08))">⚡ '+evLabel+' EV 市场参考 <span class="chip" style="background:rgba(74,222,128,.1);color:#86efac;font-size:.5rem">EU-EVs · '+(evd.period_year||'')+'/'+(evd.period_month||'')+'</span><span class="chip" style="background:rgba(59,130,246,.1);color:#93c5fd;font-size:.5rem">总注册: '+(evd.total_registrations||0).toLocaleString()+' 辆</span></div><div class="cc-b p-0"><div class="table-wrap"><table style="width:100%;border-collapse:collapse;font-size:.6rem"><thead><tr style="color:#5a6378;font-size:.52rem"><th style="padding:3px 5px;text-align:center;width:24px">#</th><th style="text-align:left">品牌</th><th style="text-align:left">车型</th><th style="text-align:right;width:55px">注册量</th></tr></thead><tbody>';
+            var topModels = evd.models.slice().sort(function(a,b){return b.count-a.count;}).filter(function(m){return m.model!=='UNKNOWN' && m.model!=='Other';}).slice(0,20);
+            for (var ei=0; ei<topModels.length; ei++) {
+              var em = topModels[ei];
+              evh += '<tr><td style="padding:2px 5px;text-align:center">'+(ei+1)+'</td><td style="font-size:.55rem">'+em.make+'</td><td>'+em.model+'</td><td style="text-align:right;font-weight:600;color:#86efac">'+em.count.toLocaleString()+'</td></tr>';
+            }
+            evh += '</tbody></table></div></div><div class="card-bd" style="padding:4px 10px;font-size:.5rem;color:#5a6378;border-top:1px solid #262a3d">🔌 仅纯电动(EV)车型 · '+(evd.country==='ALL'?'覆盖15个欧洲国家':'')+' · 月度数据 · 可交叉比对本页渗透率 ⚡<br><span style="font-size:.45rem">📡 数据源: <a href="https://eu-evs.com" style="color:#93c5fd" target="_blank">EU-EVs</a></span></div></div>';
+            var mainGrid = document.getElementById('mainGrid');
+            if (mainGrid) {
+              mainGrid.insertAdjacentHTML('afterend', evh);
+            }
+          }
+        } catch(e){}
+      };
+      evx.send();
+    
+    // Fetch penetration data and fill card
+    var px = new XMLHttpRequest();
+    px.open('GET', sf+'_penetration.json?_t='+Date.now(), true);
+    px.onload = function() {
+      try {
+        var pd = JSON.parse(px.responseText);
+        var allZeroCs = pd && pd.models && pd.models.every(function(m){return (m.car_sales||0)===0;});
+        var ph = '<div class="cc-h" style="background:linear-gradient(135deg,rgba(168,85,247,.08),rgba(236,72,153,.08))">📈 渗透率排名';
+        if (allZeroCs) {
+          ph += ' <span class="chip" style="background:rgba(234,179,8,.15);color:#fbbf24;font-size:.55rem">⚠️ 市场销量数据缺失</span>';
+        }
+        if (pd && pd.models && pd.models.length > 0) {
+          var hasEvCache = window._evRefCache && window._evRefCache.models;
+          ph += ' <span class="chip" style="background:rgba(168,85,247,.1);color:#c084fc;font-size:.55rem">'+pd.period+'</span></div><div class="cc-b p-0"><div class="table-wrap"><table style="width:100%;border-collapse:collapse;font-size:.65rem"><thead><tr style="color:#5a6378;font-size:.55rem"><th style="padding:4px 6px;text-align:center;width:24px">#</th><th style="text-align:left">车型</th><th style="text-align:center;width:45px">品牌</th><th style="text-align:center;width:55px">渗透率</th><th style="text-align:center;width:45px">3W销量</th><th style="text-align:center;width:55px" title="EU-EVs 最新月注册量">🚗EV注册</th><th style="text-align:center;width:55px" title="基于EU-EVs EV注册计算的渗透率">⚡EV渗透率</th></tr></thead><tbody>';
+          // Build EV lookup helper (will show '-' if no EV cache yet)
+          var evModels = hasEvCache ? window._evRefCache.models : [];
+          function lookupEvReg(modelName) {
+            var up = modelName.toUpperCase().split(' ');
+            var brands = ['BMW','BENZ','MERCEDES','LAND','RANGE','ROVER','VOLVO','VOLKSWAGEN','FORD','PORSCHE','HONDA','BYD','HYUNDAI','NISSAN','AUDI','KIA','MINI','SKODA','PEUGEOT','LEXUS','TOYOTA','VAUXHALL','CITROEN','JEEP','DACIA','SMART','POLESTAR','TESLA','SUZUKI','CUPRA','DS','JAECOO','LEAPMOTOR','MG','OMODA','XPENG','CHANGAN','GEELY','FARIZON','MAXUS','LOTUS','ABARTH','AION','ALPINE','ISUZU','GWM','ROLLS','MASERATI','FIAT','ALFA','GENESIS','LUCID','RIVIAN','SUBARU','MAZDA','INFINITI','ACURA','BUICK','GMC','CADILLAC','LINCOLN','CHEVROLET','DODGE','RAM','CHRYSLER','DONGFENG'];
+            var keywords = up.filter(function(w){return w.length>2 && brands.indexOf(w)<0;});
+            var total = 0;
+            if (keywords.length === 0) return 0;
+            for (var ei=0; ei<evModels.length; ei++) {
+              var em = evModels[ei];
+              var emup = em.model.toUpperCase();
+              for (var ki=0; ki<keywords.length; ki++) {
+                if (emup.indexOf(keywords[ki]) >= 0) {
+                  total += em.count;
+                  break;
+                }
+              }
+            }
+            return total;
+          }
+          for (var i=0; i<pd.models.length && i<15; i++) {
+            var p = pd.models[i];
+            var bw = Math.min(100, p.penetration_pct * 3);
+            var lowDataWarn = !allZeroCs && ((p.car_sales||0) < (salesMarket==='eu' ? 100 : 500));
+            var warnTag = lowDataWarn ? '<span title="市场销量数据'+(allZeroCs?'缺失':'偏低')+'，渗透率可能偏高" style="display:inline-flex;align-items:center;padding:0 4px;border-radius:3px;font-size:.48rem;font-weight:700;background:rgba(234,179,8,.15);color:#fbbf24;cursor:help;margin-left:2px">⚠️</span>' : '';
+            var salesVal = p.sales||0;
+            var salesDisplay = lowDataWarn ? '<span title="市场销量数据'+(allZeroCs?'缺失':'偏低')+'" style="color:#fbbf24;cursor:help">'+salesVal+'⚠️</span>' : salesVal;
+            var evReg = hasEvCache ? lookupEvReg(p.model) : 0;
+            var evRegHtml = evReg > 0 ? '<span style="color:#86efac;font-weight:600">'+evReg.toLocaleString()+'</span>':'<span style="color:#5a6378;font-size:.5rem">-</span>';
+            var evPen = (evReg > 0 && salesVal > 0) ? (salesVal / evReg * 100) : 0;
+            var evPenHtml = evPen > 0 ? '<span style="color:'+(evPen > 5?'#fbbf24':'#93c5fd')+';font-weight:600">'+evPen.toFixed(1)+'%</span>' : '<span style="color:#5a6378;font-size:.5rem">-</span>';
+            ph += '<tr><td style="padding:3px 6px;text-align:center"><span class="rank-badge" style="background:'+(i<3?["#fbbf24","#94a3b8","#fb923c"][i]:'rgba(59,130,246,.2)')+';color:#000">'+(i+1)+'</span></td><td>'+p.model+warnTag+'</td><td style="text-align:center;font-size:.55rem"><span class="badge b-eu">'+p.brand_group+'</span></td><td style="text-align:center"><div class="bt" style="height:12px"><div class="bf" style="width:'+bw+'%;background:#a855f7;font-size:.45rem">'+p.penetration_pct.toFixed(1)+'%</div></div></td><td style="text-align:center;color:'+(lowDataWarn?'#fbbf24':(p.sales>0?'#4ade80':'#5a6378'))+'">'+salesDisplay+'</td><td style="text-align:center;font-size:.55rem">'+evRegHtml+'</td><td style="text-align:center;font-size:.55rem">'+evPenHtml+'</td></tr>';
+          }
+          ph += '</tbody></table></div></div>';
+        } else {
+          ph += '</div><div class="cc-b"><div class="text-xs text-gray-600 p-4">暂无渗透率数据</div></div>';
+        }
+        document.getElementById('penCard').innerHTML = ph;
+      } catch(e) {}
+    };
+    px.send();
+  }
+  
+  // Fetch sales data
+  var x = new XMLHttpRequest();
+  x.open('GET', sf+'_sales_data.json?_t='+Date.now(), true);
+  x.onload = function() {
+    if (x.status !== 200) { bd.innerHTML = '<div class="text-xs text-gray-600 p-4">❌ 加载失败</div>'; return; }
+    try {
+      var sd = JSON.parse(x.responseText);
+      window._salesCache = sd;
+      render(sd, _pd);
+      // When predictions arrive later, fill them in
+      var predInterval = setInterval(function() {
+        if (Object.keys(_pd).length > 0) {
+          render(sd, _pd);
+          clearInterval(predInterval);
+        }
+      }, 300);
+      setTimeout(function() { clearInterval(predInterval); }, 8000);
+    } catch (e) {
+      bd.innerHTML = '<div class="text-xs text-gray-600 p-4">❌ ' + e.message + '</div>';
+    }
+  };
+  x.onerror = function() { bd.innerHTML = '<div class="text-xs text-gray-600 p-4">❌ 网络错误</div>'; };
+  x.send();
+  
+  // Fetch AI predictions
+  var _pd = {};
+  var px = new XMLHttpRequest();
+  px.open('GET', (salesMarket==='eu'?'eu_':'')+'growth_predictions.json?_t='+Date.now(), true);
+  px.onload = function() {
+    
+  // Fetch EV trend data
+  var evtFile = salesMarket === 'uk' ? 'uk_ev_trend.json' : 'eu_ev_trend.json';
+  var evt = new XMLHttpRequest();
+  evt.open('GET', evtFile+'?_t='+Date.now(), true);
+  evt.onload = function() {
+    try {
+      var d = JSON.parse(evt.responseText);
+      if (d && d.trends) {
+        window._evTrendCache = {};
+        for (var i = 0; i < d.trends.length; i++) {
+          var key = d.trends[i].make + ' ' + d.trends[i].model;
+          window._evTrendCache[key] = d.trends[i];
+        }
+        // Re-render growth table with EV trend data
+        if (window._salesCache) {
+          render(window._salesCache, _pd);
+        }
+      }
+    } catch(e){}
+  };
+  evt.send();
+  
+    try { _pd = JSON.parse(px.responseText).predictions || {}; } catch(e) {}
+    var iv = setInterval(function() {
+      // AI predictions already filled during render
+      if (Object.keys(_pd).length > 0) {
+        for (var i = 0; i < 100; i++) {
+          var el = document.getElementById('pred_' + i);
+          if (!el) break;
+          var mod = el.getAttribute('data-model');
+          if (mod && _pd[mod]) {
+            var g = _pd[mod].predicted_growth || 0;
+            var clr = g >= 0 ? '#4ade80' : '#ef4444';
+            var bg = (_pd[mod].confidence||'low') === 'high' ? 'rgba(34,197,94,.15)' : (_pd[mod].confidence||'low') === 'medium' ? 'rgba(234,179,8,.15)' : 'rgba(239,68,68,.15)';
+            el.innerHTML = '<span style="background:'+bg+';color:'+clr+';padding:0 4px;border-radius:3px;font-weight:600">'+(g>0?'+':'')+g.toFixed(1)+'%</span>';
+            el.style.visibility = 'visible';
+          }
+        }
+        clearInterval(iv);
+      }
+    }, 500);
+    setTimeout(function() { clearInterval(iv); }, 5000);
+  };
+  px.send();
+}
+
+function getModels() {
+  if (store === 'all') return D.models;
+  if (store === 'eu') return D.models.filter(m => m.eu_count > 0);
+  return D.models.filter(m => m.uk_count > 0);
+}
+
+function getPeople(m) {
+  if (store === 'all') return m.total;
+  if (store === 'eu') return m.eu_count;
+  return m.uk_count;
+}
+
+function rn() {
+  const ms = getModels();
+  const totalPeople = ms.reduce((s,m) => s + getPeople(m), 0);
+  const totalMakes = new Set(ms.map(m => m.make)).size;
+  const topMax = Math.max(1, ms[0] ? getPeople(ms[0]) : 1);
+  
+  // Make stats filtered by store
+  const mkStats = {};
+  ms.forEach(m => {
+    const people = getPeople(m);
+    if (!mkStats[m.make]) mkStats[m.make] = {count:0, people:0};
+    mkStats[m.make].count++;
+    mkStats[m.make].people += people;
+  });
+  const mkSorted = Object.entries(mkStats).sort((a,b) => b[1].people - a[1].people);
+  const maxMK = Math.max(1, mkSorted[0]?.[1].people || 1);
+  
+  const bc = ['#3b82f6','#f97316','#8b5cf6','#10b981','#ec4899','#14b8a6','#f59e0b','#6366f1'];
+  const totalAll = D.models.reduce((s,m) => s + m.total, 0);
+  
+  // Sidebar
+  document.getElementById('sb').innerHTML = `
+    <div class="sl">品牌</div>
+    <button class="fb act" onclick="sf('all')"><span class="d" style="display:inline-block;width:5px;height:5px;border-radius:50%;background:#60a5fa"></span>概览<span class="n">${ms.length}</span></button>
+    ${mkSorted.slice(0,30).map(([mk],i)=>`<button class="fb" onclick="sf('${mk}')"><span class="d" style="display:inline-block;width:5px;height:5px;border-radius:50%;background:${bc[i%bc.length]}"></span>${mk}<span class="n">${mkStats[mk].count}</span></button>`).join('')}
+    ${mkSorted.length > 30 ? `<div class="text-[.45rem] text-center text-gray-600 py-1">+${mkSorted.length-30} 更多</div>` : ''}
+  `;
+  
+  // Top bar with store selector
+  document.getElementById('topBar').innerHTML = `
+    <h1 class="text-base font-bold">🟩 3W EU/UK - 车型需求分析</h1>
+    <div class="flex items-center gap-1">
+      <button class="store-tab ${store==='all'?'active':''}" onclick="ss('all')">🌐 全部</button>
+      <button class="store-tab eu ${store==='eu'?'active':''}" onclick="ss('eu')">🇪🇺 EU</button>
+      <button class="store-tab uk ${store==='uk'?'active':''}" onclick="ss('uk')">🇬🇧 UK</button>
+    </div>
+    <span class="text-[.55rem] bg-blue-900/30 text-blue-300 px-2 py-0.5 rounded-full">${ms.length} 车型</span>
+    <span class="text-[.55rem] bg-purple-900/30 text-purple-300 px-2 py-0.5 rounded-full">${totalMakes} 品牌</span>
+    <span class="text-[.55rem] bg-green-900/30 text-green-300 px-2 py-0.5 rounded-full">${totalPeople} 人</span>
+  `;
+
+  if (af === 'all') {
+    const top = ms.sort((a,b) => getPeople(b) - getPeople(a)).slice(0, 50);
+    
+    document.getElementById('body').innerHTML = `
+    <!-- Stats -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-2 mb-3">
+      <div class="sc"><div class="sv">${store==='eu'?D.total_eu:store==='uk'?D.total_uk:D.total_all}</div><div class="sl">${store==='eu'?'EU':'UK'} 总提交 ${store==='all'?'(EU+UK)':''}</div></div>
+      <div class="sc"><div class="sv">${ms.length}</div><div class="sl">车型需求</div></div>
+      <div class="sc"><div class="sv">${totalMakes}</div><div class="sl">涉及品牌</div></div>
+      <div class="sc"><div class="sv">${totalPeople}</div><div class="sl">${store==='eu'?'EU':'UK'} 提交人数</div></div>
+    </div>
+
+    <!-- EU/UK split overview (when showing all) -->
+    ${store === 'all' ? `
+    <div class="cc mb-3" style="border-color:rgba(99,102,241,.15)">
+      <div class="cc-h" style="background:#1a1e2e"><span>📊 EU vs UK 提交对比</span></div>
+      <div class="cc-b">
+        <div class="br"><span class="w-8 text-[.6rem]">EU</span><div class="bt"><div class="bf" style="width:${(D.total_eu/Math.max(1,D.total_all)*100).toFixed(0)}%;background:#3b82f6">${D.total_eu}</div></div><span class="w-6 text-right text-[.58rem] font-semibold" style="color:#93c5fd">${((D.total_eu/D.total_all)*100).toFixed(0)}%</span></div>
+        <div class="br"><span class="w-8 text-[.6rem]">UK</span><div class="bt"><div class="bf" style="width:${(D.total_uk/Math.max(1,D.total_all)*100).toFixed(0)}%;background:#22c55e">${D.total_uk}</div></div><span class="w-6 text-right text-[.58rem] font-semibold" style="color:#86efac">${((D.total_uk/D.total_all)*100).toFixed(0)}%</span></div>
+      </div>
+    </div>` : ''}
+
+    <!-- Brand ranking -->
+    <div class="cc mb-3">
+      <div class="cc-h" style="background:#1a1e2e"><span>🏭 品牌需求排行</span></div>
+      <div class="cc-b">${mkSorted.slice(0,15).map(([mk, st], i)=>{
+        const euP = D.makes[mk]?.eu || 0;
+        const ukP = D.makes[mk]?.uk || 0;
+        return `<div class="br"><span class="rank-badge" style="background:${['#fbbf24','#94a3b8','#fb923c','#6366f1'][i]||'rgba(59,130,246,.2)'};color:#000">${i+1}</span><span class="w-12 text-[.6rem] font-medium">${mk}</span><div class="bt"><div class="bf" style="width:${(st.people/maxMK*100).toFixed(0)}%;background:${bc[i%bc.length]}">${st.people}</div></div><span class="w-5 text-right text-[.6rem]">${st.people}</span><span class="text-[.45rem] text-gray-600 w-16">${store==='all'?`🇪🇺${euP} 🇬🇧${ukP}`:''}</span></div>`;
+      }).join('')}</div>
+    </div>
+
+    <!-- Hot models -->
+    <div class="cc">
+      <div class="cc-h" style="background:#1a1e2e"><span>🏆 热门车型排行 TOP ${top.length}</span></div>
+      <div class="cc-b p-0"><div class="table-wrap" style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:.7rem">
+        <thead><tr style="color:var(--tm);font-size:.55rem;text-transform:uppercase;letter-spacing:.03em">
+          <th style="padding:5px 6px;border-bottom:1px solid var(--border);text-align:center;width:24px">#</th>
+          <th style="padding:5px 6px;border-bottom:1px solid var(--border);text-align:left;width:140px;max-width:140px;overflow:hidden">车型</th>
+          <th style="padding:5px 6px;border-bottom:1px solid var(--border);text-align:center;width:35px">总</th>
+          <th style="padding:5px 6px;border-bottom:1px solid var(--border);text-align:center;width:35px">EU</th>
+          <th style="padding:5px 6px;border-bottom:1px solid var(--border);text-align:center;width:35px">UK</th>
+          <th style="padding:5px 6px;border-bottom:1px solid var(--border);text-align:center;width:80px">开发进度</th>
+          <th style="padding:5px 6px;border-bottom:1px solid var(--border);text-align:left;min-width:140px">备注</th>
+        </tr></thead>
+        <tbody>${top.map((m,i)=>{
+          const euP = m.eu_count||0;
+          const ukP = m.uk_count||0;
+          return `<tr style="border-bottom:1px solid rgba(38,42,61,.4)">
+            <td style="padding:4px 6px;text-align:center"><span class="rank-badge" style="background:${['#fbbf24','#94a3b8','#fb923c','#6366f1'][i]||'rgba(59,130,246,.2)'};color:#000">${i+1}</span></td>
+            <td style="padding:4px 6px;max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${m.make} ${m.model}"><span class="font-medium">${m.make}</span> <span style="color:var(--t2)">${m.model}</span></td>
+            <td style="padding:4px 6px;text-align:center"><span class="font-semibold" style="color:#c084fc">${m.total}</span></td>
+            <td style="padding:4px 6px;text-align:center;color:#60a5fa;font-weight:600">${euP}</td>
+            <td style="padding:4px 6px;text-align:center;color:#4ade80;font-weight:600">${ukP}</td>
+            <td style="padding:4px 6px;text-align:center"><span class="badge ${m.eu_dev?'b-eu':'b-uk'}">${m.eu_dev||m.uk_dev||'待处理'}</span></td>
+            <td style="padding:4px 6px;color:var(--tm);font-size:.6rem;max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;cursor:pointer" title="${m.eu_notes||m.uk_notes||''}">${m.eu_notes||m.uk_notes||''}</td>
+          </tr>`;
+        }).join('')}</tbody>
+      </table></div></div>
+    </div>`;
+  } else {
+    // Single make view
+    const mkData = makes[af];
+    if (!mkData) { document.getElementById('body').innerHTML = '<div class="text-[.6rem] text-gray-600 py-4 text-center">无数据</div>'; return; }
+    const mkModels = ms.filter(m => m.make === af).sort((a,b) => getPeople(b) - getPeople(a));
+    const topMax2 = Math.max(1, getPeople(mkModels[0])||1);
+    const euP = D.makes[af]?.eu || 0;
+    const ukP = D.makes[af]?.uk || 0;
+    
+    document.getElementById('body').innerHTML = `
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-2 mb-3">
+      <div class="sc"><div class="sv">${mkModels.length}</div><div class="sl">车型</div></div>
+      <div class="sc"><div class="sv">${mkData.people[store]}</div><div class="sl">提交人数</div></div>
+      ${store === 'all' ? `<div class="sc"><div class="sv">${euP}</div><div class="sl">🇪🇺 EU</div></div>
+      <div class="sc"><div class="sv">${ukP}</div><div class="sl">🇬🇧 UK</div></div>` : '<div class="sc"><div class="sv">-</div><div class="sl">其他店铺</div></div><div class="sc"><div class="sv">-</div><div class="sl">其他店铺</div></div>'}
+    </div>
+    <div class="cc">
+      <div class="cc-h" style="background:#1a1e2e"><span>🏆 ${af} 车型排行</span></div>
+      <div class="cc-b p-0"><div class="table-wrap"><table style="width:100%;border-collapse:collapse;font-size:.7rem">
+        <thead><tr style="color:var(--tm);font-size:.55rem;text-transform:uppercase;letter-spacing:.03em">
+          <th style="padding:5px 6px;border-bottom:1px solid var(--border);text-align:center;width:24px">#</th>
+          <th style="padding:5px 6px;border-bottom:1px solid var(--border);text-align:left;width:140px">车型</th>
+          <th style="padding:5px 6px;border-bottom:1px solid var(--border);text-align:center;width:35px">总</th>
+          <th style="padding:5px 6px;border-bottom:1px solid var(--border);text-align:center;width:35px">EU</th>
+          <th style="padding:5px 6px;border-bottom:1px solid var(--border);text-align:center;width:35px">UK</th>
+        </tr></thead>
+        <tbody>${mkModels.map((m,i)=>{
+          return `<tr style="border-bottom:1px solid rgba(38,42,61,.4)">
+            <td style="padding:4px 6px;text-align:center"><span class="rank-badge" style="background:${i<3?['#fbbf24','#94a3b8','#fb923c'][i]:'rgba(59,130,246,.2)'};color:#000">${i+1}</span></td>
+            <td style="padding:4px 6px;max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${m.model}"><span class="font-medium">${m.model}</span></td>
+            <td style="padding:4px 6px;text-align:center;font-weight:600;color:#c084fc">${m.total}</td>
+            <td style="padding:4px 6px;text-align:center;color:#60a5fa;font-weight:600">${m.eu_count}</td>
+            <td style="padding:4px 6px;text-align:center;color:#4ade80;font-weight:600">${m.uk_count}</td>
+          </tr>`;
+        }).join('')}</tbody>
+      </table></div></div>
+    </div>`;
+  }
+}
+
+function sf(c) { af = c; rn(); }
+function ss(c) { store = c; rn(); }
+
+ld();
+</script>
+</body>
+</html>

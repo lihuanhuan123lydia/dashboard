@@ -1,0 +1,3846 @@
+{
+  "source": "EU-EVs",
+  "country": "ALL",
+  "country_name": "EU (15国)",
+  "latest_period": "2026/07",
+  "previous_period": "2026/06",
+  "scraped_at": "2026-08-10T01:00:11.637050+00:00",
+  "trends": [
+    {
+      "make": "SKODA",
+      "model": "ELROQ",
+      "latest_count": 3648,
+      "prev_count": 6601,
+      "mom_pct": -44.7
+    },
+    {
+      "make": "KIA",
+      "model": "EV3",
+      "latest_count": 3265,
+      "prev_count": 3634,
+      "mom_pct": -10.2
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID.4",
+      "latest_count": 3027,
+      "prev_count": 2347,
+      "mom_pct": 29.0
+    },
+    {
+      "make": "SKODA",
+      "model": "ENYAQ",
+      "latest_count": 2822,
+      "prev_count": 6820,
+      "mom_pct": -58.6
+    },
+    {
+      "make": "RENAULT",
+      "model": "5",
+      "latest_count": 2498,
+      "prev_count": 3777,
+      "mom_pct": -33.9
+    },
+    {
+      "make": "VOLVO",
+      "model": "EX30",
+      "latest_count": 2491,
+      "prev_count": 4204,
+      "mom_pct": -40.7
+    },
+    {
+      "make": "VOLVO",
+      "model": "EX40",
+      "latest_count": 2400,
+      "prev_count": 2503,
+      "mom_pct": -4.1
+    },
+    {
+      "make": "BMW",
+      "model": "IX1",
+      "latest_count": 1996,
+      "prev_count": 5351,
+      "mom_pct": -62.7
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID.7",
+      "latest_count": 1991,
+      "prev_count": 3912,
+      "mom_pct": -49.1
+    },
+    {
+      "make": "BMW",
+      "model": "IX3",
+      "latest_count": 1894,
+      "prev_count": 3365,
+      "mom_pct": -43.7
+    },
+    {
+      "make": "TOYOTA",
+      "model": "BZ4X",
+      "latest_count": 1771,
+      "prev_count": 3074,
+      "mom_pct": -42.4
+    },
+    {
+      "make": "BYD",
+      "model": "DOLPHIN SURF",
+      "latest_count": 1736,
+      "prev_count": 2114,
+      "mom_pct": -17.9
+    },
+    {
+      "make": "KIA",
+      "model": "EV5",
+      "latest_count": 1720,
+      "prev_count": 2204,
+      "mom_pct": -22.0
+    },
+    {
+      "make": "TESLA",
+      "model": "MODEL Y",
+      "latest_count": 1701,
+      "prev_count": 22009,
+      "mom_pct": -92.3
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID.BUZZ",
+      "latest_count": 1680,
+      "prev_count": 3387,
+      "mom_pct": -50.4
+    },
+    {
+      "make": "HYUNDAI",
+      "model": "INSTER",
+      "latest_count": 1595,
+      "prev_count": 2512,
+      "mom_pct": -36.5
+    },
+    {
+      "make": "KIA",
+      "model": "EV2",
+      "latest_count": 1556,
+      "prev_count": 2115,
+      "mom_pct": -26.4
+    },
+    {
+      "make": "XPENG",
+      "model": "G6",
+      "latest_count": 1552,
+      "prev_count": 1960,
+      "mom_pct": -20.8
+    },
+    {
+      "make": "FORD",
+      "model": "EXPLORER",
+      "latest_count": 1551,
+      "prev_count": 2656,
+      "mom_pct": -41.6
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID.3",
+      "latest_count": 1505,
+      "prev_count": 5929,
+      "mom_pct": -74.6
+    },
+    {
+      "make": "BYD",
+      "model": "SEALION",
+      "latest_count": 1466,
+      "prev_count": 1544,
+      "mom_pct": -5.1
+    },
+    {
+      "make": "LEAPMOTOR",
+      "model": "B10",
+      "latest_count": 1438,
+      "prev_count": 2169,
+      "mom_pct": -33.7
+    },
+    {
+      "make": "AUDI",
+      "model": "Q6 E-TRON",
+      "latest_count": 1417,
+      "prev_count": 3533,
+      "mom_pct": -59.9
+    },
+    {
+      "make": "HYUNDAI",
+      "model": "KONA",
+      "latest_count": 1343,
+      "prev_count": 2101,
+      "mom_pct": -36.1
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "CLA CLASS",
+      "latest_count": 1315,
+      "prev_count": 3454,
+      "mom_pct": -61.9
+    },
+    {
+      "make": "BYD",
+      "model": "SEAL",
+      "latest_count": 1252,
+      "prev_count": 2463,
+      "mom_pct": -49.2
+    },
+    {
+      "make": "TOYOTA",
+      "model": "URBAN CRUISER",
+      "latest_count": 1239,
+      "prev_count": 1641,
+      "mom_pct": -24.5
+    },
+    {
+      "make": "FORD",
+      "model": "TRANSIT",
+      "latest_count": 1188,
+      "prev_count": 1291,
+      "mom_pct": -8.0
+    },
+    {
+      "make": "TOYOTA",
+      "model": "C-HR",
+      "latest_count": 1158,
+      "prev_count": 2332,
+      "mom_pct": -50.3
+    },
+    {
+      "make": "CITROEN",
+      "model": "E-C3",
+      "latest_count": 1156,
+      "prev_count": 3074,
+      "mom_pct": -62.4
+    },
+    {
+      "make": "FORD",
+      "model": "PUMA",
+      "latest_count": 1128,
+      "prev_count": 2511,
+      "mom_pct": -55.1
+    },
+    {
+      "make": "MINI",
+      "model": "COUNTRYMAN",
+      "latest_count": 1059,
+      "prev_count": 1062,
+      "mom_pct": -0.3
+    },
+    {
+      "make": "MG",
+      "model": "MG S5",
+      "latest_count": 1003,
+      "prev_count": 1030,
+      "mom_pct": -2.6
+    },
+    {
+      "make": "AUDI",
+      "model": "Q4 E-TRON",
+      "latest_count": 994,
+      "prev_count": 2466,
+      "mom_pct": -59.7
+    },
+    {
+      "make": "RENAULT",
+      "model": "4",
+      "latest_count": 960,
+      "prev_count": 1564,
+      "mom_pct": -38.6
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "E-5008",
+      "latest_count": 946,
+      "prev_count": 1154,
+      "mom_pct": -18.0
+    },
+    {
+      "make": "VAUXHALL",
+      "model": "FRONTERA",
+      "latest_count": 945,
+      "prev_count": 1108,
+      "mom_pct": -14.7
+    },
+    {
+      "make": "LEAPMOTOR",
+      "model": "T03",
+      "latest_count": 924,
+      "prev_count": 5109,
+      "mom_pct": -81.9
+    },
+    {
+      "make": "MG",
+      "model": "MG4",
+      "latest_count": 897,
+      "prev_count": 2116,
+      "mom_pct": -57.6
+    },
+    {
+      "make": "JAECOO",
+      "model": "5 LUXURY",
+      "latest_count": 896,
+      "prev_count": 1212,
+      "mom_pct": -26.1
+    },
+    {
+      "make": "KIA",
+      "model": "EV4",
+      "latest_count": 889,
+      "prev_count": 1535,
+      "mom_pct": -42.1
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "EQB",
+      "latest_count": 852,
+      "prev_count": 2463,
+      "mom_pct": -65.4
+    },
+    {
+      "make": "POLESTAR",
+      "model": "4",
+      "latest_count": 846,
+      "prev_count": 3608,
+      "mom_pct": -76.6
+    },
+    {
+      "make": "HYUNDAI",
+      "model": "IONIQ 5",
+      "latest_count": 837,
+      "prev_count": 1791,
+      "mom_pct": -53.3
+    },
+    {
+      "make": "BYD",
+      "model": "ATTO 2",
+      "latest_count": 825,
+      "prev_count": 1093,
+      "mom_pct": -24.5
+    },
+    {
+      "make": "BMW",
+      "model": "I4",
+      "latest_count": 823,
+      "prev_count": 3126,
+      "mom_pct": -73.7
+    },
+    {
+      "make": "CUPRA",
+      "model": "RAVAL 155KW",
+      "latest_count": 760,
+      "prev_count": 863,
+      "mom_pct": -11.9
+    },
+    {
+      "make": "GEELY",
+      "model": "EX5",
+      "latest_count": 741,
+      "prev_count": 525,
+      "mom_pct": 41.1
+    },
+    {
+      "make": "RENAULT",
+      "model": "SCENIC",
+      "latest_count": 669,
+      "prev_count": 1854,
+      "mom_pct": -63.9
+    },
+    {
+      "make": "SUZUKI",
+      "model": "E VITARA",
+      "latest_count": 615,
+      "prev_count": 835,
+      "mom_pct": -26.3
+    },
+    {
+      "make": "ZEEKR",
+      "model": "7GT",
+      "latest_count": 611,
+      "prev_count": 206,
+      "mom_pct": 196.6
+    },
+    {
+      "make": "MINI",
+      "model": "ACEMAN",
+      "latest_count": 610,
+      "prev_count": 832,
+      "mom_pct": -26.7
+    },
+    {
+      "make": "KIA",
+      "model": "PV5 CARGO",
+      "latest_count": 609,
+      "prev_count": 309,
+      "mom_pct": 97.1
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "OTHER",
+      "latest_count": 593,
+      "prev_count": 824,
+      "mom_pct": -28.0
+    },
+    {
+      "make": "CUPRA",
+      "model": "TAVASCAN",
+      "latest_count": 581,
+      "prev_count": 647,
+      "mom_pct": -10.2
+    },
+    {
+      "make": "LEAPMOTOR",
+      "model": "C10",
+      "latest_count": 571,
+      "prev_count": 1087,
+      "mom_pct": -47.5
+    },
+    {
+      "make": "BMW",
+      "model": "IX3 50 XDRIVE",
+      "latest_count": 558,
+      "prev_count": 1219,
+      "mom_pct": -54.2
+    },
+    {
+      "make": "BYD",
+      "model": "ATTO 3",
+      "latest_count": 545,
+      "prev_count": 1016,
+      "mom_pct": -46.4
+    },
+    {
+      "make": "POLESTAR",
+      "model": "2",
+      "latest_count": 537,
+      "prev_count": 1570,
+      "mom_pct": -65.8
+    },
+    {
+      "make": "KIA",
+      "model": "PV5",
+      "latest_count": 512,
+      "prev_count": 1009,
+      "mom_pct": -49.3
+    },
+    {
+      "make": "BMW",
+      "model": "IX2",
+      "latest_count": 510,
+      "prev_count": 837,
+      "mom_pct": -39.1
+    },
+    {
+      "make": "NISSAN",
+      "model": "MICRA",
+      "latest_count": 507,
+      "prev_count": 1187,
+      "mom_pct": -57.3
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "EQA",
+      "latest_count": 504,
+      "prev_count": 1598,
+      "mom_pct": -68.5
+    },
+    {
+      "make": "CUPRA",
+      "model": "RAVAL",
+      "latest_count": 503,
+      "prev_count": 341,
+      "mom_pct": 47.5
+    },
+    {
+      "make": "ZEEKR",
+      "model": "7X",
+      "latest_count": 503,
+      "prev_count": 697,
+      "mom_pct": -27.8
+    },
+    {
+      "make": "LEAPMOTOR",
+      "model": "B05",
+      "latest_count": 495,
+      "prev_count": 47,
+      "mom_pct": 500
+    },
+    {
+      "make": "DACIA",
+      "model": "SPRING",
+      "latest_count": 492,
+      "prev_count": 4020,
+      "mom_pct": -87.8
+    },
+    {
+      "make": "FORD",
+      "model": "CAPRI",
+      "latest_count": 492,
+      "prev_count": 1054,
+      "mom_pct": -53.3
+    },
+    {
+      "make": "OPEL",
+      "model": "FRONTERA",
+      "latest_count": 486,
+      "prev_count": 863,
+      "mom_pct": -43.7
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "E-3008",
+      "latest_count": 481,
+      "prev_count": 679,
+      "mom_pct": -29.2
+    },
+    {
+      "make": "RENAULT",
+      "model": "MEGANE",
+      "latest_count": 480,
+      "prev_count": 639,
+      "mom_pct": -24.9
+    },
+    {
+      "make": "DEEPAL",
+      "model": "DEEPAL S05",
+      "latest_count": 478,
+      "prev_count": 631,
+      "mom_pct": -24.2
+    },
+    {
+      "make": "NISSAN",
+      "model": "LEAF",
+      "latest_count": 477,
+      "prev_count": 234,
+      "mom_pct": 103.8
+    },
+    {
+      "make": "PORSCHE",
+      "model": "MACAN",
+      "latest_count": 477,
+      "prev_count": 1233,
+      "mom_pct": -61.3
+    },
+    {
+      "make": "MINI",
+      "model": "COOPER",
+      "latest_count": 476,
+      "prev_count": 635,
+      "mom_pct": -25.0
+    },
+    {
+      "make": "BYD",
+      "model": "ATTO 3 EVO",
+      "latest_count": 473,
+      "prev_count": 617,
+      "mom_pct": -23.3
+    },
+    {
+      "make": "KIA",
+      "model": "EV9",
+      "latest_count": 469,
+      "prev_count": 625,
+      "mom_pct": -25.0
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "GLC 400 4MATIC WITH EQ TE",
+      "latest_count": 469,
+      "prev_count": 316,
+      "mom_pct": 48.4
+    },
+    {
+      "make": "XPENG",
+      "model": "G9",
+      "latest_count": 468,
+      "prev_count": 848,
+      "mom_pct": -44.8
+    },
+    {
+      "make": "VOLVO",
+      "model": "EX90",
+      "latest_count": 467,
+      "prev_count": 1183,
+      "mom_pct": -60.5
+    },
+    {
+      "make": "KIA",
+      "model": "EV6",
+      "latest_count": 459,
+      "prev_count": 708,
+      "mom_pct": -35.2
+    },
+    {
+      "make": "CUPRA",
+      "model": "BORN",
+      "latest_count": 454,
+      "prev_count": 477,
+      "mom_pct": -4.8
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "E-2008",
+      "latest_count": 450,
+      "prev_count": 945,
+      "mom_pct": -52.4
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "E-208",
+      "latest_count": 449,
+      "prev_count": 809,
+      "mom_pct": -44.5
+    },
+    {
+      "make": "TOYOTA",
+      "model": "BZ4X TOURING",
+      "latest_count": 443,
+      "prev_count": 390,
+      "mom_pct": 13.6
+    },
+    {
+      "make": "MAZDA",
+      "model": "6E",
+      "latest_count": 437,
+      "prev_count": 1389,
+      "mom_pct": -68.5
+    },
+    {
+      "make": "AUDI",
+      "model": "A6 E-TRON",
+      "latest_count": 427,
+      "prev_count": 733,
+      "mom_pct": -41.7
+    },
+    {
+      "make": "CITROEN",
+      "model": "E-C5",
+      "latest_count": 416,
+      "prev_count": 531,
+      "mom_pct": -21.7
+    },
+    {
+      "make": "FIAT",
+      "model": "500E",
+      "latest_count": 406,
+      "prev_count": 1349,
+      "mom_pct": -69.9
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "TRANSPORTER",
+      "latest_count": 389,
+      "prev_count": 719,
+      "mom_pct": -45.9
+    },
+    {
+      "make": "SMART",
+      "model": "5",
+      "latest_count": 378,
+      "prev_count": 988,
+      "mom_pct": -61.7
+    },
+    {
+      "make": "ALPINE",
+      "model": "A290",
+      "latest_count": 377,
+      "prev_count": 593,
+      "mom_pct": -36.4
+    },
+    {
+      "make": "TOYOTA",
+      "model": "CHR PLUS",
+      "latest_count": 355,
+      "prev_count": 483,
+      "mom_pct": -26.5
+    },
+    {
+      "make": "RENAULT",
+      "model": "TWINGO E-TECH ELECTRIC",
+      "latest_count": 353,
+      "prev_count": 367,
+      "mom_pct": -3.8
+    },
+    {
+      "make": "BMW",
+      "model": "I5",
+      "latest_count": 352,
+      "prev_count": 624,
+      "mom_pct": -43.6
+    },
+    {
+      "make": "VOLVO",
+      "model": "EC40",
+      "latest_count": 352,
+      "prev_count": 412,
+      "mom_pct": -14.6
+    },
+    {
+      "make": "HYUNDAI",
+      "model": "IONIQ 6",
+      "latest_count": 338,
+      "prev_count": 361,
+      "mom_pct": -6.4
+    },
+    {
+      "make": "RENAULT",
+      "model": "TWINGO",
+      "latest_count": 334,
+      "prev_count": 1165,
+      "mom_pct": -71.3
+    },
+    {
+      "make": "TOYOTA",
+      "model": "TOYOTA BZ4X TOURING",
+      "latest_count": 328,
+      "prev_count": 272,
+      "mom_pct": 20.6
+    },
+    {
+      "make": "BMW",
+      "model": "IX",
+      "latest_count": 326,
+      "prev_count": 920,
+      "mom_pct": -64.6
+    },
+    {
+      "make": "TOYOTA",
+      "model": "PROACE CITY",
+      "latest_count": 321,
+      "prev_count": 514,
+      "mom_pct": -37.5
+    },
+    {
+      "make": "OMODA",
+      "model": "E5",
+      "latest_count": 315,
+      "prev_count": 426,
+      "mom_pct": -26.1
+    },
+    {
+      "make": "VOLVO",
+      "model": "EX60",
+      "latest_count": 307,
+      "prev_count": 246,
+      "mom_pct": 24.8
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID.4 PRO 4MOTION 220KW",
+      "latest_count": 302,
+      "prev_count": 116,
+      "mom_pct": 160.3
+    },
+    {
+      "make": "KIA",
+      "model": "NIRO",
+      "latest_count": 284,
+      "prev_count": 1688,
+      "mom_pct": -83.2
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "SPRINTER",
+      "latest_count": 280,
+      "prev_count": 125,
+      "mom_pct": 124.0
+    },
+    {
+      "make": "PORSCHE",
+      "model": "CAYENNE",
+      "latest_count": 266,
+      "prev_count": 589,
+      "mom_pct": -54.8
+    },
+    {
+      "make": "FORD",
+      "model": "MUSTANG MACH-E",
+      "latest_count": 258,
+      "prev_count": 270,
+      "mom_pct": -4.4
+    },
+    {
+      "make": "BYD",
+      "model": "DOLPHIN",
+      "latest_count": 251,
+      "prev_count": 541,
+      "mom_pct": -53.6
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "GLC EQ",
+      "latest_count": 241,
+      "prev_count": 165,
+      "mom_pct": 46.1
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "GLB 250+",
+      "latest_count": 236,
+      "prev_count": 192,
+      "mom_pct": 22.9
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "EQC",
+      "latest_count": 234,
+      "prev_count": 1483,
+      "mom_pct": -84.2
+    },
+    {
+      "make": "MG",
+      "model": "MGS6",
+      "latest_count": 232,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "NISSAN",
+      "model": "NISSAN MICRA",
+      "latest_count": 228,
+      "prev_count": 205,
+      "mom_pct": 11.2
+    },
+    {
+      "make": "KIA",
+      "model": "PV5 PASSENGER",
+      "latest_count": 223,
+      "prev_count": 262,
+      "mom_pct": -14.9
+    },
+    {
+      "make": "JEEP",
+      "model": "COMPASS",
+      "latest_count": 218,
+      "prev_count": 194,
+      "mom_pct": 12.4
+    },
+    {
+      "make": "HYUNDAI",
+      "model": "IONIQ 9",
+      "latest_count": 217,
+      "prev_count": 396,
+      "mom_pct": -45.2
+    },
+    {
+      "make": "CHANGAN",
+      "model": "DEEPAL S07",
+      "latest_count": 216,
+      "prev_count": 183,
+      "mom_pct": 18.0
+    },
+    {
+      "make": "MG",
+      "model": "IM5",
+      "latest_count": 216,
+      "prev_count": 308,
+      "mom_pct": -29.9
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "EQE",
+      "latest_count": 213,
+      "prev_count": 490,
+      "mom_pct": -56.5
+    },
+    {
+      "make": "FIAT",
+      "model": "GRANDE PANDA",
+      "latest_count": 207,
+      "prev_count": 808,
+      "mom_pct": -74.4
+    },
+    {
+      "make": "TOYOTA",
+      "model": "TOYOTA C-HR+",
+      "latest_count": 207,
+      "prev_count": 435,
+      "mom_pct": -52.4
+    },
+    {
+      "make": "TOYOTA",
+      "model": "PROACE",
+      "latest_count": 206,
+      "prev_count": 423,
+      "mom_pct": -51.3
+    },
+    {
+      "make": "JAECOO",
+      "model": "5 PURE",
+      "latest_count": 205,
+      "prev_count": 266,
+      "mom_pct": -22.9
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "GLC 400 4MATIC WITH EQ",
+      "latest_count": 192,
+      "prev_count": 98,
+      "mom_pct": 95.9
+    },
+    {
+      "make": "SUZUKI",
+      "model": "VITARA",
+      "latest_count": 190,
+      "prev_count": 250,
+      "mom_pct": -24.0
+    },
+    {
+      "make": "LEXUS",
+      "model": "RZ",
+      "latest_count": 189,
+      "prev_count": 295,
+      "mom_pct": -35.9
+    },
+    {
+      "make": "MG",
+      "model": "MG S6",
+      "latest_count": 189,
+      "prev_count": 358,
+      "mom_pct": -47.2
+    },
+    {
+      "make": "XPENG",
+      "model": "X9",
+      "latest_count": 179,
+      "prev_count": 143,
+      "mom_pct": 25.2
+    },
+    {
+      "make": "TESLA",
+      "model": "MODEL 3",
+      "latest_count": 177,
+      "prev_count": 12081,
+      "mom_pct": -98.5
+    },
+    {
+      "make": "MG",
+      "model": "MG4 EV URBAN",
+      "latest_count": 176,
+      "prev_count": 112,
+      "mom_pct": 57.1
+    },
+    {
+      "make": "NISSAN",
+      "model": "ARIYA",
+      "latest_count": 176,
+      "prev_count": 261,
+      "mom_pct": -32.6
+    },
+    {
+      "make": "XPENG",
+      "model": "P7+",
+      "latest_count": 176,
+      "prev_count": 40,
+      "mom_pct": 340.0
+    },
+    {
+      "make": "SMART",
+      "model": "3",
+      "latest_count": 169,
+      "prev_count": 277,
+      "mom_pct": -39.0
+    },
+    {
+      "make": "RENAULT",
+      "model": "MASTER",
+      "latest_count": 168,
+      "prev_count": 347,
+      "mom_pct": -51.6
+    },
+    {
+      "make": "CITROEN",
+      "model": "E-C4",
+      "latest_count": 165,
+      "prev_count": 298,
+      "mom_pct": -44.6
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "GLC CLASS",
+      "latest_count": 165,
+      "prev_count": 70,
+      "mom_pct": 135.7
+    },
+    {
+      "make": "CITROEN",
+      "model": "Ë-C3 ELÉCTRICO MAX",
+      "latest_count": 162,
+      "prev_count": 126,
+      "mom_pct": 28.6
+    },
+    {
+      "make": "SMART",
+      "model": "1",
+      "latest_count": 158,
+      "prev_count": 446,
+      "mom_pct": -64.6
+    },
+    {
+      "make": "OMODA",
+      "model": "5",
+      "latest_count": 150,
+      "prev_count": 149,
+      "mom_pct": 0.7
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID.3 NEO",
+      "latest_count": 150,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "JEEP",
+      "model": "AVENGER",
+      "latest_count": 148,
+      "prev_count": 496,
+      "mom_pct": -70.2
+    },
+    {
+      "make": "POLESTAR",
+      "model": "STAR 4",
+      "latest_count": 148,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "SUBARU",
+      "model": "UNCHARTED",
+      "latest_count": 147,
+      "prev_count": 223,
+      "mom_pct": -34.1
+    },
+    {
+      "make": "OPEL",
+      "model": "CORSA-E",
+      "latest_count": 145,
+      "prev_count": 947,
+      "mom_pct": -84.7
+    },
+    {
+      "make": "RENAULT",
+      "model": "KANGOO",
+      "latest_count": 138,
+      "prev_count": 390,
+      "mom_pct": -64.6
+    },
+    {
+      "make": "SEAT",
+      "model": "RAVAL",
+      "latest_count": 138,
+      "prev_count": 661,
+      "mom_pct": -79.1
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID.5",
+      "latest_count": 137,
+      "prev_count": 178,
+      "mom_pct": -23.0
+    },
+    {
+      "make": "OPEL",
+      "model": "GRANDLAND",
+      "latest_count": 136,
+      "prev_count": 757,
+      "mom_pct": -82.0
+    },
+    {
+      "make": "VOLVO",
+      "model": "ES90",
+      "latest_count": 135,
+      "prev_count": 292,
+      "mom_pct": -53.8
+    },
+    {
+      "make": "MG",
+      "model": "IM6",
+      "latest_count": 132,
+      "prev_count": 219,
+      "mom_pct": -39.7
+    },
+    {
+      "make": "MINI",
+      "model": "C-MAN",
+      "latest_count": 129,
+      "prev_count": 188,
+      "mom_pct": -31.4
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID.3 NEO 125kW",
+      "latest_count": 126,
+      "prev_count": 2,
+      "mom_pct": 500
+    },
+    {
+      "make": "TOYOTA",
+      "model": "C-HR+",
+      "latest_count": 123,
+      "prev_count": 138,
+      "mom_pct": -10.9
+    },
+    {
+      "make": "PORSCHE",
+      "model": "TAYCAN",
+      "latest_count": 121,
+      "prev_count": 289,
+      "mom_pct": -58.1
+    },
+    {
+      "make": "FIAT",
+      "model": "PANDA",
+      "latest_count": 119,
+      "prev_count": 68,
+      "mom_pct": 75.0
+    },
+    {
+      "make": "SEAT",
+      "model": "TAVASCAN",
+      "latest_count": 118,
+      "prev_count": 2370,
+      "mom_pct": -95.0
+    },
+    {
+      "make": "CITROEN",
+      "model": "E-BERLINGO",
+      "latest_count": 117,
+      "prev_count": 171,
+      "mom_pct": -31.6
+    },
+    {
+      "make": "HONDA",
+      "model": "E:NY1",
+      "latest_count": 104,
+      "prev_count": 83,
+      "mom_pct": 25.3
+    },
+    {
+      "make": "MG",
+      "model": "MG S6 EV",
+      "latest_count": 102,
+      "prev_count": 181,
+      "mom_pct": -43.6
+    },
+    {
+      "make": "AION",
+      "model": "V",
+      "latest_count": 101,
+      "prev_count": 66,
+      "mom_pct": 53.0
+    },
+    {
+      "make": "JAECOO",
+      "model": "JAECOO5 EV",
+      "latest_count": 101,
+      "prev_count": 108,
+      "mom_pct": -6.5
+    },
+    {
+      "make": "LYNK & CO",
+      "model": "02",
+      "latest_count": 101,
+      "prev_count": 107,
+      "mom_pct": -5.6
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "E-PARTNER",
+      "latest_count": 101,
+      "prev_count": 75,
+      "mom_pct": 34.7
+    },
+    {
+      "make": "FIAT",
+      "model": "600E",
+      "latest_count": 99,
+      "prev_count": 179,
+      "mom_pct": -44.7
+    },
+    {
+      "make": "JAECOO",
+      "model": "J5",
+      "latest_count": 98,
+      "prev_count": 57,
+      "mom_pct": 71.9
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "E-EXPERT",
+      "latest_count": 98,
+      "prev_count": 119,
+      "mom_pct": -17.6
+    },
+    {
+      "make": "GEELY",
+      "model": "GEELY E5",
+      "latest_count": 97,
+      "prev_count": 39,
+      "mom_pct": 148.7
+    },
+    {
+      "make": "DONGFENG",
+      "model": "BOX",
+      "latest_count": 93,
+      "prev_count": 298,
+      "mom_pct": -68.8
+    },
+    {
+      "make": "CUPRA",
+      "model": "CUPRA RAVAL",
+      "latest_count": 92,
+      "prev_count": 61,
+      "mom_pct": 50.8
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "GLB 350 4MATIC",
+      "latest_count": 88,
+      "prev_count": 120,
+      "mom_pct": -26.7
+    },
+    {
+      "make": "AUDI",
+      "model": "A6",
+      "latest_count": 87,
+      "prev_count": 2415,
+      "mom_pct": -96.4
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "CLA 200",
+      "latest_count": 87,
+      "prev_count": 39,
+      "mom_pct": 123.1
+    },
+    {
+      "make": "SUBARU",
+      "model": "E-OUTBACK",
+      "latest_count": 87,
+      "prev_count": 92,
+      "mom_pct": -5.4
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "EVITO",
+      "latest_count": 82,
+      "prev_count": 201,
+      "mom_pct": -59.2
+    },
+    {
+      "make": "MG",
+      "model": "MGS6 ELECTRIC",
+      "latest_count": 82,
+      "prev_count": 114,
+      "mom_pct": -28.1
+    },
+    {
+      "make": "KG MOBILITY",
+      "model": "MUSSO EV",
+      "latest_count": 78,
+      "prev_count": 127,
+      "mom_pct": -38.6
+    },
+    {
+      "make": "DEEPAL",
+      "model": "S07",
+      "latest_count": 77,
+      "prev_count": 61,
+      "mom_pct": 26.2
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID.4 PURE 140 KW",
+      "latest_count": 77,
+      "prev_count": 23,
+      "mom_pct": 234.8
+    },
+    {
+      "make": "PORSCHE",
+      "model": "CAYENNE-E",
+      "latest_count": 76,
+      "prev_count": 61,
+      "mom_pct": 24.6
+    },
+    {
+      "make": "MAZDA",
+      "model": "MAZDA CX-6E",
+      "latest_count": 75,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "HONDA",
+      "model": "SUPER N",
+      "latest_count": 73,
+      "prev_count": 13,
+      "mom_pct": 461.5
+    },
+    {
+      "make": "SUBARU",
+      "model": "SOLTERRA",
+      "latest_count": 72,
+      "prev_count": 115,
+      "mom_pct": -37.4
+    },
+    {
+      "make": "CITROEN",
+      "model": "Ë-C3 ELÉCTRICO PLUS",
+      "latest_count": 71,
+      "prev_count": 65,
+      "mom_pct": 9.2
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "ECITAN",
+      "latest_count": 70,
+      "prev_count": 245,
+      "mom_pct": -71.4
+    },
+    {
+      "make": "FORD",
+      "model": "TOURNEO",
+      "latest_count": 68,
+      "prev_count": 96,
+      "mom_pct": -29.2
+    },
+    {
+      "make": "LEXUS",
+      "model": "LEXUS RZ350E",
+      "latest_count": 68,
+      "prev_count": 108,
+      "mom_pct": -37.0
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "GLC-CLASS",
+      "latest_count": 66,
+      "prev_count": 92,
+      "mom_pct": -28.3
+    },
+    {
+      "make": "AUDI",
+      "model": "SQ6 E-TRON",
+      "latest_count": 63,
+      "prev_count": 85,
+      "mom_pct": -25.9
+    },
+    {
+      "make": "SUBARU",
+      "model": "SUBARU UNCHARTED",
+      "latest_count": 63,
+      "prev_count": 88,
+      "mom_pct": -28.4
+    },
+    {
+      "make": "TOYOTA",
+      "model": "HILUX",
+      "latest_count": 63,
+      "prev_count": 45,
+      "mom_pct": 40.0
+    },
+    {
+      "make": "MG",
+      "model": "S5",
+      "latest_count": 62,
+      "prev_count": 318,
+      "mom_pct": -80.5
+    },
+    {
+      "make": "ALFA ROMEO",
+      "model": "JUNIOR",
+      "latest_count": 61,
+      "prev_count": 210,
+      "mom_pct": -71.0
+    },
+    {
+      "make": "PORSCHE",
+      "model": "Macan GTS",
+      "latest_count": 61,
+      "prev_count": 102,
+      "mom_pct": -40.2
+    },
+    {
+      "make": "SEAT",
+      "model": "BORN",
+      "latest_count": 61,
+      "prev_count": 1901,
+      "mom_pct": -96.8
+    },
+    {
+      "make": "MINI",
+      "model": "MINI",
+      "latest_count": 59,
+      "prev_count": 2378,
+      "mom_pct": -97.5
+    },
+    {
+      "make": "SKODA",
+      "model": "ELROQ 85X",
+      "latest_count": 59,
+      "prev_count": 94,
+      "mom_pct": -37.2
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "E-308",
+      "latest_count": 58,
+      "prev_count": 139,
+      "mom_pct": -58.3
+    },
+    {
+      "make": "AUDI",
+      "model": "Q4 E-TRON QUATTRO PERF",
+      "latest_count": 57,
+      "prev_count": 7,
+      "mom_pct": 500
+    },
+    {
+      "make": "FIAT",
+      "model": "E-DOBLO",
+      "latest_count": 57,
+      "prev_count": 23,
+      "mom_pct": 147.8
+    },
+    {
+      "make": "MG",
+      "model": "MG4 URBAN",
+      "latest_count": 56,
+      "prev_count": 102,
+      "mom_pct": -45.1
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID.BUZZ 4MOTION LR 250 KW",
+      "latest_count": 56,
+      "prev_count": 1,
+      "mom_pct": 500
+    },
+    {
+      "make": "BMW",
+      "model": "IX3 40",
+      "latest_count": 54,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "E-RIFTER",
+      "latest_count": 54,
+      "prev_count": 82,
+      "mom_pct": -34.1
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID.BUZZ PRO KR 210 KW",
+      "latest_count": 54,
+      "prev_count": 2,
+      "mom_pct": 500
+    },
+    {
+      "make": "ZEEKR",
+      "model": "X",
+      "latest_count": 54,
+      "prev_count": 109,
+      "mom_pct": -50.5
+    },
+    {
+      "make": "BMW",
+      "model": "5 SERIES",
+      "latest_count": 53,
+      "prev_count": 1006,
+      "mom_pct": -94.7
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "E-408",
+      "latest_count": 53,
+      "prev_count": 63,
+      "mom_pct": -15.9
+    },
+    {
+      "make": "OPEL",
+      "model": "MOKKA-E",
+      "latest_count": 52,
+      "prev_count": 240,
+      "mom_pct": -78.3
+    },
+    {
+      "make": "POLESTAR",
+      "model": "3",
+      "latest_count": 52,
+      "prev_count": 393,
+      "mom_pct": -86.8
+    },
+    {
+      "make": "JAC",
+      "model": "E30X",
+      "latest_count": 51,
+      "prev_count": 64,
+      "mom_pct": -20.3
+    },
+    {
+      "make": "LEXUS",
+      "model": "ES",
+      "latest_count": 51,
+      "prev_count": 18,
+      "mom_pct": 183.3
+    },
+    {
+      "make": "MAXUS",
+      "model": "E-DELIVER",
+      "latest_count": 51,
+      "prev_count": 44,
+      "mom_pct": 15.9
+    },
+    {
+      "make": "OPEL",
+      "model": "ASTRA-E",
+      "latest_count": 51,
+      "prev_count": 288,
+      "mom_pct": -82.3
+    },
+    {
+      "make": "SKODA",
+      "model": "EPIQ 155KW",
+      "latest_count": 51,
+      "prev_count": 1,
+      "mom_pct": 500
+    },
+    {
+      "make": "OPEL",
+      "model": "FRONTERA GS ELECTRIC E",
+      "latest_count": 49,
+      "prev_count": 45,
+      "mom_pct": 8.9
+    },
+    {
+      "make": "SUBARU",
+      "model": "SUBARU E-OUTBACK",
+      "latest_count": 49,
+      "prev_count": 95,
+      "mom_pct": -48.4
+    },
+    {
+      "make": "AUDI",
+      "model": "E-TRON GT",
+      "latest_count": 48,
+      "prev_count": 159,
+      "mom_pct": -69.8
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID.3 NEO 170KW",
+      "latest_count": 47,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "NISSAN",
+      "model": "TOWNSTAR",
+      "latest_count": 45,
+      "prev_count": 102,
+      "mom_pct": -55.9
+    },
+    {
+      "make": "CITROEN",
+      "model": "NUEVO Ë-C3 AIRCROSS EL",
+      "latest_count": 44,
+      "prev_count": 32,
+      "mom_pct": 37.5
+    },
+    {
+      "make": "MG",
+      "model": "MG4 URBAN ELECTRIC",
+      "latest_count": 44,
+      "prev_count": 28,
+      "mom_pct": 57.1
+    },
+    {
+      "make": "MINI",
+      "model": "3-DØRS",
+      "latest_count": 44,
+      "prev_count": 25,
+      "mom_pct": 76.0
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID.3 NEO 140kW",
+      "latest_count": 44,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "VOYAH",
+      "model": "COURAGE",
+      "latest_count": 44,
+      "prev_count": 60,
+      "mom_pct": -26.7
+    },
+    {
+      "make": "AUDI",
+      "model": "Q4 E-TRON QUATTRO",
+      "latest_count": 43,
+      "prev_count": 3,
+      "mom_pct": 500
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "GLB-KLASSE",
+      "latest_count": 43,
+      "prev_count": 85,
+      "mom_pct": -49.4
+    },
+    {
+      "make": "CUPRA",
+      "model": "RAVAL 166KW",
+      "latest_count": 42,
+      "prev_count": 99,
+      "mom_pct": -57.6
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "CITAN",
+      "latest_count": 42,
+      "prev_count": 288,
+      "mom_pct": -85.4
+    },
+    {
+      "make": "MG",
+      "model": "4 EV URBAN",
+      "latest_count": 41,
+      "prev_count": 16,
+      "mom_pct": 156.2
+    },
+    {
+      "make": "OPEL",
+      "model": "VIVARO-E",
+      "latest_count": 41,
+      "prev_count": 150,
+      "mom_pct": -72.7
+    },
+    {
+      "make": "RENAULT",
+      "model": "TRAFIC",
+      "latest_count": 41,
+      "prev_count": 74,
+      "mom_pct": -44.6
+    },
+    {
+      "make": "LOTUS",
+      "model": "ELETRE",
+      "latest_count": 40,
+      "prev_count": 114,
+      "mom_pct": -64.9
+    },
+    {
+      "make": "PORSCHE",
+      "model": "CAYENNE TURBO",
+      "latest_count": 40,
+      "prev_count": 41,
+      "mom_pct": -2.4
+    },
+    {
+      "make": "ZEEKR",
+      "model": "001",
+      "latest_count": 40,
+      "prev_count": 46,
+      "mom_pct": -13.0
+    },
+    {
+      "make": "KG MOBILITY",
+      "model": "TORRES EVX",
+      "latest_count": 39,
+      "prev_count": 58,
+      "mom_pct": -32.8
+    },
+    {
+      "make": "BMW",
+      "model": "I7",
+      "latest_count": 38,
+      "prev_count": 203,
+      "mom_pct": -81.3
+    },
+    {
+      "make": "DS",
+      "model": "8",
+      "latest_count": 38,
+      "prev_count": 32,
+      "mom_pct": 18.8
+    },
+    {
+      "make": "LEXUS",
+      "model": "LEXUS RZ500E",
+      "latest_count": 38,
+      "prev_count": 101,
+      "mom_pct": -62.4
+    },
+    {
+      "make": "MINI",
+      "model": "HATCH",
+      "latest_count": 38,
+      "prev_count": 60,
+      "mom_pct": -36.7
+    },
+    {
+      "make": "ALPINE",
+      "model": "A390",
+      "latest_count": 35,
+      "prev_count": 63,
+      "mom_pct": -44.4
+    },
+    {
+      "make": "AUDI",
+      "model": "Q4 SB E-TRON PERFORMAN",
+      "latest_count": 35,
+      "prev_count": 2,
+      "mom_pct": 500
+    },
+    {
+      "make": "BYD",
+      "model": "ATTO",
+      "latest_count": 35,
+      "prev_count": 28,
+      "mom_pct": 25.0
+    },
+    {
+      "make": "CHANGAN",
+      "model": "DEEPAL S05",
+      "latest_count": 35,
+      "prev_count": 40,
+      "mom_pct": -12.5
+    },
+    {
+      "make": "DONGFENG",
+      "model": "VIGO",
+      "latest_count": 35,
+      "prev_count": 78,
+      "mom_pct": -55.1
+    },
+    {
+      "make": "GENESIS",
+      "model": "GV60",
+      "latest_count": 34,
+      "prev_count": 100,
+      "mom_pct": -66.0
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID.BUZZ PRO LR 210 KW",
+      "latest_count": 34,
+      "prev_count": 2,
+      "mom_pct": 500
+    },
+    {
+      "make": "MG",
+      "model": "S6 EV",
+      "latest_count": 33,
+      "prev_count": 36,
+      "mom_pct": -8.3
+    },
+    {
+      "make": "VAUXHALL",
+      "model": "GRANDLAND",
+      "latest_count": 32,
+      "prev_count": 43,
+      "mom_pct": -25.6
+    },
+    {
+      "make": "ABARTH",
+      "model": "600E",
+      "latest_count": 30,
+      "prev_count": 165,
+      "mom_pct": -81.8
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "G CLASS",
+      "latest_count": 30,
+      "prev_count": 66,
+      "mom_pct": -54.5
+    },
+    {
+      "make": "BYD",
+      "model": "TANG",
+      "latest_count": 29,
+      "prev_count": 126,
+      "mom_pct": -77.0
+    },
+    {
+      "make": "CITROEN",
+      "model": "C2",
+      "latest_count": 29,
+      "prev_count": 1,
+      "mom_pct": 500
+    },
+    {
+      "make": "LANCIA",
+      "model": "YPSILON",
+      "latest_count": 29,
+      "prev_count": 33,
+      "mom_pct": -12.1
+    },
+    {
+      "make": "OPEL",
+      "model": "COMBO-E",
+      "latest_count": 29,
+      "prev_count": 75,
+      "mom_pct": -61.3
+    },
+    {
+      "make": "DEEPAL",
+      "model": "S05",
+      "latest_count": 28,
+      "prev_count": 69,
+      "mom_pct": -59.4
+    },
+    {
+      "make": "FARIZON",
+      "model": "SV L1H1",
+      "latest_count": 28,
+      "prev_count": 20,
+      "mom_pct": 40.0
+    },
+    {
+      "make": "SKODA",
+      "model": "EPIQ",
+      "latest_count": 28,
+      "prev_count": 13,
+      "mom_pct": 115.4
+    },
+    {
+      "make": "TOYOTA",
+      "model": "URBAN",
+      "latest_count": 28,
+      "prev_count": 18,
+      "mom_pct": 55.6
+    },
+    {
+      "make": "VAUXHALL",
+      "model": "CORSA",
+      "latest_count": 28,
+      "prev_count": 37,
+      "mom_pct": -24.3
+    },
+    {
+      "make": "AION",
+      "model": "UT",
+      "latest_count": 27,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "MINI",
+      "model": "JCW",
+      "latest_count": 27,
+      "prev_count": 50,
+      "mom_pct": -46.0
+    },
+    {
+      "make": "MITSUBISHI",
+      "model": "ECLIPSE CROSS",
+      "latest_count": 27,
+      "prev_count": 304,
+      "mom_pct": -91.1
+    },
+    {
+      "make": "NISSAN",
+      "model": "INTERSTAR",
+      "latest_count": 26,
+      "prev_count": 25,
+      "mom_pct": 4.0
+    },
+    {
+      "make": "AUDI",
+      "model": "Q4 E-TRON PERFORMANCE",
+      "latest_count": 25,
+      "prev_count": 3,
+      "mom_pct": 500
+    },
+    {
+      "make": "MINI",
+      "model": "JOHN COOPER",
+      "latest_count": 25,
+      "prev_count": 29,
+      "mom_pct": -13.8
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID.7 TOURER PURE",
+      "latest_count": 25,
+      "prev_count": 5,
+      "mom_pct": 400.0
+    },
+    {
+      "make": "PORSCHE",
+      "model": "CAYENNE-E TURBO",
+      "latest_count": 24,
+      "prev_count": 24,
+      "mom_pct": 0.0
+    },
+    {
+      "make": "MG",
+      "model": "CYBERSTER",
+      "latest_count": 23,
+      "prev_count": 87,
+      "mom_pct": -73.6
+    },
+    {
+      "make": "FORD",
+      "model": "CUSTOM",
+      "latest_count": 22,
+      "prev_count": 45,
+      "mom_pct": -51.1
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "EQS",
+      "latest_count": 22,
+      "prev_count": 76,
+      "mom_pct": -71.1
+    },
+    {
+      "make": "VAUXHALL",
+      "model": "MOKKA",
+      "latest_count": 22,
+      "prev_count": 64,
+      "mom_pct": -65.6
+    },
+    {
+      "make": "CUPRA",
+      "model": "BORN 140 KW 58/61 KWH",
+      "latest_count": 21,
+      "prev_count": 6,
+      "mom_pct": 250.0
+    },
+    {
+      "make": "AUDI",
+      "model": "Q4 SB e-tron quattro perf",
+      "latest_count": 20,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "CITROEN",
+      "model": "Ë-BERLINGO TALLA M ELÉ",
+      "latest_count": 20,
+      "prev_count": 20,
+      "mom_pct": 0.0
+    },
+    {
+      "make": "CITROEN",
+      "model": "E-JUMPY",
+      "latest_count": 20,
+      "prev_count": 103,
+      "mom_pct": -80.6
+    },
+    {
+      "make": "GEELY",
+      "model": "EX2 ULTRA",
+      "latest_count": 20,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "GAC",
+      "model": "AION V",
+      "latest_count": 18,
+      "prev_count": 22,
+      "mom_pct": -18.2
+    },
+    {
+      "make": "GOUPIL",
+      "model": "G4",
+      "latest_count": 18,
+      "prev_count": 12,
+      "mom_pct": 50.0
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "E-TRAVELLER",
+      "latest_count": 18,
+      "prev_count": 30,
+      "mom_pct": -40.0
+    },
+    {
+      "make": "VAUXHALL",
+      "model": "COMBO",
+      "latest_count": 18,
+      "prev_count": 10,
+      "mom_pct": 80.0
+    },
+    {
+      "make": "VAUXHALL",
+      "model": "VIVARO",
+      "latest_count": 18,
+      "prev_count": 25,
+      "mom_pct": -28.0
+    },
+    {
+      "make": "LEXUS",
+      "model": "UX 300E",
+      "latest_count": 17,
+      "prev_count": 50,
+      "mom_pct": -66.0
+    },
+    {
+      "make": "LOTUS",
+      "model": "EMEYA",
+      "latest_count": 17,
+      "prev_count": 48,
+      "mom_pct": -64.6
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID. POLO 155kW",
+      "latest_count": 17,
+      "prev_count": 2,
+      "mom_pct": 500
+    },
+    {
+      "make": "FORD",
+      "model": "F-150 LIGHTNING",
+      "latest_count": 16,
+      "prev_count": 41,
+      "mom_pct": -61.0
+    },
+    {
+      "make": "JAC",
+      "model": "T9",
+      "latest_count": 16,
+      "prev_count": 8,
+      "mom_pct": 100.0
+    },
+    {
+      "make": "KIA",
+      "model": "EV4 FASTBACK",
+      "latest_count": 16,
+      "prev_count": 25,
+      "mom_pct": -36.0
+    },
+    {
+      "make": "EXLANTIX",
+      "model": "ET",
+      "latest_count": 15,
+      "prev_count": 3,
+      "mom_pct": 400.0
+    },
+    {
+      "make": "MAXUS",
+      "model": "E",
+      "latest_count": 15,
+      "prev_count": 14,
+      "mom_pct": 7.1
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "EQV",
+      "latest_count": 15,
+      "prev_count": 123,
+      "mom_pct": -87.8
+    },
+    {
+      "make": "YUTONG",
+      "model": "IC12E",
+      "latest_count": 15,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "ALPINE",
+      "model": "A290 GT",
+      "latest_count": 14,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "AUDI",
+      "model": "S6 E-TRON",
+      "latest_count": 14,
+      "prev_count": 43,
+      "mom_pct": -67.4
+    },
+    {
+      "make": "DR",
+      "model": "EQ1",
+      "latest_count": 14,
+      "prev_count": 193,
+      "mom_pct": -92.7
+    },
+    {
+      "make": "KIA",
+      "model": "EV9 GT",
+      "latest_count": 14,
+      "prev_count": 9,
+      "mom_pct": 55.6
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "EQE SUV",
+      "latest_count": 14,
+      "prev_count": 12,
+      "mom_pct": 16.7
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "E-PARTNER - FURGÓN M",
+      "latest_count": 14,
+      "prev_count": 21,
+      "mom_pct": -33.3
+    },
+    {
+      "make": "PORSCHE",
+      "model": "CAYENNE S",
+      "latest_count": 14,
+      "prev_count": 4,
+      "mom_pct": 250.0
+    },
+    {
+      "make": "SERES",
+      "model": "SERES 5",
+      "latest_count": 14,
+      "prev_count": 25,
+      "mom_pct": -44.0
+    },
+    {
+      "make": "AION",
+      "model": "AION V",
+      "latest_count": 13,
+      "prev_count": 13,
+      "mom_pct": 0.0
+    },
+    {
+      "make": "CITROEN",
+      "model": "Ë-JUMPY FURGÓN M ELÉCT",
+      "latest_count": 13,
+      "prev_count": 10,
+      "mom_pct": 30.0
+    },
+    {
+      "make": "DS",
+      "model": "DS8",
+      "latest_count": 13,
+      "prev_count": 5,
+      "mom_pct": 160.0
+    },
+    {
+      "make": "FISKER",
+      "model": "OCEAN",
+      "latest_count": 13,
+      "prev_count": 3,
+      "mom_pct": 333.3
+    },
+    {
+      "make": "GENESIS",
+      "model": "GV70",
+      "latest_count": 13,
+      "prev_count": 33,
+      "mom_pct": -60.6
+    },
+    {
+      "make": "GOLDEN DRAGON",
+      "model": "GC15E",
+      "latest_count": 13,
+      "prev_count": 3,
+      "mom_pct": 333.3
+    },
+    {
+      "make": "LEXUS",
+      "model": "LEXUS ES350E",
+      "latest_count": 13,
+      "prev_count": 21,
+      "mom_pct": -38.1
+    },
+    {
+      "make": "CITROEN",
+      "model": "Ë-C3 ELÉCTRICO MAX CON",
+      "latest_count": 12,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "CITROEN",
+      "model": "NUEVO C3 AIRCROSS ELÉC",
+      "latest_count": 12,
+      "prev_count": 22,
+      "mom_pct": -45.5
+    },
+    {
+      "make": "SUZUKI",
+      "model": "E",
+      "latest_count": 12,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "YUTONG",
+      "model": "T15E",
+      "latest_count": 12,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "AION",
+      "model": "AION UT",
+      "latest_count": 11,
+      "prev_count": 3,
+      "mom_pct": 266.7
+    },
+    {
+      "make": "HONGQI",
+      "model": "EHS7",
+      "latest_count": 11,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID.7 PURE",
+      "latest_count": 11,
+      "prev_count": 2,
+      "mom_pct": 450.0
+    },
+    {
+      "make": "FORD",
+      "model": "COURIER",
+      "latest_count": 10,
+      "prev_count": 15,
+      "mom_pct": -33.3
+    },
+    {
+      "make": "KG MOBILITY",
+      "model": "TORRES",
+      "latest_count": 10,
+      "prev_count": 13,
+      "mom_pct": -23.1
+    },
+    {
+      "make": "MASERATI",
+      "model": "GRECALE",
+      "latest_count": 10,
+      "prev_count": 8,
+      "mom_pct": 25.0
+    },
+    {
+      "make": "MG",
+      "model": "S6",
+      "latest_count": 10,
+      "prev_count": 150,
+      "mom_pct": -93.3
+    },
+    {
+      "make": "PORSCHE",
+      "model": "CAYENNE ELECTRIC",
+      "latest_count": 10,
+      "prev_count": 16,
+      "mom_pct": -37.5
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "CARAVELLE",
+      "latest_count": 10,
+      "prev_count": 7,
+      "mom_pct": 42.9
+    },
+    {
+      "make": "AUDI",
+      "model": "E-TRON",
+      "latest_count": 9,
+      "prev_count": 1,
+      "mom_pct": 500
+    },
+    {
+      "make": "AUDI",
+      "model": "S E-TRON",
+      "latest_count": 9,
+      "prev_count": 10,
+      "mom_pct": -10.0
+    },
+    {
+      "make": "BMW",
+      "model": "4",
+      "latest_count": 9,
+      "prev_count": 11,
+      "mom_pct": -18.2
+    },
+    {
+      "make": "CITROEN",
+      "model": "E-SPACETOURER",
+      "latest_count": 9,
+      "prev_count": 8,
+      "mom_pct": 12.5
+    },
+    {
+      "make": "LEXUS",
+      "model": "RZ500E",
+      "latest_count": 9,
+      "prev_count": 14,
+      "mom_pct": -35.7
+    },
+    {
+      "make": "VOLVO",
+      "model": "FH",
+      "latest_count": 9,
+      "prev_count": 14,
+      "mom_pct": -35.7
+    },
+    {
+      "make": "CITROEN",
+      "model": "Ë-C3 ELÉCTRICO 200 YOU",
+      "latest_count": 8,
+      "prev_count": 3,
+      "mom_pct": 166.7
+    },
+    {
+      "make": "CITROEN",
+      "model": "Ë-C3 ELÉCTRICO PLUS CO",
+      "latest_count": 8,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "CITROEN",
+      "model": "Ë-C3 ELÉCTRICO YOU",
+      "latest_count": 8,
+      "prev_count": 5,
+      "mom_pct": 60.0
+    },
+    {
+      "make": "DS",
+      "model": "N 7",
+      "latest_count": 8,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "KG MOBILITY",
+      "model": "MUSSO",
+      "latest_count": 8,
+      "prev_count": 5,
+      "mom_pct": 60.0
+    },
+    {
+      "make": "LEXUS",
+      "model": "LEXUS ES500E",
+      "latest_count": 8,
+      "prev_count": 9,
+      "mom_pct": -11.1
+    },
+    {
+      "make": "LEXUS",
+      "model": "LEXUS RZ550E",
+      "latest_count": 8,
+      "prev_count": 8,
+      "mom_pct": 0.0
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "CLA 250",
+      "latest_count": 8,
+      "prev_count": 3,
+      "mom_pct": 166.7
+    },
+    {
+      "make": "MG",
+      "model": "MG4 EV",
+      "latest_count": 8,
+      "prev_count": 13,
+      "mom_pct": -38.5
+    },
+    {
+      "make": "NIO",
+      "model": "EL6",
+      "latest_count": 8,
+      "prev_count": 18,
+      "mom_pct": -55.6
+    },
+    {
+      "make": "OPEL",
+      "model": "COMBO CARGO ELECTRIC 8",
+      "latest_count": 8,
+      "prev_count": 4,
+      "mom_pct": 100.0
+    },
+    {
+      "make": "SKYWORTH",
+      "model": "SKYWORTH K",
+      "latest_count": 8,
+      "prev_count": 14,
+      "mom_pct": -42.9
+    },
+    {
+      "make": "AUDI",
+      "model": "Q4 SB E-TRON PERFORMANCE",
+      "latest_count": 7,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "CADILLAC",
+      "model": "LYRIQ",
+      "latest_count": 7,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "DS",
+      "model": "N 4",
+      "latest_count": 7,
+      "prev_count": 3,
+      "mom_pct": 133.3
+    },
+    {
+      "make": "FARIZON",
+      "model": "FARIZON SV",
+      "latest_count": 7,
+      "prev_count": 6,
+      "mom_pct": 16.7
+    },
+    {
+      "make": "FARIZON",
+      "model": "SV L3H3",
+      "latest_count": 7,
+      "prev_count": 9,
+      "mom_pct": -22.2
+    },
+    {
+      "make": "FAW",
+      "model": "EHS5",
+      "latest_count": 7,
+      "prev_count": 14,
+      "mom_pct": -50.0
+    },
+    {
+      "make": "NIO",
+      "model": "FIREFLY",
+      "latest_count": 7,
+      "prev_count": 33,
+      "mom_pct": -78.8
+    },
+    {
+      "make": "OPEL",
+      "model": "COMBO ELECTRIC N1 M 50",
+      "latest_count": 7,
+      "prev_count": 1,
+      "mom_pct": 500
+    },
+    {
+      "make": "VOLVO",
+      "model": "XC40",
+      "latest_count": 7,
+      "prev_count": 284,
+      "mom_pct": -97.5
+    },
+    {
+      "make": "YUTONG",
+      "model": "T14E",
+      "latest_count": 7,
+      "prev_count": 5,
+      "mom_pct": 40.0
+    },
+    {
+      "make": "CITROEN",
+      "model": "E-DISPATCH",
+      "latest_count": 6,
+      "prev_count": 11,
+      "mom_pct": -45.5
+    },
+    {
+      "make": "DANGEL",
+      "model": "E-PARTNER 4WD",
+      "latest_count": 6,
+      "prev_count": 6,
+      "mom_pct": 0.0
+    },
+    {
+      "make": "DS",
+      "model": "N 7 ÉTOILE E-TENSE FWD",
+      "latest_count": 6,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "EXLANTIX",
+      "model": "ES",
+      "latest_count": 6,
+      "prev_count": 2,
+      "mom_pct": 200.0
+    },
+    {
+      "make": "JAC",
+      "model": "E-JS4",
+      "latest_count": 6,
+      "prev_count": 7,
+      "mom_pct": -14.3
+    },
+    {
+      "make": "MAXUS",
+      "model": "EUNIQ 6",
+      "latest_count": 6,
+      "prev_count": 10,
+      "mom_pct": -40.0
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "GLB 200",
+      "latest_count": 6,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "E-5008 GT EXCLUSIVE EL",
+      "latest_count": 6,
+      "prev_count": 1,
+      "mom_pct": 500.0
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "E-BOXER",
+      "latest_count": 6,
+      "prev_count": 5,
+      "mom_pct": 20.0
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "E-PARTNER - DOBLE CABÍ",
+      "latest_count": 6,
+      "prev_count": 2,
+      "mom_pct": 200.0
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID.BUZZ 4MOTION KR 250 KW",
+      "latest_count": 6,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "OTHER",
+      "latest_count": 6,
+      "prev_count": 30,
+      "mom_pct": -80.0
+    },
+    {
+      "make": "VOLVO",
+      "model": "EX60 (TEST SERIES)",
+      "latest_count": 6,
+      "prev_count": 64,
+      "mom_pct": -90.6
+    },
+    {
+      "make": "XPENG",
+      "model": "P7",
+      "latest_count": 6,
+      "prev_count": 75,
+      "mom_pct": -92.0
+    },
+    {
+      "make": "AUDI",
+      "model": "Q4 SB E-TRON QUATTRO",
+      "latest_count": 5,
+      "prev_count": 2,
+      "mom_pct": 150.0
+    },
+    {
+      "make": "DENZA",
+      "model": "DENZA Z9GT EV",
+      "latest_count": 5,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "FIAT",
+      "model": "E-SCUDO",
+      "latest_count": 5,
+      "prev_count": 23,
+      "mom_pct": -78.3
+    },
+    {
+      "make": "ISUZU",
+      "model": "D-MAX",
+      "latest_count": 5,
+      "prev_count": 13,
+      "mom_pct": -61.5
+    },
+    {
+      "make": "JEEP",
+      "model": "GRAND CHEROKEE",
+      "latest_count": 5,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "MITSUBISHI",
+      "model": "ECLIPSE",
+      "latest_count": 5,
+      "prev_count": 11,
+      "mom_pct": -54.5
+    },
+    {
+      "make": "OPEL",
+      "model": "ZAFIRA-E",
+      "latest_count": 5,
+      "prev_count": 16,
+      "mom_pct": -68.8
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "ALLIED EHORIZON",
+      "latest_count": 5,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "E_RIFTER ALLURE BUSINE",
+      "latest_count": 5,
+      "prev_count": 11,
+      "mom_pct": -54.5
+    },
+    {
+      "make": "VAUXHALL",
+      "model": "ASTRA",
+      "latest_count": 5,
+      "prev_count": 12,
+      "mom_pct": -58.3
+    },
+    {
+      "make": "BMW",
+      "model": "X",
+      "latest_count": 4,
+      "prev_count": 6,
+      "mom_pct": -33.3
+    },
+    {
+      "make": "CITROEN",
+      "model": "Ë-C3 ELÉCTRICO 200 PLU",
+      "latest_count": 4,
+      "prev_count": 3,
+      "mom_pct": 33.3
+    },
+    {
+      "make": "CITROEN",
+      "model": "NEW MULTISPACE",
+      "latest_count": 4,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "CUPRA",
+      "model": "BORN 150 KW 60/63 KWH",
+      "latest_count": 4,
+      "prev_count": 5,
+      "mom_pct": -20.0
+    },
+    {
+      "make": "DS",
+      "model": "N?7",
+      "latest_count": 4,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "FARIZON",
+      "model": "FARIZON SUPERVAN",
+      "latest_count": 4,
+      "prev_count": 22,
+      "mom_pct": -81.8
+    },
+    {
+      "make": "HYUNDAI",
+      "model": "IONIQ6 N",
+      "latest_count": 4,
+      "prev_count": 4,
+      "mom_pct": 0.0
+    },
+    {
+      "make": "ISUZU",
+      "model": "D-MAX V-CROSS",
+      "latest_count": 4,
+      "prev_count": 16,
+      "mom_pct": -75.0
+    },
+    {
+      "make": "KG MOBILITY",
+      "model": "KG MOBILITY TORRES EVX",
+      "latest_count": 4,
+      "prev_count": 1,
+      "mom_pct": 300.0
+    },
+    {
+      "make": "MAXUS",
+      "model": "T90",
+      "latest_count": 4,
+      "prev_count": 6,
+      "mom_pct": -33.3
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "ACTROS",
+      "latest_count": 4,
+      "prev_count": 18,
+      "mom_pct": -77.8
+    },
+    {
+      "make": "NIO",
+      "model": "EL8",
+      "latest_count": 4,
+      "prev_count": 2,
+      "mom_pct": 100.0
+    },
+    {
+      "make": "NIO",
+      "model": "ET5",
+      "latest_count": 4,
+      "prev_count": 2,
+      "mom_pct": 100.0
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "E-3008 GT EXCLUSIVE EL",
+      "latest_count": 4,
+      "prev_count": 3,
+      "mom_pct": 33.3
+    },
+    {
+      "make": "SCANIA",
+      "model": "R 400E",
+      "latest_count": 4,
+      "prev_count": 3,
+      "mom_pct": 33.3
+    },
+    {
+      "make": "VOLVO",
+      "model": "FM",
+      "latest_count": 4,
+      "prev_count": 13,
+      "mom_pct": -69.2
+    },
+    {
+      "make": "ABARTH",
+      "model": "500E",
+      "latest_count": 3,
+      "prev_count": 6,
+      "mom_pct": -50.0
+    },
+    {
+      "make": "AUDI",
+      "model": "RS E-TRON",
+      "latest_count": 3,
+      "prev_count": 7,
+      "mom_pct": -57.1
+    },
+    {
+      "make": "BMW",
+      "model": "I7 60 XDRIVE",
+      "latest_count": 3,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "BYD",
+      "model": "HAN",
+      "latest_count": 3,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "DANGEL",
+      "model": "EXPERT 4WD",
+      "latest_count": 3,
+      "prev_count": 2,
+      "mom_pct": 50.0
+    },
+    {
+      "make": "DFSK",
+      "model": "SERES 3",
+      "latest_count": 3,
+      "prev_count": 1,
+      "mom_pct": 200.0
+    },
+    {
+      "make": "DS",
+      "model": "N°8",
+      "latest_count": 3,
+      "prev_count": 2,
+      "mom_pct": 50.0
+    },
+    {
+      "make": "FARIZON",
+      "model": "V7E",
+      "latest_count": 3,
+      "prev_count": 1,
+      "mom_pct": 200.0
+    },
+    {
+      "make": "FENIKS",
+      "model": "ESPRINTER",
+      "latest_count": 3,
+      "prev_count": 2,
+      "mom_pct": 50.0
+    },
+    {
+      "make": "IVECO",
+      "model": "MOOVY",
+      "latest_count": 3,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "MAN",
+      "model": "eTGS",
+      "latest_count": 3,
+      "prev_count": 5,
+      "mom_pct": -40.0
+    },
+    {
+      "make": "MASERATI",
+      "model": "GRAN TURISMO",
+      "latest_count": 3,
+      "prev_count": 1,
+      "mom_pct": 200.0
+    },
+    {
+      "make": "MAXUS",
+      "model": "EV80",
+      "latest_count": 3,
+      "prev_count": 4,
+      "mom_pct": -25.0
+    },
+    {
+      "make": "MAXUS",
+      "model": "SV63D-C",
+      "latest_count": 3,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "MITSUBISHI",
+      "model": "ECLIPSE CROSS 87 KWH K",
+      "latest_count": 3,
+      "prev_count": 2,
+      "mom_pct": 50.0
+    },
+    {
+      "make": "OPEL",
+      "model": "MOVANO-E",
+      "latest_count": 3,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "E-2008 GT EXCLUSIVE EL",
+      "latest_count": 3,
+      "prev_count": 2,
+      "mom_pct": 50.0
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "E-208 5P GT EXCLUSIVE",
+      "latest_count": 3,
+      "prev_count": 4,
+      "mom_pct": -25.0
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "E-5008 GT ELÉCTRICO 21",
+      "latest_count": 3,
+      "prev_count": 4,
+      "mom_pct": -25.0
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "E-PARTNER - FURGÓN XL",
+      "latest_count": 3,
+      "prev_count": 5,
+      "mom_pct": -40.0
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "NUEVO E-3008 GT EXCLUS",
+      "latest_count": 3,
+      "prev_count": 1,
+      "mom_pct": 200.0
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "NUEVO E-308 5P ALLURE",
+      "latest_count": 3,
+      "prev_count": 1,
+      "mom_pct": 200.0
+    },
+    {
+      "make": "POLARIS",
+      "model": "RANGER",
+      "latest_count": 3,
+      "prev_count": 1,
+      "mom_pct": 200.0
+    },
+    {
+      "make": "PORSCHE",
+      "model": "CAYENNE TURBO ELECTRIC",
+      "latest_count": 3,
+      "prev_count": 3,
+      "mom_pct": 0.0
+    },
+    {
+      "make": "SILA",
+      "model": "E-TECH MASTER",
+      "latest_count": 3,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "SSANGYONG",
+      "model": "TORRES",
+      "latest_count": 3,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID CROSS",
+      "latest_count": 3,
+      "prev_count": 2,
+      "mom_pct": 50.0
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID POLO",
+      "latest_count": 3,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID. Buzz GTX LR 250KW",
+      "latest_count": 3,
+      "prev_count": 26,
+      "mom_pct": -88.5
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID.POLO",
+      "latest_count": 3,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "VOLVO",
+      "model": "FMX",
+      "latest_count": 3,
+      "prev_count": 1,
+      "mom_pct": 200.0
+    },
+    {
+      "make": "ADDAX",
+      "model": "MT15",
+      "latest_count": 2,
+      "prev_count": 1,
+      "mom_pct": 100.0
+    },
+    {
+      "make": "AUDI",
+      "model": "Q4 SB E-TRON",
+      "latest_count": 2,
+      "prev_count": 1,
+      "mom_pct": 100.0
+    },
+    {
+      "make": "BMW",
+      "model": "5",
+      "latest_count": 2,
+      "prev_count": 5,
+      "mom_pct": -60.0
+    },
+    {
+      "make": "CAN-AM",
+      "model": "BRP",
+      "latest_count": 2,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "CITROEN",
+      "model": "AMI",
+      "latest_count": 2,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "DFSK",
+      "model": "EC75",
+      "latest_count": 2,
+      "prev_count": 2,
+      "mom_pct": 0.0
+    },
+    {
+      "make": "DS",
+      "model": "DS NO. 8",
+      "latest_count": 2,
+      "prev_count": 1,
+      "mom_pct": 100.0
+    },
+    {
+      "make": "DS",
+      "model": "DS9",
+      "latest_count": 2,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "DS",
+      "model": "N 8 FWD LONG RANGE ÉTO",
+      "latest_count": 2,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "ERKE",
+      "model": "KANGOO ERKE",
+      "latest_count": 2,
+      "prev_count": 4,
+      "mom_pct": -50.0
+    },
+    {
+      "make": "ERKE",
+      "model": "PROACE ERKE",
+      "latest_count": 2,
+      "prev_count": 2,
+      "mom_pct": 0.0
+    },
+    {
+      "make": "EXLANTIX",
+      "model": "EXLANTIX ES",
+      "latest_count": 2,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "EXLANTIX",
+      "model": "EXLANTIX ET",
+      "latest_count": 2,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "FARIZON",
+      "model": "SV L2H2",
+      "latest_count": 2,
+      "prev_count": 5,
+      "mom_pct": -60.0
+    },
+    {
+      "make": "FAW",
+      "model": "HONGQI EHS7",
+      "latest_count": 2,
+      "prev_count": 6,
+      "mom_pct": -66.7
+    },
+    {
+      "make": "FIREFLY",
+      "model": "COMFORT",
+      "latest_count": 2,
+      "prev_count": 2,
+      "mom_pct": 0.0
+    },
+    {
+      "make": "GENESIS",
+      "model": "G80",
+      "latest_count": 2,
+      "prev_count": 1,
+      "mom_pct": 100.0
+    },
+    {
+      "make": "GENESIS",
+      "model": "GV60 MAGMA",
+      "latest_count": 2,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "HONDA",
+      "model": "ENY1 ELEGANCE",
+      "latest_count": 2,
+      "prev_count": 4,
+      "mom_pct": -50.0
+    },
+    {
+      "make": "HYUNDAI",
+      "model": "IONIQ",
+      "latest_count": 2,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "IVECO",
+      "model": "72C14E",
+      "latest_count": 2,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "JAC",
+      "model": "ES4",
+      "latest_count": 2,
+      "prev_count": 2,
+      "mom_pct": 0.0
+    },
+    {
+      "make": "KANDI",
+      "model": "INNOVATOR",
+      "latest_count": 2,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "LEXUS",
+      "model": "ES350E",
+      "latest_count": 2,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "LEXUS",
+      "model": "ES500E",
+      "latest_count": 2,
+      "prev_count": 7,
+      "mom_pct": -71.4
+    },
+    {
+      "make": "LUCID",
+      "model": "AIR",
+      "latest_count": 2,
+      "prev_count": 20,
+      "mom_pct": -90.0
+    },
+    {
+      "make": "LUCID",
+      "model": "Lucid Gravity",
+      "latest_count": 2,
+      "prev_count": 7,
+      "mom_pct": -71.4
+    },
+    {
+      "make": "MAXUS",
+      "model": "e DELIVER 9",
+      "latest_count": 2,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "MAXUS",
+      "model": "EUNIQ 5",
+      "latest_count": 2,
+      "prev_count": 5,
+      "mom_pct": -60.0
+    },
+    {
+      "make": "MELEX",
+      "model": "N30 P6",
+      "latest_count": 2,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "EQT",
+      "latest_count": 2,
+      "prev_count": 4,
+      "mom_pct": -50.0
+    },
+    {
+      "make": "MOKE",
+      "model": "MOKE",
+      "latest_count": 2,
+      "prev_count": 4,
+      "mom_pct": -50.0
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "E-EXPERT FURGÓN XL ELÉ",
+      "latest_count": 2,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "NUEVO E-408 GT EXCLUSI",
+      "latest_count": 2,
+      "prev_count": 1,
+      "mom_pct": 100.0
+    },
+    {
+      "make": "PIAGGIO",
+      "model": "PORTER",
+      "latest_count": 2,
+      "prev_count": 2,
+      "mom_pct": 0.0
+    },
+    {
+      "make": "SCANIA",
+      "model": "R 450E",
+      "latest_count": 2,
+      "prev_count": 1,
+      "mom_pct": 100.0
+    },
+    {
+      "make": "SIN MARCA",
+      "model": "FRONTERA GS ELECTRIC 4",
+      "latest_count": 2,
+      "prev_count": 1,
+      "mom_pct": 100.0
+    },
+    {
+      "make": "SKYWELL",
+      "model": "BE11",
+      "latest_count": 2,
+      "prev_count": 1,
+      "mom_pct": 100.0
+    },
+    {
+      "make": "SORTIMO",
+      "model": "PROACE CITY SORTIMO",
+      "latest_count": 2,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID. POLO",
+      "latest_count": 2,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "VOYAH",
+      "model": "FREE",
+      "latest_count": 2,
+      "prev_count": 4,
+      "mom_pct": -50.0
+    },
+    {
+      "make": "",
+      "model": "13300",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "CADILLAC",
+      "model": "OPTIC",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "CITROEN",
+      "model": "Ë-C3 ELÉCTRICO YOU CON",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "CITROEN",
+      "model": "Ë-JUMPY FURGÓN XL ELÉC",
+      "latest_count": 1,
+      "prev_count": 10,
+      "mom_pct": -90.0
+    },
+    {
+      "make": "CITROEN",
+      "model": "E-RELAY",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "CITROEN",
+      "model": "JUMPY FURGÓN M ELÉCTRI",
+      "latest_count": 1,
+      "prev_count": 1,
+      "mom_pct": 0.0
+    },
+    {
+      "make": "CITROEN",
+      "model": "NEW C5 AIRCROSS ELECTR",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "CITROEN",
+      "model": "NUEVO CITROËN Ë-C3 COM",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "CITROEN",
+      "model": "NUEVO Ë-C4 ELÉCTRICO E",
+      "latest_count": 1,
+      "prev_count": 1,
+      "mom_pct": 0.0
+    },
+    {
+      "make": "COINPOL",
+      "model": "EXPERT COINPOL",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "DANGEL",
+      "model": "COMBO-E CARGO 4WD",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "DESIGNWERK",
+      "model": "MC8X2R",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "DIVERSE",
+      "model": "DIVERSE",
+      "latest_count": 1,
+      "prev_count": 4,
+      "mom_pct": -75.0
+    },
+    {
+      "make": "DS",
+      "model": "3",
+      "latest_count": 1,
+      "prev_count": 1,
+      "mom_pct": 0.0
+    },
+    {
+      "make": "DS",
+      "model": "DS3 E-TENSE JULES VERN",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "DS",
+      "model": "N 7 FWD ÉTOILE",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "DS",
+      "model": "N 8 AWD LONG RANGE ÉTO",
+      "latest_count": 1,
+      "prev_count": 6,
+      "mom_pct": -83.3
+    },
+    {
+      "make": "DS",
+      "model": "N 8 AWD LONG RANGE JUL",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "DS",
+      "model": "N?4",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "DS",
+      "model": "N?8",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "DS",
+      "model": "N8",
+      "latest_count": 1,
+      "prev_count": 2,
+      "mom_pct": -50.0
+    },
+    {
+      "make": "ERKE",
+      "model": "BERLINGO ERKE",
+      "latest_count": 1,
+      "prev_count": 4,
+      "mom_pct": -75.0
+    },
+    {
+      "make": "ETESIA",
+      "model": "ET LANDER",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "EVOLUTION",
+      "model": "DEL2023DUB EEC",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "FARIZON",
+      "model": "1136Y12",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "FARIZON",
+      "model": "V7E L1H1",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "FARIZON AUTO",
+      "model": "V7E",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "FIAT",
+      "model": "E-ULYSSE",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "FIAT",
+      "model": "TOPOLINO",
+      "latest_count": 1,
+      "prev_count": 2,
+      "mom_pct": -50.0
+    },
+    {
+      "make": "FORD",
+      "model": "TRANSIT CUSTOM PASSE",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "FORTHING",
+      "model": "T5",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "GOUPIL",
+      "model": "G4+",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "HDK",
+      "model": "HDK",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "HISUN",
+      "model": "0",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "HONGQI",
+      "model": "EH7",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "IVECO",
+      "model": "35S14E",
+      "latest_count": 1,
+      "prev_count": 2,
+      "mom_pct": -50.0
+    },
+    {
+      "make": "IVECO",
+      "model": "DAILY",
+      "latest_count": 1,
+      "prev_count": 3,
+      "mom_pct": -66.7
+    },
+    {
+      "make": "JIA JI",
+      "model": "JJ2000DBP",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "KANDI",
+      "model": "COWBOY",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "KARSAN",
+      "model": "E-JEST BXCEM",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "KG MOBILITY",
+      "model": "MUSSO EVX",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "KYC",
+      "model": "V5",
+      "latest_count": 1,
+      "prev_count": 1,
+      "mom_pct": 0.0
+    },
+    {
+      "make": "LUCID",
+      "model": "MOTORS LUCID",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "LYNK CO",
+      "model": "02",
+      "latest_count": 1,
+      "prev_count": 3,
+      "mom_pct": -66.7
+    },
+    {
+      "make": "MAN",
+      "model": "E TGS",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "MAXUS",
+      "model": "E-TERRON",
+      "latest_count": 1,
+      "prev_count": 8,
+      "mom_pct": -87.5
+    },
+    {
+      "make": "MAXUS",
+      "model": "EV30",
+      "latest_count": 1,
+      "prev_count": 4,
+      "mom_pct": -75.0
+    },
+    {
+      "make": "MEBAUTO",
+      "model": "PROACE  MEBAUTO",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "MEBAUTO",
+      "model": "PROACE MAX MEBAUTO",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "AMG EQS",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "EQS SUV",
+      "latest_count": 1,
+      "prev_count": 3,
+      "mom_pct": -66.7
+    },
+    {
+      "make": "MERCUS",
+      "model": "MB Sprinter",
+      "latest_count": 1,
+      "prev_count": 1,
+      "mom_pct": 0.0
+    },
+    {
+      "make": "MICRO",
+      "model": "MICROLINO",
+      "latest_count": 1,
+      "prev_count": 1,
+      "mom_pct": 0.0
+    },
+    {
+      "make": "NISSAN",
+      "model": "NISSAN JUKE",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "OPEL",
+      "model": "COMBO ELECTRIC XL GS 1",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "E-RIFTER ACTIVE BUSINE",
+      "latest_count": 1,
+      "prev_count": 3,
+      "mom_pct": -66.7
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "EXPERT - TRAVELLER",
+      "latest_count": 1,
+      "prev_count": 1,
+      "mom_pct": 0.0
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "NUEVO E-308 5P GT ELÉC",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "NUEVO E-308 5P STYLE E",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "POLESTAR",
+      "model": "4 (TEST SERIES)",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "PORSCHE",
+      "model": "CAYENNE S COUPÉ ELECTRIC",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "PORSCHE",
+      "model": "CAYENNE TURBO COUPÉ ELECTRIC",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "PORSCHE",
+      "model": "TAYCAN BLACK EDITION",
+      "latest_count": 1,
+      "prev_count": 2,
+      "mom_pct": -50.0
+    },
+    {
+      "make": "PORSCHE",
+      "model": "TAYCAN SPORT TURISMO BLACK EDITION",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "RENAULT",
+      "model": "E-TECH",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "RENAULT TRUCKS",
+      "model": "MASTER",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "RENAULT TRUCKS",
+      "model": "TRAFIC 30",
+      "latest_count": 1,
+      "prev_count": 2,
+      "mom_pct": -50.0
+    },
+    {
+      "make": "SANY",
+      "model": "SY1380T2BEV",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "SCANIA",
+      "model": "R400E",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "SERES",
+      "model": "3",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "SHINERAY",
+      "model": "N.A.",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "SIN MARCA",
+      "model": "Ë-C3 ELÉCTRICO MAX",
+      "latest_count": 1,
+      "prev_count": 1,
+      "mom_pct": 0.0
+    },
+    {
+      "make": "SIN MARCA",
+      "model": "Ë-C3 ELÉCTRICO PLUS",
+      "latest_count": 1,
+      "prev_count": 2,
+      "mom_pct": -50.0
+    },
+    {
+      "make": "SIN MARCA",
+      "model": "E-PARTNER - DOBLE CABÍ",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "SIN MARCA",
+      "model": "E-RIFTER GT STANDARD 1",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "SIN MARCA",
+      "model": "NUEVO Ë-C4 ELÉCTRICO 1",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "SORTIMO",
+      "model": "VITO SORTIMO",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "TESLA",
+      "model": "MODEL S",
+      "latest_count": 1,
+      "prev_count": 63,
+      "mom_pct": -98.4
+    },
+    {
+      "make": "TESLA",
+      "model": "MODEL X",
+      "latest_count": 1,
+      "prev_count": 53,
+      "mom_pct": -98.1
+    },
+    {
+      "make": "VAUXHALL",
+      "model": "MOVANO-E 40",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ETRANSPORTER STYLE",
+      "latest_count": 1,
+      "prev_count": 6,
+      "mom_pct": -83.3
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID. BUZZ PURE KR 125 K",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID.BUZZ 4MOTION KR 250",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID.BUZZ 4MOTION LR 250",
+      "latest_count": 1,
+      "prev_count": 1,
+      "mom_pct": 0.0
+    },
+    {
+      "make": "VOYAH",
+      "model": "DREAM",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    },
+    {
+      "make": "YULONG MOTORS",
+      "model": "JJ2000DBP",
+      "latest_count": 1,
+      "prev_count": 1,
+      "mom_pct": 0.0
+    },
+    {
+      "make": "ZAGO AUTOMOTIVE",
+      "model": "CORSA VAN ZAGO",
+      "latest_count": 1,
+      "prev_count": 3,
+      "mom_pct": -66.7
+    },
+    {
+      "make": "ZEROID",
+      "model": "ZEROID EV15",
+      "latest_count": 1,
+      "prev_count": 0,
+      "mom_pct": 0
+    }
+  ]
+}

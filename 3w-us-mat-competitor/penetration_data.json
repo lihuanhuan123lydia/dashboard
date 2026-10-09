@@ -1,0 +1,568 @@
+{
+  "source": "3W 渗透率数据",
+  "scraped_at": "2026-06-03",
+  "period": "2026-04",
+  "models": [
+    {
+      "model": "Cadillac XT4",
+      "penetration_pct": 34.38,
+      "penetration_change_pct": -8.32,
+      "sales": 11.0,
+      "car_sales": 32.0,
+      "brand_group": "Chevrolet"
+    },
+    {
+      "model": "Jeep Grand Wagoneer",
+      "penetration_pct": 33.92,
+      "penetration_change_pct": 23.57,
+      "sales": 77.0,
+      "car_sales": 227.0,
+      "brand_group": "Jeep"
+    },
+    {
+      "model": "Tesla Model S",
+      "penetration_pct": 22.8,
+      "penetration_change_pct": 42.5,
+      "sales": 114.0,
+      "car_sales": 500.0,
+      "brand_group": "Tesla"
+    },
+    {
+      "model": "Tesla Model X",
+      "penetration_pct": 22.0,
+      "penetration_change_pct": 57.14,
+      "sales": 154.0,
+      "car_sales": 700.0,
+      "brand_group": "Tesla"
+    },
+    {
+      "model": "Tesla Model Y",
+      "penetration_pct": 19.16,
+      "penetration_change_pct": 6.31,
+      "sales": 3928.0,
+      "car_sales": 20500.0,
+      "brand_group": "Tesla"
+    },
+    {
+      "model": "Lexus ES",
+      "penetration_pct": 14.21,
+      "penetration_change_pct": 112.09,
+      "sales": 26.0,
+      "car_sales": 183.0,
+      "brand_group": "Toyota"
+    },
+    {
+      "model": "Benz CLA",
+      "penetration_pct": 9.77,
+      "penetration_change_pct": -21.84,
+      "sales": 59.0,
+      "car_sales": 604.0,
+      "brand_group": "Mercedes"
+    },
+    {
+      "model": "Ford Bronco",
+      "penetration_pct": 8.49,
+      "penetration_change_pct": -40.5,
+      "sales": 1449.0,
+      "car_sales": 17073.0,
+      "brand_group": "Ford"
+    },
+    {
+      "model": "Chevrolet Suburban",
+      "penetration_pct": 8.05,
+      "penetration_change_pct": -11.54,
+      "sales": 321.0,
+      "car_sales": 3989.0,
+      "brand_group": "Chevrolet"
+    },
+    {
+      "model": "短轴tahoe/yukon/escalade",
+      "penetration_pct": 6.97,
+      "penetration_change_pct": 10.81,
+      "sales": 694.0,
+      "car_sales": 9951.0,
+      "brand_group": "Chevrolet"
+    },
+    {
+      "model": "BMW IX",
+      "penetration_pct": 6.83,
+      "penetration_change_pct": 23.73,
+      "sales": 51.0,
+      "car_sales": 747.0,
+      "brand_group": "BMW"
+    },
+    {
+      "model": "Hyundai IONIQ 5",
+      "penetration_pct": 6.61,
+      "penetration_change_pct": 3572.22,
+      "sales": 238.0,
+      "car_sales": 3603.0,
+      "brand_group": "Hyundai"
+    },
+    {
+      "model": "Jaguar F-pace",
+      "penetration_pct": 6.51,
+      "penetration_change_pct": -35.93,
+      "sales": 20.0,
+      "car_sales": 307.0,
+      "brand_group": "Other"
+    },
+    {
+      "model": "Tesla Model 3",
+      "penetration_pct": 6.17,
+      "penetration_change_pct": 2.86,
+      "sales": 617.0,
+      "car_sales": 10000.0,
+      "brand_group": "Tesla"
+    },
+    {
+      "model": "Tesla Cybertruck",
+      "penetration_pct": 6.0,
+      "penetration_change_pct": -48.67,
+      "sales": 132.0,
+      "car_sales": 2200.0,
+      "brand_group": "Tesla"
+    },
+    {
+      "model": "Toyota Sienna",
+      "penetration_pct": 5.6,
+      "penetration_change_pct": -2.44,
+      "sales": 529.0,
+      "car_sales": 9448.0,
+      "brand_group": "Toyota"
+    },
+    {
+      "model": "Acura MDX",
+      "penetration_pct": 4.61,
+      "penetration_change_pct": 24.59,
+      "sales": 194.0,
+      "car_sales": 4211.0,
+      "brand_group": "Honda"
+    },
+    {
+      "model": "Subaru Crosstrek/Impreza",
+      "penetration_pct": 4.36,
+      "penetration_change_pct": -10.47,
+      "sales": 63.0,
+      "car_sales": 1444.0,
+      "brand_group": "Subaru"
+    },
+    {
+      "model": "Lexus GX460",
+      "penetration_pct": 3.91,
+      "penetration_change_pct": -2.49,
+      "sales": 73.0,
+      "car_sales": 1868.0,
+      "brand_group": "Toyota"
+    },
+    {
+      "model": "Benz G-Class",
+      "penetration_pct": 3.82,
+      "penetration_change_pct": -7.28,
+      "sales": 37.0,
+      "car_sales": 968.0,
+      "brand_group": "Mercedes"
+    },
+    {
+      "model": "Ford Expedition",
+      "penetration_pct": 3.41,
+      "penetration_change_pct": 6.9,
+      "sales": 230.0,
+      "car_sales": 6751.0,
+      "brand_group": "Ford"
+    },
+    {
+      "model": "Benz GLB",
+      "penetration_pct": 3.06,
+      "penetration_change_pct": -16.85,
+      "sales": 36.0,
+      "car_sales": 1178.0,
+      "brand_group": "Mercedes"
+    },
+    {
+      "model": "Range Rover Velar",
+      "penetration_pct": 2.8,
+      "penetration_change_pct": 0.72,
+      "sales": 13.0,
+      "car_sales": 464.0,
+      "brand_group": "Land Rover"
+    },
+    {
+      "model": "Honda Odyssey",
+      "penetration_pct": 2.78,
+      "penetration_change_pct": 14.88,
+      "sales": 207.0,
+      "car_sales": 7449.0,
+      "brand_group": "Honda"
+    },
+    {
+      "model": "BMW X2",
+      "penetration_pct": 2.71,
+      "penetration_change_pct": 148.62,
+      "sales": 14.0,
+      "car_sales": 517.0,
+      "brand_group": "BMW"
+    },
+    {
+      "model": "Ford F-Series",
+      "penetration_pct": 2.55,
+      "penetration_change_pct": -7.27,
+      "sales": 1460.0,
+      "car_sales": 57249.0,
+      "brand_group": "Ford"
+    },
+    {
+      "model": "Nissan Pathfinder",
+      "penetration_pct": 2.41,
+      "penetration_change_pct": -16.9,
+      "sales": 284.0,
+      "car_sales": 11786.0,
+      "brand_group": "Nissan"
+    },
+    {
+      "model": "Porsche Cayenne",
+      "penetration_pct": 2.28,
+      "penetration_change_pct": -30.28,
+      "sales": 46.0,
+      "car_sales": 2014.0,
+      "brand_group": "Porsche"
+    },
+    {
+      "model": "Toyota Grand Highlander",
+      "penetration_pct": 2.01,
+      "penetration_change_pct": 39.58,
+      "sales": 284.0,
+      "car_sales": 14096.0,
+      "brand_group": "Toyota"
+    },
+    {
+      "model": "Honda Pilot",
+      "penetration_pct": 1.77,
+      "penetration_change_pct": -9.69,
+      "sales": 198.0,
+      "car_sales": 11156.0,
+      "brand_group": "Honda"
+    },
+    {
+      "model": "Volvo XC60",
+      "penetration_pct": 1.63,
+      "penetration_change_pct": -35.32,
+      "sales": 57.0,
+      "car_sales": 3500.0,
+      "brand_group": "Volvo"
+    },
+    {
+      "model": "Honda Prologue",
+      "penetration_pct": 1.59,
+      "penetration_change_pct": 9.66,
+      "sales": 24.0,
+      "car_sales": 1508.0,
+      "brand_group": "Honda"
+    },
+    {
+      "model": "BMW X6",
+      "penetration_pct": 1.56,
+      "penetration_change_pct": -9.3,
+      "sales": 18.0,
+      "car_sales": 1151.0,
+      "brand_group": "BMW"
+    },
+    {
+      "model": "Nissan Murano",
+      "penetration_pct": 1.37,
+      "penetration_change_pct": -10.46,
+      "sales": 46.0,
+      "car_sales": 3368.0,
+      "brand_group": "Nissan"
+    },
+    {
+      "model": "Nissan Armada",
+      "penetration_pct": 1.37,
+      "penetration_change_pct": -16.46,
+      "sales": 20.0,
+      "car_sales": 1459.0,
+      "brand_group": "Nissan"
+    },
+    {
+      "model": "Porsche Macan",
+      "penetration_pct": 1.29,
+      "penetration_change_pct": 13.16,
+      "sales": 29.0,
+      "car_sales": 2251.0,
+      "brand_group": "Porsche"
+    },
+    {
+      "model": "Santa Cruz",
+      "penetration_pct": 1.27,
+      "penetration_change_pct": 76.39,
+      "sales": 24.0,
+      "car_sales": 1885.0,
+      "brand_group": "Other"
+    },
+    {
+      "model": "Cadillac XT5",
+      "penetration_pct": 1.23,
+      "penetration_change_pct": -41.43,
+      "sales": 26.0,
+      "car_sales": 2117.0,
+      "brand_group": "Chevrolet"
+    },
+    {
+      "model": "Acura RDX",
+      "penetration_pct": 1.14,
+      "penetration_change_pct": -47.47,
+      "sales": 29.0,
+      "car_sales": 2538.0,
+      "brand_group": "Honda"
+    },
+    {
+      "model": "Ford Mustang Mach E",
+      "penetration_pct": 1.12,
+      "penetration_change_pct": -34.12,
+      "sales": 30.0,
+      "car_sales": 2670.0,
+      "brand_group": "Ford"
+    },
+    {
+      "model": "Kia Telluride",
+      "penetration_pct": 1.08,
+      "penetration_change_pct": -14.29,
+      "sales": 136.0,
+      "car_sales": 12577.0,
+      "brand_group": "Kia"
+    },
+    {
+      "model": "Nissan Frontier",
+      "penetration_pct": 1.06,
+      "penetration_change_pct": -29.8,
+      "sales": 74.0,
+      "car_sales": 6952.0,
+      "brand_group": "Nissan"
+    },
+    {
+      "model": "Chevrolet Silverado&GMC Sierra",
+      "penetration_pct": 1.03,
+      "penetration_change_pct": -5.5,
+      "sales": 791.0,
+      "car_sales": 76835.0,
+      "brand_group": "Chevrolet"
+    },
+    {
+      "model": "Nissan Altima",
+      "penetration_pct": 1.01,
+      "penetration_change_pct": -19.84,
+      "sales": 60.0,
+      "car_sales": 5962.0,
+      "brand_group": "Nissan"
+    },
+    {
+      "model": "Jeep Cherokee",
+      "penetration_pct": 1.01,
+      "penetration_change_pct": -62.73,
+      "sales": 21.0,
+      "car_sales": 2076.0,
+      "brand_group": "Jeep"
+    },
+    {
+      "model": "Audi Q7/Audi Q8",
+      "penetration_pct": 0.95,
+      "penetration_change_pct": -20.17,
+      "sales": 22.0,
+      "car_sales": 2313.0,
+      "brand_group": "Audi"
+    },
+    {
+      "model": "Mazda CX50",
+      "penetration_pct": 0.88,
+      "penetration_change_pct": 131.58,
+      "sales": 72.0,
+      "car_sales": 8201.0,
+      "brand_group": "Mazda"
+    },
+    {
+      "model": "Ford Explorer",
+      "penetration_pct": 0.7,
+      "penetration_change_pct": 4.48,
+      "sales": 149.0,
+      "car_sales": 21191.0,
+      "brand_group": "Ford"
+    },
+    {
+      "model": "Toyota 4 Runner/Lexus GX460",
+      "penetration_pct": 0.7,
+      "penetration_change_pct": -9.09,
+      "sales": 84.0,
+      "car_sales": 11929.0,
+      "brand_group": "Toyota"
+    },
+    {
+      "model": "Kia EV6",
+      "penetration_pct": 0.69,
+      "penetration_change_pct": -61.88,
+      "sales": 5.0,
+      "car_sales": 728.0,
+      "brand_group": "Kia"
+    },
+    {
+      "model": "Kia sorento",
+      "penetration_pct": 0.66,
+      "penetration_change_pct": -17.5,
+      "sales": 60.0,
+      "car_sales": 9109.0,
+      "brand_group": "Kia"
+    },
+    {
+      "model": "Hyundai Sonata",
+      "penetration_pct": 0.62,
+      "penetration_change_pct": -19.48,
+      "sales": 44.0,
+      "car_sales": 7105.0,
+      "brand_group": "Hyundai"
+    },
+    {
+      "model": "Honda Passport",
+      "penetration_pct": 0.61,
+      "penetration_change_pct": -10.29,
+      "sales": 33.0,
+      "car_sales": 5447.0,
+      "brand_group": "Honda"
+    },
+    {
+      "model": "Mazda CX-5",
+      "penetration_pct": 0.6,
+      "penetration_change_pct": 25.0,
+      "sales": 61.0,
+      "car_sales": 10206.0,
+      "brand_group": "Mazda"
+    },
+    {
+      "model": "Jeep Compass",
+      "penetration_pct": 0.56,
+      "penetration_change_pct": -32.53,
+      "sales": 37.0,
+      "car_sales": 6590.0,
+      "brand_group": "Jeep"
+    },
+    {
+      "model": "BMW X7",
+      "penetration_pct": 0.55,
+      "penetration_change_pct": -11.29,
+      "sales": 14.0,
+      "car_sales": 2550.0,
+      "brand_group": "BMW"
+    },
+    {
+      "model": "Honda HR-V",
+      "penetration_pct": 0.51,
+      "penetration_change_pct": -7.27,
+      "sales": 63.0,
+      "car_sales": 12264.0,
+      "brand_group": "Honda"
+    },
+    {
+      "model": "Rivian R1S",
+      "penetration_pct": 0.5,
+      "penetration_change_pct": 233.33,
+      "sales": 5.0,
+      "car_sales": 1008.0,
+      "brand_group": "Rivian"
+    },
+    {
+      "model": "Chevrolet Trax",
+      "penetration_pct": 0.47,
+      "penetration_change_pct": 30.56,
+      "sales": 85.0,
+      "car_sales": 18084.0,
+      "brand_group": "Chevrolet"
+    },
+    {
+      "model": "Kia Sportage",
+      "penetration_pct": 0.47,
+      "penetration_change_pct": -32.86,
+      "sales": 75.0,
+      "car_sales": 15803.0,
+      "brand_group": "Kia"
+    },
+    {
+      "model": "Ford Escape",
+      "penetration_pct": 0.46,
+      "penetration_change_pct": -4.17,
+      "sales": 23.0,
+      "car_sales": 5050.0,
+      "brand_group": "Ford"
+    },
+    {
+      "model": "Subaru Outback",
+      "penetration_pct": 0.38,
+      "penetration_change_pct": -48.65,
+      "sales": 40.0,
+      "car_sales": 10552.0,
+      "brand_group": "Subaru"
+    },
+    {
+      "model": "Chevrolet trailblazer",
+      "penetration_pct": 0.36,
+      "penetration_change_pct": -14.29,
+      "sales": 38.0,
+      "car_sales": 10667.0,
+      "brand_group": "Chevrolet"
+    },
+    {
+      "model": "Hyundai Kona",
+      "penetration_pct": 0.34,
+      "penetration_change_pct": -66.0,
+      "sales": 23.0,
+      "car_sales": 6706.0,
+      "brand_group": "Hyundai"
+    },
+    {
+      "model": "Nissan kick",
+      "penetration_pct": 0.28,
+      "penetration_change_pct": -28.21,
+      "sales": 25.0,
+      "car_sales": 8924.0,
+      "brand_group": "Nissan"
+    },
+    {
+      "model": "Hyundai Tucson",
+      "penetration_pct": 0.25,
+      "penetration_change_pct": -26.47,
+      "sales": 56.0,
+      "car_sales": 22024.0,
+      "brand_group": "Hyundai"
+    },
+    {
+      "model": "Toyota Highlander",
+      "penetration_pct": 0.25,
+      "penetration_change_pct": -13.79,
+      "sales": 16.0,
+      "car_sales": 6456.0,
+      "brand_group": "Toyota"
+    },
+    {
+      "model": "Hyundai Elantra",
+      "penetration_pct": 0.19,
+      "penetration_change_pct": -9.52,
+      "sales": 28.0,
+      "car_sales": 14778.0,
+      "brand_group": "Hyundai"
+    },
+    {
+      "model": "Toyota Corrola",
+      "penetration_pct": 0.18,
+      "penetration_change_pct": -5.26,
+      "sales": 45.0,
+      "car_sales": 25312.0,
+      "brand_group": "Toyota"
+    },
+    {
+      "model": "Hyundai Palisade",
+      "penetration_pct": 0.06,
+      "penetration_change_pct": -14.29,
+      "sales": 7.0,
+      "car_sales": 11324.0,
+      "brand_group": "Hyundai"
+    }
+  ],
+  "total_models": 70
+}

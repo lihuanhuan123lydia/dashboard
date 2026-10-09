@@ -2,6 +2,20 @@
 
 原封不动复刻 [dashboard.dmdmnow.com/new_products_viewer.html](https://dashboard.dmdmnow.com/new_products_viewer.html) 的竞品新品监控面板，数据自动同步，并在 Lasfit 上架新车型脚垫时自动推送到飞书群「车型匹配&新品下单」。
 
+## 面板导航（2026-10-09 起全部走 GitHub Pages）
+
+老域名（dashboard.dmdmnow.com / wolfbox.dmdmnow.com）已停用，面板按业务名迁移到以下路径：
+
+| 业务名 | 新地址 | 原地址 |
+|---|---|---|
+| 3W-EU-UK客户车型需求 | [/3w-eu-uk-vehicle-needs/](https://lihuanhuan123lydia.github.io/dmdmnow-dashboard/3w-eu-uk-vehicle-needs/) | dashboard.dmdmnow.com/3w-eu/ |
+| WB-US改装车型需求 | [/wb-us-gear-vehicle-needs/](https://lihuanhuan123lydia.github.io/dmdmnow-dashboard/wb-us-gear-vehicle-needs/) | dashboard.dmdmnow.com/analysis.html |
+| 3W-US客户车型需求 | [/3w-us-vehicle-needs/](https://lihuanhuan123lydia.github.io/dmdmnow-dashboard/3w-us-vehicle-needs/) | dashboard.dmdmnow.com/3w/ |
+| 3W-US脚垫竞品分析 | [/3w-us-mat-competitor/](https://lihuanhuan123lydia.github.io/dmdmnow-dashboard/3w-us-mat-competitor/) | dashboard.dmdmnow.com/（首页） |
+| WB论坛监控面板 | [/wb-forum-monitor/](https://lihuanhuan123lydia.github.io/dmdmnow-dashboard/wb-forum-monitor/) | wolfbox.dmdmnow.com/ |
+
+旧路径（`/3w-eu/`、`/analysis.html`、`/3w/`、`/`、`/wolfbox/`）保留并自动跳转到新地址，外部收藏不会 404。
+
 ## 文件
 
 - `new_products_viewer.html` — 面板页面（与原站 1:1 一致）

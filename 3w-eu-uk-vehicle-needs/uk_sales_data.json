@@ -1,0 +1,528 @@
+{
+  "source": "3W UK",
+  "total_models": 58,
+  "sales": [
+    {
+      "model": "Kia Sportage",
+      "month": 12.0,
+      "car_sales": 7310,
+      "penetration_pct": 0.16,
+      "change_pct": 83.33,
+      "ytd_change_pct": 0,
+      "brand_group": "Kia"
+    },
+    {
+      "model": "Nissan Qashqai",
+      "month": 60.0,
+      "car_sales": 8718,
+      "penetration_pct": 0.69,
+      "change_pct": -63.33,
+      "ytd_change_pct": 0,
+      "brand_group": "Nissan"
+    },
+    {
+      "model": "Volkswagen Tiguan",
+      "month": 16.0,
+      "car_sales": 4215,
+      "penetration_pct": 0.38,
+      "change_pct": 0,
+      "ytd_change_pct": 0,
+      "brand_group": "Volkswagen"
+    },
+    {
+      "model": "Land Rover Defender",
+      "month": 189.0,
+      "car_sales": 4729,
+      "penetration_pct": 4.0,
+      "change_pct": -42.86,
+      "ytd_change_pct": 0,
+      "brand_group": "Land Rover"
+    },
+    {
+      "model": "Audi A3",
+      "month": 1.0,
+      "car_sales": 3396,
+      "penetration_pct": 0.03,
+      "change_pct": -100.0,
+      "ytd_change_pct": 0,
+      "brand_group": "Audi"
+    },
+    {
+      "model": "Tesla Model Y",
+      "month": 398.0,
+      "car_sales": 5177,
+      "penetration_pct": 7.69,
+      "change_pct": -14.38,
+      "ytd_change_pct": 0,
+      "brand_group": "Tesla"
+    },
+    {
+      "model": "Peugeot 3008",
+      "month": 12.0,
+      "car_sales": 3278,
+      "penetration_pct": 0.37,
+      "change_pct": -33.33,
+      "ytd_change_pct": 0,
+      "brand_group": "Peugeot"
+    },
+    {
+      "model": "Tesla Model 3",
+      "month": 257.0,
+      "car_sales": 3422,
+      "penetration_pct": 7.51,
+      "change_pct": 3.23,
+      "ytd_change_pct": 0,
+      "brand_group": "Tesla"
+    },
+    {
+      "model": "Range Rover Sport",
+      "month": 116.0,
+      "car_sales": 3204,
+      "penetration_pct": 3.62,
+      "change_pct": -75.0,
+      "ytd_change_pct": 0,
+      "brand_group": "Range Rover"
+    },
+    {
+      "model": "MINI COUNTRYMAN",
+      "month": 15.0,
+      "car_sales": 2823,
+      "penetration_pct": 0.53,
+      "change_pct": -60.0,
+      "ytd_change_pct": 0,
+      "brand_group": "MINI"
+    },
+    {
+      "model": "Benz GLC",
+      "month": 9.0,
+      "car_sales": 2454,
+      "penetration_pct": 0.37,
+      "change_pct": -9.09,
+      "ytd_change_pct": 0,
+      "brand_group": "Benz"
+    },
+    {
+      "model": "Range Rover Evoque",
+      "month": 63.0,
+      "car_sales": 2352,
+      "penetration_pct": 2.68,
+      "change_pct": -34.92,
+      "ytd_change_pct": 0,
+      "brand_group": "Range Rover"
+    },
+    {
+      "model": "BMW X1",
+      "month": 34.0,
+      "car_sales": 2465,
+      "penetration_pct": 1.38,
+      "change_pct": -29.41,
+      "ytd_change_pct": 0,
+      "brand_group": "BMW"
+    },
+    {
+      "model": "Volvo XC60",
+      "month": 117.0,
+      "car_sales": 2395,
+      "penetration_pct": 4.89,
+      "change_pct": -36.75,
+      "ytd_change_pct": 0,
+      "brand_group": "Volvo"
+    },
+    {
+      "model": "SKODA Kodiaq",
+      "month": 9.0,
+      "car_sales": 1901,
+      "penetration_pct": 0.47,
+      "change_pct": -11.11,
+      "ytd_change_pct": 0,
+      "brand_group": "Skoda"
+    },
+    {
+      "model": "BMW 3 Series",
+      "month": 4.0,
+      "car_sales": 2025,
+      "penetration_pct": 0.2,
+      "change_pct": -25.0,
+      "ytd_change_pct": 0,
+      "brand_group": "BMW"
+    },
+    {
+      "model": "Ford Ranger",
+      "month": 56.0,
+      "car_sales": 2094,
+      "penetration_pct": 2.67,
+      "change_pct": -23.21,
+      "ytd_change_pct": 0,
+      "brand_group": "Ford"
+    },
+    {
+      "model": "Benz GLA",
+      "month": 3.0,
+      "car_sales": 1535,
+      "penetration_pct": 0.2,
+      "change_pct": 33.33,
+      "ytd_change_pct": 0,
+      "brand_group": "Benz"
+    },
+    {
+      "model": "Audi Q3",
+      "month": 2.0,
+      "car_sales": 1713,
+      "penetration_pct": 0.12,
+      "change_pct": 150.0,
+      "ytd_change_pct": 0,
+      "brand_group": "Audi"
+    },
+    {
+      "model": "Volkswagen ID.3",
+      "month": 2.0,
+      "car_sales": 1423,
+      "penetration_pct": 0.14,
+      "change_pct": 100.0,
+      "ytd_change_pct": 0,
+      "brand_group": "Volkswagen"
+    },
+    {
+      "model": "BMW X5",
+      "month": 68.0,
+      "car_sales": 1782,
+      "penetration_pct": 3.82,
+      "change_pct": -38.24,
+      "ytd_change_pct": 0,
+      "brand_group": "BMW"
+    },
+    {
+      "model": "Porsche Macan",
+      "month": 19.0,
+      "car_sales": 1402,
+      "penetration_pct": 1.36,
+      "change_pct": -68.42,
+      "ytd_change_pct": 0,
+      "brand_group": "Porsche"
+    },
+    {
+      "model": "Range Rover",
+      "month": 1.0,
+      "car_sales": 1451,
+      "penetration_pct": 0.07,
+      "change_pct": -7.14,
+      "ytd_change_pct": 0,
+      "brand_group": "Range Rover"
+    },
+    {
+      "model": "Land Rover Discovery Sport",
+      "month": 23.0,
+      "car_sales": 1197,
+      "penetration_pct": 1.92,
+      "change_pct": -73.91,
+      "ytd_change_pct": 0,
+      "brand_group": "Land Rover"
+    },
+    {
+      "model": "BMW X3",
+      "month": 26.0,
+      "car_sales": 1067,
+      "penetration_pct": 2.44,
+      "change_pct": -15.62,
+      "ytd_change_pct": 0,
+      "brand_group": "BMW"
+    },
+    {
+      "model": "Nissan X-Trail",
+      "month": 12.0,
+      "car_sales": 1309,
+      "penetration_pct": 0.92,
+      "change_pct": -75.0,
+      "ytd_change_pct": 0,
+      "brand_group": "Nissan"
+    },
+    {
+      "model": "Benz C-Class",
+      "month": 4.0,
+      "car_sales": 1087,
+      "penetration_pct": 0.37,
+      "change_pct": 25.0,
+      "ytd_change_pct": 0,
+      "brand_group": "Benz"
+    },
+    {
+      "model": "Audi Q5",
+      "month": 2.0,
+      "car_sales": 1039,
+      "penetration_pct": 0.19,
+      "change_pct": -50.0,
+      "ytd_change_pct": 0,
+      "brand_group": "Audi"
+    },
+    {
+      "model": "Audi A6",
+      "month": 2.0,
+      "car_sales": 1015,
+      "penetration_pct": 0.2,
+      "change_pct": 0.0,
+      "ytd_change_pct": 0,
+      "brand_group": "Audi"
+    },
+    {
+      "model": "BMW IX1",
+      "month": 19.0,
+      "car_sales": 700,
+      "penetration_pct": 2.71,
+      "change_pct": 47.37,
+      "ytd_change_pct": 0,
+      "brand_group": "BMW"
+    },
+    {
+      "model": "Lexus NX",
+      "month": 7.0,
+      "car_sales": 824,
+      "penetration_pct": 0.85,
+      "change_pct": -42.86,
+      "ytd_change_pct": 0,
+      "brand_group": "Lexus"
+    },
+    {
+      "model": "Volkswagen ID.7",
+      "month": 27.0,
+      "car_sales": 771,
+      "penetration_pct": 3.5,
+      "change_pct": -18.52,
+      "ytd_change_pct": 0,
+      "brand_group": "Volkswagen"
+    },
+    {
+      "model": "Benz GLB",
+      "month": 14.0,
+      "car_sales": 693,
+      "penetration_pct": 2.02,
+      "change_pct": -57.14,
+      "ytd_change_pct": 0,
+      "brand_group": "Benz"
+    },
+    {
+      "model": "BMW IX",
+      "month": 54.0,
+      "car_sales": 603,
+      "penetration_pct": 8.96,
+      "change_pct": -12.96,
+      "ytd_change_pct": 0,
+      "brand_group": "BMW"
+    },
+    {
+      "model": "Hyundai IONIQ 5",
+      "month": 10.0,
+      "car_sales": 561,
+      "penetration_pct": 1.78,
+      "change_pct": 10.0,
+      "ytd_change_pct": 0,
+      "brand_group": "Hyundai"
+    },
+    {
+      "model": "Honda CR-V",
+      "month": 26.0,
+      "car_sales": 642,
+      "penetration_pct": 4.05,
+      "change_pct": -42.31,
+      "ytd_change_pct": 0,
+      "brand_group": "Honda"
+    },
+    {
+      "model": "BYD ATTO 3 Yuan Plus",
+      "month": 4.0,
+      "car_sales": 413,
+      "penetration_pct": 0.97,
+      "change_pct": -25.0,
+      "ytd_change_pct": 0,
+      "brand_group": "BYD"
+    },
+    {
+      "model": "Porsche Cayenne",
+      "month": 3.0,
+      "car_sales": 476,
+      "penetration_pct": 0.63,
+      "change_pct": -33.33,
+      "ytd_change_pct": 0,
+      "brand_group": "Porsche"
+    },
+    {
+      "model": "Benz GLE",
+      "month": 14.0,
+      "car_sales": 539,
+      "penetration_pct": 2.6,
+      "change_pct": 7.14,
+      "ytd_change_pct": 0,
+      "brand_group": "Benz"
+    },
+    {
+      "model": "BMW X7",
+      "month": 6.0,
+      "car_sales": 356,
+      "penetration_pct": 1.69,
+      "change_pct": 0.0,
+      "ytd_change_pct": 0,
+      "brand_group": "BMW"
+    },
+    {
+      "model": "Volkswagen Touareg",
+      "month": 10.0,
+      "car_sales": 252,
+      "penetration_pct": 3.97,
+      "change_pct": -100.0,
+      "ytd_change_pct": 0,
+      "brand_group": "Volkswagen"
+    },
+    {
+      "model": "BMW IX3",
+      "month": 32.0,
+      "car_sales": 425,
+      "penetration_pct": 7.53,
+      "change_pct": -25.0,
+      "ytd_change_pct": 0,
+      "brand_group": "BMW"
+    },
+    {
+      "model": "Ford Mustang Mach E",
+      "month": 1.0,
+      "car_sales": 337,
+      "penetration_pct": 0.3,
+      "change_pct": 200.0,
+      "ytd_change_pct": 0,
+      "brand_group": "Ford"
+    },
+    {
+      "model": "Benz G-Class",
+      "month": 3.0,
+      "car_sales": 296,
+      "penetration_pct": 1.01,
+      "change_pct": -66.67,
+      "ytd_change_pct": 0,
+      "brand_group": "Benz"
+    },
+    {
+      "model": "BMW 7 Series",
+      "month": 0,
+      "car_sales": 109,
+      "penetration_pct": 0.0,
+      "change_pct": 0,
+      "ytd_change_pct": 0,
+      "brand_group": "BMW"
+    },
+    {
+      "model": "BMW X6",
+      "month": 1.0,
+      "car_sales": 66,
+      "penetration_pct": 1.52,
+      "change_pct": 0.0,
+      "ytd_change_pct": 0,
+      "brand_group": "BMW"
+    },
+    {
+      "model": "Audi A4",
+      "month": 0.0,
+      "car_sales": 0,
+      "penetration_pct": 0,
+      "change_pct": 0,
+      "ytd_change_pct": 0,
+      "brand_group": "Audi"
+    },
+    {
+      "model": "BMW 5 Series",
+      "month": 4.0,
+      "car_sales": 0,
+      "penetration_pct": 0,
+      "change_pct": 300.0,
+      "ytd_change_pct": 0,
+      "brand_group": "BMW"
+    },
+    {
+      "model": "Benz E-Class",
+      "month": 2.0,
+      "car_sales": 0,
+      "penetration_pct": 0,
+      "change_pct": -33.33,
+      "ytd_change_pct": 0,
+      "brand_group": "Benz"
+    },
+    {
+      "model": "MINI HATCH",
+      "month": 31.0,
+      "car_sales": 0,
+      "penetration_pct": 0,
+      "change_pct": 3.33,
+      "ytd_change_pct": 0,
+      "brand_group": "MINI"
+    },
+    {
+      "model": "Skoda ELroq",
+      "month": 2.0,
+      "car_sales": 0,
+      "penetration_pct": 0,
+      "change_pct": 0,
+      "ytd_change_pct": 0,
+      "brand_group": "Skoda"
+    },
+    {
+      "model": "Suzuki Jimny",
+      "month": 10.0,
+      "car_sales": 0,
+      "penetration_pct": 0,
+      "change_pct": -50.0,
+      "ytd_change_pct": 0,
+      "brand_group": "Suzuki"
+    },
+    {
+      "model": "Tesla Cybertruck",
+      "month": 0.0,
+      "car_sales": 0,
+      "penetration_pct": 0,
+      "change_pct": 0,
+      "ytd_change_pct": 0,
+      "brand_group": "Tesla"
+    },
+    {
+      "model": "Tesla Model S",
+      "month": 1.0,
+      "car_sales": 0,
+      "penetration_pct": 0,
+      "change_pct": 0,
+      "ytd_change_pct": 0,
+      "brand_group": "Tesla"
+    },
+    {
+      "model": "Tesla Model X",
+      "month": 0.0,
+      "car_sales": 0,
+      "penetration_pct": 0,
+      "change_pct": -100.0,
+      "ytd_change_pct": 0,
+      "brand_group": "Tesla"
+    },
+    {
+      "model": "Toyota Hilux",
+      "month": 33.0,
+      "car_sales": 0,
+      "penetration_pct": 0,
+      "change_pct": -19.51,
+      "ytd_change_pct": 0,
+      "brand_group": "Toyota"
+    },
+    {
+      "model": "Toyota RAV4",
+      "month": 38.0,
+      "car_sales": 0,
+      "penetration_pct": 0,
+      "change_pct": -41.54,
+      "ytd_change_pct": 0,
+      "brand_group": "Toyota"
+    },
+    {
+      "model": "Volkswagen ID.4",
+      "month": 8.0,
+      "car_sales": 0,
+      "penetration_pct": 0,
+      "change_pct": 33.33,
+      "ytd_change_pct": 0,
+      "brand_group": "Volkswagen"
+    }
+  ]
+}

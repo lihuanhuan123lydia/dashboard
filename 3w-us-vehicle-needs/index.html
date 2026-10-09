@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="dark">
+<head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta http-equiv="Cache-Control" content="no-cache">
+<title>3W-US客户车型需求</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0b0d14;--bg2:#131621;--card:#1a1e2e;--hover:#24283b;--text:#e8eaf0;--t2:#8892a8;--tm:#5a6378;--accent:#3b82f6;--border:#262a3d;--sbw:175px}
+body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;display:flex}
+::-webkit-scrollbar{width:3px}::-webkit-scrollbar-track:var(--bg)::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px}
+.sidebar{width:var(--sbw);min-height:100vh;background:var(--bg2);border-right:1px solid var(--border);padding:12px 6px;flex-shrink:0;display:flex;flex-direction:column}
+.sidebar .brand{font-size:.85rem;font-weight:800;padding:2px 8px 8px;border-bottom:1px solid var(--border);margin-bottom:6px}
+.sidebar .brand span{background:linear-gradient(135deg,#60a5fa,#22c55e);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.sl{font-size:.55rem;font-weight:600;text-transform:uppercase;letter-spacing:.04em;color:var(--tm);padding:5px 8px 2px}
+.fb{display:flex;align-items:center;gap:4px;width:100%;padding:4px 7px;border-radius:4px;cursor:pointer;font-size:.66rem;font-weight:500;color:var(--t2);background:0;border:0;text-align:left;transition:.1s;margin-bottom:1px}
+.fb:hover{background:var(--hover);color:var(--text)}
+.fb.act{background:rgba(59,130,246,.12);color:#93c5fd}
+.fb .n{font-size:.53rem;background:rgba(255,255,255,.06);padding:0 5px;border-radius:3px;margin-left:auto;color:var(--tm)}
+.new-badge{background:rgba(59,130,246,.12);color:#93c5fd;padding:0 5px;border-radius:3px;font-size:.48rem;margin-left:auto}
+.sd{height:1px;background:var(--border);margin:4px 6px}
+.main{flex:1;padding:12px 16px;overflow-y:auto;max-height:100vh}
+
+/* Stat card */
+.sc{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:8px 10px;text-align:center}
+.sc .sv{font-size:1.1rem;font-weight:700}
+.sc .sl{font-size:.53rem;color:var(--tm);letter-spacing:.03em}
+
+/* Progress bar row */
+.br{display:flex;align-items:center;gap:5px;padding:2px 0;font-size:.66rem}
+.bt{flex:1;height:16px;background:var(--bg);border-radius:3px;overflow:hidden}
+.bf{height:100%;border-radius:3px;display:flex;align-items:center;padding-left:4px;font-size:.52rem;font-weight:600;color:#fff;min-width:20px;transition:width .5s}
+
+/* Category card */
+.cc{background:var(--card);border:1px solid var(--border);border-radius:7px;margin-bottom:6px;overflow:hidden}
+.cc-h{display:flex;align-items:center;gap:6px;padding:6px 10px;font-size:.72rem;font-weight:600;cursor:pointer;user-select:none}
+.cc-h:hover{filter:brightness(1.1)}
+.cc-b{padding:4px 10px 8px}
+
+/* Dev status badges */
+.badge{display:inline-flex;padding:0 5px;border-radius:3px;font-size:.5rem;font-weight:600;white-space:nowrap}
+.b-dev-online{background:rgba(34,197,94,.15);color:#86efac}
+.b-dev-dev{background:rgba(249,115,22,.15);color:#fdba74}
+.b-dev-prod{background:rgba(59,130,246,.15);color:#93c5fd}
+.b-dev-pending{background:rgba(107,114,128,.15);color:#9ca3af}
+.b-dev-reject{background:rgba(239,68,68,.12);color:#fca5a5}
+.b-dev-old{background:rgba(234,179,8,.12);color:#fde047}
+.b-dev-na{background:rgba(107,114,128,.08);color:#6b7280}
+
+.rank-badge{display:inline-flex;align-items:center;justify-content:center;border-radius:3px;padding:0 5px;font-size:.5rem;font-weight:700;min-width:16px;text-align:center}
+.store-tab{padding:3px 10px;border-radius:4px;font-size:.6rem;font-weight:500;cursor:pointer;border:1px solid var(--border);background:transparent;color:var(--t2);transition:.12s}
+.store-tab:hover{border-color:var(--accent);color:var(--text)}
+.store-tab.active{border-color:var(--accent);background:rgba(59,130,246,.12);color:#93c5fd}
+.hover-row:hover{background:rgba(255,255,255,.05)}
+
+.cc .ar{font-size:.5rem;transition:transform .2s;color:var(--tm);cursor:pointer}
+.cc.cl .ar{transform:rotate(-90deg)}
+.cc.cl .cc-b{display:none}
+
+.loading{padding:30px;text-align:center;color:var(--tm)}
+.loading .sp{width:16px;height:16px;border:2px solid rgba(255,255,255,.08);border-top-color:var(--accent);border-radius:50%;animation:s .7s linear infinite;margin:0 auto 4px}
+@keyframes s{to{transform:rotate(360deg)}}
+
+@media(max-width:700px){.sidebar{display:none}.main{padding:8px}}
+</style>
+</head>
+<body>
+
+<aside class="sidebar">
+  <div class="brand"><span>3W 脚垫</span> 车型需求</div>
+  <div style="flex:1;overflow-y:auto" id="sb"></div>
+  <div class="sd"></div>
+  <div class="text-[.52rem] text-gray-600 px-2 py-1">
+    <div id="ut">-</div>
+    <button class="text-[.52rem] text-green-400 bg-transparent border-0 cursor-pointer hover:text-green-300" onclick="refreshDashboard()">🔄 刷新</button>
+  </div>
+</aside>
+
+<div class="main">
+  <div class="flex items-center gap-2 mb-3 flex-wrap" id="topBar"></div>
+  <div id="refreshStatusBar" class="text-[.55rem] text-gray-500 mb-2 text-center" style="display:none"></div>
+  <div class="flex items-center gap-2 mb-3 flex-wrap" id="filterBar">
+    <button class="store-tab active" onclick="sf2('all')" data-s="all">📋 全部车型</button>
+    <button class="store-tab" onclick="sf2('dev')" data-s="dev">🔧 开发中/未上线</button>
+    <button class="store-tab" onclick="sf2('live')" data-s="live">✅ 已上线</button>
+  </div>
+  <div id="body"></div>
+</div>
+
+<script>
+let D, af='all', makes={}, store='all';
+
+function getModels() {
+  const models = D.models;
+  if (store === 'dev') return models.filter(m => {
+    const s = (m.dev_status||'') + ' ' + (m.notes||'');
+    return !(s.includes('上线')||s.includes('在售')||s.includes('可售')||s.includes('已上市'));
+  });
+  if (store === 'live') return models.filter(m => {
+    const s = (m.dev_status||'') + ' ' + (m.notes||'');
+    return s.includes('上线')||s.includes('在售')||s.includes('可售')||s.includes('已上市');
+  });
+  return models;
+}
+function sf2(s) {
+  store = s;
+  document.querySelectorAll('#filterBar .store-tab').forEach(b => b.classList.toggle('active', b.getAttribute('data-s') === s));
+  rn();
+}
+
+// Dev status classification
+function devClass(s) {
+  if (!s) return 'b-dev-pending';
+  const l = s.toLowerCase();
+  if (l.includes('上线')||l.includes('可售')||l.includes('在售')) return 'b-dev-online';
+  if (l.includes('开发')||l.includes('生产')||l.includes('立项')||l.includes('预售')) return 'b-dev-dev';
+  if (l.includes('不开')||l.includes('N/A')||l.includes('未通过')||l.includes('没通过')) return 'b-dev-reject';
+  if (l.includes('老年份')||l.includes('老年分')) return 'b-dev-old';
+  if (l.includes('提需求')) return 'b-dev-prod';
+  return 'b-dev-pending';
+}
+function devLabel(s) {
+  if (!s) return '待处理';
+  return s;
+}
+
+async function ld() {
+  try {
+    const r = await fetch('dashboard_data.json?_t='+Date.now());
+    D = await r.json();
+    const {models} = D;
+    
+    // Build make index
+    makes = {};
+    models.forEach(m => {
+      if (!makes[m.make]) makes[m.make] = {count:0, people:0, models:[]};
+      makes[m.make].count++;
+      makes[m.make].people += m.people_count;
+      makes[m.make].models.push(m);
+    });
+    
+    document.getElementById('ut').textContent = '📅 '+(D.updated_at||'-');
+    rn();
+  } catch(e) {
+    document.getElementById('body').innerHTML = '<div class="loading"><div class="sp"></div>加载失败</div>';
+  }
+}
+
+function rn() {
+  const {models, total_models, total_people, total_makes} = D;
+  const ms = getModels();
+  
+  // Dev progress from notes (开发进度备注)
+  const devStats = {};
+  ms.forEach(m => {
+    const n = m.notes || '';
+    // Extract key status from notes
+    let key = '待处理';
+    if (n.includes('🏁已上市') || n.includes('已上线') || n.includes('可售') || n.includes('在售')) key = '🏁已上线';
+    else if (n.includes('🔴延期')) key = '🔴延期中';
+    else if (n.includes('🟢正常推进')) key = '🟢正常推进';
+    else if (n.includes('✅已完成') || n.includes('已完成')) key = '✅已完成';
+    else if (m.dev_status && (m.dev_status.includes('上线') || m.dev_status.includes('可售') || m.dev_status.includes('在售'))) key = '🏁已上线';
+    else if (m.dev_status && (m.dev_status.includes('开发') || m.dev_status.includes('延期'))) key = '🔧开发中';
+    
+    devStats[key] = devStats[key] || {count:0, people:0, models:[]};
+    devStats[key].count++;
+    devStats[key].people += m.people_count;
+    if (devStats[key].models.length < 3) devStats[key].models.push(m.model);
+  });
+  
+  // Make rankings
+  const mkSorted = Object.entries(makes).sort((a,b) => b[1].people - a[1].people);
+  const maxPeople = Math.max(1, mkSorted[0]?.[1].people || 1);
+  
+  // Colors
+  const bc = ['#3b82f6','#f97316','#8b5cf6','#10b981','#ec4899','#14b8a6','#f59e0b','#6366f1','#a855f7','#ef4444'];
+  
+  // Sidebar
+  document.getElementById('sb').innerHTML = `
+    <div class="sl">品牌</div>
+    <button class="fb act" onclick="sf('all')"><span class="d" style="display:inline-block;width:5px;height:5px;border-radius:50%;background:#60a5fa"></span>概览<span class="n">${ms.length}</span></button>
+    ${mkSorted.slice(0,30).map(([mk],i)=>`<button class="fb" onclick="sf('${mk}')"><span class="d" style="display:inline-block;width:5px;height:5px;border-radius:50%;background:${bc[i%bc.length]}"></span>${mk}<span class="n">${makes[mk].count}</span></button>`).join('')}
+    ${mkSorted.length > 30 ? `<div class="text-[.45rem] text-center text-gray-600 py-1">+${mkSorted.length-30} 更多品牌</div>` : ''}
+  `;
+  
+  document.getElementById('topBar').innerHTML = `
+    <h1 class="text-base font-bold">🟩 3W 脚垫 - 车型需求分析</h1>
+    <span class="text-[.55rem] bg-green-900/30 text-green-300 px-2 py-0.5 rounded-full">${total_models} 车型</span>
+    <span class="text-[.55rem] bg-blue-900/30 text-blue-300 px-2 py-0.5 rounded-full">${total_makes} 品牌</span>
+    <span class="text-[.55rem] bg-purple-900/30 text-purple-300 px-2 py-0.5 rounded-full">${total_people} 人提交</span>
+  `;
+
+  // === OVERVIEW ===
+  if (af === 'all') {
+    const topMax = Math.max(1, ms[0]?.people_count || 1);
+    const top = ms.slice(0, 50); // Show top 50
+    
+    // Dev status badge
+    const devOrder = ['b-dev-online','b-dev-dev','b-dev-prod','b-dev-pending','b-dev-reject','b-dev-old','b-dev-na'];
+    const devSorted = Object.entries(devStats).sort((a,b) => {
+      const ai = devOrder.findIndex(d => d === devClass(a[0]?"":"")); // simpler: just sort by people
+      return b[1].people - a[1].people;
+    });
+    
+    document.getElementById('body').innerHTML = `
+    <!-- Stats -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-2 mb-3">
+      <div class="sc"><div class="sv">${ms.length}</div><div class="sl">车型需求（归一化）</div></div>
+      <div class="sc"><div class="sv">${D.total_makes}</div><div class="sl">涉及品牌</div></div>
+      <div class="sc"><div class="sv">${D.total_people}</div><div class="sl">累计提交人数</div></div>
+      <div class="sc"><div class="sv">${Object.keys(devStats).length}</div><div class="sl">开发状态类别</div></div>
+    </div>
+
+    <!-- 2027 Year Overview (collapsed by default) -->
+    <div class="cc mb-3 cl" style="border-color:rgba(139,92,246,.2);background:linear-gradient(135deg,rgba(139,92,246,.04),transparent)">
+      <div class="cc-h" onclick="toggleSection(this)" style="cursor:pointer"><span class="ar">▼</span><span style="font-size:.85rem">🚀</span>2027年车型提交概览<span class="text-[.6rem] opacity-70 ml-2">${D.year_2027?.total||0} 条 · ${D.year_2027?.models||0} 车型</span></div>
+      <div class="cc-b">${D.year_2027 && D.year_2027.data ? `
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-2 mb-3">
+          <div class="sc"><div class="sv">${D.year_2027.total}</div><div class="sl">27年提交数</div></div>
+          <div class="sc"><div class="sv">${D.year_2027.models}</div><div class="sl">涉及车型</div></div>
+          <div class="sc"><div class="sv">${D.year_2027.makes}</div><div class="sl">涉及品牌</div></div>
+          <div class="sc"><div class="sv">${D.year_2027.data.length?Math.round(D.year_2027.data[0].count/D.year_2027.total*100):0}%</div><div class="sl">头部车型占比</div></div>
+        </div>
+        <div style="margin-top:4px">
+          ${D.year_2027.data.map((item,i)=>{
+            const maxC = D.year_2027.data[0]?.count||1;
+            const pct = (item.count/maxC*100).toFixed(0);
+            const bc2 = ['#a855f7','#c084fc','#d8b4fe','#3b82f6','#6366f1','#8b5cf6','#6d28d9'];
+            return `<div class="flex items-center gap-2 py-1.5 ${i<D.year_2027.data.length-1?'border-b border-gray-800':''}" style="cursor:pointer" onclick="showDetail2027(${i})">
+              <span class="rank-badge" style="background:${i<3?['#fbbf24','#94a3b8','#fb923c'][i]:'rgba(139,92,246,.2)'};color:#000">${i+1}</span>
+              <span class="text-[.6rem] font-medium w-16">${item.make}</span>
+              <span class="w-20 text-[.62rem] font-semibold">${item.model}</span>
+              <div class="bt flex-1"><div class="bf" style="width:${pct}%;background:${bc2[i%bc2.length]}">${item.count}</div></div>
+              <span class="w-5 text-right font-semibold" style="color:#c084fc">${item.count}</span>
+              ${item.trims && item.trims.length?`<span class="text-[.45rem] text-gray-600 max-w-[120px] truncate" title="${item.trims.join(', ')}">(${item.trims.join(', ')})</span>`:''}
+            </div>`;
+          }).join('')}
+        </div>`:'<div class="text-[.6rem] text-gray-600 py-2">暂无2027年数据</div>'}</div>
+    </div>
+
+    <!-- Dev Progress (collapsible) -->
+    <div class="cc mb-3 cl" style="border-color:rgba(59,130,246,.15)">
+      <div class="cc-h" onclick="toggleSection(this)" style="cursor:pointer"><span class="ar">▼</span><span>📊 开发进度概览</span></div>
+      <div class="cc-b">${Object.entries(devStats).sort((a,b)=>b[1].people-a[1].people).map(([status,st])=>{
+        const pct = (st.people / Math.max(1,total_people) * 100).toFixed(0);
+        const sampleModels = st.models ? st.models.join(', ') : '';
+        return `<div class="br"><span class="w-16 text-[.6rem]">${status}</span><div class="bt"><div class="bf" style="width:${pct}%;background:var(--accent)">${pct}%</div></div><span class="w-10 text-right text-[.58rem] font-semibold">${st.people}人</span><span class="text-[.45rem] text-gray-600 w-24 truncate" title="${sampleModels}">${sampleModels}</span></div>`;
+      }).join('')}</div>
+    </div>
+
+    <!-- Trending models (hot demand surge) -->
+    <div class="cc mb-3" id="trendingSection" style="border-color:rgba(251,191,36,.2);background:linear-gradient(135deg,rgba(251,191,36,.04),transparent)">
+      <div class="cc-h" style="background:rgba(251,191,36,.08)"><span>🔥 新增热门车型 <span class="text-[.58rem] opacity-70 ml-2">近14天 · 需求飙升检测</span></span></div>
+      <div class="cc-b">${D.trending_models && D.trending_models.length ? 
+        D.trending_models.slice(0,10).map((t,i)=>{
+          const urgency = t.trending_score > 100 ? '🔥' : t.trending_score > 30 ? '📈' : '⚡';
+          const max14 = D.trending_models[0].recent_14d || 1;
+          const pctWidth = Math.min(100, Math.round(t.recent_14d / max14 * 100));
+          const bgColors = ['#f97316','#eab308','#10b981','#3b82f6','#8b5cf6'];
+          const bgColor = bgColors[i % bgColors.length];
+          
+          // Reason hint
+          let hint = '';
+          if (t.spike_ratio > 5) hint += '⚡爆发';
+          if (t.growth_ratio > 3) hint += '📈激增';
+          if (t.spike_ratio <= 5 && t.growth_ratio <= 3 && t.recent_14d > 10) hint += '📊持续热';
+          
+          return `<div class="flex items-center gap-1.5 py-1.5 ${i<D.trending_models.length-1?'border-b border-gray-800':''} hover:bg-white/5 cursor-pointer" onclick="showTrendingDetail(${i})">
+            <span class="rank-badge" style="background:${i<3?['#fbbf24','#94a3b8','#fb923c'][i]:'rgba(251,191,36,.2)'};color:#000">${i+1}</span>
+            <span class="text-[.6rem] font-medium w-14 truncate" title="${t.make}">${t.make}</span>
+            <span class="w-20 text-[.62rem] font-semibold truncate" title="${t.model}">${t.model}</span>
+            <div class="bt flex-1"><div class="bf" style="width:${pctWidth}%;background:${bgColor}">${t.recent_14d}</div></div>
+            <span class="w-8 text-right text-[.58rem] font-semibold" style="color:#93c5fd">${t.recent_14d}</span>
+            <span class="text-[.50rem] text-gray-500 w-12 text-right">↗${t.spike_ratio}x</span>
+            <span class="text-[.45rem] w-10 text-yellow-400 truncate" title="14d/${t.recent_14d} 环比/${t.growth_ratio}x">${urgency}</span>
+            ${hint ? `<span class="text-[.45rem] text-yellow-500/70">${hint}</span>` : ''}
+          </div>`;
+        }).join('')
+        : '<div class="text-[.6rem] text-gray-600 py-2 text-center">近14天无明显新增热门车型</div>'}
+      </div>
+    </div>
+
+    <!-- Hot models list -->
+    <div class="cc">
+      <div class="cc-h" style="background:#1a1e2e"><span>🏆 热门车型排行 TOP ${top.length}</span><span class="text-[.58rem] opacity-70">按提交人数排序</span></div>
+      <div class="cc-b p-0"><div class="table-wrap" style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:.7rem">
+        <thead><tr style="color:var(--tm);font-size:.55rem;text-transform:uppercase;letter-spacing:.03em">
+          <th style="padding:5px 6px;border-bottom:1px solid var(--border);text-align:center;width:24px">#</th>
+          <th style="padding:5px 6px;border-bottom:1px solid var(--border);text-align:left;width:140px;max-width:140px;overflow:hidden">车型</th>
+          <th style="padding:5px 6px;border-bottom:1px solid var(--border);text-align:center;width:45px">人数</th>
+          <th style="padding:5px 6px;border-bottom:1px solid var(--border);text-align:center;width:80px">开发进度</th>
+          <th style="padding:5px 6px;border-bottom:1px solid var(--border);text-align:left;min-width:180px">备注</th>
+        </tr></thead>
+        <tbody>${top.map((m,i)=>{
+          const pct = (m.people_count / topMax * 100).toFixed(0);
+          return `<tr style="border-bottom:1px solid rgba(38,42,61,.4);cursor:pointer" class="hover-row" onclick="showDetail(${m.rank-1})">
+            <td style="padding:4px 6px;text-align:center"><span class="rank-badge" style="background:${['#fbbf24','#94a3b8','#fb923c','#6366f1'][i]||'rgba(59,130,246,.2)'};color:#000">${i+1}</span></td>
+            <td style="padding:4px 6px;max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${m.make} ${m.model}"><span class="font-medium">${m.make}</span> <span style="color:var(--t2)">${m.model}</span></td>
+            <td style="padding:4px 6px;text-align:center"><span class="font-semibold" style="color:#93c5fd">${m.people_count}</span></td>
+            <td style="padding:4px 6px;text-align:center"><span class="badge ${devClass(m.dev_status)}">${devLabel(m.dev_status)}</span></td>
+            <td style="padding:4px 6px;color:var(--tm);font-size:.6rem;max-width:260px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;cursor:pointer" title="${m.notes ? m.notes : ''}">${m.notes||''}${m.competitor_str ? '<br><span style="font-size:.45rem;color:#f59e0b">⚡' + m.competitor_str + '</span>' : ''}
+            </td>
+          </tr>`;
+        }).join('')}</tbody>
+      </table></div></div>
+    </div>`;
+  } else {
+    // Single make view
+    const mk = makes[af];
+    if (!mk) { document.getElementById('body').innerHTML = '<div class="text-[.6rem] text-gray-600 py-4 text-center">无数据</div>'; return; }
+    const topMax = Math.max(1, mk.models[0]?.people_count || 1);
+    
+    document.getElementById('body').innerHTML = `
+    <div class="grid grid-cols-3 gap-2 mb-3">
+      <div class="sc"><div class="sv">${mk.models.length}</div><div class="sl">车型</div></div>
+      <div class="sc"><div class="sv">${mk.people}</div><div class="sl">提交人数</div></div>
+      <div class="sc"><div class="sv">${(mk.people/Math.max(1,D.total_people)*100).toFixed(0)}%</div><div class="sl">总需求占比</div></div>
+    </div>
+    <div class="cc">
+      <div class="cc-h" style="background:#1a1e2e"><span>🏆 ${af} 车型排行</span></div>
+      <div class="cc-b p-0"><div class="table-wrap"><table style="width:100%;border-collapse:collapse;font-size:.7rem">
+        <thead><tr style="color:var(--tm);font-size:.55rem;text-transform:uppercase;letter-spacing:.03em">
+          <th style="padding:5px 6px;border-bottom:1px solid var(--border);text-align:center;width:24px">#</th>
+          <th style="padding:5px 6px;border-bottom:1px solid var(--border);text-align:left;width:140px;max-width:140px;overflow:hidden">车型</th>
+          <th style="padding:5px 6px;border-bottom:1px solid var(--border);text-align:center;width:45px">人数</th>
+          <th style="padding:5px 6px;border-bottom:1px solid var(--border);text-align:center;width:80px">开发进度</th>
+          <th style="padding:5px 6px;border-bottom:1px solid var(--border);text-align:left;min-width:180px">备注</th>
+        </tr></thead>
+        <tbody>${mk.models.sort((a,b)=>b.people_count-a.people_count).map((m,i)=>{
+          const pct = (m.people_count / topMax * 100).toFixed(0);
+          return `<tr style="border-bottom:1px solid rgba(38,42,61,.4);cursor:pointer" class="hover-row" onclick="showDetail(${m.rank-1})">
+            <td style="padding:4px 6px;text-align:center"><span class="rank-badge" style="background:${i<3?['#fbbf24','#94a3b8','#fb923c'][i]:'rgba(59,130,246,.2)'};color:#000">${i+1}</span></td>
+            <td style="padding:4px 6px;max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${m.model}"><span class="font-medium">${m.model}</span></td>
+            <td style="padding:4px 6px;text-align:center"><span class="font-semibold" style="color:#93c5fd">${m.people_count}</span></td>
+            <td style="padding:4px 6px;text-align:center"><span class="badge ${devClass(m.dev_status)}">${devLabel(m.dev_status)}</span></td>
+            <td style="padding:4px 6px;color:var(--tm);font-size:.6rem;max-width:260px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;cursor:pointer" title="${m.notes ? m.notes : ''}">${m.notes||''}${m.competitor_str ? '<br><span style="font-size:.45rem;color:#f59e0b">⚡' + m.competitor_str + '</span>' : ''}
+            </tr>`;
+        }).join('')}
+      </table></div></div>
+    </div>`;
+  }
+}
+
+function sf(c) { 
+  af = c;
+  document.querySelectorAll('#sb .fb').forEach(b => b.classList.remove('act'));
+  document.querySelectorAll('#sb .fb').forEach(b => {
+    if (b.textContent.trim().startsWith(af==='all'?'概览':af)) b.classList.add('act');
+  });
+  rn();
+}
+
+function showDetail(idx) {
+  const m = D.models[idx];
+  if (!m) return;
+  showModelModal({make:m.make, model:m.model, people:m.people_count, dev:m.dev_status, notes:m.notes, years:m.years||[], trims:m.trims||[], total_subs:m.total_subs||0});
+}
+
+function showDetail2027(i) {
+  const item = D.year_2027?.data?.[i];
+  if (!item) return;
+  const found = D.models.findIndex(m => m.make === item.make && m.model === item.model);
+  if (found >= 0) return showDetail(found);
+  showModelModal({make:item.make, model:item.model, people:item.count, dev:'', notes:'🚀 2027年新车需求', years:[{year:'2027', count:item.count, pct:100}], trims:(item.trims||[]).map(t=>({trim:t, count:0})), total_subs:item.count});
+}
+
+function showModelModal(m) {
+  const years = m.years || [];
+  const trims = m.trims || [];
+  const totalSubs = m.total_subs || 0;
+
+  let summary = '';
+  if (years.length) {
+    const topY = years[0];
+    const yrSummary = years.length > 1 ?
+      `集中在${topY.year}款(${topY.pct}%)，其次${years[1].year}款` :
+      `集中在${topY.year}款`;
+    summary += `<div class="text-[.6rem] text-gray-400 mt-2">📅 年份：${yrSummary}</div>`;
+  }
+  if (trims.length) {
+    const topT = trims.slice(0,3).map(tm => `${tm.trim}${tm.count ? '('+tm.count+'条)' : ''}`).join('、');
+    summary += `<div class="text-[.6rem] text-gray-400 mt-1">🏷️ 版本：${topT}</div>`;
+  }
+
+  const maxYears = years.length ? Math.max(...years.map(y => y.count)) : 1;
+  const devBadge = m.dev ? `<span class="badge ${devClass(m.dev)}">${devLabel(m.dev)}</span>` : '';
+
+  const body = document.getElementById('body');
+  const overlay = document.createElement('div');
+  overlay.className = 'modal-overlay';
+  overlay.innerHTML = `
+    <div class="modal-card">
+      <button class="modal-close" onclick="this.closest('.modal-overlay').remove()">✕</button>
+      <div class="text-[.9rem] font-bold mb-1">🚗 ${m.make} ${m.model}</div>
+      <div class="flex gap-3 text-[.55rem] text-gray-500 mb-2 flex-wrap">
+        <span>提交人数: <span class="text-blue-400 font-semibold">${m.people}</span></span>
+        ${totalSubs ? `<span>需求明细: <span class="text-yellow-400 font-semibold">${totalSubs}</span> 条</span>` : ''}
+        ${devBadge ? `<span>开发: ${devBadge}</span>` : ''}
+      </div>
+      ${summary}
+      ${years.length ? `
+      <div class="text-[.55rem] font-semibold text-gray-400 mt-3 mb-1">📅 年份分布（占提交量比例）</div>
+      <div class="flex flex-col gap-1">${years.map(y => `
+        <div class="flex items-center gap-2 text-[.6rem]">
+          <span class="w-10 text-right font-medium">${y.year}款</span>
+          <div class="bt flex-1"><div class="bf" style="width:${(y.count/maxYears*100).toFixed(0)}%;background:#3b82f6">${y.count}</div></div>
+          <span class="w-6 text-right text-[.5rem] text-gray-500">${y.pct}%</span>
+        </div>
+      `).join('')}</div>` : '<div class="text-[.58rem] text-gray-600 mt-2">暂无年份数据</div>'}
+      ${trims.length ? `
+      <div class="text-[.55rem] font-semibold text-gray-400 mt-3 mb-1">🏷️ 常见版本</div>
+      <div class="flex flex-wrap gap-1">${trims.map(tm => `
+        <span class="bg-gray-700/50 text-gray-300 px-2 py-0.5 rounded text-[.55rem]">${tm.trim}${tm.count ? ` <span class="text-gray-500">${tm.count}</span>` : ''}</span>
+      `).join('')}</div>` : ''}
+      ${m.notes ? `<div class="text-[.55rem] font-semibold text-gray-400 mt-3 mb-1">📝 备注</div><div class="text-[.58rem] text-gray-400 leading-relaxed break-all">${m.notes}</div>` : ''}
+      <div class="text-[.5rem] text-gray-600 mt-3">数据截止: ${D.updated_at || '-'}</div>
+    </div>
+  `;
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) overlay.remove();
+  });
+  body.parentElement.appendChild(overlay);
+}
+
+// Modal overlay styles
+const modalStyles = document.createElement('style');
+modalStyles.textContent = `
+.modal-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.7);z-index:999;display:flex;align-items:center;justify-content:center}
+.modal-card{background:#1a1e2e;border:1px solid #262a3d;border-radius:10px;padding:16px;max-width:480px;width:90%;max-height:80vh;overflow-y:auto;box-shadow:0 8px 32px rgba(0,0,0,.5)}
+.modal-close{float:right;background:0;border:0;color:#8892a8;font-size:1rem;cursor:pointer;padding:2px 6px;border-radius:4px}
+.modal-close:hover{background:rgba(255,255,255,.08);color:#e8eaf0}
+`;
+document.head.appendChild(modalStyles);
+
+function showTrendingDetail(idx) {
+  const t = D.trending_models[idx];
+  if (!t) return;
+  
+  const years = t.top_years || [];
+  const trims = t.top_trims || [];
+  
+  // Generate summary hint
+  let summary = '';
+  if (years.length) {
+    const topY = years[0];
+    const yrSummary = years.length > 1 ? 
+      `集中在${topY.year}款(${topY.pct}%)，其次${years[1].year}款` : 
+      `集中在${topY.year}款`;
+    summary += `<div class="text-[.6rem] text-gray-400 mt-2">📅 年份：${yrSummary}</div>`;
+  }
+  if (trims.length) {
+    const topT = trims.slice(0,3).map(tm => `${tm.trim}(${tm.count}条)`).join('、');
+    summary += `<div class="text-[.6rem] text-gray-400 mt-1">🏷️ 版本：${topT}</div>`;
+  }
+  
+  const totalY = years.reduce((s, y) => s + y.count, 0);
+  const maxYears = years.length ? Math.max(...years.map(y => y.count)) : 1;
+  
+  const body = document.getElementById('body');
+  const overlay = document.createElement('div');
+  overlay.className = 'modal-overlay';
+  overlay.innerHTML = `
+    <div class="modal-card">
+      <button class="modal-close" onclick="this.closest('.modal-overlay').remove()">✕</button>
+      <div class="text-[.9rem] font-bold mb-1">🔥 ${t.make} ${t.model}</div>
+      <div class="flex gap-3 text-[.55rem] text-gray-500 mb-3">
+        <span>14天: <span class="text-yellow-400 font-semibold">${t.recent_14d}</span> 条</span>
+        <span>飙升: <span class="text-orange-400 font-semibold">${t.spike_ratio}x</span></span>
+        <span>环比: <span class="text-green-400 font-semibold">${t.growth_ratio}x</span></span>
+        <span>总计: ${t.total_submissions} 条</span>
+      </div>
+      ${summary}
+      ${years.length ? `
+      <div class="text-[.55rem] font-semibold text-gray-400 mt-3 mb-1">📅 年份分布</div>
+      <div class="flex flex-col gap-1">${years.map(y => `
+        <div class="flex items-center gap-2 text-[.6rem]">
+          <span class="w-10 text-right font-medium">${y.year}款</span>
+          <div class="bt flex-1"><div class="bf" style="width:${(y.count/maxYears*100).toFixed(0)}%;background:#3b82f6">${y.count}</div></div>
+          <span class="w-6 text-right text-[.5rem] text-gray-500">${y.pct}%</span>
+        </div>
+      `).join('')}</div>` : ''}
+      ${trims.length ? `
+      <div class="text-[.55rem] font-semibold text-gray-400 mt-3 mb-1">🏷️ 常见版本</div>
+      <div class="flex flex-wrap gap-1">${trims.map(tm => `
+        <span class="bg-gray-700/50 text-gray-300 px-2 py-0.5 rounded text-[.55rem]">${tm.trim} <span class="text-gray-500">${tm.count}</span></span>
+      `).join('')}</div>` : ''}
+      <div class="text-[.5rem] text-gray-600 mt-3">数据截止: ${D.updated_at || '-'}</div>
+    </div>
+  `;
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) overlay.remove();
+  });
+  body.parentElement.appendChild(overlay);
+}
+
+// Toggle collapsible card sections (click on header)
+function toggleSection(el) {
+  const card = el.classList.contains('cc-h') ? el.parentElement : el.closest('.cc');
+  if (card && card.classList.contains('cc')) {
+    card.classList.toggle('cl');
+  }
+}
+
+async function refreshDashboard() {
+  const statBar = document.getElementById('refreshStatusBar');
+  if (statBar) {
+    statBar.textContent = '⏳ 正在重新加载最新数据...';
+    statBar.style.display = 'block';
+  }
+  try {
+    await ld();
+    if (statBar) { statBar.textContent = '✅ ' + new Date().toLocaleTimeString() + ' 数据已重新加载（新数据同步到 GitHub 仓库后，刷新即可看到）'; }
+  } catch(e) {
+    if (statBar) { statBar.textContent = '❌ 数据加载失败: ' + (e.message || e); }
+  }
+  if (statBar) { setTimeout(() => { statBar.style.display = 'none'; }, 4000); }
+}
+
+window.onerror = function(msg, url, line) { document.getElementById('body').innerHTML = '<div style="padding:20px;text-align:center;color:red">❌ 页面错误: ' + msg + ' (行: ' + line + ')</div>'; };
+ld();
+</script>
+</body>
+</html>

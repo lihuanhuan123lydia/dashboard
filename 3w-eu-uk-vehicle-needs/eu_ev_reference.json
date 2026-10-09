@@ -1,0 +1,2753 @@
+{
+  "source": "EU-EVs",
+  "country": "ALL",
+  "country_name": "EU (15国)",
+  "period_year": 2026,
+  "period_month": 7,
+  "scraped_at": "2026-08-10T01:00:11.631943+00:00",
+  "total_registrations": 114752,
+  "brands_count": 117,
+  "models_count": 548,
+  "models": [
+    {
+      "make": "SKODA",
+      "model": "ELROQ",
+      "count": 3648
+    },
+    {
+      "make": "KIA",
+      "model": "EV3",
+      "count": 3265
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID.4",
+      "count": 3027
+    },
+    {
+      "make": "SKODA",
+      "model": "ENYAQ",
+      "count": 2822
+    },
+    {
+      "make": "RENAULT",
+      "model": "5",
+      "count": 2498
+    },
+    {
+      "make": "VOLVO",
+      "model": "EX30",
+      "count": 2491
+    },
+    {
+      "make": "VOLVO",
+      "model": "EX40",
+      "count": 2400
+    },
+    {
+      "make": "BMW",
+      "model": "IX1",
+      "count": 1996
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID.7",
+      "count": 1991
+    },
+    {
+      "make": "BMW",
+      "model": "IX3",
+      "count": 1894
+    },
+    {
+      "make": "TOYOTA",
+      "model": "BZ4X",
+      "count": 1771
+    },
+    {
+      "make": "BYD",
+      "model": "DOLPHIN SURF",
+      "count": 1736
+    },
+    {
+      "make": "KIA",
+      "model": "EV5",
+      "count": 1720
+    },
+    {
+      "make": "TESLA",
+      "model": "MODEL Y",
+      "count": 1701
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID.BUZZ",
+      "count": 1680
+    },
+    {
+      "make": "HYUNDAI",
+      "model": "INSTER",
+      "count": 1595
+    },
+    {
+      "make": "KIA",
+      "model": "EV2",
+      "count": 1556
+    },
+    {
+      "make": "XPENG",
+      "model": "G6",
+      "count": 1552
+    },
+    {
+      "make": "FORD",
+      "model": "EXPLORER",
+      "count": 1551
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID.3",
+      "count": 1505
+    },
+    {
+      "make": "BYD",
+      "model": "SEALION",
+      "count": 1466
+    },
+    {
+      "make": "LEAPMOTOR",
+      "model": "B10",
+      "count": 1438
+    },
+    {
+      "make": "AUDI",
+      "model": "Q6 E-TRON",
+      "count": 1417
+    },
+    {
+      "make": "HYUNDAI",
+      "model": "KONA",
+      "count": 1343
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "CLA CLASS",
+      "count": 1315
+    },
+    {
+      "make": "BYD",
+      "model": "SEAL",
+      "count": 1252
+    },
+    {
+      "make": "TOYOTA",
+      "model": "URBAN CRUISER",
+      "count": 1239
+    },
+    {
+      "make": "FORD",
+      "model": "TRANSIT",
+      "count": 1188
+    },
+    {
+      "make": "TOYOTA",
+      "model": "C-HR",
+      "count": 1158
+    },
+    {
+      "make": "CITROEN",
+      "model": "E-C3",
+      "count": 1156
+    },
+    {
+      "make": "FORD",
+      "model": "PUMA",
+      "count": 1128
+    },
+    {
+      "make": "MINI",
+      "model": "COUNTRYMAN",
+      "count": 1059
+    },
+    {
+      "make": "MG",
+      "model": "MG S5",
+      "count": 1003
+    },
+    {
+      "make": "AUDI",
+      "model": "Q4 E-TRON",
+      "count": 994
+    },
+    {
+      "make": "RENAULT",
+      "model": "4",
+      "count": 960
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "E-5008",
+      "count": 946
+    },
+    {
+      "make": "VAUXHALL",
+      "model": "FRONTERA",
+      "count": 945
+    },
+    {
+      "make": "LEAPMOTOR",
+      "model": "T03",
+      "count": 924
+    },
+    {
+      "make": "MG",
+      "model": "MG4",
+      "count": 897
+    },
+    {
+      "make": "JAECOO",
+      "model": "5 LUXURY",
+      "count": 896
+    },
+    {
+      "make": "KIA",
+      "model": "EV4",
+      "count": 889
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "EQB",
+      "count": 852
+    },
+    {
+      "make": "POLESTAR",
+      "model": "4",
+      "count": 846
+    },
+    {
+      "make": "HYUNDAI",
+      "model": "IONIQ 5",
+      "count": 837
+    },
+    {
+      "make": "BYD",
+      "model": "ATTO 2",
+      "count": 825
+    },
+    {
+      "make": "BMW",
+      "model": "I4",
+      "count": 823
+    },
+    {
+      "make": "CUPRA",
+      "model": "RAVAL 155KW",
+      "count": 760
+    },
+    {
+      "make": "GEELY",
+      "model": "EX5",
+      "count": 741
+    },
+    {
+      "make": "RENAULT",
+      "model": "SCENIC",
+      "count": 669
+    },
+    {
+      "make": "SUZUKI",
+      "model": "E VITARA",
+      "count": 615
+    },
+    {
+      "make": "ZEEKR",
+      "model": "7GT",
+      "count": 611
+    },
+    {
+      "make": "MINI",
+      "model": "ACEMAN",
+      "count": 610
+    },
+    {
+      "make": "KIA",
+      "model": "PV5 CARGO",
+      "count": 609
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "OTHER",
+      "count": 593
+    },
+    {
+      "make": "CUPRA",
+      "model": "TAVASCAN",
+      "count": 581
+    },
+    {
+      "make": "LEAPMOTOR",
+      "model": "C10",
+      "count": 571
+    },
+    {
+      "make": "BMW",
+      "model": "IX3 50 XDRIVE",
+      "count": 558
+    },
+    {
+      "make": "BYD",
+      "model": "ATTO 3",
+      "count": 545
+    },
+    {
+      "make": "POLESTAR",
+      "model": "2",
+      "count": 537
+    },
+    {
+      "make": "KIA",
+      "model": "PV5",
+      "count": 512
+    },
+    {
+      "make": "BMW",
+      "model": "IX2",
+      "count": 510
+    },
+    {
+      "make": "NISSAN",
+      "model": "MICRA",
+      "count": 507
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "EQA",
+      "count": 504
+    },
+    {
+      "make": "CUPRA",
+      "model": "RAVAL",
+      "count": 503
+    },
+    {
+      "make": "ZEEKR",
+      "model": "7X",
+      "count": 503
+    },
+    {
+      "make": "LEAPMOTOR",
+      "model": "B05",
+      "count": 495
+    },
+    {
+      "make": "DACIA",
+      "model": "SPRING",
+      "count": 492
+    },
+    {
+      "make": "FORD",
+      "model": "CAPRI",
+      "count": 492
+    },
+    {
+      "make": "OPEL",
+      "model": "FRONTERA",
+      "count": 486
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "E-3008",
+      "count": 481
+    },
+    {
+      "make": "RENAULT",
+      "model": "MEGANE",
+      "count": 480
+    },
+    {
+      "make": "DEEPAL",
+      "model": "DEEPAL S05",
+      "count": 478
+    },
+    {
+      "make": "NISSAN",
+      "model": "LEAF",
+      "count": 477
+    },
+    {
+      "make": "PORSCHE",
+      "model": "MACAN",
+      "count": 477
+    },
+    {
+      "make": "MINI",
+      "model": "COOPER",
+      "count": 476
+    },
+    {
+      "make": "BYD",
+      "model": "ATTO 3 EVO",
+      "count": 473
+    },
+    {
+      "make": "KIA",
+      "model": "EV9",
+      "count": 469
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "GLC 400 4MATIC WITH EQ TE",
+      "count": 469
+    },
+    {
+      "make": "XPENG",
+      "model": "G9",
+      "count": 468
+    },
+    {
+      "make": "VOLVO",
+      "model": "EX90",
+      "count": 467
+    },
+    {
+      "make": "KIA",
+      "model": "EV6",
+      "count": 459
+    },
+    {
+      "make": "CUPRA",
+      "model": "BORN",
+      "count": 454
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "E-2008",
+      "count": 450
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "E-208",
+      "count": 449
+    },
+    {
+      "make": "TOYOTA",
+      "model": "BZ4X TOURING",
+      "count": 443
+    },
+    {
+      "make": "MAZDA",
+      "model": "6E",
+      "count": 437
+    },
+    {
+      "make": "AUDI",
+      "model": "A6 E-TRON",
+      "count": 427
+    },
+    {
+      "make": "CITROEN",
+      "model": "E-C5",
+      "count": 416
+    },
+    {
+      "make": "FIAT",
+      "model": "500E",
+      "count": 406
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "TRANSPORTER",
+      "count": 389
+    },
+    {
+      "make": "SMART",
+      "model": "5",
+      "count": 378
+    },
+    {
+      "make": "ALPINE",
+      "model": "A290",
+      "count": 377
+    },
+    {
+      "make": "TOYOTA",
+      "model": "CHR PLUS",
+      "count": 355
+    },
+    {
+      "make": "RENAULT",
+      "model": "TWINGO E-TECH ELECTRIC",
+      "count": 353
+    },
+    {
+      "make": "BMW",
+      "model": "I5",
+      "count": 352
+    },
+    {
+      "make": "VOLVO",
+      "model": "EC40",
+      "count": 352
+    },
+    {
+      "make": "HYUNDAI",
+      "model": "IONIQ 6",
+      "count": 338
+    },
+    {
+      "make": "RENAULT",
+      "model": "TWINGO",
+      "count": 334
+    },
+    {
+      "make": "TOYOTA",
+      "model": "TOYOTA BZ4X TOURING",
+      "count": 328
+    },
+    {
+      "make": "BMW",
+      "model": "IX",
+      "count": 326
+    },
+    {
+      "make": "TOYOTA",
+      "model": "PROACE CITY",
+      "count": 321
+    },
+    {
+      "make": "OMODA",
+      "model": "E5",
+      "count": 315
+    },
+    {
+      "make": "VOLVO",
+      "model": "EX60",
+      "count": 307
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID.4 PRO 4MOTION 220KW",
+      "count": 302
+    },
+    {
+      "make": "KIA",
+      "model": "NIRO",
+      "count": 284
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "SPRINTER",
+      "count": 280
+    },
+    {
+      "make": "PORSCHE",
+      "model": "CAYENNE",
+      "count": 266
+    },
+    {
+      "make": "FORD",
+      "model": "MUSTANG MACH-E",
+      "count": 258
+    },
+    {
+      "make": "BYD",
+      "model": "DOLPHIN",
+      "count": 251
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "GLC EQ",
+      "count": 241
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "GLB 250+",
+      "count": 236
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "EQC",
+      "count": 234
+    },
+    {
+      "make": "MG",
+      "model": "MGS6",
+      "count": 232
+    },
+    {
+      "make": "NISSAN",
+      "model": "NISSAN MICRA",
+      "count": 228
+    },
+    {
+      "make": "KIA",
+      "model": "PV5 PASSENGER",
+      "count": 223
+    },
+    {
+      "make": "JEEP",
+      "model": "COMPASS",
+      "count": 218
+    },
+    {
+      "make": "HYUNDAI",
+      "model": "IONIQ 9",
+      "count": 217
+    },
+    {
+      "make": "CHANGAN",
+      "model": "DEEPAL S07",
+      "count": 216
+    },
+    {
+      "make": "MG",
+      "model": "IM5",
+      "count": 216
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "EQE",
+      "count": 213
+    },
+    {
+      "make": "FIAT",
+      "model": "GRANDE PANDA",
+      "count": 207
+    },
+    {
+      "make": "TOYOTA",
+      "model": "TOYOTA C-HR+",
+      "count": 207
+    },
+    {
+      "make": "TOYOTA",
+      "model": "PROACE",
+      "count": 206
+    },
+    {
+      "make": "JAECOO",
+      "model": "5 PURE",
+      "count": 205
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "GLC 400 4MATIC WITH EQ",
+      "count": 192
+    },
+    {
+      "make": "SUZUKI",
+      "model": "VITARA",
+      "count": 190
+    },
+    {
+      "make": "LEXUS",
+      "model": "RZ",
+      "count": 189
+    },
+    {
+      "make": "MG",
+      "model": "MG S6",
+      "count": 189
+    },
+    {
+      "make": "XPENG",
+      "model": "X9",
+      "count": 179
+    },
+    {
+      "make": "TESLA",
+      "model": "MODEL 3",
+      "count": 177
+    },
+    {
+      "make": "MG",
+      "model": "MG4 EV URBAN",
+      "count": 176
+    },
+    {
+      "make": "NISSAN",
+      "model": "ARIYA",
+      "count": 176
+    },
+    {
+      "make": "XPENG",
+      "model": "P7+",
+      "count": 176
+    },
+    {
+      "make": "SMART",
+      "model": "3",
+      "count": 169
+    },
+    {
+      "make": "RENAULT",
+      "model": "MASTER",
+      "count": 168
+    },
+    {
+      "make": "CITROEN",
+      "model": "E-C4",
+      "count": 165
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "GLC CLASS",
+      "count": 165
+    },
+    {
+      "make": "CITROEN",
+      "model": "Ë-C3 ELÉCTRICO MAX",
+      "count": 162
+    },
+    {
+      "make": "SMART",
+      "model": "1",
+      "count": 158
+    },
+    {
+      "make": "OMODA",
+      "model": "5",
+      "count": 150
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID.3 NEO",
+      "count": 150
+    },
+    {
+      "make": "JEEP",
+      "model": "AVENGER",
+      "count": 148
+    },
+    {
+      "make": "POLESTAR",
+      "model": "STAR 4",
+      "count": 148
+    },
+    {
+      "make": "SUBARU",
+      "model": "UNCHARTED",
+      "count": 147
+    },
+    {
+      "make": "OPEL",
+      "model": "CORSA-E",
+      "count": 145
+    },
+    {
+      "make": "RENAULT",
+      "model": "KANGOO",
+      "count": 138
+    },
+    {
+      "make": "SEAT",
+      "model": "RAVAL",
+      "count": 138
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID.5",
+      "count": 137
+    },
+    {
+      "make": "OPEL",
+      "model": "GRANDLAND",
+      "count": 136
+    },
+    {
+      "make": "VOLVO",
+      "model": "ES90",
+      "count": 135
+    },
+    {
+      "make": "MG",
+      "model": "IM6",
+      "count": 132
+    },
+    {
+      "make": "MINI",
+      "model": "C-MAN",
+      "count": 129
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID.3 NEO 125kW",
+      "count": 126
+    },
+    {
+      "make": "TOYOTA",
+      "model": "C-HR+",
+      "count": 123
+    },
+    {
+      "make": "PORSCHE",
+      "model": "TAYCAN",
+      "count": 121
+    },
+    {
+      "make": "FIAT",
+      "model": "PANDA",
+      "count": 119
+    },
+    {
+      "make": "SEAT",
+      "model": "TAVASCAN",
+      "count": 118
+    },
+    {
+      "make": "CITROEN",
+      "model": "E-BERLINGO",
+      "count": 117
+    },
+    {
+      "make": "HONDA",
+      "model": "E:NY1",
+      "count": 104
+    },
+    {
+      "make": "MG",
+      "model": "MG S6 EV",
+      "count": 102
+    },
+    {
+      "make": "AION",
+      "model": "V",
+      "count": 101
+    },
+    {
+      "make": "JAECOO",
+      "model": "JAECOO5 EV",
+      "count": 101
+    },
+    {
+      "make": "LYNK & CO",
+      "model": "02",
+      "count": 101
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "E-PARTNER",
+      "count": 101
+    },
+    {
+      "make": "FIAT",
+      "model": "600E",
+      "count": 99
+    },
+    {
+      "make": "JAECOO",
+      "model": "J5",
+      "count": 98
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "E-EXPERT",
+      "count": 98
+    },
+    {
+      "make": "GEELY",
+      "model": "GEELY E5",
+      "count": 97
+    },
+    {
+      "make": "DONGFENG",
+      "model": "BOX",
+      "count": 93
+    },
+    {
+      "make": "CUPRA",
+      "model": "CUPRA RAVAL",
+      "count": 92
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "GLB 350 4MATIC",
+      "count": 88
+    },
+    {
+      "make": "AUDI",
+      "model": "A6",
+      "count": 87
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "CLA 200",
+      "count": 87
+    },
+    {
+      "make": "SUBARU",
+      "model": "E-OUTBACK",
+      "count": 87
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "EVITO",
+      "count": 82
+    },
+    {
+      "make": "MG",
+      "model": "MGS6 ELECTRIC",
+      "count": 82
+    },
+    {
+      "make": "KG MOBILITY",
+      "model": "MUSSO EV",
+      "count": 78
+    },
+    {
+      "make": "DEEPAL",
+      "model": "S07",
+      "count": 77
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID.4 PURE 140 KW",
+      "count": 77
+    },
+    {
+      "make": "PORSCHE",
+      "model": "CAYENNE-E",
+      "count": 76
+    },
+    {
+      "make": "MAZDA",
+      "model": "MAZDA CX-6E",
+      "count": 75
+    },
+    {
+      "make": "HONDA",
+      "model": "SUPER N",
+      "count": 73
+    },
+    {
+      "make": "SUBARU",
+      "model": "SOLTERRA",
+      "count": 72
+    },
+    {
+      "make": "CITROEN",
+      "model": "Ë-C3 ELÉCTRICO PLUS",
+      "count": 71
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "ECITAN",
+      "count": 70
+    },
+    {
+      "make": "FORD",
+      "model": "TOURNEO",
+      "count": 68
+    },
+    {
+      "make": "LEXUS",
+      "model": "LEXUS RZ350E",
+      "count": 68
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "GLC-CLASS",
+      "count": 66
+    },
+    {
+      "make": "AUDI",
+      "model": "SQ6 E-TRON",
+      "count": 63
+    },
+    {
+      "make": "SUBARU",
+      "model": "SUBARU UNCHARTED",
+      "count": 63
+    },
+    {
+      "make": "TOYOTA",
+      "model": "HILUX",
+      "count": 63
+    },
+    {
+      "make": "MG",
+      "model": "S5",
+      "count": 62
+    },
+    {
+      "make": "ALFA ROMEO",
+      "model": "JUNIOR",
+      "count": 61
+    },
+    {
+      "make": "PORSCHE",
+      "model": "Macan GTS",
+      "count": 61
+    },
+    {
+      "make": "SEAT",
+      "model": "BORN",
+      "count": 61
+    },
+    {
+      "make": "MINI",
+      "model": "MINI",
+      "count": 59
+    },
+    {
+      "make": "SKODA",
+      "model": "ELROQ 85X",
+      "count": 59
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "E-308",
+      "count": 58
+    },
+    {
+      "make": "AUDI",
+      "model": "Q4 E-TRON QUATTRO PERF",
+      "count": 57
+    },
+    {
+      "make": "FIAT",
+      "model": "E-DOBLO",
+      "count": 57
+    },
+    {
+      "make": "MG",
+      "model": "MG4 URBAN",
+      "count": 56
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID.BUZZ 4MOTION LR 250 KW",
+      "count": 56
+    },
+    {
+      "make": "BMW",
+      "model": "IX3 40",
+      "count": 54
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "E-RIFTER",
+      "count": 54
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID.BUZZ PRO KR 210 KW",
+      "count": 54
+    },
+    {
+      "make": "ZEEKR",
+      "model": "X",
+      "count": 54
+    },
+    {
+      "make": "BMW",
+      "model": "5 SERIES",
+      "count": 53
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "E-408",
+      "count": 53
+    },
+    {
+      "make": "OPEL",
+      "model": "MOKKA-E",
+      "count": 52
+    },
+    {
+      "make": "POLESTAR",
+      "model": "3",
+      "count": 52
+    },
+    {
+      "make": "JAC",
+      "model": "E30X",
+      "count": 51
+    },
+    {
+      "make": "LEXUS",
+      "model": "ES",
+      "count": 51
+    },
+    {
+      "make": "MAXUS",
+      "model": "E-DELIVER",
+      "count": 51
+    },
+    {
+      "make": "OPEL",
+      "model": "ASTRA-E",
+      "count": 51
+    },
+    {
+      "make": "SKODA",
+      "model": "EPIQ 155KW",
+      "count": 51
+    },
+    {
+      "make": "OPEL",
+      "model": "FRONTERA GS ELECTRIC E",
+      "count": 49
+    },
+    {
+      "make": "SUBARU",
+      "model": "SUBARU E-OUTBACK",
+      "count": 49
+    },
+    {
+      "make": "AUDI",
+      "model": "E-TRON GT",
+      "count": 48
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID.3 NEO 170KW",
+      "count": 47
+    },
+    {
+      "make": "NISSAN",
+      "model": "TOWNSTAR",
+      "count": 45
+    },
+    {
+      "make": "CITROEN",
+      "model": "NUEVO Ë-C3 AIRCROSS EL",
+      "count": 44
+    },
+    {
+      "make": "MG",
+      "model": "MG4 URBAN ELECTRIC",
+      "count": 44
+    },
+    {
+      "make": "MINI",
+      "model": "3-DØRS",
+      "count": 44
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID.3 NEO 140kW",
+      "count": 44
+    },
+    {
+      "make": "VOYAH",
+      "model": "COURAGE",
+      "count": 44
+    },
+    {
+      "make": "AUDI",
+      "model": "Q4 E-TRON QUATTRO",
+      "count": 43
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "GLB-KLASSE",
+      "count": 43
+    },
+    {
+      "make": "CUPRA",
+      "model": "RAVAL 166KW",
+      "count": 42
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "CITAN",
+      "count": 42
+    },
+    {
+      "make": "MG",
+      "model": "4 EV URBAN",
+      "count": 41
+    },
+    {
+      "make": "OPEL",
+      "model": "VIVARO-E",
+      "count": 41
+    },
+    {
+      "make": "RENAULT",
+      "model": "TRAFIC",
+      "count": 41
+    },
+    {
+      "make": "LOTUS",
+      "model": "ELETRE",
+      "count": 40
+    },
+    {
+      "make": "PORSCHE",
+      "model": "CAYENNE TURBO",
+      "count": 40
+    },
+    {
+      "make": "ZEEKR",
+      "model": "001",
+      "count": 40
+    },
+    {
+      "make": "KG MOBILITY",
+      "model": "TORRES EVX",
+      "count": 39
+    },
+    {
+      "make": "BMW",
+      "model": "I7",
+      "count": 38
+    },
+    {
+      "make": "DS",
+      "model": "8",
+      "count": 38
+    },
+    {
+      "make": "LEXUS",
+      "model": "LEXUS RZ500E",
+      "count": 38
+    },
+    {
+      "make": "MINI",
+      "model": "HATCH",
+      "count": 38
+    },
+    {
+      "make": "ALPINE",
+      "model": "A390",
+      "count": 35
+    },
+    {
+      "make": "AUDI",
+      "model": "Q4 SB E-TRON PERFORMAN",
+      "count": 35
+    },
+    {
+      "make": "BYD",
+      "model": "ATTO",
+      "count": 35
+    },
+    {
+      "make": "CHANGAN",
+      "model": "DEEPAL S05",
+      "count": 35
+    },
+    {
+      "make": "DONGFENG",
+      "model": "VIGO",
+      "count": 35
+    },
+    {
+      "make": "GENESIS",
+      "model": "GV60",
+      "count": 34
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID.BUZZ PRO LR 210 KW",
+      "count": 34
+    },
+    {
+      "make": "MG",
+      "model": "S6 EV",
+      "count": 33
+    },
+    {
+      "make": "VAUXHALL",
+      "model": "GRANDLAND",
+      "count": 32
+    },
+    {
+      "make": "ABARTH",
+      "model": "600E",
+      "count": 30
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "G CLASS",
+      "count": 30
+    },
+    {
+      "make": "BYD",
+      "model": "TANG",
+      "count": 29
+    },
+    {
+      "make": "CITROEN",
+      "model": "C2",
+      "count": 29
+    },
+    {
+      "make": "LANCIA",
+      "model": "YPSILON",
+      "count": 29
+    },
+    {
+      "make": "OPEL",
+      "model": "COMBO-E",
+      "count": 29
+    },
+    {
+      "make": "DEEPAL",
+      "model": "S05",
+      "count": 28
+    },
+    {
+      "make": "FARIZON",
+      "model": "SV L1H1",
+      "count": 28
+    },
+    {
+      "make": "SKODA",
+      "model": "EPIQ",
+      "count": 28
+    },
+    {
+      "make": "TOYOTA",
+      "model": "URBAN",
+      "count": 28
+    },
+    {
+      "make": "VAUXHALL",
+      "model": "CORSA",
+      "count": 28
+    },
+    {
+      "make": "AION",
+      "model": "UT",
+      "count": 27
+    },
+    {
+      "make": "MINI",
+      "model": "JCW",
+      "count": 27
+    },
+    {
+      "make": "MITSUBISHI",
+      "model": "ECLIPSE CROSS",
+      "count": 27
+    },
+    {
+      "make": "NISSAN",
+      "model": "INTERSTAR",
+      "count": 26
+    },
+    {
+      "make": "AUDI",
+      "model": "Q4 E-TRON PERFORMANCE",
+      "count": 25
+    },
+    {
+      "make": "MINI",
+      "model": "JOHN COOPER",
+      "count": 25
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID.7 TOURER PURE",
+      "count": 25
+    },
+    {
+      "make": "PORSCHE",
+      "model": "CAYENNE-E TURBO",
+      "count": 24
+    },
+    {
+      "make": "MG",
+      "model": "CYBERSTER",
+      "count": 23
+    },
+    {
+      "make": "FORD",
+      "model": "CUSTOM",
+      "count": 22
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "EQS",
+      "count": 22
+    },
+    {
+      "make": "VAUXHALL",
+      "model": "MOKKA",
+      "count": 22
+    },
+    {
+      "make": "CUPRA",
+      "model": "BORN 140 KW 58/61 KWH",
+      "count": 21
+    },
+    {
+      "make": "AUDI",
+      "model": "Q4 SB e-tron quattro perf",
+      "count": 20
+    },
+    {
+      "make": "CITROEN",
+      "model": "Ë-BERLINGO TALLA M ELÉ",
+      "count": 20
+    },
+    {
+      "make": "CITROEN",
+      "model": "E-JUMPY",
+      "count": 20
+    },
+    {
+      "make": "GEELY",
+      "model": "EX2 ULTRA",
+      "count": 20
+    },
+    {
+      "make": "GAC",
+      "model": "AION V",
+      "count": 18
+    },
+    {
+      "make": "GOUPIL",
+      "model": "G4",
+      "count": 18
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "E-TRAVELLER",
+      "count": 18
+    },
+    {
+      "make": "VAUXHALL",
+      "model": "COMBO",
+      "count": 18
+    },
+    {
+      "make": "VAUXHALL",
+      "model": "VIVARO",
+      "count": 18
+    },
+    {
+      "make": "LEXUS",
+      "model": "UX 300E",
+      "count": 17
+    },
+    {
+      "make": "LOTUS",
+      "model": "EMEYA",
+      "count": 17
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID. POLO 155kW",
+      "count": 17
+    },
+    {
+      "make": "FORD",
+      "model": "F-150 LIGHTNING",
+      "count": 16
+    },
+    {
+      "make": "JAC",
+      "model": "T9",
+      "count": 16
+    },
+    {
+      "make": "KIA",
+      "model": "EV4 FASTBACK",
+      "count": 16
+    },
+    {
+      "make": "EXLANTIX",
+      "model": "ET",
+      "count": 15
+    },
+    {
+      "make": "MAXUS",
+      "model": "E",
+      "count": 15
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "EQV",
+      "count": 15
+    },
+    {
+      "make": "YUTONG",
+      "model": "IC12E",
+      "count": 15
+    },
+    {
+      "make": "ALPINE",
+      "model": "A290 GT",
+      "count": 14
+    },
+    {
+      "make": "AUDI",
+      "model": "S6 E-TRON",
+      "count": 14
+    },
+    {
+      "make": "DR",
+      "model": "EQ1",
+      "count": 14
+    },
+    {
+      "make": "KIA",
+      "model": "EV9 GT",
+      "count": 14
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "EQE SUV",
+      "count": 14
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "E-PARTNER - FURGÓN M",
+      "count": 14
+    },
+    {
+      "make": "PORSCHE",
+      "model": "CAYENNE S",
+      "count": 14
+    },
+    {
+      "make": "SERES",
+      "model": "SERES 5",
+      "count": 14
+    },
+    {
+      "make": "AION",
+      "model": "AION V",
+      "count": 13
+    },
+    {
+      "make": "CITROEN",
+      "model": "Ë-JUMPY FURGÓN M ELÉCT",
+      "count": 13
+    },
+    {
+      "make": "DS",
+      "model": "DS8",
+      "count": 13
+    },
+    {
+      "make": "FISKER",
+      "model": "OCEAN",
+      "count": 13
+    },
+    {
+      "make": "GENESIS",
+      "model": "GV70",
+      "count": 13
+    },
+    {
+      "make": "GOLDEN DRAGON",
+      "model": "GC15E",
+      "count": 13
+    },
+    {
+      "make": "LEXUS",
+      "model": "LEXUS ES350E",
+      "count": 13
+    },
+    {
+      "make": "CITROEN",
+      "model": "Ë-C3 ELÉCTRICO MAX CON",
+      "count": 12
+    },
+    {
+      "make": "CITROEN",
+      "model": "NUEVO C3 AIRCROSS ELÉC",
+      "count": 12
+    },
+    {
+      "make": "SUZUKI",
+      "model": "E",
+      "count": 12
+    },
+    {
+      "make": "YUTONG",
+      "model": "T15E",
+      "count": 12
+    },
+    {
+      "make": "AION",
+      "model": "AION UT",
+      "count": 11
+    },
+    {
+      "make": "HONGQI",
+      "model": "EHS7",
+      "count": 11
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID.7 PURE",
+      "count": 11
+    },
+    {
+      "make": "FORD",
+      "model": "COURIER",
+      "count": 10
+    },
+    {
+      "make": "KG MOBILITY",
+      "model": "TORRES",
+      "count": 10
+    },
+    {
+      "make": "MASERATI",
+      "model": "GRECALE",
+      "count": 10
+    },
+    {
+      "make": "MG",
+      "model": "S6",
+      "count": 10
+    },
+    {
+      "make": "PORSCHE",
+      "model": "CAYENNE ELECTRIC",
+      "count": 10
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "CARAVELLE",
+      "count": 10
+    },
+    {
+      "make": "AUDI",
+      "model": "E-TRON",
+      "count": 9
+    },
+    {
+      "make": "AUDI",
+      "model": "S E-TRON",
+      "count": 9
+    },
+    {
+      "make": "BMW",
+      "model": "4",
+      "count": 9
+    },
+    {
+      "make": "CITROEN",
+      "model": "E-SPACETOURER",
+      "count": 9
+    },
+    {
+      "make": "LEXUS",
+      "model": "RZ500E",
+      "count": 9
+    },
+    {
+      "make": "VOLVO",
+      "model": "FH",
+      "count": 9
+    },
+    {
+      "make": "CITROEN",
+      "model": "Ë-C3 ELÉCTRICO 200 YOU",
+      "count": 8
+    },
+    {
+      "make": "CITROEN",
+      "model": "Ë-C3 ELÉCTRICO PLUS CO",
+      "count": 8
+    },
+    {
+      "make": "CITROEN",
+      "model": "Ë-C3 ELÉCTRICO YOU",
+      "count": 8
+    },
+    {
+      "make": "DS",
+      "model": "N 7",
+      "count": 8
+    },
+    {
+      "make": "KG MOBILITY",
+      "model": "MUSSO",
+      "count": 8
+    },
+    {
+      "make": "LEXUS",
+      "model": "LEXUS ES500E",
+      "count": 8
+    },
+    {
+      "make": "LEXUS",
+      "model": "LEXUS RZ550E",
+      "count": 8
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "CLA 250",
+      "count": 8
+    },
+    {
+      "make": "MG",
+      "model": "MG4 EV",
+      "count": 8
+    },
+    {
+      "make": "NIO",
+      "model": "EL6",
+      "count": 8
+    },
+    {
+      "make": "OPEL",
+      "model": "COMBO CARGO ELECTRIC 8",
+      "count": 8
+    },
+    {
+      "make": "SKYWORTH",
+      "model": "SKYWORTH K",
+      "count": 8
+    },
+    {
+      "make": "AUDI",
+      "model": "Q4 SB E-TRON PERFORMANCE",
+      "count": 7
+    },
+    {
+      "make": "CADILLAC",
+      "model": "LYRIQ",
+      "count": 7
+    },
+    {
+      "make": "DS",
+      "model": "N 4",
+      "count": 7
+    },
+    {
+      "make": "FARIZON",
+      "model": "FARIZON SV",
+      "count": 7
+    },
+    {
+      "make": "FARIZON",
+      "model": "SV L3H3",
+      "count": 7
+    },
+    {
+      "make": "FAW",
+      "model": "EHS5",
+      "count": 7
+    },
+    {
+      "make": "NIO",
+      "model": "FIREFLY",
+      "count": 7
+    },
+    {
+      "make": "OPEL",
+      "model": "COMBO ELECTRIC N1 M 50",
+      "count": 7
+    },
+    {
+      "make": "VOLVO",
+      "model": "XC40",
+      "count": 7
+    },
+    {
+      "make": "YUTONG",
+      "model": "T14E",
+      "count": 7
+    },
+    {
+      "make": "CITROEN",
+      "model": "E-DISPATCH",
+      "count": 6
+    },
+    {
+      "make": "DANGEL",
+      "model": "E-PARTNER 4WD",
+      "count": 6
+    },
+    {
+      "make": "DS",
+      "model": "N 7 ÉTOILE E-TENSE FWD",
+      "count": 6
+    },
+    {
+      "make": "EXLANTIX",
+      "model": "ES",
+      "count": 6
+    },
+    {
+      "make": "JAC",
+      "model": "E-JS4",
+      "count": 6
+    },
+    {
+      "make": "MAXUS",
+      "model": "EUNIQ 6",
+      "count": 6
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "GLB 200",
+      "count": 6
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "E-5008 GT EXCLUSIVE EL",
+      "count": 6
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "E-BOXER",
+      "count": 6
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "E-PARTNER - DOBLE CABÍ",
+      "count": 6
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID.BUZZ 4MOTION KR 250 KW",
+      "count": 6
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "OTHER",
+      "count": 6
+    },
+    {
+      "make": "VOLVO",
+      "model": "EX60 (TEST SERIES)",
+      "count": 6
+    },
+    {
+      "make": "XPENG",
+      "model": "P7",
+      "count": 6
+    },
+    {
+      "make": "AUDI",
+      "model": "Q4 SB E-TRON QUATTRO",
+      "count": 5
+    },
+    {
+      "make": "DENZA",
+      "model": "DENZA Z9GT EV",
+      "count": 5
+    },
+    {
+      "make": "FIAT",
+      "model": "E-SCUDO",
+      "count": 5
+    },
+    {
+      "make": "ISUZU",
+      "model": "D-MAX",
+      "count": 5
+    },
+    {
+      "make": "JEEP",
+      "model": "GRAND CHEROKEE",
+      "count": 5
+    },
+    {
+      "make": "MITSUBISHI",
+      "model": "ECLIPSE",
+      "count": 5
+    },
+    {
+      "make": "OPEL",
+      "model": "ZAFIRA-E",
+      "count": 5
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "ALLIED EHORIZON",
+      "count": 5
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "E_RIFTER ALLURE BUSINE",
+      "count": 5
+    },
+    {
+      "make": "VAUXHALL",
+      "model": "ASTRA",
+      "count": 5
+    },
+    {
+      "make": "BMW",
+      "model": "X",
+      "count": 4
+    },
+    {
+      "make": "CITROEN",
+      "model": "Ë-C3 ELÉCTRICO 200 PLU",
+      "count": 4
+    },
+    {
+      "make": "CITROEN",
+      "model": "NEW MULTISPACE",
+      "count": 4
+    },
+    {
+      "make": "CUPRA",
+      "model": "BORN 150 KW 60/63 KWH",
+      "count": 4
+    },
+    {
+      "make": "DS",
+      "model": "N?7",
+      "count": 4
+    },
+    {
+      "make": "FARIZON",
+      "model": "FARIZON SUPERVAN",
+      "count": 4
+    },
+    {
+      "make": "HYUNDAI",
+      "model": "IONIQ6 N",
+      "count": 4
+    },
+    {
+      "make": "ISUZU",
+      "model": "D-MAX V-CROSS",
+      "count": 4
+    },
+    {
+      "make": "KG MOBILITY",
+      "model": "KG MOBILITY TORRES EVX",
+      "count": 4
+    },
+    {
+      "make": "MAXUS",
+      "model": "T90",
+      "count": 4
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "ACTROS",
+      "count": 4
+    },
+    {
+      "make": "NIO",
+      "model": "EL8",
+      "count": 4
+    },
+    {
+      "make": "NIO",
+      "model": "ET5",
+      "count": 4
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "E-3008 GT EXCLUSIVE EL",
+      "count": 4
+    },
+    {
+      "make": "SCANIA",
+      "model": "R 400E",
+      "count": 4
+    },
+    {
+      "make": "VOLVO",
+      "model": "FM",
+      "count": 4
+    },
+    {
+      "make": "ABARTH",
+      "model": "500E",
+      "count": 3
+    },
+    {
+      "make": "AUDI",
+      "model": "RS E-TRON",
+      "count": 3
+    },
+    {
+      "make": "BMW",
+      "model": "I7 60 XDRIVE",
+      "count": 3
+    },
+    {
+      "make": "BYD",
+      "model": "HAN",
+      "count": 3
+    },
+    {
+      "make": "DANGEL",
+      "model": "EXPERT 4WD",
+      "count": 3
+    },
+    {
+      "make": "DFSK",
+      "model": "SERES 3",
+      "count": 3
+    },
+    {
+      "make": "DS",
+      "model": "N°8",
+      "count": 3
+    },
+    {
+      "make": "FARIZON",
+      "model": "V7E",
+      "count": 3
+    },
+    {
+      "make": "FENIKS",
+      "model": "ESPRINTER",
+      "count": 3
+    },
+    {
+      "make": "IVECO",
+      "model": "MOOVY",
+      "count": 3
+    },
+    {
+      "make": "MAN",
+      "model": "eTGS",
+      "count": 3
+    },
+    {
+      "make": "MASERATI",
+      "model": "GRAN TURISMO",
+      "count": 3
+    },
+    {
+      "make": "MAXUS",
+      "model": "EV80",
+      "count": 3
+    },
+    {
+      "make": "MAXUS",
+      "model": "SV63D-C",
+      "count": 3
+    },
+    {
+      "make": "MITSUBISHI",
+      "model": "ECLIPSE CROSS 87 KWH K",
+      "count": 3
+    },
+    {
+      "make": "OPEL",
+      "model": "MOVANO-E",
+      "count": 3
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "E-2008 GT EXCLUSIVE EL",
+      "count": 3
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "E-208 5P GT EXCLUSIVE",
+      "count": 3
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "E-5008 GT ELÉCTRICO 21",
+      "count": 3
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "E-PARTNER - FURGÓN XL",
+      "count": 3
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "NUEVO E-3008 GT EXCLUS",
+      "count": 3
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "NUEVO E-308 5P ALLURE",
+      "count": 3
+    },
+    {
+      "make": "POLARIS",
+      "model": "RANGER",
+      "count": 3
+    },
+    {
+      "make": "PORSCHE",
+      "model": "CAYENNE TURBO ELECTRIC",
+      "count": 3
+    },
+    {
+      "make": "SILA",
+      "model": "E-TECH MASTER",
+      "count": 3
+    },
+    {
+      "make": "SSANGYONG",
+      "model": "TORRES",
+      "count": 3
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID CROSS",
+      "count": 3
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID POLO",
+      "count": 3
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID. Buzz GTX LR 250KW",
+      "count": 3
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID.POLO",
+      "count": 3
+    },
+    {
+      "make": "VOLVO",
+      "model": "FMX",
+      "count": 3
+    },
+    {
+      "make": "ADDAX",
+      "model": "MT15",
+      "count": 2
+    },
+    {
+      "make": "AUDI",
+      "model": "Q4 SB E-TRON",
+      "count": 2
+    },
+    {
+      "make": "BMW",
+      "model": "5",
+      "count": 2
+    },
+    {
+      "make": "CAN-AM",
+      "model": "BRP",
+      "count": 2
+    },
+    {
+      "make": "CITROEN",
+      "model": "AMI",
+      "count": 2
+    },
+    {
+      "make": "DFSK",
+      "model": "EC75",
+      "count": 2
+    },
+    {
+      "make": "DS",
+      "model": "DS NO. 8",
+      "count": 2
+    },
+    {
+      "make": "DS",
+      "model": "DS9",
+      "count": 2
+    },
+    {
+      "make": "DS",
+      "model": "N 8 FWD LONG RANGE ÉTO",
+      "count": 2
+    },
+    {
+      "make": "ERKE",
+      "model": "KANGOO ERKE",
+      "count": 2
+    },
+    {
+      "make": "ERKE",
+      "model": "PROACE ERKE",
+      "count": 2
+    },
+    {
+      "make": "EXLANTIX",
+      "model": "EXLANTIX ES",
+      "count": 2
+    },
+    {
+      "make": "EXLANTIX",
+      "model": "EXLANTIX ET",
+      "count": 2
+    },
+    {
+      "make": "FARIZON",
+      "model": "SV L2H2",
+      "count": 2
+    },
+    {
+      "make": "FAW",
+      "model": "HONGQI EHS7",
+      "count": 2
+    },
+    {
+      "make": "FIREFLY",
+      "model": "COMFORT",
+      "count": 2
+    },
+    {
+      "make": "GENESIS",
+      "model": "G80",
+      "count": 2
+    },
+    {
+      "make": "GENESIS",
+      "model": "GV60 MAGMA",
+      "count": 2
+    },
+    {
+      "make": "HONDA",
+      "model": "ENY1 ELEGANCE",
+      "count": 2
+    },
+    {
+      "make": "HYUNDAI",
+      "model": "IONIQ",
+      "count": 2
+    },
+    {
+      "make": "IVECO",
+      "model": "72C14E",
+      "count": 2
+    },
+    {
+      "make": "JAC",
+      "model": "ES4",
+      "count": 2
+    },
+    {
+      "make": "KANDI",
+      "model": "INNOVATOR",
+      "count": 2
+    },
+    {
+      "make": "LEXUS",
+      "model": "ES350E",
+      "count": 2
+    },
+    {
+      "make": "LEXUS",
+      "model": "ES500E",
+      "count": 2
+    },
+    {
+      "make": "LUCID",
+      "model": "AIR",
+      "count": 2
+    },
+    {
+      "make": "LUCID",
+      "model": "Lucid Gravity",
+      "count": 2
+    },
+    {
+      "make": "MAXUS",
+      "model": "e DELIVER 9",
+      "count": 2
+    },
+    {
+      "make": "MAXUS",
+      "model": "EUNIQ 5",
+      "count": 2
+    },
+    {
+      "make": "MELEX",
+      "model": "N30 P6",
+      "count": 2
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "EQT",
+      "count": 2
+    },
+    {
+      "make": "MOKE",
+      "model": "MOKE",
+      "count": 2
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "E-EXPERT FURGÓN XL ELÉ",
+      "count": 2
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "NUEVO E-408 GT EXCLUSI",
+      "count": 2
+    },
+    {
+      "make": "PIAGGIO",
+      "model": "PORTER",
+      "count": 2
+    },
+    {
+      "make": "SCANIA",
+      "model": "R 450E",
+      "count": 2
+    },
+    {
+      "make": "SIN MARCA",
+      "model": "FRONTERA GS ELECTRIC 4",
+      "count": 2
+    },
+    {
+      "make": "SKYWELL",
+      "model": "BE11",
+      "count": 2
+    },
+    {
+      "make": "SORTIMO",
+      "model": "PROACE CITY SORTIMO",
+      "count": 2
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID. POLO",
+      "count": 2
+    },
+    {
+      "make": "VOYAH",
+      "model": "FREE",
+      "count": 2
+    },
+    {
+      "make": "",
+      "model": "13300",
+      "count": 1
+    },
+    {
+      "make": "CADILLAC",
+      "model": "OPTIC",
+      "count": 1
+    },
+    {
+      "make": "CITROEN",
+      "model": "Ë-C3 ELÉCTRICO YOU CON",
+      "count": 1
+    },
+    {
+      "make": "CITROEN",
+      "model": "Ë-JUMPY FURGÓN XL ELÉC",
+      "count": 1
+    },
+    {
+      "make": "CITROEN",
+      "model": "E-RELAY",
+      "count": 1
+    },
+    {
+      "make": "CITROEN",
+      "model": "JUMPY FURGÓN M ELÉCTRI",
+      "count": 1
+    },
+    {
+      "make": "CITROEN",
+      "model": "NEW C5 AIRCROSS ELECTR",
+      "count": 1
+    },
+    {
+      "make": "CITROEN",
+      "model": "NUEVO CITROËN Ë-C3 COM",
+      "count": 1
+    },
+    {
+      "make": "CITROEN",
+      "model": "NUEVO Ë-C4 ELÉCTRICO E",
+      "count": 1
+    },
+    {
+      "make": "COINPOL",
+      "model": "EXPERT COINPOL",
+      "count": 1
+    },
+    {
+      "make": "DANGEL",
+      "model": "COMBO-E CARGO 4WD",
+      "count": 1
+    },
+    {
+      "make": "DESIGNWERK",
+      "model": "MC8X2R",
+      "count": 1
+    },
+    {
+      "make": "DIVERSE",
+      "model": "DIVERSE",
+      "count": 1
+    },
+    {
+      "make": "DS",
+      "model": "3",
+      "count": 1
+    },
+    {
+      "make": "DS",
+      "model": "DS3 E-TENSE JULES VERN",
+      "count": 1
+    },
+    {
+      "make": "DS",
+      "model": "N 7 FWD ÉTOILE",
+      "count": 1
+    },
+    {
+      "make": "DS",
+      "model": "N 8 AWD LONG RANGE ÉTO",
+      "count": 1
+    },
+    {
+      "make": "DS",
+      "model": "N 8 AWD LONG RANGE JUL",
+      "count": 1
+    },
+    {
+      "make": "DS",
+      "model": "N?4",
+      "count": 1
+    },
+    {
+      "make": "DS",
+      "model": "N?8",
+      "count": 1
+    },
+    {
+      "make": "DS",
+      "model": "N8",
+      "count": 1
+    },
+    {
+      "make": "ERKE",
+      "model": "BERLINGO ERKE",
+      "count": 1
+    },
+    {
+      "make": "ETESIA",
+      "model": "ET LANDER",
+      "count": 1
+    },
+    {
+      "make": "EVOLUTION",
+      "model": "DEL2023DUB EEC",
+      "count": 1
+    },
+    {
+      "make": "FARIZON",
+      "model": "1136Y12",
+      "count": 1
+    },
+    {
+      "make": "FARIZON",
+      "model": "V7E L1H1",
+      "count": 1
+    },
+    {
+      "make": "FARIZON AUTO",
+      "model": "V7E",
+      "count": 1
+    },
+    {
+      "make": "FIAT",
+      "model": "E-ULYSSE",
+      "count": 1
+    },
+    {
+      "make": "FIAT",
+      "model": "TOPOLINO",
+      "count": 1
+    },
+    {
+      "make": "FORD",
+      "model": "TRANSIT CUSTOM PASSE",
+      "count": 1
+    },
+    {
+      "make": "FORTHING",
+      "model": "T5",
+      "count": 1
+    },
+    {
+      "make": "GOUPIL",
+      "model": "G4+",
+      "count": 1
+    },
+    {
+      "make": "HDK",
+      "model": "HDK",
+      "count": 1
+    },
+    {
+      "make": "HISUN",
+      "model": "0",
+      "count": 1
+    },
+    {
+      "make": "HONGQI",
+      "model": "EH7",
+      "count": 1
+    },
+    {
+      "make": "IVECO",
+      "model": "35S14E",
+      "count": 1
+    },
+    {
+      "make": "IVECO",
+      "model": "DAILY",
+      "count": 1
+    },
+    {
+      "make": "JIA JI",
+      "model": "JJ2000DBP",
+      "count": 1
+    },
+    {
+      "make": "KANDI",
+      "model": "COWBOY",
+      "count": 1
+    },
+    {
+      "make": "KARSAN",
+      "model": "E-JEST BXCEM",
+      "count": 1
+    },
+    {
+      "make": "KG MOBILITY",
+      "model": "MUSSO EVX",
+      "count": 1
+    },
+    {
+      "make": "KYC",
+      "model": "V5",
+      "count": 1
+    },
+    {
+      "make": "LUCID",
+      "model": "MOTORS LUCID",
+      "count": 1
+    },
+    {
+      "make": "LYNK CO",
+      "model": "02",
+      "count": 1
+    },
+    {
+      "make": "MAN",
+      "model": "E TGS",
+      "count": 1
+    },
+    {
+      "make": "MAXUS",
+      "model": "E-TERRON",
+      "count": 1
+    },
+    {
+      "make": "MAXUS",
+      "model": "EV30",
+      "count": 1
+    },
+    {
+      "make": "MEBAUTO",
+      "model": "PROACE  MEBAUTO",
+      "count": 1
+    },
+    {
+      "make": "MEBAUTO",
+      "model": "PROACE MAX MEBAUTO",
+      "count": 1
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "AMG EQS",
+      "count": 1
+    },
+    {
+      "make": "MERCEDES-BENZ",
+      "model": "EQS SUV",
+      "count": 1
+    },
+    {
+      "make": "MERCUS",
+      "model": "MB Sprinter",
+      "count": 1
+    },
+    {
+      "make": "MICRO",
+      "model": "MICROLINO",
+      "count": 1
+    },
+    {
+      "make": "NISSAN",
+      "model": "NISSAN JUKE",
+      "count": 1
+    },
+    {
+      "make": "OPEL",
+      "model": "COMBO ELECTRIC XL GS 1",
+      "count": 1
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "E-RIFTER ACTIVE BUSINE",
+      "count": 1
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "EXPERT - TRAVELLER",
+      "count": 1
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "NUEVO E-308 5P GT ELÉC",
+      "count": 1
+    },
+    {
+      "make": "PEUGEOT",
+      "model": "NUEVO E-308 5P STYLE E",
+      "count": 1
+    },
+    {
+      "make": "POLESTAR",
+      "model": "4 (TEST SERIES)",
+      "count": 1
+    },
+    {
+      "make": "PORSCHE",
+      "model": "CAYENNE S COUPÉ ELECTRIC",
+      "count": 1
+    },
+    {
+      "make": "PORSCHE",
+      "model": "CAYENNE TURBO COUPÉ ELECTRIC",
+      "count": 1
+    },
+    {
+      "make": "PORSCHE",
+      "model": "TAYCAN BLACK EDITION",
+      "count": 1
+    },
+    {
+      "make": "PORSCHE",
+      "model": "TAYCAN SPORT TURISMO BLACK EDITION",
+      "count": 1
+    },
+    {
+      "make": "RENAULT",
+      "model": "E-TECH",
+      "count": 1
+    },
+    {
+      "make": "RENAULT TRUCKS",
+      "model": "MASTER",
+      "count": 1
+    },
+    {
+      "make": "RENAULT TRUCKS",
+      "model": "TRAFIC 30",
+      "count": 1
+    },
+    {
+      "make": "SANY",
+      "model": "SY1380T2BEV",
+      "count": 1
+    },
+    {
+      "make": "SCANIA",
+      "model": "R400E",
+      "count": 1
+    },
+    {
+      "make": "SERES",
+      "model": "3",
+      "count": 1
+    },
+    {
+      "make": "SHINERAY",
+      "model": "N.A.",
+      "count": 1
+    },
+    {
+      "make": "SIN MARCA",
+      "model": "Ë-C3 ELÉCTRICO MAX",
+      "count": 1
+    },
+    {
+      "make": "SIN MARCA",
+      "model": "Ë-C3 ELÉCTRICO PLUS",
+      "count": 1
+    },
+    {
+      "make": "SIN MARCA",
+      "model": "E-PARTNER - DOBLE CABÍ",
+      "count": 1
+    },
+    {
+      "make": "SIN MARCA",
+      "model": "E-RIFTER GT STANDARD 1",
+      "count": 1
+    },
+    {
+      "make": "SIN MARCA",
+      "model": "NUEVO Ë-C4 ELÉCTRICO 1",
+      "count": 1
+    },
+    {
+      "make": "SORTIMO",
+      "model": "VITO SORTIMO",
+      "count": 1
+    },
+    {
+      "make": "TESLA",
+      "model": "MODEL S",
+      "count": 1
+    },
+    {
+      "make": "TESLA",
+      "model": "MODEL X",
+      "count": 1
+    },
+    {
+      "make": "VAUXHALL",
+      "model": "MOVANO-E 40",
+      "count": 1
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ETRANSPORTER STYLE",
+      "count": 1
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID. BUZZ PURE KR 125 K",
+      "count": 1
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID.BUZZ 4MOTION KR 250",
+      "count": 1
+    },
+    {
+      "make": "VOLKSWAGEN",
+      "model": "ID.BUZZ 4MOTION LR 250",
+      "count": 1
+    },
+    {
+      "make": "VOYAH",
+      "model": "DREAM",
+      "count": 1
+    },
+    {
+      "make": "YULONG MOTORS",
+      "model": "JJ2000DBP",
+      "count": 1
+    },
+    {
+      "make": "ZAGO AUTOMOTIVE",
+      "model": "CORSA VAN ZAGO",
+      "count": 1
+    },
+    {
+      "make": "ZEROID",
+      "model": "ZEROID EV15",
+      "count": 1
+    }
+  ]
+}

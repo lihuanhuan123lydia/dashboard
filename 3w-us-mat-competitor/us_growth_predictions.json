@@ -1,0 +1,527 @@
+{
+  "model": "LinearRegression+Momentum",
+  "training": "US 2023-2025",
+  "total_models": 130,
+  "predictions": {
+    "Chevrolet Silverado&GMC Sierra": {
+      "predicted_growth": 0.01,
+      "confidence": "high"
+    },
+    "Ford F-Series": {
+      "predicted_growth": 0.03,
+      "confidence": "high"
+    },
+    "Nissan Rogue": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Jeep Grand Cherokee": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Honda Civic": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Honda CR-V": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Ford Explorer": {
+      "predicted_growth": 0.01,
+      "confidence": "medium"
+    },
+    "Jeep Wrangler": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Ford Escape": {
+      "predicted_growth": 0.01,
+      "confidence": "low"
+    },
+    "Nissan Altima": {
+      "predicted_growth": 0.01,
+      "confidence": "high"
+    },
+    "Hyundai Tucson": {
+      "predicted_growth": 0.0,
+      "confidence": "low"
+    },
+    "Toyota Tundra": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Toyota 4 Runner/Lexus GX460": {
+      "predicted_growth": 0.01,
+      "confidence": "low"
+    },
+    "Ford Edge": {
+      "predicted_growth": -0.02,
+      "confidence": "low"
+    },
+    "Jeep Compass": {
+      "predicted_growth": 0.03,
+      "confidence": "low"
+    },
+    "Ford Bronco": {
+      "predicted_growth": 0.01,
+      "confidence": "high"
+    },
+    "Hyundai Palisade": {
+      "predicted_growth": -0.0,
+      "confidence": "low"
+    },
+    "Honda Odyssey": {
+      "predicted_growth": -0.11,
+      "confidence": "medium"
+    },
+    "Audi Q5": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Mazda CX-5": {
+      "predicted_growth": 0.02,
+      "confidence": "high"
+    },
+    "BMW X5": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Toyota Sienna": {
+      "predicted_growth": 0.01,
+      "confidence": "high"
+    },
+    "Ford Bronco Sport": {
+      "predicted_growth": 0.02,
+      "confidence": "high"
+    },
+    "Benz GLE": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Jeep Gladiator": {
+      "predicted_growth": -0.13,
+      "confidence": "medium"
+    },
+    "Honda Accord": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Hyundai Sonata": {
+      "predicted_growth": -0.01,
+      "confidence": "low"
+    },
+    "Audi Q7/Audi Q8": {
+      "predicted_growth": 0.02,
+      "confidence": "low"
+    },
+    "Ford Mustang Mach E": {
+      "predicted_growth": 0.05,
+      "confidence": "low"
+    },
+    "Volvo XC60": {
+      "predicted_growth": 0.04,
+      "confidence": "low"
+    },
+    "Acura RDX": {
+      "predicted_growth": -0.03,
+      "confidence": "low"
+    },
+    "BMW 3 Series": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Porsche Macan": {
+      "predicted_growth": 0.08,
+      "confidence": "high"
+    },
+    "BMW X7": {
+      "predicted_growth": -0.02,
+      "confidence": "medium"
+    },
+    "Cadillac XT5": {
+      "predicted_growth": 0.02,
+      "confidence": "medium"
+    },
+    "Land Rover Defender": {
+      "predicted_growth": 0.02,
+      "confidence": "medium"
+    },
+    "Jeep Renegade": {
+      "predicted_growth": 10.22,
+      "confidence": "medium"
+    },
+    "Jeep Cherokee": {
+      "predicted_growth": 6.25,
+      "confidence": "high"
+    },
+    "Porsche Cayenne": {
+      "predicted_growth": 0.04,
+      "confidence": "high"
+    },
+    "Lexus NX": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Cadillac XT4": {
+      "predicted_growth": 0.45,
+      "confidence": "medium"
+    },
+    "Toyota Highlander": {
+      "predicted_growth": 0.01,
+      "confidence": "high"
+    },
+    "Nissan Armada": {
+      "predicted_growth": 0.03,
+      "confidence": "medium"
+    },
+    "Lexus ES": {
+      "predicted_growth": 0.01,
+      "confidence": "low"
+    },
+    "Honda Pilot": {
+      "predicted_growth": -0.0,
+      "confidence": "high"
+    },
+    "Hyundai Elantra": {
+      "predicted_growth": 0.0,
+      "confidence": "low"
+    },
+    "Benz GLB": {
+      "predicted_growth": 0.1,
+      "confidence": "medium"
+    },
+    "BMW IX": {
+      "predicted_growth": 0.05,
+      "confidence": "low"
+    },
+    "BMW X6": {
+      "predicted_growth": 0.01,
+      "confidence": "medium"
+    },
+    "Benz G-Class": {
+      "predicted_growth": 0.01,
+      "confidence": "medium"
+    },
+    "Benz CLA": {
+      "predicted_growth": -1.07,
+      "confidence": "low"
+    },
+    "Hyundai IONIQ 5": {
+      "predicted_growth": 0.06,
+      "confidence": "high"
+    },
+    "Toyota Grand Highlander": {
+      "predicted_growth": 0.03,
+      "confidence": "medium"
+    },
+    "Range Rover Velar": {
+      "predicted_growth": -0.14,
+      "confidence": "medium"
+    },
+    "Tesla Model X": {
+      "predicted_growth": 0.35,
+      "confidence": "high"
+    },
+    "Jaguar F-pace": {
+      "predicted_growth": 0.04,
+      "confidence": "medium"
+    },
+    "Tesla Model S": {
+      "predicted_growth": 0.55,
+      "confidence": "high"
+    },
+    "Range Rover Evoque": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Jeep Grand Wagoneer": {
+      "predicted_growth": 0.05,
+      "confidence": "medium"
+    },
+    "BMW X2": {
+      "predicted_growth": -0.07,
+      "confidence": "low"
+    },
+    "BMW 5 Series": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "BMW X3": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Benz C-Class": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Benz E-Class": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Benz GLA": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Benz GLC": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Benz GLS": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Cadillac CT6": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Cadillac XTS": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Chevrolet Equinox": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Chevrolet Traverse": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Dodge Ram 系列": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Ford Ranger": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Hyundai Santa Fe": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Lexus CT": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Lexus RX": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Lincoln MKC": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Lincoln MKX": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Lincoln MKZ": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Range Rover Sport": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Subaru Forester": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Tesla Model 3": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Tesla Model Y": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Toyota Camry": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Toyota RAV4": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Toyota Tacoma": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Volkswagen ID.4": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Volkswagen Tiguan": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Toyota Corrola": {
+      "predicted_growth": 0.0,
+      "confidence": "medium"
+    },
+    "短轴tahoe/yukon/escalade": {
+      "predicted_growth": 0.08,
+      "confidence": "high"
+    },
+    "Kia sorento": {
+      "predicted_growth": 0.04,
+      "confidence": "high"
+    },
+    "Honda HR-V": {
+      "predicted_growth": 0.0,
+      "confidence": "medium"
+    },
+    "Subaru Crosstrek/Impreza": {
+      "predicted_growth": 0.16,
+      "confidence": "high"
+    },
+    "Chevrolet Suburban": {
+      "predicted_growth": -0.07,
+      "confidence": "high"
+    },
+    "Acura MDX": {
+      "predicted_growth": 0.07,
+      "confidence": "high"
+    },
+    "Tesla Cybertruck": {
+      "predicted_growth": -0.08,
+      "confidence": "high"
+    },
+    "Kia EV6": {
+      "predicted_growth": 0.07,
+      "confidence": "medium"
+    },
+    "Audi Q3": {
+      "predicted_growth": -4.99,
+      "confidence": "high"
+    },
+    "BMW X1": {
+      "predicted_growth": 0.01,
+      "confidence": "medium"
+    },
+    "Lexus GX460": {
+      "predicted_growth": 0.04,
+      "confidence": "high"
+    },
+    "Volkswagen Golf": {
+      "predicted_growth": -4.95,
+      "confidence": "low"
+    },
+    "Audi Q4": {
+      "predicted_growth": -4.99,
+      "confidence": "high"
+    },
+    "Porsche 911": {
+      "predicted_growth": -4.99,
+      "confidence": "high"
+    },
+    "Audi A6": {
+      "predicted_growth": -4.99,
+      "confidence": "low"
+    },
+    "Rivian R1S": {
+      "predicted_growth": 0.0,
+      "confidence": "medium"
+    },
+    "Audi A4": {
+      "predicted_growth": 39.98,
+      "confidence": "high"
+    },
+    "Land Rover Discovery Sport": {
+      "predicted_growth": -0.0,
+      "confidence": "high"
+    },
+    "Benz S-Class": {
+      "predicted_growth": -4.96,
+      "confidence": "high"
+    },
+    "Ford Maverick": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Porsche 718": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "无": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Chevrolet Trax": {
+      "predicted_growth": 0.02,
+      "confidence": "high"
+    },
+    "Kia Sportage": {
+      "predicted_growth": 0.02,
+      "confidence": "medium"
+    },
+    "Subaru Outback": {
+      "predicted_growth": 0.02,
+      "confidence": "high"
+    },
+    "Nissan Pathfinder": {
+      "predicted_growth": 0.06,
+      "confidence": "medium"
+    },
+    "Nissan kick": {
+      "predicted_growth": 0.01,
+      "confidence": "high"
+    },
+    "Kia Telluride": {
+      "predicted_growth": -4.94,
+      "confidence": "high"
+    },
+    "Chevrolet trailblazer": {
+      "predicted_growth": 0.01,
+      "confidence": "high"
+    },
+    "Nissan Frontier": {
+      "predicted_growth": 0.03,
+      "confidence": "high"
+    },
+    "Mazda CX50": {
+      "predicted_growth": -4.97,
+      "confidence": "high"
+    },
+    "Hyundai Kona": {
+      "predicted_growth": -4.98,
+      "confidence": "high"
+    },
+    "Ford Expedition": {
+      "predicted_growth": -4.99,
+      "confidence": "high"
+    },
+    "Nissan Murano": {
+      "predicted_growth": -4.97,
+      "confidence": "low"
+    },
+    "Honda Passport": {
+      "predicted_growth": -4.97,
+      "confidence": "low"
+    },
+    "BMW 7 Series": {
+      "predicted_growth": 0.03,
+      "confidence": "medium"
+    },
+    "Audi A3": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Santa Cruz": {
+      "predicted_growth": -4.96,
+      "confidence": "high"
+    },
+    "Honda Prologue": {
+      "predicted_growth": -4.88,
+      "confidence": "low"
+    },
+    "Chevrolet Silverado": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    },
+    "Nissan X-Trail": {
+      "predicted_growth": 0,
+      "confidence": "low"
+    }
+  }
+}
