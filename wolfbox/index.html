@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wolfbox 论坛运营监控面板</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-primary: #0b0d14; --bg-secondary: #131621; --bg-card: #1a1e2e;
+      --bg-hover: #24283b; --text-primary: #e8eaf0; --text-secondary: #8892a8;
+      --text-muted: #5a6378; --accent: #3b82f6; --border: #262a3d; --sidebar-w: 220px;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:'Inter',-apple-system,system-ui,sans-serif; background:var(--bg-primary); color:var(--text-primary); min-height:100vh; display:flex; }
+    ::-webkit-scrollbar { width:5px; } ::-webkit-scrollbar-track { background:var(--bg-primary); } ::-webkit-scrollbar-thumb { background:var(--border); border-radius:3px; }
+
+    .sidebar {
+      width:var(--sidebar-w); min-height:100vh; background:var(--bg-secondary);
+      border-right:1px solid var(--border); padding:20px 12px; flex-shrink:0; display:flex; flex-direction:column;
+    }
+    .sidebar .brand { font-size:1.2rem; font-weight:800; padding:4px 12px 16px; margin-bottom:12px; border-bottom:1px solid var(--border); }
+    .sidebar .brand span { background:linear-gradient(135deg,#60a5fa,#a855f7); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+    .nav-item { display:flex; align-items:center; gap:10px; padding:10px 12px; border-radius:8px; cursor:pointer; transition:all .15s; font-size:.85rem; font-weight:500; color:var(--text-secondary); margin-bottom:2px; }
+    .nav-item:hover { background:var(--bg-hover); color:var(--text-primary); }
+    .nav-item.active { background:rgba(59,130,246,.12); color:#93c5fd; }
+    .nav-item .icon { font-size:1.1rem; width:24px; text-align:center; }
+    .nav-divider { height:1px; background:var(--border); margin:12px 0; }
+
+    .main { flex:1; padding:24px 28px; max-width:1320px; overflow-y:auto; max-height:100vh; }
+    .page-section { display:none; }
+    .page-section.active { display:block; animation:fadeIn .3s ease; }
+    @keyframes fadeIn { from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:translateY(0)} }
+
+    .card { background:var(--bg-card); border:1px solid var(--border); border-radius:10px; transition:all .15s; }
+    .card-header { display:flex; align-items:center; justify-content:space-between; padding:14px 18px; border-bottom:1px solid var(--border); font-size:.85rem; font-weight:600; }
+    .card-body { padding:16px 18px; }
+    .stat-value { font-weight:700; letter-spacing:-.02em; }
+    .stat-label { font-size:.7rem; font-weight:600; text-transform:uppercase; letter-spacing:.06em; color:var(--text-muted); }
+    
+    .forum-badge { display:inline-flex; align-items:center; padding:2px 8px; border-radius:5px; font-size:.68rem; font-weight:600; }
+    .bronco { background:rgba(59,130,246,.15); color:#60a5fa; }
+    .f150 { background:rgba(34,197,94,.15); color:#4ade80; }
+    .jl { background:rgba(168,85,247,.15); color:#c084fc; }
+    
+    .chip { display:inline-flex; padding:2px 10px; border-radius:999px; font-size:.7rem; font-weight:500; background:rgba(59,130,246,.1); color:#93c5fd; }
+    .chip-green { background:rgba(34,197,94,.12); color:#86efac; }
+    .chip-orange { background:rgba(249,115,22,.12); color:#fdba74; }
+    .chip-red { background:rgba(239,68,68,.12); color:#fca5a5; }
+    
+    .progress-bar { height:6px; border-radius:3px; background:var(--bg-primary); overflow:hidden; }
+    .progress-fill { height:100%; border-radius:3px; transition:width .6s ease; }
+    .rank-badge { display:inline-flex; align-items:center; justify-content:center; width:22px; height:22px; border-radius:5px; font-size:.68rem; font-weight:700; flex-shrink:0; }
+    .r1 { background:linear-gradient(135deg,#f59e0b,#d97706); color:#fff; }
+    .r2 { background:linear-gradient(135deg,#9ca3af,#6b7280); color:#fff; }
+    .r3 { background:linear-gradient(135deg,#b45309,#92400e); color:#fff; }
+    .refresh-btn { display:flex; align-items:center; gap:6px; background:var(--accent); color:#fff; border:none; padding:7px 16px; border-radius:7px; font-weight:600; cursor:pointer; font-size:.82rem; transition:all .15s; }
+    .refresh-btn:hover { background:#2563eb; }
+    .refresh-btn:disabled { opacity:.5; cursor:not-allowed; }
+    .loading-spinner { width:18px; height:18px; border:2px solid rgba(255,255,255,.2); border-top-color:#fff; border-radius:50%; animation:spin .7s linear infinite; display:inline-block; }
+    @keyframes spin { to{transform:rotate(360deg)} }
+    .hover-row { cursor:pointer; border-radius:6px; transition:background .12s; }
+    .hover-row:hover { background:var(--bg-hover); }
+
+    .pill { display:inline-flex; padding:1px 8px; border-radius:99px; font-size:.68rem; font-weight:500; }
+    .pill-g900 { background:rgba(59,130,246,.12); color:#93c5fd; }
+    .pill-duster { background:rgba(34,197,94,.12); color:#86efac; }
+    .pill-jump { background:rgba(249,115,22,.12); color:#fdba74; }
+    .pill-mirror { background:rgba(168,85,247,.12); color:#d8b4fe; }
+    .pill-acc { background:rgba(234,179,8,.12); color:#fde047; }
+
+    .search-input {
+      background:var(--bg-primary); border:1px solid var(--border); border-radius:7px;
+      padding:7px 12px; font-size:.82rem; color:var(--text-primary); width:260px; outline:none;
+      transition:border-color .15s;
+    }
+    .search-input:focus { border-color:var(--accent); }
+    .search-input::placeholder { color:var(--text-muted); }
+
+    .modal-overlay { position:fixed; inset:0; background:rgba(0,0,0,.6); backdrop-filter:blur(4px); z-index:50; display:none; align-items:center; justify-content:center; }
+    .modal-overlay.active { display:flex; }
+    .modal { background:var(--bg-card); border:1px solid var(--border); border-radius:12px; max-width:720px; width:92vw; max-height:85vh; overflow-y:auto; padding:24px; }
+    .modal::-webkit-scrollbar { width:4px; }
+
+    .sentiment-bar { display:flex; height:8px; border-radius:4px; overflow:hidden; }
+    .sentiment-seg { transition:width .8s ease; }
+    .table-wrap { overflow-x:auto; }
+    .table-wrap table { width:100%; border-collapse:collapse; font-size:.82rem; }
+    .table-wrap th { text-align:left; padding:8px 10px; color:var(--text-muted); font-weight:600; text-transform:uppercase; font-size:.68rem; letter-spacing:.04em; border-bottom:1px solid var(--border); }
+    .table-wrap td { padding:8px 10px; border-bottom:1px solid var(--border); }
+
+    .insight-card { border-left:3px solid; padding:10px 14px; background:var(--bg-primary); border-radius:0 6px 6px 0; }
+    .insight-positive { border-color:#22c55e; }
+    .insight-negative { border-color:#ef4444; }
+    .insight-suggest { border-color:#f97316; }
+    .insight-neutral { border-color:#6b7280; }
+
+    .forum-filter-btn {
+      padding:4px 12px; border-radius:6px; font-size:.75rem; font-weight:500; cursor:pointer;
+      border:1px solid var(--border); background:transparent; color:var(--text-secondary); transition:all .12s;
+    }
+    .forum-filter-btn:hover { border-color:var(--accent); color:var(--text-primary); }
+    .forum-filter-btn.active { border-color:var(--accent); background:rgba(59,130,246,.12); color:#93c5fd; }
+    .forum-filter-btn.bf { border-color:rgba(59,130,246,.3); color:#60a5fa; }
+    .forum-filter-btn.ff { border-color:rgba(34,197,94,.3); color:#4ade80; }
+    .forum-filter-btn.jf { border-color:rgba(168,85,247,.3); color:#c084fc; }
+
+    @media (max-width:768px) { .sidebar { display:none; } .main { padding:16px; } }
+  </style>
+</head>
+<body>
+
+<!-- ========== SIDEBAR ========== -->
+<aside class="sidebar">
+  <div class="brand"><span>Wolfbox</span>&nbsp;Ops</div>
+  <div class="nav-item active" data-tab="overview" onclick="switchTab('overview')"><span class="icon">📊</span> 总览</div>
+  <div class="nav-item" data-tab="forums" onclick="switchTab('forums')"><span class="icon">🌐</span> 论坛分站</div>
+  <div class="nav-item" data-tab="products" onclick="switchTab('products')"><span class="icon">📦</span> 品类分布</div>
+  <div class="nav-item" data-tab="rankings" onclick="switchTab('rankings')"><span class="icon">🏆</span> 热门排行</div>
+  <div class="nav-item" data-tab="timeline" onclick="switchTab('timeline')"><span class="icon">📅</span> 时间线</div>
+  <div class="nav-divider"></div>
+  <div class="nav-item" onclick="refreshData()"><span class="icon">🔄</span> 刷新数据</div>
+  <div style="flex:1"></div>
+  <div class="text-xs text-gray-600 px-3 py-2">数据源: Google 搜索索引<br>更新: <span id="lastUpdate">2026/06/11</span></div>
+</aside>
+
+<!-- ========== MAIN ========== -->
+<div class="main">
+
+<!-- TAB: 总览 -->
+<div id="tab-overview" class="page-section active">
+  <div class="flex items-center justify-between mb-5">
+    <div><h1 class="text-xl font-bold">📊 总览仪表盘</h1><p class="text-sm text-gray-500 mt-1">Wolfbox 在三个北美论坛的运营数据一览</p></div>
+    <button class="refresh-btn" onclick="refreshData()"><span id="refreshText">🔄 刷新</span><span id="refreshSpinner" class="loading-spinner" style="display:none"></span></button>
+  </div>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
+    <div class="card p-4"><div class="stat-label">总话题数</div><div class="stat-value text-3xl mt-1" id="totalThreads">-</div><div class="text-xs text-gray-600 mt-1">全部论坛累计</div></div>
+    <div class="card p-4"><div class="stat-label">总回复量</div><div class="stat-value text-3xl mt-1" id="totalReplies">-</div><div class="text-xs text-gray-600 mt-1">全部帖子累计</div></div>
+    <div class="card p-4"><div class="stat-label">总浏览量</div><div class="stat-value text-3xl mt-1" id="totalViews">-</div><div class="text-xs text-gray-600 mt-1">全部帖子累计</div></div>
+    <div class="card p-4"><div class="stat-label">覆盖品类</div><div class="stat-value text-3xl mt-1" id="totalProducts">-</div><div class="text-xs text-gray-600 mt-1">产品系列数</div></div>
+  </div>
+  <div class="grid md:grid-cols-3 gap-3 mb-6">
+    <div class="card p-4">
+      <div class="flex items-center gap-2 mb-2"><span class="forum-badge bronco">BRONCO6G</span><span class="text-xs text-gray-500">Ford Bronco</span></div>
+      <div class="flex items-end gap-4">
+        <div><div class="stat-label text-xs">话题</div><div class="text-xl font-bold" id="broncoThreads">-</div></div>
+        <div><div class="stat-label text-xs">回复</div><div class="text-xl font-bold" id="broncoReplies">-</div></div>
+        <div><div class="stat-label text-xs">浏览量</div><div class="text-xl font-bold" id="broncoViews">-</div></div>
+      </div>
+      <div class="text-xs text-gray-500 mt-2">最新: <span id="broncoLatest" class="text-gray-300">-</span> · 热点: <span id="broncoHot" class="text-yellow-400">-</span></div>
+    </div>
+    <div class="card p-4">
+      <div class="flex items-center gap-2 mb-2"><span class="forum-badge f150">F150GEN14</span><span class="text-xs text-gray-500">F-150 Forum</span></div>
+      <div class="flex items-end gap-4">
+        <div><div class="stat-label text-xs">话题</div><div class="text-xl font-bold" id="f150Threads">-</div></div>
+        <div><div class="stat-label text-xs">回复</div><div class="text-xl font-bold" id="f150Replies">-</div></div>
+        <div><div class="stat-label text-xs">浏览量</div><div class="text-xl font-bold" id="f150Views">-</div></div>
+      </div>
+      <div class="text-xs text-gray-500 mt-2">最新: <span id="f150Latest" class="text-gray-300">-</span> · 热点: <span id="f150Hot" class="text-yellow-400">-</span></div>
+    </div>
+    <div class="card p-4">
+      <div class="flex items-center gap-2 mb-2"><span class="forum-badge jl">JL WRANGLER</span><span class="text-xs text-gray-500">Jeep Wrangler</span></div>
+      <div class="flex items-end gap-4">
+        <div><div class="stat-label text-xs">话题</div><div class="text-xl font-bold" id="jlThreads">-</div></div>
+        <div><div class="stat-label text-xs">回复</div><div class="text-xl font-bold" id="jlReplies">-</div></div>
+        <div><div class="stat-label text-xs">浏览量</div><div class="text-xl font-bold" id="jlViews">-</div></div>
+      </div>
+      <div class="text-xs text-gray-500 mt-2">最新: <span id="jlLatest" class="text-gray-300">-</span> · 热点: <span id="jlHot" class="text-yellow-400">-</span></div>
+    </div>
+  </div>
+
+  <div class="grid md:grid-cols-2 gap-3">
+    <div class="card"><div class="card-header">📦 品类分布概览</div><div class="card-body" id="overviewProducts"><div class="text-center text-gray-500 py-6">加载中...</div></div></div>
+    <div class="card"><div class="card-header">🔥 热门话题 Top 5</div><div class="card-body" id="overviewHot"><div class="text-center text-gray-500 py-6">加载中...</div></div></div>
+  </div>
+</div>
+
+<!-- TAB: 论坛分站 -->
+<div id="tab-forums" class="page-section">
+  <h1 class="text-xl font-bold mb-1">🌐 论坛分站详情</h1>
+  <p class="text-sm text-gray-500 mb-5">点击任意帖子可展开深度分析（评论风向 + 产品优化建议）</p>
+  <!-- Bronco6G -->
+  <div class="card mb-4">
+    <div class="card-header"><div class="flex items-center gap-2"><span class="forum-badge bronco">BRONCO6G</span><span class="text-sm font-normal text-gray-400">Ford Bronco · <a href="https://www.bronco6g.com/forum/members/wolfbox.64878/" target="_blank" class="text-blue-400 hover:underline">Wolfbox 主页</a></span></div><span id="broncoCount" class="chip">0 条</span></div>
+    <div class="card-body p-0"><div class="table-wrap"><table><thead><tr><th style="width:28px">#</th><th>标题</th><th style="width:90px">品类</th><th style="width:55px">回复</th><th style="width:60px">浏览</th><th style="width:35px">🔥</th></tr></thead><tbody id="broncoTable"></tbody></table></div></div>
+  </div>
+  <!-- F150 -->
+  <div class="card mb-4">
+    <div class="card-header"><div class="flex items-center gap-2"><span class="forum-badge f150">F150GEN14</span><span class="text-sm font-normal text-gray-400">F-150 Forum · <a href="https://www.f150gen14.com/forum/members/wolfbox.28472/" target="_blank" class="text-green-400 hover:underline">Wolfbox 主页</a></span></div><span id="f150Count" class="chip">0 条</span></div>
+    <div class="card-body p-0"><div class="table-wrap"><table><thead><tr><th style="width:28px">#</th><th>标题</th><th style="width:90px">品类</th><th style="width:55px">回复</th><th style="width:60px">浏览</th><th style="width:35px">🔥</th></tr></thead><tbody id="f150Table"></tbody></table></div></div>
+  </div>
+  <!-- JL -->
+  <div class="card">
+    <div class="card-header"><div class="flex items-center gap-2"><span class="forum-badge jl">JL WRANGLER</span><span class="text-sm font-normal text-gray-400">Jeep Wrangler · <a href="https://www.jlwranglerforums.com/forum/members/wolfbox-car-life.96491/" target="_blank" class="text-purple-400 hover:underline">Wolfbox 主页</a></span></div><span id="jlCount" class="chip">0 条</span></div>
+    <div class="card-body p-0"><div class="table-wrap"><table><thead><tr><th style="width:28px">#</th><th>标题</th><th style="width:90px">品类</th><th style="width:55px">回复</th><th style="width:60px">浏览</th><th style="width:35px">🔥</th></tr></thead><tbody id="jlTable"></tbody></table></div></div>
+  </div>
+</div>
+
+<!-- TAB: 品类分布 -->
+<div id="tab-products" class="page-section">
+  <h1 class="text-xl font-bold mb-1">📦 产品 / 品类话题分布</h1>
+  <p class="text-sm text-gray-500 mb-5">按 Wolfbox 产品系列统计话题数、回复量和浏览热度</p>
+  <div class="grid md:grid-cols-2 gap-4">
+    <div class="card"><div class="card-header">📊 各品类话题占比</div><div class="card-body" id="productDetail"><div class="text-center text-gray-500 py-6">加载中...</div></div></div>
+    <div class="card"><div class="card-header">📈 品类互动数据对比</div><div class="card-body" id="productCompare"><div class="text-center text-gray-500 py-6">加载中...</div></div></div>
+  </div>
+</div>
+
+<!-- TAB: 热门排行 -->
+<div id="tab-rankings" class="page-section">
+  <h1 class="text-xl font-bold mb-1">🏆 Wolfbox 全论坛热门帖子排行</h1>
+  <p class="text-sm text-gray-500 mb-3">基于热度指数综合排序 · 点击帖子可查看深度分析 + 评论风向 + 优化建议</p>
+
+  <!-- Search + Filter Bar -->
+  <div class="card mb-4">
+    <div class="card-body">
+      <div class="flex items-center flex-wrap gap-3">
+        <div class="flex items-center gap-2 bg-[var(--bg-primary)] border border-[var(--border)] rounded-lg px-3 py-1.5 flex-1 min-w-[200px] max-w-sm">
+          <span class="text-gray-400 text-sm">🔍</span>
+          <input class="search-input !border-none !bg-transparent !p-0 !w-full !text-sm" id="rankSearch" placeholder="搜索标题关键词..." oninput="filterRankings()" />
+          <button class="text-gray-500 hover:text-white text-xs" onclick="document.getElementById('rankSearch').value='';filterRankings()">✕</button>
+        </div>
+        <div class="flex items-center gap-1.5 flex-wrap">
+          <span class="text-xs text-gray-500 mr-1">论坛:</span>
+          <button class="forum-filter-btn active" data-f="all" onclick="setRankFilter('all',this)">全部</button>
+          <button class="forum-filter-btn bf" data-f="Bronco6G" onclick="setRankFilter('Bronco6G',this)">Bronco6G</button>
+          <button class="forum-filter-btn ff" data-f="F150Gen14" onclick="setRankFilter('F150Gen14',this)">F150Gen14</button>
+          <button class="forum-filter-btn jf" data-f="JL Wrangler" onclick="setRankFilter('JL Wrangler',this)">JL Wrangler</button>
+        </div>
+        <div class="flex items-center gap-1.5 flex-wrap">
+          <span class="text-xs text-gray-500 mr-1">品类:</span>
+          <button class="forum-filter-btn active" data-c="all" onclick="setCatFilter('all',this)">全部</button>
+          <button class="forum-filter-btn" data-c="G900 系列" onclick="setCatFilter('G900 系列',this)">G900</button>
+          <button class="forum-filter-btn" data-c="Air Duster" onclick="setCatFilter('Air Duster',this)">Air Duster</button>
+          <button class="forum-filter-btn" data-c="Jump Starter" onclick="setCatFilter('Jump Starter',this)">Jump Starter</button>
+          <button class="forum-filter-btn" data-c="Side Mirrors" onclick="setCatFilter('Side Mirrors',this)">Side Mirrors</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header"><span>排名结果</span><span id="rankingTotal" class="chip">0 条</span></div>
+    <div class="card-body p-0"><div class="table-wrap"><table><thead><tr>
+      <th style="width:30px">#</th><th style="width:70px">论坛</th><th>标题</th><th style="width:70px">品类</th><th style="width:50px">回复</th><th style="width:60px">浏览</th><th style="width:40px">热度</th><th style="width:60px">评论风向</th><th style="width:35px"></th>
+    </tr></thead><tbody id="rankingTable"></tbody></table></div></div>
+  </div>
+</div>
+
+<!-- TAB: 时间线 -->
+<div id="tab-timeline" class="page-section">
+  <h1 class="text-xl font-bold mb-1">📅 最新话题时间线</h1>
+  <p class="text-sm text-gray-500 mb-5">全部帖子按发布时间倒序排列</p>
+  <div class="card">
+    <div class="card-header"><span>时间线</span><span id="timelineTotal" class="chip">0 条</span></div>
+    <div class="card-body" id="timelineList"><div class="text-center text-gray-500 py-6">加载中...</div></div>
+  </div>
+</div>
+</div>
+
+<!-- ========== 深度分析弹窗 ========== -->
+<div class="modal-overlay" id="threadModal" onclick="if(event.target===this)closeModal()">
+  <div class="modal">
+    <div class="flex items-start justify-between mb-4">
+      <div class="flex-1 min-w-0 mr-4">
+        <h2 class="text-base font-bold leading-snug" id="modalTitle">-</h2>
+        <div class="flex items-center gap-2 mt-1.5 flex-wrap" id="modalMeta"></div>
+      </div>
+      <button onclick="closeModal()" class="text-gray-400 hover:text-white text-lg flex-shrink-0">&times;</button>
+    </div>
+    <div id="modalBody" class="space-y-4"></div>
+  </div>
+</div>
+
+<script>
+// ========== 带评论风向的数据 ==========
+const SEED = [
+  {id:1, f:'Bronco6G', t:'Wolfbox vs Acumen', u:'https://www.bronco6g.com/forum/threads/wolfbox-vs-acumen.102946/', d:'2024-10-25', c:'G900 系列', r:45, v:3200, h:8,
+    sentiment:{pos:35,neu:50,neg:15},
+    pros:['画质比竞品清晰','夜视表现突出','安装相对简单'],
+    cons:['价格偏高','售后响应慢','部分车型支架不匹配'],
+    suggests:[{label:'定价策略',text:'考虑推出入门级版本对标竞品',priority:'高'},{label:'兼容性',text:'增加更多车型支架适配',priority:'中'}],
+    summary:'用户对比 WOLFBOX 与竞品 Acumen，整体偏向 Wolfbox，但有部分用户认为价格不够友好。'},
+  {id:2, f:'Bronco6G', t:'Rear Washer Fluid Line Route for Wolfbox Tripro', u:'https://www.bronco6g.com/forum/threads/rear-washer-fluid-line-route.131565/', d:'2026-04-12', c:'配件/周边', r:12, v:1100, h:3,
+    sentiment:{pos:40,neu:50,neg:10},
+    pros:['社区互助氛围好','安装指导帖受欢迎'],
+    cons:['原装配件安装说明不够清晰'],
+    suggests:[{label:'安装文档',text:'优化 Tripro 后摄像头安装说明书，增加走线示意图',priority:'中'}],
+    summary:'技术安装求助帖，用户对 Tripro 后摄像头走线有疑问。'},
+  {id:3, f:'Bronco6G', t:'Wolfbox G900 Tripro: Honest Review', u:'https://www.bronco6g.com/forum/threads/wolfbox-g900-tripro-honest-review.120377/', d:'2025-08-17', c:'G900 系列', r:78, v:8500, h:15,
+    sentiment:{pos:60,neu:30,neg:10},
+    pros:['4K画质远超竞品','STARVIS 2 夜视出色','安装整体简便','多车主要求加购第二套'],
+    cons:['APP连接偶有断连','GPS模块偶尔丢失信号'],
+    suggests:[{label:'APP稳定性',text:'修复APP蓝牙连接稳定性，推动OTA固件升级',priority:'高'},{label:'GPS模块',text:'优化GPS模块天线设计',priority:'中'}],
+    summary:'详细评测帖，口碑正面。用户对画质和夜视功能极度满意，APP稳定性是唯一被提及的短板。'},
+  {id:4, f:'Bronco6G', t:'Wolfbox G900 Tri Pro Dashcam and Rear Camera Review', u:'https://www.bronco6g.com/forum/threads/wolfbox-g900-tri-pro-dashcam-and-rear-camera-review.120328/', d:'2025-08-16', c:'G900 系列', r:92, v:12000, h:18,
+    sentiment:{pos:65,neu:28,neg:7},
+    pros:['录像质量超预期','广角视野优秀','停车监控功能实用'],
+    cons:['硬线安装包OBD接口偶发兼容问题','内存卡需自行购买'],
+    suggests:[{label:'OBD电源',text:'测试更多车型 OBD 兼容性，出兼容性列表',priority:'高'},{label:'配件',text:'考虑标配内存卡提升开箱体验',priority:'低'}],
+    summary:'高互动评测帖，整体口碑极佳。部分用户提到 OBD 电源适配器在某些车型上不兼容。'},
+  {id:5, f:'Bronco6G', t:'G900 Tri Pro Mirror Dash Cam - Install & Review', u:'https://www.bronco6g.com/wolfbox-g900-tri-pro-mirror-dash-cam-install-review/', d:'2025-06-15', c:'G900 系列', r:56, v:6200, h:11,
+    sentiment:{pos:55,neu:35,neg:10},
+    pros:['前视摄像头补足了低配车型缺失','安装资源丰富','优惠码分享活跃'],
+    cons:['长时间暴晒后机身发热','镜面反光偶有干扰'],
+    suggests:[{label:'散热',text:'测试高温环境散热表现，考虑增加散热设计',priority:'中'},{label:'屏幕',text:'优化防眩光涂层',priority:'低'}],
+    summary:'安装加评测帖，内容详实。用户特别提到在 Bronco 上完美补足了缺失的前摄像头功能。'},
+  {id:6, f:'Bronco6G', t:'Review: WolfBox G900 Tri-Pro Bronco Install', u:'https://www.bronco6g.com/review-wolfbox-g900-tri-pro-bronco-install/', d:'2025-07-05', c:'G900 系列', r:34, v:4100, h:7,
+    sentiment:{pos:70,neu:25,neg:5},
+    pros:['安装简单','双摄系统值回票价','准备购买第二套'],
+    cons:['少数安装时的走线问题'],
+    suggests:[{label:'安装指导',text:'制作车型专属安装视频',priority:'中'}],
+    summary:'非常正面的评测帖，用户表示要再买一套装第二辆车。'},
+  {id:7, f:'Bronco6G', t:'G900 TriPro Camera Review (Giveaway)', u:'https://www.bronco6g.com/forum/threads/wolfbox-g900-tripro-camera-review.122525/', d:'2025-09-29', c:'G900 系列', r:41, v:3800, h:9,
+    sentiment:{pos:50,neu:45,neg:5},
+    pros:['开箱体验惊喜','社区活动积极'],
+    cons:['参与人数期望更多'],
+    suggests:[{label:'营销活动',text:'增加抽奖频次，扩大社区影响力',priority:'中'}],
+    summary:'Giveaway 活动帖，品牌好感度提升明显。'},
+  {id:8, f:'Bronco6G', t:'Project Farm Tested WOLFBOX MF100 Air Duster', u:'https://www.bronco6g.com/forum/threads/project-farm-tested-wolfbox-mf100-air-duster.109356/', d:'2025-02-18', c:'Air Duster', r:63, v:7100, h:12,
+    sentiment:{pos:75,neu:20,neg:5},
+    pros:['Project Farm 背书可信度高','出风量大','性价比优于竞品'],
+    cons:['噪音略大','续航中等'],
+    suggests:[{label:'噪音优化',text:'优化电机降噪设计',priority:'中'},{label:'KOL合作',text:'继续与 Project Farm 等权威频道合作测评',priority:'高'}],
+    summary:'Project Farm 测试视频带来的强背书帖，极大提升 MF100 品牌可信度。'},
+  {id:9, f:'Bronco6G', t:'Install & Review: WOLFBOX G900Pro Dash Cam', u:'https://www.bronco6g.com/forum/threads/install-review-wolfbox-g900pro-dash-cam.106663/', d:'2025-01-02', c:'G900 系列', r:28, v:3500, h:5,
+    sentiment:{pos:60,neu:35,neg:5},
+    pros:['视频质量清晰','安装方式灵活','整体评价正面'],
+    cons:['价格门槛略高'],
+    suggests:[{label:'价格策略',text:'考虑推出促销套装',priority:'中'}],
+    summary:'视频评测帖，涵盖两种安装方式。'},
+  {id:10, f:'Bronco6G', t:'Is the WolfBox OBDII power kit any good', u:'https://www.bronco6g.com/forum/threads/is-the-wolfbox-obdii-power-kit-any-good.133094/', d:'2026-05-20', c:'配件/周边', r:18, v:2100, h:4,
+    sentiment:{pos:45,neu:45,neg:10},
+    pros:['低温环境表现稳定','定期用车无亏电风险'],
+    cons:['极寒地区电压阈值需优化','长期停驶不适用'],
+    suggests:[{label:'产品迭代',text:'开发可调电压阈值版本适配不同气候',priority:'中'}],
+    summary:'OBDII 电源套件的讨论帖，冬季用户反馈积极。'},
+
+  {id:11, f:'F150Gen14', t:'WOLFBOX MegaVolt24 Air Jump Starter Review', u:'https://www.f150gen14.com/2026/05/11/wolfbox-megavolt24-air-jump-starter-with-air-compressor-review/', d:'2026-05-11', c:'Jump Starter', r:38, v:4500, h:8,
+    sentiment:{pos:65,neu:30,neg:5},
+    pros:['充气泵应急实用','多功能一体方便','收纳盒做工精良'],
+    cons:['一次故障整机报废风险','尺寸稍大'],
+    suggests:[{label:'产品设计',text:'考虑模块化设计以便单独更换故障部件',priority:'中'},{label:'体积优化',text:'下一代考虑更紧凑设计',priority:'低'}],
+    summary:'高评分评测帖。用户强调充气泵在高速爆胎时救了急，实用主义高度好评。'},
+  {id:12, f:'F150Gen14', t:'MegaVolt24 Air + MF200 Air Duster Review', u:'https://www.f150gen14.com/forum/threads/wolfbox-megavolt24-air-mf200-air-duster-review.44808/', d:'2025-12-11', c:'Jump Starter', r:25, v:2800, h:5,
+    sentiment:{pos:55,neu:40,neg:5},
+    pros:['双产品组合评测','硬壳包装漂亮'],
+    cons:['组合后体积偏大'],
+    suggests:[{label:'组合营销',text:'考虑组合销售折扣',priority:'低'}],
+    summary:'双产品组合评测帖。'},
+  {id:13, f:'F150Gen14', t:'Installed a WolfBox G900Pro', u:'https://www.f150gen14.com/forum/threads/installed-a-wolfbox-g900pro.32692/', d:'2025-01-21', c:'G900 系列', r:15, v:1800, h:3,
+    sentiment:{pos:50,neu:48,neg:2},
+    pros:['安装顺利','产品描述准确'],
+    cons:['内容较简短缺乏深度'],
+    suggests:[{label:'社区激励',text:'鼓励用户分享详细安装经验',priority:'低'}],
+    summary:'简短的安装分享帖。'},
+  {id:14, f:'F150Gen14', t:'Review: WOLFBOX 4-in-1 Jump Starter 4000A', u:'https://www.f150gen14.com/2026/01/19/review-wolfbox-4-in-1-jump-starter-4000a-air-compressor-160psi-light-usb-charger/', d:'2026-01-19', c:'Jump Starter', r:47, v:5200, h:10,
+    sentiment:{pos:70,neu:25,neg:5},
+    pros:['4000A峰值电流充沛','充气泵160psi优秀','收纳位置巧妙（后座下）'],
+    cons:['USB充电口功率偏低'],
+    suggests:[{label:'功能升级',text:'升级USB-C快充协议支持',priority:'中'}],
+    summary:'详细评测帖，用户评分极高，特别提到在F-150后座下有完美收纳位。'},
+  {id:15, f:'F150Gen14', t:'Wolfbox Air Duster Review', u:'https://www.f150gen14.com/forum/threads/wolfbox-air-duster-review.36714/', d:'2025-04-28', c:'Air Duster', r:32, v:3000, h:6,
+    sentiment:{pos:65,neu:30,neg:5},
+    pros:['出乎意料实用','从车内到居家都可用','老房子除尘利器'],
+    cons:['滤网清理稍麻烦'],
+    suggests:[{label:'配件',text:'考虑增加可更换滤网设计',priority:'低'}],
+    summary:'用户最初持怀疑态度但使用后真香。从车内清洁扩展到家庭使用场景。'},
+  {id:16, f:'F150Gen14', t:'G900 Tri Pro rear view mirror dashcam', u:'https://www.f150gen14.com/2025/11/23/wolfbox-g900-tri-pro-rear-view-mirror-dashcam-install-review/', d:'2025-11-20', c:'G900 系列', r:44, v:4800, h:9,
+    sentiment:{pos:60,neu:35,neg:5},
+    pros:['替换原厂后视镜效果佳','夜间录制清晰','佛罗里达车主强烈推荐'],
+    cons:['无后雨刷车型需额外注意安装'],
+    suggests:[{label:'区域市场',text:'佛罗里达等强降雨区域重点推广',priority:'中'}],
+    summary:'佛罗里达车主推荐帖，强调行车记录仪在事故责任认定中的关键作用。'},
+  {id:17, f:'F150Gen14', t:'How to use Wolfbox G900 Tripro? Video tutorial', u:'https://www.f150gen14.com/forum/threads/how-to-use-wolfbox-g900-tripro-video-tutorial-here.39236/', d:'2025-06-18', c:'G900 系列', r:8, v:900, h:2,
+    sentiment:{pos:40,neu:55,neg:5},
+    pros:['视频教程受欢迎'],
+    cons:['内容偏基础'],
+    suggests:[{label:'教程体系',text:'制作系统化教程系列（安装→设置→使用→故障排除）',priority:'中'}],
+    summary:'教程分享帖，对新手友好。'},
+  {id:18, f:'F150Gen14', t:'G900 Tripro Bumper Version Review', u:'https://www.f150gen14.com/forum/threads/dashcam-wolfbox-g900-tripro-bumper-version-review.41644/', d:'2025-09-22', c:'G900 系列', r:36, v:3600, h:7,
+    sentiment:{pos:65,neu:30,neg:5},
+    pros:['12寸大屏触控爽','STARVIS 2画质卓越','APP下载视频方便'],
+    cons:['硬线套件需另购','部分用户期望更高帧率'],
+    suggests:[{label:'套件整合',text:'考虑将硬线套件纳入标准包装',priority:'中'}],
+    summary:'Bumper 版本评测，12寸大屏是主要卖点。'},
+  {id:19, f:'F150Gen14', t:'Wolfbox Wide-Angle Convex Side Mirrors', u:'https://www.f150gen14.com/forum/threads/wolfbox-wide-angle-convex-side-mirrors-pair-from-69-99-extra-discount-code-included.50038/', d:'2026-05-14', c:'Side Mirrors', r:29, v:3900, h:6,
+    sentiment:{pos:55,neu:40,neg:5},
+    pros:['视野大幅改善','价格合理','越野场景尤其好用'],
+    cons:['安装需适应'],
+    suggests:[{label:'营销',text:'推荐越野场景用途，突出 off-road 场景优势',priority:'中'}],
+    summary:'侧镜产品帖，越野场景下用户反馈极好。'},
+
+  {id:20, f:'JL Wrangler', t:'G900 4k Dash Cam System - My Review (Pros & Cons)', u:'https://www.jlwranglerforums.com/review-wolfbox-g900-4k-front-camera-2-5k-rear-camera-dash-cam-system/', d:'2024-02-09', c:'G900 系列', r:112, v:15000, h:20,
+    sentiment:{pos:55,neu:35,neg:10},
+    pros:['4K+2.5K双摄清晰','论坛赞助商增加品牌信任','品牌响应及时'],
+    cons:['初次安装需摸索','GPS信号在车内信号弱'],
+    suggests:[{label:'安装优化',text:'提供Jeep车型专属安装指南',priority:'高'},{label:'GPS天线',text:'增强GPS天线设计适配金属车顶',priority:'中'}],
+    summary:'论坛赞助商身份带来高可信度。超长评测帖，回复112条是该论坛互动最高的帖子。'},
+  {id:21, f:'JL Wrangler', t:'The New WOLFBOX MF200 Compressed Air Duster Review', u:'https://www.jlwranglerforums.com/forum/threads/the-new-wolfbox-mf200-compressed-air-duster-review.158850/', d:'2025-11-17', c:'Air Duster', r:23, v:2500, h:5,
+    sentiment:{pos:60,neu:35,neg:5},
+    pros:['MF200比MF100风量更大','客服响应速度极快'],
+    cons:['价格高于100型号'],
+    suggests:[{label:'售后',text:'继续保持客服快速响应标准——这是用户反复提及的竞争优势',priority:'高'}],
+    summary:'客服积极响应的口碑反复被提及，是品牌的差异化优势。'},
+  {id:22, f:'JL Wrangler', t:'WolfBox G900 smart rear view mirror / dash cam', u:'https://www.jlwranglerforums.com/wolfbox-g900-smart-rear-view-mirror-dash-cam-review/', d:'2024-01-29', c:'G900 系列', r:88, v:11000, h:16,
+    sentiment:{pos:50,neu:40,neg:10},
+    pros:['双通道录制方案成熟','后视镜一体设计节省空间'],
+    cons:['前期840H用户体验一般','期待更多功能迭代'],
+    suggests:[{label:'产品迭代',text:'保持新产品功能的显著提升，让老用户有升级动力',priority:'中'}],
+    summary:'从840H到G900的产品迭代对比帖。'},
+  {id:23, f:'JL Wrangler', t:'Wolfbox Jump Starter - Megavolt 24', u:'https://www.jlwranglerforums.com/forum/threads/wolfbox-jump-starter.145625/', d:'2025-03-13', c:'Jump Starter', r:55, v:5800, h:11,
+    sentiment:{pos:70,neu:25,neg:5},
+    pros:['卓越的跨接启动能力','优于竞争对手','冬季救急多次成功'],
+    cons:['希望有更大容量版本'],
+    suggests:[{label:'产品线扩展',text:'考虑推出大容量专业版',priority:'低'}],
+    summary:'用户对比了电容式和铅酸式跨接启动器后，认为Wolfbox表现最优。'},
+  {id:24, f:'JL Wrangler', t:'WolfBox G900 Pro Dash Cam Review', u:'https://www.jlwranglerforums.com/forum/threads/wolfbox-g900-pro-dash-cam-review.135641/', d:'2024-08-31', c:'G900 系列', r:71, v:7500, h:13,
+    sentiment:{pos:55,neu:38,neg:7},
+    pros:['免费产品试用提升社区参与','评测诚信度高','画质和夜视突出'],
+    cons:['部分功能有学习曲线'],
+    suggests:[{label:'社区运营',text:'KOL评测计划效果好，持续投入免费试用计划',priority:'高'}],
+    summary:'品牌寄送产品邀请测评的典型成功案例。用户强调是honest review。'},
+  {id:25, f:'JL Wrangler', t:'WOLFBOX G900 PRO DASH/REAR CAM', u:'https://www.jlwranglerforums.com/forum/threads/wolfbox-g900-pro-dash-rear-cam.141669/', d:'2025-01-21', c:'G900 系列', r:39, v:4200, h:8,
+    sentiment:{pos:60,neu:35,neg:5},
+    pros:['3小时完成安装','附带4路保险丝硬线套件','OEM支架可替换原厂后视镜'],
+    cons:['安装耗时长'],
+    suggests:[{label:'安装视频',text:'制作15分钟快速安装指南',priority:'中'}],
+    summary:'安装经验分享帖，附带硬线套件好评。'},
+  {id:26, f:'JL Wrangler', t:'New Arrival! WolfBox MF100 Air Duster with $20 off', u:'https://www.jlwranglerforums.com/forum/threads/new-arrival-wolfbox-mf100-air-duster-with-20-off-and-free-car-patch.140986/', d:'2024-12-13', c:'Air Duster', r:67, v:6800, h:12,
+    sentiment:{pos:65,neu:30,neg:5},
+    pros:['促销力度大','免费车贴受欢迎','产品发布节奏好'],
+    cons:['促销期过后价格回归略高'],
+    suggests:[{label:'促销策略',text:'新产品首发促销+车贴的策略效果显著',priority:'中'}],
+    summary:'新品发布+促销帖，67条回复显示促销策略成功。'},
+  {id:27, f:'JL Wrangler', t:'Wolfbox G900 TriPro - Review', u:'https://www.jlwranglerforums.com/forum/threads/wolfbox-g900-tripro-review.146684/', d:'2025-03-30', c:'G900 系列', r:48, v:5500, h:9,
+    sentiment:{pos:55,neu:40,neg:5},
+    pros:['37寸备胎不影响使用','露营/越野场景完美'],
+    cons:['安装时需规划走线'],
+    suggests:[{label:'场景营销',text:'突出大备胎/满载场景痛点——这是Jeep用户的刚需',priority:'高'}],
+    summary:'37寸大备胎用户痛点精准命中，这类场景化内容是品牌很好的营销素材。'},
+  {id:28, f:'JL Wrangler', t:'Project Farm Tested WOLFBOX MF100 Air Duster', u:'https://www.jlwranglerforums.com/forum/threads/project-farm-tested-wolfbox-mf100-air-duster.144364/', d:'2025-02-19', c:'Air Duster', r:31, v:3200, h:6,
+    sentiment:{pos:70,neu:25,neg:5},
+    pros:['权威测评背书','品牌知名度提升','社区自豪感'],
+    cons:['暂无显著负面'],
+    suggests:[{label:'PR策略',text:'Project Farm 合作效果极佳，考虑更多权威KOL合作',priority:'高'}],
+    summary:'Project Farm 测评的二次传播帖，用户因权威测评对品牌更信任。'},
+  {id:29, f:'JL Wrangler', t:'WOLFBOX CAR LIFE: MF100 AND MF200 - THEY REALLY BLOW!', u:'https://www.jlwranglerforums.com/forum/threads/wolfbox-car-life-mf100-and-mf200-they-really-blow.161329/', d:'2025-12-19', c:'Air Duster', r:52, v:5000, h:10,
+    sentiment:{pos:80,neu:18,neg:2},
+    pros:['MF100口碑极好','品牌主动回馈忠实用户','从MF100升级到MF200真香'],
+    cons:['无显著问题'],
+    suggests:[{label:'用户忠诚',text:'识别并维护核心KOL用户（如发帖人），他们是最佳品牌大使',priority:'高'}],
+    summary:'超正向帖！用户主动发帖表达热爱，品牌主动联系赠送MF200评测的行为被大大赞赏。'},
+  {id:30, f:'JL Wrangler', t:'G900 TriPro - Bumper Camera Install', u:'https://www.jlwranglerforums.com/forum/threads/wolfbox-g900-tripro-bumper-camera-install.151234/', d:'2025-07-15', c:'G900 系列', r:33, v:3400, h:6,
+    sentiment:{pos:55,neu:40,neg:5},
+    pros:['Rubicon车型完美适配','前保险杠视角越野实用'],
+    cons:['走线稍复杂'],
+    suggests:[{label:'产品定位',text:'Bumper版本在越野场景下差异化优势明显',priority:'中'}],
+    summary:'Bumper版在Jeep Rubicon上的安装帖。'},
+
+  {id:31, f:'Bronco6G', t:'Wolfbox Wide-Angle Convex Side Mirrors (Pair) from $69.99', u:'https://www.bronco6g.com/forum/threads/wolfbox-wide-angle-convex-side-mirrors-pair-from-69-99-extra-discount-code-included.132833/', d:'2026-05-24', c:'Side Mirrors', r:35, v:4200, h:7,
+    sentiment:{pos:60,neu:35,neg:5},
+    pros:['适配Bronco车型盲区消除','越野场景视野提升明显','价格合理69.99起'],
+    cons:['凸面镜适应需要时间'],
+    suggests:[{label:'营销',text:'利用Bronco越野场景做精准推广',priority:'中'}],
+    summary:'Bronco6G的侧视镜产品帖，突出盲区消除和越野场景。'},
+  {id:32, f:'Bronco6G', t:'Wolfbox Wide-Angle Convex Side Mirrors', u:'https://www.bronco6g.com/forum/threads/wolfbox-wide-angle-convex-side-mirrors.132072/', d:'2026-04-23', c:'Side Mirrors', r:22, v:2800, h:5,
+    sentiment:{pos:50,neu:45,neg:5},
+    pros:['产品链接分享清晰','discount code分享活跃'],
+    cons:['内容偏简短'],
+    suggests:[{label:'社区推广',text:'鼓励已购买用户分享使用心得',priority:'低'}],
+    summary:'早期侧视镜分享帖，用户对产品链接和优惠码关注度高。'},
+  {id:33, f:'JL Wrangler', t:'Wolfbox Wide-Angle Convex Side Mirrors (Pair) from $69.99', u:'https://www.jlwranglerforums.com/forum/threads/wolfbox-wide-angle-convex-side-mirrors-pair-from-69-99-extra-discount-code-included.167443/', d:'2026-05-13', c:'Side Mirrors', r:31, v:3600, h:6,
+    sentiment:{pos:55,neu:40,neg:5},
+    pros:['适配Jeep Wrangler JL/Gladiator JT','trail场景视野极佳'],
+    cons:['安装稍有门槛'],
+    suggests:[{label:'跨论坛推广',text:'B6G/F150/JL三线同步推广策略有效，保持一致性',priority:'中'}],
+    summary:'JL Wrangler侧视镜产品帖，涵盖2018-2026款Jeep Wrangler和Gladiator。'},
+  {id:34, f:'Bronco6G', t:'Parasitic Drain from Wolfbox Tri cam mirror PARKING MODE DISABLED', u:'https://www.bronco6g.com/forum/threads/parasitic-drain-from-wolfbox-tri-cam-mirror-parking-mode-disabled.133646/', d:'2026-05-24', c:'配件/周边', r:15, v:1800, h:4,
+    sentiment:{pos:30,neu:45,neg:25},
+    pros:['社区互助氛围好','品牌客服在跟进'],
+    cons:['停车模式仍有耗电问题','固件更新需要改善'],
+    suggests:[{label:'固件优化',text:'优化停车模式功耗管理，推动OTA修复',priority:'高'},{label:'用户沟通',text:'主动回应用户关于耗电的质疑',priority:'高'}],
+    summary:'用户报告G900 Tripro在停车模式下仍有寄生耗电问题，需要品牌关注并修复。'},
+  {id:35, f:'F150Gen14', t:'WOLFBOX MegaVolt24 Air Jump Starter with Air Compressor Review', u:'https://www.f150gen14.com/forum/threads/wolfbox-megavolt24-air-jump-starter-with-air-compressor-review.49973/', d:'2026-05-10', c:'Jump Starter', r:28, v:3500, h:7,
+    sentiment:{pos:65,neu:30,neg:5},
+    pros:['功能集紧凑高效','充气泵表现令人印象深刻','性价比高'],
+    cons:['希望有更大容量版本','收纳盒尺寸可优化'],
+    suggests:[{label:'产品迭代',text:'测试所有功能在不同工况下的表现，出专业版',priority:'中'}],
+    summary:'详细评测帖，用户对所有功能进行逐一测试并给予高度评价。'},
+  {id:36, f:'JL Wrangler', t:'Firmware Upgrade Went Sideways? How To Unbrick Your Dash Cam G900 Tripro', u:'https://www.jlwranglerforums.com/forum/threads/firmware-upgrade-went-sideways-how-to-unbrick-your-dash-cam-g900-tripro-guide-here.167998/', d:'2026-05-28', c:'G900 系列', r:20, v:2400, h:5,
+    sentiment:{pos:40,neu:50,neg:10},
+    pros:['社区自救教程实用','品牌固件更新积极'],
+    cons:['固件升级流程不够傻瓜化','变砖风险让用户担心'],
+    suggests:[{label:'固件升级',text:'优化固件升级流程，增加安全校验和回滚机制',priority:'高'},{label:'教程',text:'制作官方刷机教程视频',priority:'中'}],
+    summary:'固件升级失败自救教程帖，用户需要更安全的固件更新方案。'},
+
+];
+
+const FORUMS = ['Bronco6G','F150Gen14','JL Wrangler'];
+const CAT_COLORS = {'G900 系列':'#3b82f6','Air Duster':'#22c55e','Jump Starter':'#f97316','Side Mirrors':'#a855f7','配件/周边':'#eab308'};
+const CAT_PILL = {'G900 系列':'pill-g900','Air Duster':'pill-duster','Jump Starter':'pill-jump','Side Mirrors':'pill-mirror','配件/周边':'pill-acc'};
+
+let all = [...SEED];
+let rankFilter = {forum:'all',cat:'all',keyword:''};
+
+function fmtViews(v) { return v>=1000?(v/1000).toFixed(v%1000===0?0:1)+'K':v; }
+
+function switchTab(n) {
+  document.querySelectorAll('.nav-item').forEach(e=>e.classList.remove('active'));
+  document.querySelector(`[data-tab="${n}"]`).classList.add('active');
+  document.querySelectorAll('.page-section').forEach(e=>e.classList.remove('active'));
+  document.getElementById('tab-'+n).classList.add('active');
+}
+
+function bCls(f) { return f==='Bronco6G'?'bronco':f==='F150Gen14'?'f150':'jl'; }
+function sentCls(t) { const s=t.sentiment; return s.pos>=60?'green':s.neg>=15?'red':'neutral'; }
+function sentLabel(t) {
+  const s=t.sentiment;
+  if(s.pos>=65) return '🟢 非常积极';
+  if(s.pos>=50) return '🟢 偏积极';
+  if(s.neg>=15) return '🔴 有争议';
+  return '🟡 中性偏正';
+}
+function sentDot(t) {
+  const s=t.sentiment;
+  if(s.pos>=60) return '<span class="text-green-400">●</span>';
+  if(s.neg>=15) return '<span class="text-red-400">●</span>';
+  return '<span class="text-yellow-400">●</span>';
+}
+
+// ===== 热门排行筛选 =====
+function setRankFilter(val,btn) {
+  const parent=btn.parentElement;
+  parent.querySelectorAll('.forum-filter-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  if(btn.hasAttribute('data-f')) rankFilter.forum=val;
+  if(btn.hasAttribute('data-c')) rankFilter.cat=val;
+  filterRankings();
+}
+function filterRankings() {
+  const kw=document.getElementById('rankSearch').value.toLowerCase().trim();
+  rankFilter.keyword=kw;
+  let filtered=[...all];
+  if(rankFilter.forum!=='all') filtered=filtered.filter(t=>t.f===rankFilter.forum);
+  if(rankFilter.cat!=='all') filtered=filtered.filter(t=>t.c===rankFilter.cat);
+  if(kw) filtered=filtered.filter(t=>t.t.toLowerCase().includes(kw));
+  renderRankingTable(filtered);
+}
+
+// ===== 深度分析弹窗 =====
+function openModal(id) {
+  const t = all.find(x=>x.id===id);
+  if(!t)return;
+  const s=t.sentiment;
+  document.getElementById('modalTitle').textContent=t.t;
+  document.getElementById('modalMeta').innerHTML=`
+    <span class="forum-badge ${bCls(t.f)}">${t.f}</span>
+    <span class="pill ${CAT_PILL[t.c]}">${t.c}</span>
+    <span class="text-gray-400 text-xs">${t.d}</span>
+    <a href="${t.u}" target="_blank" class="text-xs text-blue-400 hover:underline">原文→</a>
+  `;
+  // Related threads (same forum + same category, excluding current)
+  const related = all.filter(x=>x.id!==t.id && (x.f===t.f || x.c===t.c)).sort((a,b)=>b.h-a.h).slice(0,4);
+
+  document.getElementById('modalBody').innerHTML=`
+    <!-- 摘要 -->
+    <div class="bg-[var(--bg-primary)] rounded-lg p-3 text-sm text-gray-300 leading-relaxed">
+      ${t.summary||'暂无摘要'}
+    </div>
+
+    <!-- 数据卡片 -->
+    <div class="grid grid-cols-3 gap-3">
+      <div class="bg-[var(--bg-primary)] rounded-lg p-3 text-center">
+        <div class="text-2xl font-bold text-blue-400">${t.r}</div>
+        <div class="text-xs text-gray-500 mt-0.5">💬 回复</div>
+      </div>
+      <div class="bg-[var(--bg-primary)] rounded-lg p-3 text-center">
+        <div class="text-2xl font-bold text-purple-400">${fmtViews(t.v)}</div>
+        <div class="text-xs text-gray-500 mt-0.5">👁️ 浏览</div>
+      </div>
+      <div class="bg-[var(--bg-primary)] rounded-lg p-3 text-center">
+        <div class="text-2xl font-bold text-yellow-400">${t.h}</div>
+        <div class="text-xs text-gray-500 mt-0.5">🔥 热度指数</div>
+      </div>
+    </div>
+
+    <!-- 评论风向分析 -->
+    <div>
+      <div class="text-sm font-semibold mb-2">📊 评论风向</div>
+      <div class="sentiment-bar mb-2">
+        <div class="sentiment-seg bg-green-500" style="width:${s.pos}%"></div>
+        <div class="sentiment-seg bg-gray-500" style="width:${s.neu}%"></div>
+        <div class="sentiment-seg bg-red-500" style="width:${s.neg}%"></div>
+      </div>
+      <div class="flex gap-4 text-xs">
+        <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-green-500"></span>正面 ${s.pos}%</span>
+        <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-gray-500"></span>中性 ${s.neu}%</span>
+        <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-red-500"></span>负面 ${s.neg}%</span>
+      </div>
+    </div>
+
+    <!-- 用户反馈亮点 -->
+    <div>
+      <div class="text-sm font-semibold mb-2">✅ 用户点赞</div>
+      <div class="space-y-1.5">
+        ${(t.pros||[]).map(p=>`<div class="insight-card insight-positive text-xs">${p}</div>`).join('')||'<div class="text-xs text-gray-500">暂无数据</div>'}
+      </div>
+    </div>
+
+    <div>
+      <div class="text-sm font-semibold mb-2">⚠️ 用户吐槽</div>
+      <div class="space-y-1.5">
+        ${(t.cons||[]).map(c=>`<div class="insight-card insight-negative text-xs">${c}</div>`).join('')||'<div class="text-xs text-gray-500">暂无数据</div>'}
+      </div>
+    </div>
+
+    <!-- 优化建议 -->
+    <div class="card !bg-[var(--bg-primary)] !border-orange-500/30">
+      <div class="text-sm font-semibold mb-2">💡 产品/服务优化建议</div>
+      <div class="space-y-2">
+        ${(t.suggests||[]).map(s=>`
+          <div class="flex items-start gap-2 text-xs">
+            <span class="chip ${s.priority==='高'?'chip-orange':'chip-green'} flex-shrink-0 mt-0.5">${s.priority}优先级</span>
+            <div>
+              <span class="text-gray-300 font-medium">${s.label}:</span>
+              <span class="text-gray-400">${s.text}</span>
+            </div>
+          </div>
+        `).join('')||'<div class="text-xs text-gray-500">暂无建议</div>'}
+      </div>
+    </div>
+
+    <!-- 关联话题 -->
+    ${related.length>0?`
+    <div>
+      <div class="text-sm font-semibold mb-2">🔗 同论坛/同品类关联话题 (${related.length})</div>
+      <div class="space-y-1">
+        ${related.map(x=>`
+          <div class="hover-row p-2 -mx-2 flex items-center gap-2 text-xs" onclick="closeModal();openModal(${x.id})">
+            <span class="forum-badge ${bCls(x.f)}">${x.f==='JL Wrangler'?'JL':x.f}</span>
+            <span class="flex-1 truncate">${x.t}</span>
+            <span class="text-yellow-400">🔥${x.h}</span>
+            <span class="text-gray-500">💬${x.r}</span>
+          </div>
+        `).join('')}
+      </div>
+    </div>`:''}
+  `;
+  document.getElementById('threadModal').classList.add('active');
+}
+function closeModal() { document.getElementById('threadModal').classList.remove('active'); }
+
+// ===== 渲染 =====
+function render() {
+  all = [...SEED];
+  const now=new Date();
+  document.getElementById('lastUpdate').textContent=now.toLocaleDateString('zh-CN')+' '+now.toLocaleTimeString('zh-CN',{hour:'2-digit',minute:'2-digit'});
+
+  document.getElementById('totalThreads').textContent=all.length;
+  document.getElementById('totalReplies').textContent=all.reduce((s,t)=>s+t.r,0);
+  document.getElementById('totalViews').textContent=all.reduce((s,t)=>s+t.v,0).toLocaleString();
+  document.getElementById('totalProducts').textContent=Object.keys(CAT_COLORS).length;
+
+  FORUMS.forEach(f=>{
+    const ts=all.filter(t=>t.f===f);
+    const k=f==='Bronco6G'?'bronco':f==='F150Gen14'?'f150':'jl';
+    document.getElementById(k+'Threads').textContent=ts.length;
+    document.getElementById(k+'Replies').textContent=ts.reduce((s,t)=>s+t.r,0);
+    document.getElementById(k+'Views').textContent=ts.reduce((s,t)=>s+t.v,0).toLocaleString();
+    const lt=ts.sort((a,b)=>new Date(b.d)-new Date(a.d))[0];
+    document.getElementById(k+'Latest').textContent=lt?lt.d:'-';
+    document.getElementById(k+'Hot').textContent=ts.filter(t=>t.h>=8).length;
+  });
+
+  renderOverviewProducts();
+  renderOverviewHot();
+  renderForumTable('bronco','Bronco6G');
+  renderForumTable('f150','F150Gen14');
+  renderForumTable('jl','JL Wrangler');
+  renderProductsDetail();
+  renderProductsCompare();
+  filterRankings();
+  renderTimeline();
+}
+
+function renderOverviewProducts() {
+  const cat=aggCat(),sorted=Object.entries(cat).sort((a,b)=>b[1].n-a[1].n);
+  const max=sorted[0]?.[1].n||1;
+  document.getElementById('overviewProducts').innerHTML=sorted.map(([n,d])=>`<div class="flex items-center justify-between mb-2 last:mb-0"><div class="flex items-center gap-2 flex-1"><span class="w-2 h-2 rounded-full" style="background:${CAT_COLORS[n]||'#3b82f6'}"></span><span class="text-xs font-medium">${n}</span></div><div class="flex items-center gap-3"><div class="progress-bar w-20"><div class="progress-fill" style="width:${(d.n/max*100).toFixed(0)}%;background:${CAT_COLORS[n]||'#3b82f6'}"></div></div><span class="text-xs font-semibold w-6 text-right">${d.n}</span></div></div>`).join('');
+}
+
+function renderOverviewHot() {
+  const top=[...all].sort((a,b)=>b.h-a.h).slice(0,5);
+  document.getElementById('overviewHot').innerHTML=top.map(t=>`<div class="hover-row p-2 -mx-2 flex items-center gap-2" onclick="openModal(${t.id})"><span class="rank-badge ${t.h>=18?'r1':t.h>=12?'r2':'r3'}">${t.h}</span><div class="flex-1 min-w-0"><span class="text-xs font-medium truncate block">${t.t}</span><span class="text-xs text-gray-500"><span class="forum-badge ${bCls(t.f)}" style="font-size:.6rem">${t.f}</span> ${t.r} 回复 · ${sentDot(t)} ${sentLabel(t)}</span></div></div>`).join('');
+}
+
+function renderForumTable(id,forum) {
+  const ts=all.filter(t=>t.f===forum);
+  document.getElementById(id+'Count').textContent=ts.length+' 条';
+  document.getElementById(id+'Table').innerHTML=ts.map((t,i)=>`<tr class="hover-row" onclick="openModal(${t.id})" style="cursor:pointer"><td class="text-gray-500 text-xs text-center">${i+1}</td><td class="text-sm">${t.t}</td><td><span class="pill ${CAT_PILL[t.c]}">${t.c}</span></td><td class="text-center">${t.r}</td><td class="text-center">${fmtViews(t.v)}</td><td class="text-center text-yellow-400">${t.h}</td></tr>`).join('');
+}
+
+function aggCat() {
+  const m={};all.forEach(t=>{if(!m[t.c])m[t.c]={n:0,r:0,v:0};m[t.c].n++;m[t.c].r+=t.r;m[t.c].v+=t.v;});return m;
+}
+
+function renderProductsDetail() {
+  const cat=aggCat(),sorted=Object.entries(cat).sort((a,b)=>b[1].n-a[1].n);
+  const max=sorted[0]?.[1].n||1;
+  document.getElementById('productDetail').innerHTML=sorted.map(([n,d])=>`<div class="mb-4 last:mb-0"><div class="flex items-center justify-between mb-1"><div class="flex items-center gap-2"><span class="w-3 h-3 rounded-full" style="background:${CAT_COLORS[n]||'#3b82f6'}"></span><span class="text-sm font-semibold">${n}</span></div><span class="text-sm font-bold">${d.n} 条</span></div><div class="progress-bar mb-1"><div class="progress-fill" style="width:${(d.n/max*100).toFixed(0)}%;background:${CAT_COLORS[n]||'#3b82f6'}"></div></div><div class="flex gap-3 text-xs text-gray-500"><span>💬 ${d.r} 回复</span><span>👁️ ${d.v.toLocaleString()} 浏览</span><span>📊 平均 ${Math.round(d.r/d.n)} 回复/帖</span></div></div>`).join('');
+}
+
+function renderProductsCompare() {
+  const cat=aggCat(),sorted=Object.entries(cat).sort((a,b)=>b[1].r-a[1].r);
+  const maxR=sorted[0]?.[1].r||1,maxV=sorted.reduce((m,[_,d])=>Math.max(m,d.v),0);
+  document.getElementById('productCompare').innerHTML=sorted.map(([n,d])=>`<div class="mb-4 last:mb-0"><div class="flex items-center gap-2 mb-2"><span class="w-2 h-2 rounded-full" style="background:${CAT_COLORS[n]||'#3b82f6'}"></span><span class="text-sm font-semibold">${n}</span></div><div class="flex items-center gap-3 text-xs mb-1"><span class="w-12 text-gray-500">回复</span><div class="progress-bar flex-1"><div class="progress-fill" style="width:${(d.r/maxR*100).toFixed(0)}%;background:#3b82f6"></div></div><span class="w-16 text-right font-medium">${d.r}</span></div><div class="flex items-center gap-3 text-xs"><span class="w-12 text-gray-500">浏览</span><div class="progress-bar flex-1"><div class="progress-fill" style="width:${(d.v/maxV*100).toFixed(0)}%;background:#8b5cf6"></div></div><span class="w-16 text-right font-medium">${fmtViews(d.v)}</span></div></div>`).join('');
+}
+
+function renderRankingTable(filtered) {
+  const sorted=[...filtered].sort((a,b)=>b.h-a.h);
+  document.getElementById('rankingTotal').textContent=sorted.length+' 条';
+  document.getElementById('rankingTable').innerHTML=sorted.map((t,i)=>`<tr class="hover-row" onclick="openModal(${t.id})"><td class="text-center"><span class="rank-badge ${i<3?'r'+(i+1):''}" style="${i>=3?'background:var(--bg-primary);color:var(--text-muted)':''}">${i+1}</span></td><td><span class="forum-badge ${bCls(t.f)}">${t.f==='JL Wrangler'?'JL':t.f}</span></td><td class="text-sm">${t.t}</td><td><span class="pill ${CAT_PILL[t.c]}">${t.c}</span></td><td class="text-center">${t.r}</td><td class="text-center">${fmtViews(t.v)}</td><td class="text-center font-bold">${t.h}</td><td class="text-center text-xs">${sentDot(t)} ${sentLabel(t).slice(2)}</td><td class="text-lg text-center">${i===0?'🥇':i===1?'🥈':i===2?'🥉':''}</td></tr>`).join('');
+}
+
+function renderTimeline() {
+  const sorted=[...all].sort((a,b)=>new Date(b.d)-new Date(a.d));
+  document.getElementById('timelineTotal').textContent=sorted.length+' 条';
+  document.getElementById('timelineList').innerHTML='<div class="relative">'+sorted.map(t=>`<div class="flex items-start gap-3 pb-3 relative hover-row p-2 -mx-2 rounded-lg" onclick="openModal(${t.id})"><div class="flex flex-col items-center"><div class="w-[10px] h-[10px] rounded-full border-2 mt-1" style="border-color:${CAT_COLORS[t.c]||'#3b82f6'};background:var(--bg-primary)"></div><div class="w-[2px] flex-1 bg-[var(--border)]" style="min-height:20px"></div></div><div class="flex-1 min-w-0"><div class="flex items-center gap-2 text-xs"><span class="forum-badge ${bCls(t.f)}">${t.f}</span><span class="pill ${CAT_PILL[t.c]}">${t.c}</span><span class="text-gray-500">${t.d}</span></div><div class="text-sm font-medium truncate mt-0.5 hover:text-blue-400">${t.t}</div><div class="text-xs text-gray-500 mt-0.5">💬 ${t.r} · 👁️ ${fmtViews(t.v)} · 🔥 ${t.h} · ${sentDot(t)} ${sentLabel(t)}</div></div></div>`).join('')+'</div>';
+}
+
+async function refreshData() {
+  const btn=document.getElementById('refreshBtn'),txt=document.getElementById('refreshText'),spn=document.getElementById('refreshSpinner');
+  btn.disabled=true;txt.style.display='none';spn.style.display='inline-block';
+  // Re-render from existing data (hardcoded SEED) + update timestamp
+  render();
+  updateLastChecked();
+  btn.disabled=false;txt.style.display='inline';spn.style.display='none';
+}
+function updateLastChecked() {
+  const now=new Date();
+  document.getElementById('lastUpdate').textContent=now.toLocaleDateString('zh-CN')+' '+now.toLocaleTimeString('zh-CN',{hour:'2-digit',minute:'2-digit'});
+}
+
+document.addEventListener('DOMContentLoaded',render);
+</script>
+</body>
+</html>
