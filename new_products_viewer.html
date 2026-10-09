@@ -520,7 +520,7 @@ function showLasfitModal() {
 
 async function loadData(){
   try {
-    const r = await fetch('new_products_data.js?_t='+Date.now());
+    const r = await fetch('new_products_data.js?_t='+Date.now(), {cache: 'no-store'});
     const txt = await r.text();
     // Extract JSON array from var NEW_PRODUCTS = [...];
     const jsonStr = txt.substring(txt.indexOf('['), txt.lastIndexOf(']')+1);
