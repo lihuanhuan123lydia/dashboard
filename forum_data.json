@@ -1,0 +1,1345 @@
+{
+  "source": "Amazon + Google + Vertical Forums",
+  "scraped_at": "2026-09-22T10:38:08.033742",
+  "total_models": 144,
+  "activity": {
+    "Chevrolet Silverado&GMC Sierra": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Ford F-Series": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {
+        "F150gen14": {
+          "status": "HTTP 404",
+          "mentions": 0,
+          "url_ok": false
+        }
+      },
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Toyota RAV4": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Honda CR-V": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Toyota Camry": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Tesla Model Y": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Toyota Tacoma": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {
+        "TacomaWorld": {
+          "status": "HTTP 404",
+          "mentions": 0,
+          "url_ok": false
+        }
+      },
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Dodge Ram 系列": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Toyota Corrola": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Honda Civic": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Hyundai Tucson": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Ford Explorer": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Nissan Rogue": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Jeep Grand Cherokee": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Tesla Model 3": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Jeep Wrangler": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Honda Accord": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Honda HR-V": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Hyundai Elantra": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Toyota Tundra": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {
+        "TacomaWorld": {
+          "status": "HTTP 404",
+          "mentions": 0,
+          "url_ok": false
+        }
+      },
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Chevrolet Trax": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Ford Bronco": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {
+        "Bronco6G": {
+          "status": "HTTP 403",
+          "mentions": 0,
+          "url_ok": false
+        }
+      },
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Chevrolet Equinox": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Ford Escape": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Toyota Grand Highlander": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Mazda CX-5": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Ford Bronco Sport": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {
+        "Bronco6G": {
+          "status": "HTTP 403",
+          "mentions": 0,
+          "url_ok": false
+        }
+      },
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Kia Sportage": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Honda Pilot": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Hyundai Palisade": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Ford Maverick": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {
+        "MaverickTruckClub": {
+          "status": "HTTP 404",
+          "mentions": 0,
+          "url_ok": false
+        }
+      },
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Subaru Outback": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "短轴tahoe/yukon/escalade": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Lexus RX": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Subaru Forester": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Jeep Compass": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Toyota Sienna": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Toyota 4 Runner/Lexus GX460": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Kia sorento": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Nissan Altima": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Honda Odyssey": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Nissan Qashqai": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Lexus NX": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "BMW X5": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Peugeot 3008": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Nissan Pathfinder": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Benz GLC": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Hyundai Sonata": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Benz GLE": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Chevrolet Suburban": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Chevrolet Traverse": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Jeep Gladiator": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Toyota Highlander": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Ford Ranger": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Nissan kick": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Ford Mustang Mach E": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Kia Telluride": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Hyundai Santa Fe": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "BMW X3": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Hyundai IONIQ 5": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Chevrolet trailblazer": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Audi Q5": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Acura MDX": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Skoda ELroq": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Volvo XC60": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Lexus ES": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Jeep Grand Wagoneer": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {
+        "WagoneerForums": {
+          "status": "HTTP 403",
+          "mentions": 0,
+          "url_ok": false
+        }
+      },
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Nissan Frontier": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Mazda CX50": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "BMW 1 Series": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Volkswagen ID.3": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "SKODA Kodiaq": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Lexus GX460": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Volkswagen ID.7": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "BMW 3 Series": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Acura RDX": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "BMW X7": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Benz A-Class": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "MINI HATCH": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Benz C-Class": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Audi Q7/Audi Q8": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Hyundai Kona": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Subaru Crosstrek/Impreza": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Land Rover Defender": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "BMW X1": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "BMW 2 Series": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Porsche Macan": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "BMW IX1": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Rivian R1S": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Cadillac XT5": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Benz GLA": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Cadillac XTS": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Volkswagen ID.4": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Benz E-Class": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Range Rover Sport": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Audi Q3": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Benz V-Class": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Porsche Cayenne": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Volkswagen Tiguan": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Tesla Cybertruck": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "BMW 5 Series": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Ford Expedition": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Lincoln MKC": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Lincoln MKX": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Nissan Armada": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "MINI COUNTRYMAN": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Nissan X-Trail": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Nissan Murano": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Tesla Model X": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Kia EV6": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "BMW IX": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Benz G-Class": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Lincoln MKZ": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "BMW X6": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Benz GLB": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Cadillac XT4": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "BMW IX3": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Honda Passport": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Benz B-Class": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "BMW 7 Series": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Volkswagen Touareg": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "BMW X2": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Audi A3": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Audi Q4": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Santa Cruz": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Tesla Model S": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Audi A6": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Range Rover Velar": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Volkswagen Golf": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Range Rover Evoque": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Jaguar F-pace": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "BYD ATTO 3 Yuan Plus": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Porsche 911": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Ford Edge": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Land Rover Discovery Sport": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Honda Prologue": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Benz CLA": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Porsche panamera": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Range Rover": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Benz GLS": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Benz S-Class": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Jeep Renegade": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Jeep Cherokee": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    },
+    "Audi A4": {
+      "amazon_product_count": 0,
+      "web_mentions": 0,
+      "reddit_mentions": 0,
+      "forum_mentions": 0,
+      "forum_details": {},
+      "raw_activity_score": 0,
+      "activity_score_pct": 0
+    }
+  }
+}
