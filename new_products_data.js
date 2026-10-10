@@ -24325,5 +24325,19 @@ var NEW_PRODUCTS = [
   "p": 49.99,
   "d": "2026-10-09",
   "u": "https://lasfit.com/products/9256253458?variant=33220922322"
+ },
+ {
+  "b": "3W",
+  "t": "3W Jeep Cherokee 2026-2027 Custom Floor Mats / Trunk Mat / Seat Back Protector Thorex™ All-Weather Protection (2022-2027 / Cherokee 2026-2027 / Floor Mats + Trunk Mat + Sub-Trunk Mat + Seat Back Protector)",
+  "p": 279.99,
+  "d": "2026-10-10",
+  "u": "https://3wliners.com/products/15272197357931?variant=54025518416235"
+ },
+ {
+  "b": "3W",
+  "t": "3W Jeep Cherokee 2026-2027 Custom Floor Mats / Trunk Mat / Seat Back Protector Thorex™ All-Weather Protection (2022-2027 / Cherokee 2026-2027 / Floor Mats + Trunk Mat + Seat Back Protector)",
+  "p": 259.99,
+  "d": "2026-10-10",
+  "u": "https://3wliners.com/products/15272197357931?variant=54019703505259"
  }
 ]
