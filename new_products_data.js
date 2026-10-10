@@ -8018,21 +8018,21 @@ var NEW_PRODUCTS = [
  },
  {
   "b": "Lasfit",
-  "t": "Fit for 2025-2026 Ram 1500 LED Turn Signal Bulbs (Tradesman/Tradesman HFE/Big Horn/Warlock/Laramie/Rebel/Express / Combo Package)",
+  "t": "Fit for 2025-2027 Ram 1500 LED Turn Signal Bulbs (Tradesman/Tradesman HFE/Big Horn/Warlock/Laramie/Rebel/Express / Combo Package)",
   "p": 179.97,
   "d": "2026-09-02",
   "u": "https://lasfit.com/products/10070727393527?variant=51095533388023"
  },
  {
   "b": "Lasfit",
-  "t": "Fit for 2025-2026 Ram 1500 LED Turn Signal Bulbs (Tradesman/Tradesman HFE/Big Horn/Warlock/Laramie/Rebel/Express / Front Turn Signal Light(Amber/White))",
+  "t": "Fit for 2025-2027 Ram 1500 LED Turn Signal Bulbs (Tradesman/Tradesman HFE/Big Horn/Warlock/Laramie/Rebel/Express / Front Turn Signal Light(Amber/White))",
   "p": 59.99,
   "d": "2026-09-02",
   "u": "https://lasfit.com/products/10070727393527?variant=51095533420791"
  },
  {
   "b": "Lasfit",
-  "t": "Fit for 2025-2026 Ram 1500 LED Turn Signal Bulbs (Tradesman/Tradesman HFE/Big Horn/Warlock/Laramie/Rebel/Express / Rear Turn Signal/Brake/Tail Light)",
+  "t": "Fit for 2025-2027 Ram 1500 LED Turn Signal Bulbs (Tradesman/Tradesman HFE/Big Horn/Warlock/Laramie/Rebel/Express / Rear Turn Signal/Brake/Tail Light)",
   "p": 119.98,
   "d": "2026-09-02",
   "u": "https://lasfit.com/products/10070727393527?variant=51095533453559"
@@ -24297,5 +24297,33 @@ var NEW_PRODUCTS = [
   "p": 109.5,
   "d": "2026-01-13",
   "u": "https://tuxmat.com/products/8676617650236?variant=43526580404284"
+ },
+ {
+  "b": "Lasfit",
+  "t": "70W H7 LA Air Series | 7,000LM 6000K LED Bulbs (Default Title)",
+  "p": 64.99,
+  "d": "2026-10-09",
+  "u": "https://lasfit.com/products/7943950467319?variant=43912143896823"
+ },
+ {
+  "b": "Lasfit",
+  "t": "100W 9006 HB4 LA Air Series | 10,000LM 6000K LED Bulbs (Default Title)",
+  "p": 64.99,
+  "d": "2026-10-09",
+  "u": "https://lasfit.com/products/7942926041335?variant=43909462720759"
+ },
+ {
+  "b": "Lasfit",
+  "t": "100W 9005 HB3 LA Air Series | 10,000LM 6000K LED Bulbs (Default Title)",
+  "p": 64.99,
+  "d": "2026-10-09",
+  "u": "https://lasfit.com/products/7942388318455?variant=43907958505719"
+ },
+ {
+  "b": "Lasfit",
+  "t": "50W H3 LC Plus Series | 5,000LM 6000K LED Bulbs (Default Title)",
+  "p": 49.99,
+  "d": "2026-10-09",
+  "u": "https://lasfit.com/products/9256253458?variant=33220922322"
  }
 ]
